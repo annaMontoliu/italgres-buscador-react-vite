@@ -47,10 +47,16 @@ export function IndexPage({ onOpenCollection }) {
         onOpenCollection("ELEGANCE PRO");
         return;
       }
+
+      if (item.name === "ELYSIAN") {
+        e.preventDefault();
+        onOpenCollection("ELYSIAN");
+        return;
+      }
     }
 
-    // El resto de colecciones (como ELYSIAN, mientras siga en HTML)
-    // seguirán usando su href normal
+    // El resto de colecciones que sigan en HTML
+    // usarán su href normal
   }
 
   return (
