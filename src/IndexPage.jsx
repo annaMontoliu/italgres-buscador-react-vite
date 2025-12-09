@@ -34,12 +34,23 @@ export function IndexPage({ onOpenCollection }) {
           .filter((group) => group.items.length > 0);
 
   function handleClickCollection(e, item) {
-    // Si App nos pasa onOpenCollection, usamos React para abrir LUCENA
-    if (onOpenCollection && item.name === "LUCENA") {
-      e.preventDefault();
-      onOpenCollection("LUCENA");
+    // Si App nos pasa onOpenCollection, usamos React para abrir colecciones internas
+    if (onOpenCollection) {
+      if (item.name === "LUCENA") {
+        e.preventDefault();
+        onOpenCollection("LUCENA");
+        return;
+      }
+
+      if (item.name === "ELEGANCE PRO") {
+        e.preventDefault();
+        onOpenCollection("ELEGANCE PRO");
+        return;
+      }
     }
-    // El resto de colecciones (cuando existan) seguirán usando su href normal
+
+    // El resto de colecciones (como ELYSIAN, mientras siga en HTML)
+    // seguirán usando su href normal
   }
 
   return (
