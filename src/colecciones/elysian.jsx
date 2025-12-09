@@ -6,94 +6,117 @@ import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
 
-// ELYSIAN 01
+// ELYSIAN 01 (8 fotos)
 import elysian01_1 from "../assets/imagenes/elysian/elysian-01/elysian-01-1.jpg";
 import elysian01_2 from "../assets/imagenes/elysian/elysian-01/elysian-01-2.jpg";
-// (Ya no importamos elysian-01-3.jpg porque no existe)
+import elysian01_3 from "../assets/imagenes/elysian/elysian-01/elysian-01-3.jpg";
+import elysian01_4 from "../assets/imagenes/elysian/elysian-01/elysian-01-4.jpg";
+import elysian01_5 from "../assets/imagenes/elysian/elysian-01/elysian-01-5.jpg";
+import elysian01_6 from "../assets/imagenes/elysian/elysian-01/elysian-01-6.jpg";
+import elysian01_7 from "../assets/imagenes/elysian/elysian-01/elysian-01-7.jpg";
+import elysian01_8 from "../assets/imagenes/elysian/elysian-01/elysian-01-8.jpg";
 
-// ELYSIAN 02
+// ELYSIAN 02 (5 fotos)
 import elysian02_1 from "../assets/imagenes/elysian/elysian-02/elysian-02-1.jpg";
 import elysian02_2 from "../assets/imagenes/elysian/elysian-02/elysian-02-2.jpg";
 import elysian02_3 from "../assets/imagenes/elysian/elysian-02/elysian-02-3.jpg";
 import elysian02_4 from "../assets/imagenes/elysian/elysian-02/elysian-02-4.jpg";
 import elysian02_5 from "../assets/imagenes/elysian/elysian-02/elysian-02-5.jpg";
 
-// ELYSIAN 03
+// ELYSIAN 03 (6 fotos)
 import elysian03_1 from "../assets/imagenes/elysian/elysian-03/elysian-03-1.jpg";
 import elysian03_2 from "../assets/imagenes/elysian/elysian-03/elysian-03-2.jpg";
 import elysian03_3 from "../assets/imagenes/elysian/elysian-03/elysian-03-3.jpg";
+import elysian03_4 from "../assets/imagenes/elysian/elysian-03/elysian-03-4.jpg";
+import elysian03_5 from "../assets/imagenes/elysian/elysian-03/elysian-03-5.jpg";
+import elysian03_6 from "../assets/imagenes/elysian/elysian-03/elysian-03-6.jpg";
 
-// ELYSIAN 04
+// ELYSIAN 04 (3 fotos)
 import elysian04_1 from "../assets/imagenes/elysian/elysian-04/elysian-04-1.jpg";
 import elysian04_2 from "../assets/imagenes/elysian/elysian-04/elysian-04-2.jpg";
 import elysian04_3 from "../assets/imagenes/elysian/elysian-04/elysian-04-3.jpg";
 
-// ELYSIAN 05
+// ELYSIAN 05 (2 fotos)
 import elysian05_1 from "../assets/imagenes/elysian/elysian-05/elysian-05-1.jpg";
 import elysian05_2 from "../assets/imagenes/elysian/elysian-05/elysian-05-2.jpg";
 
 // (NO HAY 06)
 
-// ELYSIAN 07
+// ELYSIAN 07 (8 fotos)
 import elysian07_1 from "../assets/imagenes/elysian/elysian-07/elysian-07-1.jpg";
 import elysian07_2 from "../assets/imagenes/elysian/elysian-07/elysian-07-2.jpg";
 import elysian07_3 from "../assets/imagenes/elysian/elysian-07/elysian-07-3.jpg";
 import elysian07_4 from "../assets/imagenes/elysian/elysian-07/elysian-07-4.jpg";
 import elysian07_5 from "../assets/imagenes/elysian/elysian-07/elysian-07-5.jpg";
+import elysian07_6 from "../assets/imagenes/elysian/elysian-07/elysian-07-6.jpg";
+import elysian07_7 from "../assets/imagenes/elysian/elysian-07/elysian-07-7.jpg";
+import elysian07_8 from "../assets/imagenes/elysian/elysian-07/elysian-07-8.jpg";
 
-// ELYSIAN 08
+// ELYSIAN 08 (3 fotos)
 import elysian08_1 from "../assets/imagenes/elysian/elysian-08/elysian-08-1.jpg";
 import elysian08_2 from "../assets/imagenes/elysian/elysian-08/elysian-08-2.jpg";
 import elysian08_3 from "../assets/imagenes/elysian/elysian-08/elysian-08-3.jpg";
 
-// ELYSIAN 09
+// ELYSIAN 09 (3 fotos)
 import elysian09_1 from "../assets/imagenes/elysian/elysian-09/elysian-09-1.jpg";
 import elysian09_2 from "../assets/imagenes/elysian/elysian-09/elysian-09-2.jpg";
 import elysian09_3 from "../assets/imagenes/elysian/elysian-09/elysian-09-3.jpg";
 
 // ORDEN EXACTO DE TODAS LAS FOTOS
 const images = [
-  // 01 (2 fotos)
-  elysian01_1, // index 0
-  elysian01_2, // index 1
+  // 01 (8 fotos) → índices 0–7
+  elysian01_1, // 0
+  elysian01_2, // 1
+  elysian01_3, // 2
+  elysian01_4, // 3
+  elysian01_5, // 4
+  elysian01_6, // 5
+  elysian01_7, // 6
+  elysian01_8, // 7
 
-  // 02 (5 fotos)
-  elysian02_1, // 2
-  elysian02_2, // 3
-  elysian02_3, // 4
-  elysian02_4, // 5
-  elysian02_5, // 6
+  // 02 (5 fotos) → índices 8–12
+  elysian02_1, // 8
+  elysian02_2, // 9
+  elysian02_3, // 10
+  elysian02_4, // 11
+  elysian02_5, // 12
 
-  // 03 (3 fotos)
-  elysian03_1, // 7
-  elysian03_2, // 8
-  elysian03_3, // 9
+  // 03 (6 fotos) → índices 13–18
+  elysian03_1, // 13
+  elysian03_2, // 14
+  elysian03_3, // 15
+  elysian03_4, // 16
+  elysian03_5, // 17
+  elysian03_6, // 18
 
-  // 04 (3 fotos)
-  elysian04_1, // 10
-  elysian04_2, // 11
-  elysian04_3, // 12
+  // 04 (3 fotos) → índices 19–21
+  elysian04_1, // 19
+  elysian04_2, // 20
+  elysian04_3, // 21
 
-  // 05 (2 fotos)
-  elysian05_1, // 13
-  elysian05_2, // 14
+  // 05 (2 fotos) → índices 22–23
+  elysian05_1, // 22
+  elysian05_2, // 23
 
-  // 07 (5 fotos)
-  elysian07_1, // 15
-  elysian07_2, // 16
-  elysian07_3, // 17
-  elysian07_4, // 18
-  elysian07_5, // 19
+  // 07 (8 fotos) → índices 24–31
+  elysian07_1, // 24
+  elysian07_2, // 25
+  elysian07_3, // 26
+  elysian07_4, // 27
+  elysian07_5, // 28
+  elysian07_6, // 29
+  elysian07_7, // 30
+  elysian07_8, // 31
 
-  // 08 (3 fotos)
-  elysian08_1, // 20
-  elysian08_2, // 21
-  elysian08_3, // 22
+  // 08 (3 fotos) → índices 32–34
+  elysian08_1, // 32
+  elysian08_2, // 33
+  elysian08_3, // 34
 
-  // 09 (3 fotos)
-  elysian09_1, // 23
-  elysian09_2, // 24
-  elysian09_3, // 25
+  // 09 (3 fotos) → índices 35–37
+  elysian09_1, // 35
+  elysian09_2, // 36
+  elysian09_3, // 37
 ];
 
 export function Elysian({ onGoHome }) {
@@ -154,6 +177,48 @@ export function Elysian({ onGoHome }) {
             loading="lazy"
             alt="ELYSIAN 01 - 2"
           />
+          <img
+            src={elysian01_3}
+            className="gallery-img"
+            onClick={() => openModal(2)}
+            loading="lazy"
+            alt="ELYSIAN 01 - 3"
+          />
+          <img
+            src={elysian01_4}
+            className="gallery-img"
+            onClick={() => openModal(3)}
+            loading="lazy"
+            alt="ELYSIAN 01 - 4"
+          />
+          <img
+            src={elysian01_5}
+            className="gallery-img"
+            onClick={() => openModal(4)}
+            loading="lazy"
+            alt="ELYSIAN 01 - 5"
+          />
+          <img
+            src={elysian01_6}
+            className="gallery-img"
+            onClick={() => openModal(5)}
+            loading="lazy"
+            alt="ELYSIAN 01 - 6"
+          />
+          <img
+            src={elysian01_7}
+            className="gallery-img"
+            onClick={() => openModal(6)}
+            loading="lazy"
+            alt="ELYSIAN 01 - 7"
+          />
+          <img
+            src={elysian01_8}
+            className="gallery-img"
+            onClick={() => openModal(7)}
+            loading="lazy"
+            alt="ELYSIAN 01 - 8"
+          />
         </section>
 
         {/* ELYSIAN 02 */}
@@ -162,35 +227,35 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian02_1}
             className="gallery-img"
-            onClick={() => openModal(2)}
+            onClick={() => openModal(8)}
             loading="lazy"
             alt="ELYSIAN 02 - 1"
           />
           <img
             src={elysian02_2}
             className="gallery-img"
-            onClick={() => openModal(3)}
+            onClick={() => openModal(9)}
             loading="lazy"
             alt="ELYSIAN 02 - 2"
           />
           <img
             src={elysian02_3}
             className="gallery-img"
-            onClick={() => openModal(4)}
+            onClick={() => openModal(10)}
             loading="lazy"
             alt="ELYSIAN 02 - 3"
           />
           <img
             src={elysian02_4}
             className="gallery-img"
-            onClick={() => openModal(5)}
+            onClick={() => openModal(11)}
             loading="lazy"
             alt="ELYSIAN 02 - 4"
           />
           <img
             src={elysian02_5}
             className="gallery-img"
-            onClick={() => openModal(6)}
+            onClick={() => openModal(12)}
             loading="lazy"
             alt="ELYSIAN 02 - 5"
           />
@@ -202,23 +267,44 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian03_1}
             className="gallery-img"
-            onClick={() => openModal(7)}
+            onClick={() => openModal(13)}
             loading="lazy"
             alt="ELYSIAN 03 - 1"
           />
           <img
             src={elysian03_2}
             className="gallery-img"
-            onClick={() => openModal(8)}
+            onClick={() => openModal(14)}
             loading="lazy"
             alt="ELYSIAN 03 - 2"
           />
           <img
             src={elysian03_3}
             className="gallery-img"
-            onClick={() => openModal(9)}
+            onClick={() => openModal(15)}
             loading="lazy"
             alt="ELYSIAN 03 - 3"
+          />
+          <img
+            src={elysian03_4}
+            className="gallery-img"
+            onClick={() => openModal(16)}
+            loading="lazy"
+            alt="ELYSIAN 03 - 4"
+          />
+          <img
+            src={elysian03_5}
+            className="gallery-img"
+            onClick={() => openModal(17)}
+            loading="lazy"
+            alt="ELYSIAN 03 - 5"
+          />
+          <img
+            src={elysian03_6}
+            className="gallery-img"
+            onClick={() => openModal(18)}
+            loading="lazy"
+            alt="ELYSIAN 03 - 6"
           />
         </section>
 
@@ -228,21 +314,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian04_1}
             className="gallery-img"
-            onClick={() => openModal(10)}
+            onClick={() => openModal(19)}
             loading="lazy"
             alt="ELYSIAN 04 - 1"
           />
           <img
             src={elysian04_2}
             className="gallery-img"
-            onClick={() => openModal(11)}
+            onClick={() => openModal(20)}
             loading="lazy"
             alt="ELYSIAN 04 - 2"
           />
           <img
             src={elysian04_3}
             className="gallery-img"
-            onClick={() => openModal(12)}
+            onClick={() => openModal(21)}
             loading="lazy"
             alt="ELYSIAN 04 - 3"
           />
@@ -254,14 +340,14 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian05_1}
             className="gallery-img"
-            onClick={() => openModal(13)}
+            onClick={() => openModal(22)}
             loading="lazy"
             alt="ELYSIAN 05 - 1"
           />
           <img
             src={elysian05_2}
             className="gallery-img"
-            onClick={() => openModal(14)}
+            onClick={() => openModal(23)}
             loading="lazy"
             alt="ELYSIAN 05 - 2"
           />
@@ -273,37 +359,58 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian07_1}
             className="gallery-img"
-            onClick={() => openModal(15)}
+            onClick={() => openModal(24)}
             loading="lazy"
             alt="ELYSIAN 07 - 1"
           />
           <img
             src={elysian07_2}
             className="gallery-img"
-            onClick={() => openModal(16)}
+            onClick={() => openModal(25)}
             loading="lazy"
             alt="ELYSIAN 07 - 2"
           />
           <img
             src={elysian07_3}
             className="gallery-img"
-            onClick={() => openModal(17)}
+            onClick={() => openModal(26)}
             loading="lazy"
             alt="ELYSIAN 07 - 3"
           />
           <img
             src={elysian07_4}
             className="gallery-img"
-            onClick={() => openModal(18)}
+            onClick={() => openModal(27)}
             loading="lazy"
             alt="ELYSIAN 07 - 4"
           />
           <img
             src={elysian07_5}
             className="gallery-img"
-            onClick={() => openModal(19)}
+            onClick={() => openModal(28)}
             loading="lazy"
             alt="ELYSIAN 07 - 5"
+          />
+          <img
+            src={elysian07_6}
+            className="gallery-img"
+            onClick={() => openModal(29)}
+            loading="lazy"
+            alt="ELYSIAN 07 - 6"
+          />
+          <img
+            src={elysian07_7}
+            className="gallery-img"
+            onClick={() => openModal(30)}
+            loading="lazy"
+            alt="ELYSIAN 07 - 7"
+          />
+          <img
+            src={elysian07_8}
+            className="gallery-img"
+            onClick={() => openModal(31)}
+            loading="lazy"
+            alt="ELYSIAN 07 - 8"
           />
         </section>
 
@@ -313,21 +420,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian08_1}
             className="gallery-img"
-            onClick={() => openModal(20)}
+            onClick={() => openModal(32)}
             loading="lazy"
             alt="ELYSIAN 08 - 1"
           />
           <img
             src={elysian08_2}
             className="gallery-img"
-            onClick={() => openModal(21)}
+            onClick={() => openModal(33)}
             loading="lazy"
             alt="ELYSIAN 08 - 2"
           />
           <img
             src={elysian08_3}
             className="gallery-img"
-            onClick={() => openModal(22)}
+            onClick={() => openModal(34)}
             loading="lazy"
             alt="ELYSIAN 08 - 3"
           />
@@ -339,21 +446,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian09_1}
             className="gallery-img"
-            onClick={() => openModal(23)}
+            onClick={() => openModal(35)}
             loading="lazy"
             alt="ELYSIAN 09 - 1"
           />
           <img
             src={elysian09_2}
             className="gallery-img"
-            onClick={() => openModal(24)}
+            onClick={() => openModal(36)}
             loading="lazy"
             alt="ELYSIAN 09 - 2"
           />
           <img
             src={elysian09_3}
             className="gallery-img"
-            onClick={() => openModal(25)}
+            onClick={() => openModal(37)}
             loading="lazy"
             alt="ELYSIAN 09 - 3"
           />
