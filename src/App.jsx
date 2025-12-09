@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { IndexPage } from "./IndexPage";
 import { Lucena } from "./colecciones/lucena";
-import { ElegancePro } from "./colecciones/ElegancePro";
+import { ElegancePro } from "./colecciones/elegance-pro";
 
 export function App() {
   // Páginas disponibles:
