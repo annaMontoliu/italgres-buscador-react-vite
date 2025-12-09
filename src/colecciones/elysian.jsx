@@ -5,10 +5,11 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
+
 // ELYSIAN 01
 import elysian01_1 from "../assets/imagenes/elysian/elysian-01/elysian-01-1.jpg";
 import elysian01_2 from "../assets/imagenes/elysian/elysian-01/elysian-01-2.jpg";
-import elysian01_3 from "../assets/imagenes/elysian/elysian-01/elysian-01-3.jpg";
+// (Ya no importamos elysian-01-3.jpg porque no existe)
 
 // ELYSIAN 02
 import elysian02_1 from "../assets/imagenes/elysian/elysian-02/elysian-02-1.jpg";
@@ -50,50 +51,49 @@ import elysian09_1 from "../assets/imagenes/elysian/elysian-09/elysian-09-1.jpg"
 import elysian09_2 from "../assets/imagenes/elysian/elysian-09/elysian-09-2.jpg";
 import elysian09_3 from "../assets/imagenes/elysian/elysian-09/elysian-09-3.jpg";
 
-// ORDEN EXACTO DE TODAS LAS FOTOS (POR NÚMERO Y LUEGO POR ORDEN)
+// ORDEN EXACTO DE TODAS LAS FOTOS
 const images = [
-  // 01
-  elysian01_1,
-  elysian01_2,
-  elysian01_3,
+  // 01 (2 fotos)
+  elysian01_1, // index 0
+  elysian01_2, // index 1
 
-  // 02
-  elysian02_1,
-  elysian02_2,
-  elysian02_3,
-  elysian02_4,
-  elysian02_5,
+  // 02 (5 fotos)
+  elysian02_1, // 2
+  elysian02_2, // 3
+  elysian02_3, // 4
+  elysian02_4, // 5
+  elysian02_5, // 6
 
-  // 03
-  elysian03_1,
-  elysian03_2,
-  elysian03_3,
+  // 03 (3 fotos)
+  elysian03_1, // 7
+  elysian03_2, // 8
+  elysian03_3, // 9
 
-  // 04
-  elysian04_1,
-  elysian04_2,
-  elysian04_3,
+  // 04 (3 fotos)
+  elysian04_1, // 10
+  elysian04_2, // 11
+  elysian04_3, // 12
 
-  // 05
-  elysian05_1,
-  elysian05_2,
+  // 05 (2 fotos)
+  elysian05_1, // 13
+  elysian05_2, // 14
 
-  // 07
-  elysian07_1,
-  elysian07_2,
-  elysian07_3,
-  elysian07_4,
-  elysian07_5,
+  // 07 (5 fotos)
+  elysian07_1, // 15
+  elysian07_2, // 16
+  elysian07_3, // 17
+  elysian07_4, // 18
+  elysian07_5, // 19
 
-  // 08
-  elysian08_1,
-  elysian08_2,
-  elysian08_3,
+  // 08 (3 fotos)
+  elysian08_1, // 20
+  elysian08_2, // 21
+  elysian08_3, // 22
 
-  // 09
-  elysian09_1,
-  elysian09_2,
-  elysian09_3,
+  // 09 (3 fotos)
+  elysian09_1, // 23
+  elysian09_2, // 24
+  elysian09_3, // 25
 ];
 
 export function Elysian({ onGoHome }) {
@@ -154,13 +154,6 @@ export function Elysian({ onGoHome }) {
             loading="lazy"
             alt="ELYSIAN 01 - 2"
           />
-          <img
-            src={elysian01_3}
-            className="gallery-img"
-            onClick={() => openModal(2)}
-            loading="lazy"
-            alt="ELYSIAN 01 - 3"
-          />
         </section>
 
         {/* ELYSIAN 02 */}
@@ -169,35 +162,35 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian02_1}
             className="gallery-img"
-            onClick={() => openModal(3)}
+            onClick={() => openModal(2)}
             loading="lazy"
             alt="ELYSIAN 02 - 1"
           />
           <img
             src={elysian02_2}
             className="gallery-img"
-            onClick={() => openModal(4)}
+            onClick={() => openModal(3)}
             loading="lazy"
             alt="ELYSIAN 02 - 2"
           />
           <img
             src={elysian02_3}
             className="gallery-img"
-            onClick={() => openModal(5)}
+            onClick={() => openModal(4)}
             loading="lazy"
             alt="ELYSIAN 02 - 3"
           />
           <img
             src={elysian02_4}
             className="gallery-img"
-            onClick={() => openModal(6)}
+            onClick={() => openModal(5)}
             loading="lazy"
             alt="ELYSIAN 02 - 4"
           />
           <img
             src={elysian02_5}
             className="gallery-img"
-            onClick={() => openModal(7)}
+            onClick={() => openModal(6)}
             loading="lazy"
             alt="ELYSIAN 02 - 5"
           />
@@ -209,21 +202,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian03_1}
             className="gallery-img"
-            onClick={() => openModal(8)}
+            onClick={() => openModal(7)}
             loading="lazy"
             alt="ELYSIAN 03 - 1"
           />
           <img
             src={elysian03_2}
             className="gallery-img"
-            onClick={() => openModal(9)}
+            onClick={() => openModal(8)}
             loading="lazy"
             alt="ELYSIAN 03 - 2"
           />
           <img
             src={elysian03_3}
             className="gallery-img"
-            onClick={() => openModal(10)}
+            onClick={() => openModal(9)}
             loading="lazy"
             alt="ELYSIAN 03 - 3"
           />
@@ -235,21 +228,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian04_1}
             className="gallery-img"
-            onClick={() => openModal(11)}
+            onClick={() => openModal(10)}
             loading="lazy"
             alt="ELYSIAN 04 - 1"
           />
           <img
             src={elysian04_2}
             className="gallery-img"
-            onClick={() => openModal(12)}
+            onClick={() => openModal(11)}
             loading="lazy"
             alt="ELYSIAN 04 - 2"
           />
           <img
             src={elysian04_3}
             className="gallery-img"
-            onClick={() => openModal(13)}
+            onClick={() => openModal(12)}
             loading="lazy"
             alt="ELYSIAN 04 - 3"
           />
@@ -261,14 +254,14 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian05_1}
             className="gallery-img"
-            onClick={() => openModal(14)}
+            onClick={() => openModal(13)}
             loading="lazy"
             alt="ELYSIAN 05 - 1"
           />
           <img
             src={elysian05_2}
             className="gallery-img"
-            onClick={() => openModal(15)}
+            onClick={() => openModal(14)}
             loading="lazy"
             alt="ELYSIAN 05 - 2"
           />
@@ -280,35 +273,35 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian07_1}
             className="gallery-img"
-            onClick={() => openModal(16)}
+            onClick={() => openModal(15)}
             loading="lazy"
             alt="ELYSIAN 07 - 1"
           />
           <img
             src={elysian07_2}
             className="gallery-img"
-            onClick={() => openModal(17)}
+            onClick={() => openModal(16)}
             loading="lazy"
             alt="ELYSIAN 07 - 2"
           />
           <img
             src={elysian07_3}
             className="gallery-img"
-            onClick={() => openModal(18)}
+            onClick={() => openModal(17)}
             loading="lazy"
             alt="ELYSIAN 07 - 3"
           />
           <img
             src={elysian07_4}
             className="gallery-img"
-            onClick={() => openModal(19)}
+            onClick={() => openModal(18)}
             loading="lazy"
             alt="ELYSIAN 07 - 4"
           />
           <img
             src={elysian07_5}
             className="gallery-img"
-            onClick={() => openModal(20)}
+            onClick={() => openModal(19)}
             loading="lazy"
             alt="ELYSIAN 07 - 5"
           />
@@ -320,21 +313,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian08_1}
             className="gallery-img"
-            onClick={() => openModal(21)}
+            onClick={() => openModal(20)}
             loading="lazy"
             alt="ELYSIAN 08 - 1"
           />
           <img
             src={elysian08_2}
             className="gallery-img"
-            onClick={() => openModal(22)}
+            onClick={() => openModal(21)}
             loading="lazy"
             alt="ELYSIAN 08 - 2"
           />
           <img
             src={elysian08_3}
             className="gallery-img"
-            onClick={() => openModal(23)}
+            onClick={() => openModal(22)}
             loading="lazy"
             alt="ELYSIAN 08 - 3"
           />
@@ -346,21 +339,21 @@ export function Elysian({ onGoHome }) {
           <img
             src={elysian09_1}
             className="gallery-img"
-            onClick={() => openModal(24)}
+            onClick={() => openModal(23)}
             loading="lazy"
             alt="ELYSIAN 09 - 1"
           />
           <img
             src={elysian09_2}
             className="gallery-img"
-            onClick={() => openModal(25)}
+            onClick={() => openModal(24)}
             loading="lazy"
             alt="ELYSIAN 09 - 2"
           />
           <img
             src={elysian09_3}
             className="gallery-img"
-            onClick={() => openModal(26)}
+            onClick={() => openModal(25)}
             loading="lazy"
             alt="ELYSIAN 09 - 3"
           />
