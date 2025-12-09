@@ -29,3 +29,6 @@ export function App() {
 
   return null;
 }
+
+// 👇 ESTA LÍNEA ES LA QUE FALTABA PARA NETLIFY
+export default App;
