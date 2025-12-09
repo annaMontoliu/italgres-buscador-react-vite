@@ -61,7 +61,7 @@ nav a {
   margin: 0 auto;
 }
 
-/* Título COLLECTIONS (más grande pero equilibrado) */
+/* Título COLLECTIONS */
 .index-page h1 {
   text-align: center;
   font-size: 2.6rem;    
@@ -85,7 +85,7 @@ nav a {
   display: block;
 }
 
-/* Letras del índice (E, L…) */
+/* Letras del índice */
 .index-page .letter-heading {
   font-size: 1.6rem;
   color: #f68e1c;
@@ -94,14 +94,13 @@ nav a {
   margin-bottom: 0.8rem;
 }
 
-/* Lista de colecciones */
+/* Lista colecciones */
 .index-page ul.collection-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Nombres de colecciones */
 .index-page ul.collection-list li {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -221,16 +220,18 @@ h3.color-title {
   background: rgba(0, 0, 0, 0.92);
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 20px;
 }
 
+/* La imagen centrada */
 #modalImage {
   max-width: 92vw;
   max-height: 80vh;
   border-radius: 10px;
+  z-index: 5;
 }
 
+/* X y flechas */
 .close,
 .arrow {
   position: absolute;
@@ -239,6 +240,31 @@ h3.color-title {
   font-weight: 700;
   cursor: pointer;
   user-select: none;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+
+/* X en la esquina de la foto:
+   la imagen deja ~10vh arriba y ~4vw a los lados */
+.close {
+  top: 10vh;
+  right: 4vw;
+}
+
+/* Flecha izquierda pegada al borde de la imagen:
+   la imagen deja ~4vw de margen lateral */
+.arrow.left {
+  top: 50%;
+  left: 4vw;
+  transform: translateY(-50%);
+}
+
+/* Flecha derecha pegada al borde de la imagen */
+.arrow.right {
+  top: 50%;
+  right: 4vw;
+  transform: translateY(-50%);
 }
 
 /* ----------------------------- */
