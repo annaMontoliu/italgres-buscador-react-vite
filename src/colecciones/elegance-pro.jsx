@@ -57,7 +57,7 @@ export function ElegancePro({ onGoHome }) {
         {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout
           // Sustituye este texto por la URL real del PDF cuando la tengas
-          infoUrl="URL_DEL_PDF_DE_ELEGANCE_PRO"
+          infoUrl=https://www.emilgroup.it/emil/prodotti/documenticollezioni_emil/Elegance%20Pro%20Catalogo%202024.12%20Web.pdf
         />
 
         {/* ---- GALERÍA ---- */}
