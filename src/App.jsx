@@ -4,7 +4,8 @@ import { IndexPage } from "./IndexPage";
 import { Lucena } from "./colecciones/lucena";
 import { ElegancePro } from "./colecciones/elegance-pro";
 import { Elysian } from "./colecciones/elysian";
-import { Sinai } from "./colecciones/sinai"; // ⬅️ NUEVO IMPORT
+import { Sinai } from "./colecciones/sinai";
+import { Glocal } from "./colecciones/glocal";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -22,8 +23,12 @@ export function App() {
       setPage("elysian");
     }
 
-    if (name === "SINAI") {       // ⬅️ NUEVO
+    if (name === "SINAI") {
       setPage("sinai");
+    }
+
+    if (name === "GLOCAL") {
+      setPage("glocal");
     }
   }
 
@@ -47,8 +52,12 @@ export function App() {
     return <Elysian onGoHome={handleGoHome} />;
   }
 
-  if (page === "sinai") {         // ⬅️ NUEVO
+  if (page === "sinai") {
     return <Sinai onGoHome={handleGoHome} />;
+  }
+
+  if (page === "glocal") {
+    return <Glocal onGoHome={handleGoHome} />;
   }
 
   return null;

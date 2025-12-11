@@ -17,6 +17,12 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "G",
+    items: [
+      { name: "GLOCAL", href: "/colecciones/glocal.html" },
+    ],
+  },
+  {
     letter: "L",
     items: [{ name: "LUCENA", href: "/colecciones/lucena.html" }],
   },
@@ -63,6 +69,11 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "SINAI") {
         e.preventDefault();
         onOpenCollection("SINAI");
+        return;
+      }
+      if (item.name === "GLOCAL") {
+        e.preventDefault();
+        onOpenCollection("GLOCAL");
         return;
       }
     }
