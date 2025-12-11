@@ -6,7 +6,7 @@ const COLLECTION_GROUPS = [
   {
     letter: "A",
     items: [
-      { name: "SINAI", href: "/colecciones/sinai.html" },
+      { name: "SINAI", href: "/colecciones/sinai.html"},
     ],
   },
   {
@@ -60,7 +60,7 @@ export function IndexPage({ onOpenCollection }) {
         return;
       }
 
-      if (item.name === "SINAI AVORIO") {
+      if (item.name === "SINAI") {
         e.preventDefault();
         onOpenCollection("SINAI");
         return;
