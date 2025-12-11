@@ -5,15 +5,22 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-import glocal0201 from "../assets/imagenes/glocal-glocal-02/glocal-02-01.jpg";
-import glocal0202 from "../assets/imagenes/glocal-glocal-02/glocal-02-02.jpg";
-import glocal0203 from "../assets/imagenes/glocal-glocal-02/glocal-02-03.jpg";
-import glocal0204 from "../assets/imagenes/glocal-glocal-02/glocal-02-04.jpg";
-import glocal0205 from "../assets/imagenes/glocal-glocal-02/glocal-02-05.jpg";
-import glocal0206 from "../assets/imagenes/glocal-glocal-02/glocal-02-06.jpg";
+import glocal0201 from "../assets/imagenes/glocal/glocal-02/glocal-02-01.jpg";
+import glocal0202 from "../assets/imagenes/glocal/glocal-02/glocal-02-02.jpg";
+import glocal0203 from "../assets/imagenes/glocal/glocal-02/glocal-02-03.jpg";
+import glocal0204 from "../assets/imagenes/glocal/glocal-02/glocal-02-04.jpg";
+import glocal0205 from "../assets/imagenes/glocal/glocal-02/glocal-02-05.jpg";
+import glocal0206 from "../assets/imagenes/glocal/glocal-02/glocal-02-06.jpg";
 
 // ORDEN EXACTO COMO EN TU HTML ORIGINAL
-const images = [glocal0201, glocal0202, glocal0203, glocal0204, glocal0205, glocal0206];
+const images = [
+  glocal0201,
+  glocal0202,
+  glocal0203,
+  glocal0204,
+  glocal0205,
+  glocal0206,
+];
 
 export function Glocal({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
