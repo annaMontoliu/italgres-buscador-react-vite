@@ -4,6 +4,12 @@ import { Header } from "./components/Header";
 
 const COLLECTION_GROUPS = [
   {
+    letter: "A",
+    items: [
+      { name: "SINAI AVORIO", href: "/colecciones/sinai.html" },
+    ],
+  },
+  {
     letter: "E",
     items: [
       { name: "ELEGANCE PRO", href: "/colecciones/elegance-pro.html" },
@@ -51,6 +57,12 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "ELYSIAN") {
         e.preventDefault();
         onOpenCollection("ELYSIAN");
+        return;
+      }
+
+      if (item.name === "SINAI AVORIO") {
+        e.preventDefault();
+        onOpenCollection("SINAI");
         return;
       }
     }

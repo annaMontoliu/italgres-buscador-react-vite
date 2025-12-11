@@ -3,7 +3,8 @@ import { useState } from "react";
 import { IndexPage } from "./IndexPage";
 import { Lucena } from "./colecciones/lucena";
 import { ElegancePro } from "./colecciones/elegance-pro";
-import { Elysian } from "./colecciones/elysian"; // ⬅️ NUEVO IMPORT
+import { Elysian } from "./colecciones/elysian";
+import { Sinai } from "./colecciones/sinai"; // ⬅️ NUEVO IMPORT
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -17,8 +18,12 @@ export function App() {
       setPage("elegance-pro");
     }
 
-    if (name === "ELYSIAN") {      // ⬅️ NUEVO
+    if (name === "ELYSIAN") {
       setPage("elysian");
+    }
+
+    if (name === "SINAI") {       // ⬅️ NUEVO
+      setPage("sinai");
     }
   }
 
@@ -38,8 +43,12 @@ export function App() {
     return <ElegancePro onGoHome={handleGoHome} />;
   }
 
-  if (page === "elysian") {        // ⬅️ NUEVO
+  if (page === "elysian") {
     return <Elysian onGoHome={handleGoHome} />;
+  }
+
+  if (page === "sinai") {         // ⬅️ NUEVO
+    return <Sinai onGoHome={handleGoHome} />;
   }
 
   return null;
