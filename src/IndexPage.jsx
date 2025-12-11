@@ -6,7 +6,7 @@ const COLLECTION_GROUPS = [
   {
     letter: "A",
     items: [
-      { name: "SINAI AVORIO", href: "/colecciones/sinai.html" },
+      { name: "SINAI", href: "/colecciones/sinai.html" },
     ],
   },
   {
