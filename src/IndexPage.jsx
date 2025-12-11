@@ -4,12 +4,6 @@ import { Header } from "./components/Header";
 
 const COLLECTION_GROUPS = [
   {
-    letter: "A",
-    items: [
-      { name: "SINAI", href: "/colecciones/sinai.html"},
-    ],
-  },
-  {
     letter: "E",
     items: [
       { name: "ELEGANCE PRO", href: "/colecciones/elegance-pro.html" },
@@ -18,13 +12,25 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "G",
-    items: [
-      { name: "GLOCAL", href: "/colecciones/glocal.html" },
-    ],
+    items: [{ name: "GLOCAL", href: "/colecciones/glocal.html" }],
   },
   {
     letter: "L",
     items: [{ name: "LUCENA", href: "/colecciones/lucena.html" }],
+  },
+  {
+    letter: "M",
+    items: [
+      { name: "MATERIA", href: "/colecciones/materia.html" },
+      { name: "MOTLEY", href: "/colecciones/motley.html" },
+    ],
+  },
+  {
+    letter: "S",
+    items: [
+      { name: "SHEER", href: "/colecciones/sheer.html" },
+      { name: "SINAI", href: "/colecciones/sinai.html" },
+    ],
   },
 ];
 
@@ -36,14 +42,12 @@ export function IndexPage({ onOpenCollection }) {
   const groupsToShow =
     normalizedSearch === ""
       ? COLLECTION_GROUPS
-      : COLLECTION_GROUPS
-          .map((group) => {
-            const filteredItems = group.items.filter((item) =>
-              item.name.toLowerCase().includes(normalizedSearch)
-            );
-            return { ...group, items: filteredItems };
-          })
-          .filter((group) => group.items.length > 0);
+      : COLLECTION_GROUPS.map((group) => {
+          const filteredItems = group.items.filter((item) =>
+            item.name.toLowerCase().includes(normalizedSearch)
+          );
+          return { ...group, items: filteredItems };
+        }).filter((group) => group.items.length > 0);
 
   function handleClickCollection(e, item) {
     // Si App nos pasa onOpenCollection, usamos React para abrir colecciones internas
@@ -71,9 +75,28 @@ export function IndexPage({ onOpenCollection }) {
         onOpenCollection("SINAI");
         return;
       }
+
       if (item.name === "GLOCAL") {
         e.preventDefault();
         onOpenCollection("GLOCAL");
+        return;
+      }
+
+      if (item.name === "MATERIA") {
+        e.preventDefault();
+        onOpenCollection("MATERIA");
+        return;
+      }
+
+      if (item.name === "SHEER") {
+        e.preventDefault();
+        onOpenCollection("SHEER");
+        return;
+      }
+
+      if (item.name === "MOTLEY") {
+        e.preventDefault();
+        onOpenCollection("MOTLEY");
         return;
       }
     }

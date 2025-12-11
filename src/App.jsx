@@ -6,6 +6,9 @@ import { ElegancePro } from "./colecciones/elegance-pro";
 import { Elysian } from "./colecciones/elysian";
 import { Sinai } from "./colecciones/sinai";
 import { Glocal } from "./colecciones/glocal";
+import { Materia } from "./colecciones/materia";
+import { Sheer } from "./colecciones/sheer";
+import { Motley } from "./colecciones/motley";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -29,6 +32,18 @@ export function App() {
 
     if (name === "GLOCAL") {
       setPage("glocal");
+    }
+
+    if (name === "MATERIA") {
+      setPage("materia");
+    }
+
+    if (name === "SHEER") {
+      setPage("sheer");
+    }
+
+    if (name === "MOTLEY") {
+      setPage("motley");
     }
   }
 
@@ -58,6 +73,18 @@ export function App() {
 
   if (page === "glocal") {
     return <Glocal onGoHome={handleGoHome} />;
+  }
+
+  if (page === "materia") {
+    return <Materia onGoHome={handleGoHome} />;
+  }
+
+  if (page === "sheer") {
+    return <Sheer onGoHome={handleGoHome} />;
+  }
+
+  if (page === "motley") {
+    return <Motley onGoHome={handleGoHome} />;
   }
 
   return null;
