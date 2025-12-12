@@ -95,7 +95,7 @@ export function Motley({ onGoHome }) {
 
         {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout
-          infoUrl="https://www.fapceramiche.com/es/productos/sheer/"
+          infoUrl="https://mirage-cdn.thron.com/static/BL755F_MRG_CAT_MOTLEY_072024_ACYXN5.pdf?xseo=&response-content-disposition=inline%3Bfilename%3D%22catalogo-motley-pdf.pdf%22"
         />
 
         {/* ---- GALERÍA ---- */}
