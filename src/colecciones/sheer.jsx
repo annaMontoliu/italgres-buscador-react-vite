@@ -98,115 +98,95 @@ export function Sheer({ onGoHome }) {
 
         {/* ---- GALERÍA ---- */}
 
-        {/* SHEER WHITE PLAIN */}
-        <h3 className="color-title">SHEER WHITE PLAIN</h3>
+        {/* SHEER WHITE (PLAIN + STICK) */}
+        <h3 className="color-title">SHEER WHITE</h3>
         <section className="gallery-grid">
           <img
             src={sheerWhitePlain01}
             className="gallery-img"
             onClick={() => openModal(0)}
             loading="lazy"
-            alt="SHEER WHITE PLAIN 1"
+            alt="SHEER WHITE 1"
           />
           <img
             src={sheerWhitePlain02}
             className="gallery-img"
             onClick={() => openModal(1)}
             loading="lazy"
-            alt="SHEER WHITE PLAIN 2"
+            alt="SHEER WHITE 2"
           />
-        </section>
-
-        {/* SHEER WHITE STICK */}
-        <h3 className="color-title">SHEER WHITE STICK</h3>
-        <section className="gallery-grid">
           <img
             src={sheerWhiteStick01}
             className="gallery-img"
             onClick={() => openModal(2)}
             loading="lazy"
-            alt="SHEER WHITE STICK 1"
+            alt="SHEER WHITE 3"
           />
         </section>
 
-        {/* SHEER BEIGE STICK */}
-        <h3 className="color-title">SHEER BEIGE STICK</h3>
+        {/* SHEER BEIGE (STICK + BLOOM STAR) */}
+        <h3 className="color-title">SHEER BEIGE</h3>
         <section className="gallery-grid">
           <img
             src={sheerBeigeStick01}
             className="gallery-img"
             onClick={() => openModal(3)}
             loading="lazy"
-            alt="SHEER BEIGE STICK 1"
+            alt="SHEER BEIGE 1"
           />
           <img
             src={sheerBeigeStick02}
             className="gallery-img"
             onClick={() => openModal(4)}
             loading="lazy"
-            alt="SHEER BEIGE STICK 2"
+            alt="SHEER BEIGE 2"
           />
-        </section>
-
-        {/* SHEER BEIGE BLOOM STAR */}
-        <h3 className="color-title">SHEER BEIGE BLOOM STAR</h3>
-        <section className="gallery-grid">
           <img
             src={sheerBeigeBloomStar01}
             className="gallery-img"
             onClick={() => openModal(5)}
             loading="lazy"
-            alt="SHEER BEIGE BLOOM STAR 1"
+            alt="SHEER BEIGE 3"
           />
           <img
             src={sheerBeigeBloomStar02}
             className="gallery-img"
             onClick={() => openModal(6)}
             loading="lazy"
-            alt="SHEER BEIGE BLOOM STAR 2"
+            alt="SHEER BEIGE 4"
           />
           <img
             src={sheerBeigeBloomStar03}
             className="gallery-img"
             onClick={() => openModal(7)}
             loading="lazy"
-            alt="SHEER BEIGE BLOOM STAR 3"
+            alt="SHEER BEIGE 5"
           />
         </section>
 
-        {/* SHEER GREY PLAIN */}
-        <h3 className="color-title">SHEER GREY PLAIN</h3>
+        {/* SHEER GREY (PLAIN + STICK + DUNE) */}
+        <h3 className="color-title">SHEER GREY</h3>
         <section className="gallery-grid">
           <img
             src={sheerGreyPlain01}
             className="gallery-img"
             onClick={() => openModal(8)}
             loading="lazy"
-            alt="SHEER GREY PLAIN 1"
+            alt="SHEER GREY 1"
           />
-        </section>
-
-        {/* SHEER GREY STICK */}
-        <h3 className="color-title">SHEER GREY STICK</h3>
-        <section className="gallery-grid">
           <img
             src={sheerGreyStick01}
             className="gallery-img"
             onClick={() => openModal(9)}
             loading="lazy"
-            alt="SHEER GREY STICK 1"
+            alt="SHEER GREY 2"
           />
-        </section>
-
-        {/* SHEER GREY DUNE */}
-        <h3 className="color-title">SHEER GREY DUNE</h3>
-        <section className="gallery-grid">
           <img
             src={sheerGreyDune01}
             className="gallery-img"
             onClick={() => openModal(10)}
             loading="lazy"
-            alt="SHEER GREY DUNE 1"
+            alt="SHEER GREY 3"
           />
         </section>
 
