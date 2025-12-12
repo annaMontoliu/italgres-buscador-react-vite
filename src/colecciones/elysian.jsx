@@ -13,8 +13,7 @@ import elysian01_3 from "../assets/imagenes/elysian/elysian-01/elysian-01-3.jpg"
 import elysian01_4 from "../assets/imagenes/elysian/elysian-01/elysian-01-4.jpg";
 import elysian01_5 from "../assets/imagenes/elysian/elysian-01/elysian-01-5.jpg";
 import elysian01_6 from "../assets/imagenes/elysian/elysian-01/elysian-01-6.jpg";
-import elysian01_7 from "../assets/imagenes/elysian/elysian-01/elysian-01-7.jpg";
-import elysian01_8 from "../assets/imagenes/elysian/elysian-01/elysian-01-8.jpg";
+
 
 // ELYSIAN 02 (5 fotos)
 import elysian02_1 from "../assets/imagenes/elysian/elysian-02/elysian-02-1.jpg";
@@ -71,8 +70,6 @@ const images = [
   elysian01_4, // 3
   elysian01_5, // 4
   elysian01_6, // 5
-  elysian01_7, // 6
-  elysian01_8, // 7
 
   // 02 (5 fotos) → índices 8–12
   elysian02_1, // 8
@@ -205,20 +202,7 @@ export function Elysian({ onGoHome }) {
             loading="lazy"
             alt="ELYSIAN 01 - 6"
           />
-          <img
-            src={elysian01_7}
-            className="gallery-img"
-            onClick={() => openModal(6)}
-            loading="lazy"
-            alt="ELYSIAN 01 - 7"
-          />
-          <img
-            src={elysian01_8}
-            className="gallery-img"
-            onClick={() => openModal(7)}
-            loading="lazy"
-            alt="ELYSIAN 01 - 8"
-          />
+          
         </section>
 
         {/* ELYSIAN 02 */}
