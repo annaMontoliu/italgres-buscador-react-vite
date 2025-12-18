@@ -5,8 +5,8 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORT FOTO
-import pierreViveLoireNoble01 from "../assets/imagenes/pierre-vive/pierre-vive-loire-noble/pierre-vive-loire-noble-01.jpg";
+// IMPORT FOTO (RUTA CORRECTA SEGÚN TU CAPTURA)
+import pierreViveLoireNoble01 from "../assets/imagenes/pierre-vive/pierre-vive-loire/pierre-vive-loire-noble-01.jpg";
 
 // ORDEN EXACTO
 const images = [pierreViveLoireNoble01];
