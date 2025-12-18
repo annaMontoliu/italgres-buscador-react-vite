@@ -11,14 +11,14 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "G",
+    items: [{ name: "GLOCAL", href: "/colecciones/glocal.html" }],
+  },
+  {
     letter: "I",
     items: [
       { name: "IMPERIAL STONE", href: "/colecciones/imperial-stone.html" },
     ],
-  },
-  {
-    letter: "G",
-    items: [{ name: "GLOCAL", href: "/colecciones/glocal.html" }],
   },
   {
     letter: "L",
@@ -32,11 +32,16 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "P",
+    items: [{ name: "PULPIS", href: "/colecciones/pulpis.html" }],
+  },
+  {
     letter: "S",
     items: [
       { name: "SHEER", href: "/colecciones/sheer.html" },
       { name: "SINAI", href: "/colecciones/sinai.html" },
       { name: "SUPREME", href: "/colecciones/supreme.html" },
+      { name: "SYBIL", href: "/colecciones/sybil.html" },
     ],
   },
 ];
@@ -117,6 +122,18 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "SUPREME") {
         e.preventDefault();
         onOpenCollection("SUPREME");
+        return;
+      }
+
+      if (item.name === "SYBIL") {
+        e.preventDefault();
+        onOpenCollection("SYBIL");
+        return;
+      }
+
+      if (item.name === "PULPIS") {
+        e.preventDefault();
+        onOpenCollection("PULPIS");
         return;
       }
     }

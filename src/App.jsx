@@ -11,50 +11,25 @@ import { Sheer } from "./colecciones/sheer";
 import { Motley } from "./colecciones/motley";
 import { Supreme } from "./colecciones/supreme";
 import { ImperialStone } from "./colecciones/imperial-stone";
+import { Sybil } from "./colecciones/sybil";
+import { Pulpis } from "./colecciones/pulpis";
 
 export function App() {
   const [page, setPage] = useState("home");
 
   function handleOpenCollection(name) {
-    if (name === "LUCENA") {
-      setPage("lucena");
-    }
-
-    if (name === "ELEGANCE PRO") {
-      setPage("elegance-pro");
-    }
-
-    if (name === "ELYSIAN") {
-      setPage("elysian");
-    }
-
-    if (name === "SINAI") {
-      setPage("sinai");
-    }
-
-    if (name === "GLOCAL") {
-      setPage("glocal");
-    }
-
-    if (name === "MATERIA") {
-      setPage("materia");
-    }
-
-    if (name === "SHEER") {
-      setPage("sheer");
-    }
-
-    if (name === "MOTLEY") {
-      setPage("motley");
-    }
-
-    if (name === "SUPREME") {
-      setPage("supreme");
-    }
-
-    if (name === "IMPERIAL STONE") {
-      setPage("imperial-stone");
-    }
+    if (name === "LUCENA") setPage("lucena");
+    if (name === "ELEGANCE PRO") setPage("elegance-pro");
+    if (name === "ELYSIAN") setPage("elysian");
+    if (name === "SINAI") setPage("sinai");
+    if (name === "GLOCAL") setPage("glocal");
+    if (name === "MATERIA") setPage("materia");
+    if (name === "SHEER") setPage("sheer");
+    if (name === "MOTLEY") setPage("motley");
+    if (name === "SUPREME") setPage("supreme");
+    if (name === "IMPERIAL STONE") setPage("imperial-stone");
+    if (name === "SYBIL") setPage("sybil");
+    if (name === "PULPIS") setPage("pulpis");
   }
 
   function handleGoHome() {
@@ -103,6 +78,14 @@ export function App() {
 
   if (page === "imperial-stone") {
     return <ImperialStone onGoHome={handleGoHome} />;
+  }
+
+  if (page === "sybil") {
+    return <Sybil onGoHome={handleGoHome} />;
+  }
+
+  if (page === "pulpis") {
+    return <Pulpis onGoHome={handleGoHome} />;
   }
 
   return null;
