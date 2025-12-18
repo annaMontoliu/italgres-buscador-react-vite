@@ -27,7 +27,7 @@ import mapierreGrey06 from "../assets/imagenes/mapierre/mapierre-grey/mapierre-g
 
 // =====================
 // ARRAY GLOBAL MODAL
-// ORDEN EXACTO
+// ORDEN EXACTO (como LUCENA)
 // =====================
 const images = [
   mapierreBlanco01,
@@ -69,59 +69,40 @@ export function Mapierre({ onGoHome }) {
 
   return (
     <>
+      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
+        {/* TÍTULO */}
         <h1 className="titulo-coleccion">MAPIERRE</h1>
 
-        <p className="descripcion-coleccion">
-          MAPIERRE es una colección de inspiración mineral que reinterpreta la
-          piedra natural con una estética sobria y contemporánea. Diseñada para
-          arquitectura e interiorismo, ofrece superficies equilibradas,
-          versátiles y de gran naturalidad visual.
-        </p>
-
+        {/* BOTÓN / BLOQUE COMO TODAS */}
         <ColeccionLayout infoUrl="https://www.emilgroup.it/emil/prodotti/documenticollezioni_emil/Mapierre%20Catalogo%202025.11%20Web.pdf" />
 
-        {/* ===================== */}
-        {/* COLOR: MAPIERRE BLANCO */}
-        {/* ===================== */}
+        {/* ===== COLOR BLANCO ===== */}
         <h3 className="color-title">MAPIERRE BLANCO</h3>
         <section className="gallery-grid">
-          {[mapierreBlanco01, mapierreBlanco02, mapierreBlanco03, mapierreBlanco04, mapierreBlanco05, mapierreBlanco06].map(
-            (img, index) => (
-              <img
-                key={index}
-                src={img}
-                className="gallery-img"
-                loading="lazy"
-                onClick={() => openModal(index)}
-                alt={`MAPIERRE BLANCO ${index + 1}`}
-              />
-            )
-          )}
+          <img src={mapierreBlanco01} className="gallery-img" onClick={() => openModal(0)} loading="lazy" alt="MAPIERRE BLANCO 01" />
+          <img src={mapierreBlanco02} className="gallery-img" onClick={() => openModal(1)} loading="lazy" alt="MAPIERRE BLANCO 02" />
+          <img src={mapierreBlanco03} className="gallery-img" onClick={() => openModal(2)} loading="lazy" alt="MAPIERRE BLANCO 03" />
+          <img src={mapierreBlanco04} className="gallery-img" onClick={() => openModal(3)} loading="lazy" alt="MAPIERRE BLANCO 04" />
+          <img src={mapierreBlanco05} className="gallery-img" onClick={() => openModal(4)} loading="lazy" alt="MAPIERRE BLANCO 05" />
+          <img src={mapierreBlanco06} className="gallery-img" onClick={() => openModal(5)} loading="lazy" alt="MAPIERRE BLANCO 06" />
         </section>
 
-        {/* ===================== */}
-        {/* COLOR: MAPIERRE GREY */}
-        {/* ===================== */}
+        {/* ===== COLOR GREY ===== */}
         <h3 className="color-title">MAPIERRE GREY</h3>
         <section className="gallery-grid">
-          {[mapierreGrey01, mapierreGrey02, mapierreGrey03, mapierreGrey04, mapierreGrey05, mapierreGrey06].map(
-            (img, index) => (
-              <img
-                key={index}
-                src={img}
-                className="gallery-img"
-                loading="lazy"
-                onClick={() => openModal(index + 6)}
-                alt={`MAPIERRE GREY ${index + 1}`}
-              />
-            )
-          )}
+          <img src={mapierreGrey01} className="gallery-img" onClick={() => openModal(6)} loading="lazy" alt="MAPIERRE GREY 01" />
+          <img src={mapierreGrey02} className="gallery-img" onClick={() => openModal(7)} loading="lazy" alt="MAPIERRE GREY 02" />
+          <img src={mapierreGrey03} className="gallery-img" onClick={() => openModal(8)} loading="lazy" alt="MAPIERRE GREY 03" />
+          <img src={mapierreGrey04} className="gallery-img" onClick={() => openModal(9)} loading="lazy" alt="MAPIERRE GREY 04" />
+          <img src={mapierreGrey05} className="gallery-img" onClick={() => openModal(10)} loading="lazy" alt="MAPIERRE GREY 05" />
+          <img src={mapierreGrey06} className="gallery-img" onClick={() => openModal(11)} loading="lazy" alt="MAPIERRE GREY 06" />
         </section>
       </main>
 
+      {/* MODAL REUTILIZABLE */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}
