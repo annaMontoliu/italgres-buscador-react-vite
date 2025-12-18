@@ -19,8 +19,8 @@ body {
   background: var(--paper);
   font-family: Roboto, Arial, sans-serif;
 
-  /* para el header fijo */
-  padding-top: 90px;
+  /* espacio para el header fijo */
+  padding-top: 110px;
 }
 
 /* ----------------------------- */
@@ -47,18 +47,22 @@ header img {
 
 nav {
   display: flex;
-  gap: 32px;
-  margin-right: 80px; /* un poco más hacia el margen derecho */
+  align-items: center;
+  margin-right: 110px;
 }
 
 nav a {
   color: var(--brand);
-  font-weight: bold;
+  font-weight: 700;
   background-color: white;
-  padding: 0.6rem 1.6rem; /* botón más ancho */
-  border-radius: 5px;
+
+  /* BOTÓN HOME GRANDE (como en Canva) */
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+
+  border-radius: 999px;
   text-decoration: none;
-  font-size: 1.05rem; /* texto un poco más grande */
 }
 
 /* ----------------------------- */
@@ -71,17 +75,15 @@ nav a {
   margin: 0 auto;
 }
 
-/* Título COLLECTIONS */
 .index-page h1 {
   text-align: center;
-  font-size: 2.6rem;    
+  font-size: 2.6rem;
   color: #4c4844;
   margin-bottom: 2.2rem;
   letter-spacing: 5px;
   font-weight: normal;
 }
 
-/* Buscador */
 .index-page input[type="search"] {
   padding: 0.9rem;
   font-size: 1.4rem;
@@ -151,141 +153,4 @@ h1.titulo-coleccion {
   letter-spacing: 4px;
   font-weight: 500;
   margin: 1.25rem 0 1.75rem;
-}
-
-/* ----------------------------- */
-/* FINISHES & FORMATS            */
-/* ----------------------------- */
-
-.top-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 2.5rem;
-}
-
-.info-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.info-box h2 {
-  font-size: 1.1rem;
-  color: var(--ink);
-  font-weight: 700;
-  margin: 0;
-}
-
-.button.info-button {
-  background-color: var(--brand);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-/* ----------------------------- */
-/* GALERÍA                       */
-/* ----------------------------- */
-
-h3.color-title {
-  color: var(--ink);
-  font-weight: 500;
-  margin: 2rem 0 1rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-
-.gallery-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.gallery-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* ----------------------------- */
-/* MODAL                         */
-/* ----------------------------- */
-
-#imageModal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.92);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* La imagen centrada */
-#modalImage {
-  max-width: 92vw;
-  max-height: 80vh;
-  border-radius: 10px;
-  z-index: 5;
-}
-
-/* X y flechas */
-.close,
-.arrow {
-  position: absolute;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 700;
-  cursor: pointer;
-  user-select: none;
-  background: none;
-  border: none;
-  z-index: 10;
-}
-
-/* X */
-.close {
-  top: 10vh;
-  right: 4vw;
-}
-
-/* Flechas */
-.arrow.left {
-  top: 50%;
-  left: 4vw;
-  transform: translateY(-50%);
-}
-
-.arrow.right {
-  top: 50%;
-  right: 4vw;
-  transform: translateY(-50%);
-}
-
-/* ----------------------------- */
-/* RESPONSIVE                    */
-/* ----------------------------- */
-
-@media (max-width: 900px) {
-  header img { height: 70px; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-img { height: 230px; }
-}
-
-@media (max-width: 600px) {
-  header img { height: 50px; }
-  .gallery-grid { grid-template-columns: 1fr; }
-  .gallery-img { height: 260px; }
 }
