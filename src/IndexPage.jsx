@@ -27,6 +27,7 @@ const COLLECTION_GROUPS = [
   {
     letter: "M",
     items: [
+      { name: "MAPIERRE", href: "/colecciones/mapierre.html" },
       { name: "MATERIA", href: "/colecciones/materia.html" },
       { name: "MOTLEY", href: "/colecciones/motley.html" },
     ],
@@ -109,15 +110,21 @@ export function IndexPage({ onOpenCollection }) {
         return;
       }
 
-      if (item.name === "SHEER") {
-        e.preventDefault();
-        onOpenCollection("SHEER");
-        return;
-      }
-
       if (item.name === "MOTLEY") {
         e.preventDefault();
         onOpenCollection("MOTLEY");
+        return;
+      }
+
+      if (item.name === "MAPIERRE") {
+        e.preventDefault();
+        onOpenCollection("MAPIERRE");
+        return;
+      }
+
+      if (item.name === "SHEER") {
+        e.preventDefault();
+        onOpenCollection("SHEER");
         return;
       }
 
@@ -167,7 +174,6 @@ export function IndexPage({ onOpenCollection }) {
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header />
 
       <main className="index-page">

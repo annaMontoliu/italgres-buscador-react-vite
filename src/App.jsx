@@ -16,6 +16,7 @@ import { Pulpis } from "./colecciones/pulpis";
 import { PierreVive } from "./colecciones/pierre-vive";
 import { Riverside } from "./colecciones/riverside";
 import { Palermo } from "./colecciones/palermo";
+import { Mapierre } from "./colecciones/mapierre";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -27,8 +28,8 @@ export function App() {
     if (name === "SINAI") setPage("sinai");
     if (name === "GLOCAL") setPage("glocal");
     if (name === "MATERIA") setPage("materia");
-    if (name === "SHEER") setPage("sheer");
     if (name === "MOTLEY") setPage("motley");
+    if (name === "SHEER") setPage("sheer");
     if (name === "SUPREME") setPage("supreme");
     if (name === "IMPERIAL STONE") setPage("imperial-stone");
     if (name === "SYBIL") setPage("sybil");
@@ -36,15 +37,14 @@ export function App() {
     if (name === "PIERRE VIVE") setPage("pierre-vive");
     if (name === "RIVERSIDE") setPage("riverside");
     if (name === "PALERMO") setPage("palermo");
+    if (name === "MAPIERRE") setPage("mapierre");
   }
 
   function handleGoHome() {
     setPage("home");
   }
 
-  if (page === "home") {
-    return <IndexPage onOpenCollection={handleOpenCollection} />;
-  }
+  if (page === "home") return <IndexPage onOpenCollection={handleOpenCollection} />;
 
   if (page === "lucena") return <Lucena onGoHome={handleGoHome} />;
   if (page === "elegance-pro") return <ElegancePro onGoHome={handleGoHome} />;
@@ -61,6 +61,7 @@ export function App() {
   if (page === "pierre-vive") return <PierreVive onGoHome={handleGoHome} />;
   if (page === "riverside") return <Riverside onGoHome={handleGoHome} />;
   if (page === "palermo") return <Palermo onGoHome={handleGoHome} />;
+  if (page === "mapierre") return <Mapierre onGoHome={handleGoHome} />;
 
   return null;
 }
