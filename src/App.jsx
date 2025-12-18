@@ -1,6 +1,7 @@
 // src/App.jsx
 import { useState } from "react";
 import { IndexPage } from "./IndexPage";
+
 import { Lucena } from "./colecciones/lucena";
 import { ElegancePro } from "./colecciones/elegance-pro";
 import { Elysian } from "./colecciones/elysian";
@@ -17,6 +18,7 @@ import { PierreVive } from "./colecciones/pierre-vive";
 import { Riverside } from "./colecciones/riverside";
 import { Palermo } from "./colecciones/palermo";
 import { Mapierre } from "./colecciones/mapierre";
+import { Kora } from "./colecciones/kora";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -38,6 +40,7 @@ export function App() {
     if (name === "RIVERSIDE") setPage("riverside");
     if (name === "PALERMO") setPage("palermo");
     if (name === "MAPIERRE") setPage("mapierre");
+    if (name === "KORA") setPage("kora");
   }
 
   function handleGoHome() {
@@ -62,6 +65,7 @@ export function App() {
   if (page === "riverside") return <Riverside onGoHome={handleGoHome} />;
   if (page === "palermo") return <Palermo onGoHome={handleGoHome} />;
   if (page === "mapierre") return <Mapierre onGoHome={handleGoHome} />;
+  if (page === "kora") return <Kora onGoHome={handleGoHome} />;
 
   return null;
 }

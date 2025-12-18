@@ -21,6 +21,10 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "K",
+    items: [{ name: "KORA", href: "/colecciones/kora.html" }],
+  },
+  {
     letter: "L",
     items: [{ name: "LUCENA", href: "/colecciones/lucena.html" }],
   },
@@ -119,6 +123,12 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "MAPIERRE") {
         e.preventDefault();
         onOpenCollection("MAPIERRE");
+        return;
+      }
+
+      if (item.name === "KORA") {
+        e.preventDefault();
+        onOpenCollection("KORA");
         return;
       }
 
