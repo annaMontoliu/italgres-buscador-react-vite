@@ -11,6 +11,12 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "I",
+    items: [
+      { name: "IMPERIAL STONE", href: "/colecciones/imperial-stone.html" },
+    ],
+  },
+  {
     letter: "G",
     items: [{ name: "GLOCAL", href: "/colecciones/glocal.html" }],
   },
@@ -42,15 +48,16 @@ export function IndexPage({ onOpenCollection }) {
   const groupsToShow =
     normalizedSearch === ""
       ? COLLECTION_GROUPS
-      : COLLECTION_GROUPS.map((group) => {
-          const filteredItems = group.items.filter((item) =>
-            item.name.toLowerCase().includes(normalizedSearch)
-          );
-          return { ...group, items: filteredItems };
-        }).filter((group) => group.items.length > 0);
+      : COLLECTION_GROUPS
+          .map((group) => {
+            const filteredItems = group.items.filter((item) =>
+              item.name.toLowerCase().includes(normalizedSearch)
+            );
+            return { ...group, items: filteredItems };
+          })
+          .filter((group) => group.items.length > 0);
 
   function handleClickCollection(e, item) {
-    // Si App nos pasa onOpenCollection, usamos React para abrir colecciones internas
     if (onOpenCollection) {
       if (item.name === "LUCENA") {
         e.preventDefault();
@@ -99,10 +106,13 @@ export function IndexPage({ onOpenCollection }) {
         onOpenCollection("MOTLEY");
         return;
       }
-    }
 
-    // El resto de colecciones que sigan en HTML
-    // usarán su href normal
+      if (item.name === "IMPERIAL STONE") {
+        e.preventDefault();
+        onOpenCollection("IMPERIAL STONE");
+        return;
+      }
+    }
   }
 
   return (
@@ -110,7 +120,6 @@ export function IndexPage({ onOpenCollection }) {
       {/* HEADER GLOBAL */}
       <Header />
 
-      {/* CONTENIDO DEL ÍNDICE */}
       <main className="index-page">
         <h1>COLLECTIONS</h1>
 
