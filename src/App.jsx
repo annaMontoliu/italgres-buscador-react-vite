@@ -13,6 +13,9 @@ import { Supreme } from "./colecciones/supreme";
 import { ImperialStone } from "./colecciones/imperial-stone";
 import { Sybil } from "./colecciones/sybil";
 import { Pulpis } from "./colecciones/pulpis";
+import { PierreVive } from "./colecciones/pierre-vive";
+import { Riverside } from "./colecciones/riverside";
+import { Palermo } from "./colecciones/palermo";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -30,6 +33,9 @@ export function App() {
     if (name === "IMPERIAL STONE") setPage("imperial-stone");
     if (name === "SYBIL") setPage("sybil");
     if (name === "PULPIS") setPage("pulpis");
+    if (name === "PIERRE VIVE") setPage("pierre-vive");
+    if (name === "RIVERSIDE") setPage("riverside");
+    if (name === "PALERMO") setPage("palermo");
   }
 
   function handleGoHome() {
@@ -40,53 +46,21 @@ export function App() {
     return <IndexPage onOpenCollection={handleOpenCollection} />;
   }
 
-  if (page === "lucena") {
-    return <Lucena onGoHome={handleGoHome} />;
-  }
-
-  if (page === "elegance-pro") {
-    return <ElegancePro onGoHome={handleGoHome} />;
-  }
-
-  if (page === "elysian") {
-    return <Elysian onGoHome={handleGoHome} />;
-  }
-
-  if (page === "sinai") {
-    return <Sinai onGoHome={handleGoHome} />;
-  }
-
-  if (page === "glocal") {
-    return <Glocal onGoHome={handleGoHome} />;
-  }
-
-  if (page === "materia") {
-    return <Materia onGoHome={handleGoHome} />;
-  }
-
-  if (page === "sheer") {
-    return <Sheer onGoHome={handleGoHome} />;
-  }
-
-  if (page === "motley") {
-    return <Motley onGoHome={handleGoHome} />;
-  }
-
-  if (page === "supreme") {
-    return <Supreme onGoHome={handleGoHome} />;
-  }
-
-  if (page === "imperial-stone") {
-    return <ImperialStone onGoHome={handleGoHome} />;
-  }
-
-  if (page === "sybil") {
-    return <Sybil onGoHome={handleGoHome} />;
-  }
-
-  if (page === "pulpis") {
-    return <Pulpis onGoHome={handleGoHome} />;
-  }
+  if (page === "lucena") return <Lucena onGoHome={handleGoHome} />;
+  if (page === "elegance-pro") return <ElegancePro onGoHome={handleGoHome} />;
+  if (page === "elysian") return <Elysian onGoHome={handleGoHome} />;
+  if (page === "sinai") return <Sinai onGoHome={handleGoHome} />;
+  if (page === "glocal") return <Glocal onGoHome={handleGoHome} />;
+  if (page === "materia") return <Materia onGoHome={handleGoHome} />;
+  if (page === "sheer") return <Sheer onGoHome={handleGoHome} />;
+  if (page === "motley") return <Motley onGoHome={handleGoHome} />;
+  if (page === "supreme") return <Supreme onGoHome={handleGoHome} />;
+  if (page === "imperial-stone") return <ImperialStone onGoHome={handleGoHome} />;
+  if (page === "sybil") return <Sybil onGoHome={handleGoHome} />;
+  if (page === "pulpis") return <Pulpis onGoHome={handleGoHome} />;
+  if (page === "pierre-vive") return <PierreVive onGoHome={handleGoHome} />;
+  if (page === "riverside") return <Riverside onGoHome={handleGoHome} />;
+  if (page === "palermo") return <Palermo onGoHome={handleGoHome} />;
 
   return null;
 }

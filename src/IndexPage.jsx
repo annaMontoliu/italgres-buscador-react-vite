@@ -33,7 +33,15 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "P",
-    items: [{ name: "PULPIS", href: "/colecciones/pulpis.html" }],
+    items: [
+      { name: "PALERMO", href: "/colecciones/palermo.html" },
+      { name: "PIERRE VIVE", href: "/colecciones/pierre-vive.html" },
+      { name: "PULPIS", href: "/colecciones/pulpis.html" },
+    ],
+  },
+  {
+    letter: "R",
+    items: [{ name: "RIVERSIDE", href: "/colecciones/riverside.html" }],
   },
   {
     letter: "S",
@@ -134,6 +142,24 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "PULPIS") {
         e.preventDefault();
         onOpenCollection("PULPIS");
+        return;
+      }
+
+      if (item.name === "PALERMO") {
+        e.preventDefault();
+        onOpenCollection("PALERMO");
+        return;
+      }
+
+      if (item.name === "PIERRE VIVE") {
+        e.preventDefault();
+        onOpenCollection("PIERRE VIVE");
+        return;
+      }
+
+      if (item.name === "RIVERSIDE") {
+        e.preventDefault();
+        onOpenCollection("RIVERSIDE");
         return;
       }
     }
