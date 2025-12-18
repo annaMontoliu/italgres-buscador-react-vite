@@ -36,6 +36,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "SHEER", href: "/colecciones/sheer.html" },
       { name: "SINAI", href: "/colecciones/sinai.html" },
+      { name: "SUPREME", href: "/colecciones/supreme.html" },
     ],
   },
 ];
@@ -110,6 +111,12 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "IMPERIAL STONE") {
         e.preventDefault();
         onOpenCollection("IMPERIAL STONE");
+        return;
+      }
+
+      if (item.name === "SUPREME") {
+        e.preventDefault();
+        onOpenCollection("SUPREME");
         return;
       }
     }
