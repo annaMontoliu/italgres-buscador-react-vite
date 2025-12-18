@@ -39,14 +39,14 @@ header img {
 nav {
   display: flex;
   gap: 32px;
-  margin-right: 64px;
+  margin-right: 24px;
 }
 
 nav a {
   color: var(--brand);
   font-weight: bold;
   background-color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2.2rem;
   border-radius: 5px;
   text-decoration: none;
 }
