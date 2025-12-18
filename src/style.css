@@ -19,7 +19,7 @@ body {
   background: var(--paper);
   font-family: Roboto, Arial, sans-serif;
 
-  /* 👇 para que el contenido no quede debajo del header fijo */
+  /* para el header fijo */
   padding-top: 90px;
 }
 
@@ -34,7 +34,6 @@ header {
   justify-content: space-between;
   padding: 0 32px;
 
-  /* 👇 HEADER SIEMPRE VISIBLE */
   position: fixed;
   top: 0;
   left: 0;
@@ -49,16 +48,17 @@ header img {
 nav {
   display: flex;
   gap: 32px;
-  margin-right: 64px;
+  margin-right: 80px; /* un poco más hacia el margen derecho */
 }
 
 nav a {
   color: var(--brand);
   font-weight: bold;
   background-color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.6rem; /* botón más ancho */
   border-radius: 5px;
   text-decoration: none;
+  font-size: 1.05rem; /* texto un poco más grande */
 }
 
 /* ----------------------------- */
@@ -255,7 +255,7 @@ h3.color-title {
   z-index: 10;
 }
 
-/* X en la esquina de la foto */
+/* X */
 .close {
   top: 10vh;
   right: 4vw;
