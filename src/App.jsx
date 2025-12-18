@@ -10,6 +10,7 @@ import { Materia } from "./colecciones/materia";
 import { Sheer } from "./colecciones/sheer";
 import { Motley } from "./colecciones/motley";
 import { Supreme } from "./colecciones/supreme";
+import { ImperialStone } from "./colecciones/imperial-stone";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -49,6 +50,10 @@ export function App() {
 
     if (name === "SUPREME") {
       setPage("supreme");
+    }
+
+    if (name === "IMPERIAL STONE") {
+      setPage("imperial-stone");
     }
   }
 
@@ -94,6 +99,10 @@ export function App() {
 
   if (page === "supreme") {
     return <Supreme onGoHome={handleGoHome} />;
+  }
+
+  if (page === "imperial-stone") {
+    return <ImperialStone onGoHome={handleGoHome} />;
   }
 
   return null;
