@@ -31,6 +31,17 @@ import materiaCenere6 from "../assets/imagenes/materia/cenere/materia_cenere-06.
 import materiaCenere7 from "../assets/imagenes/materia/cenere/materia_cenere-07.jpg";
 import materiaCenere8 from "../assets/imagenes/materia/cenere/materia_cenere-08.jpg";
 
+// OLIVA (9)
+import materiaOliva1 from "../assets/imagenes/materia/oliva/materia-oliva-01.jpg";
+import materiaOliva2 from "../assets/imagenes/materia/oliva/materia-oliva-02.jpg";
+import materiaOliva3 from "../assets/imagenes/materia/oliva/materia-oliva-03.jpg";
+import materiaOliva4 from "../assets/imagenes/materia/oliva/materia-oliva-04.jpg";
+import materiaOliva5 from "../assets/imagenes/materia/oliva/materia-oliva-05.jpg";
+import materiaOliva6 from "../assets/imagenes/materia/oliva/materia-oliva-06.jpg";
+import materiaOliva7 from "../assets/imagenes/materia/oliva/materia-oliva-07.jpg";
+import materiaOliva8 from "../assets/imagenes/materia/oliva/materia-oliva-08.jpg";
+import materiaOliva9 from "../assets/imagenes/materia/oliva/materia-oliva-09.jpg";
+
 // ORDEN EXACTO DE LAS IMÁGENES
 const images = [
   // GESSO
@@ -57,6 +68,17 @@ const images = [
   materiaCenere6,
   materiaCenere7,
   materiaCenere8,
+
+  // OLIVA
+  materiaOliva1,
+  materiaOliva2,
+  materiaOliva3,
+  materiaOliva4,
+  materiaOliva5,
+  materiaOliva6,
+  materiaOliva7,
+  materiaOliva8,
+  materiaOliva9,
 ];
 
 export function Materia({ onGoHome }) {
@@ -94,9 +116,7 @@ export function Materia({ onGoHome }) {
         <h1 className="titulo-coleccion">MATERIA</h1>
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout
-          infoUrl="https://kronosceramiche.com/src/uploads/sites/3/2025/03/Materia.pdf?_gl=1*1eq5iow*_up*MQ..*_ga*MTIyMTU1NTc1My4xNzY1NDgyOTky*_ga_4S4P65CL4D*czE3NjU0ODI5OTIkbzEkZzAkdDE3NjU0ODI5OTIkajYwJGwwJGgxNzY5MTYwNDY5"
-        />
+        <ColeccionLayout infoUrl="https://kronosceramiche.com/src/uploads/sites/3/2025/03/Materia.pdf?_gl=1*1eq5iow*_up*MQ..*_ga*MTIyMTU1NTc1My4xNzY1NDgyOTky*_ga_4S4P65CL4D*czE3NjU0ODI5OTIkbzEkZzAkdDE3NjU0ODI5OTIkajYwJGwwJGgxNzY5MTYwNDY5" />
 
         {/* ---- GALERÍA ---- */}
 
@@ -245,6 +265,74 @@ export function Materia({ onGoHome }) {
             onClick={() => openModal(18)}
             loading="lazy"
             alt="MATERIA CENERE 8"
+          />
+        </section>
+
+        {/* Color OLIVA */}
+        <h3 className="color-title">MATERIA OLIVA</h3>
+        <section className="gallery-grid">
+          <img
+            src={materiaOliva1}
+            className="gallery-img"
+            onClick={() => openModal(19)}
+            loading="lazy"
+            alt="MATERIA OLIVA 1"
+          />
+          <img
+            src={materiaOliva2}
+            className="gallery-img"
+            onClick={() => openModal(20)}
+            loading="lazy"
+            alt="MATERIA OLIVA 2"
+          />
+          <img
+            src={materiaOliva3}
+            className="gallery-img"
+            onClick={() => openModal(21)}
+            loading="lazy"
+            alt="MATERIA OLIVA 3"
+          />
+          <img
+            src={materiaOliva4}
+            className="gallery-img"
+            onClick={() => openModal(22)}
+            loading="lazy"
+            alt="MATERIA OLIVA 4"
+          />
+          <img
+            src={materiaOliva5}
+            className="gallery-img"
+            onClick={() => openModal(23)}
+            loading="lazy"
+            alt="MATERIA OLIVA 5"
+          />
+          <img
+            src={materiaOliva6}
+            className="gallery-img"
+            onClick={() => openModal(24)}
+            loading="lazy"
+            alt="MATERIA OLIVA 6"
+          />
+          <img
+            src={materiaOliva7}
+            className="gallery-img"
+            onClick={() => openModal(25)}
+            loading="lazy"
+            alt="MATERIA OLIVA 7"
+          />
+          <img
+            src={materiaOliva8}
+            className="gallery-img"
+            onClick={() => openModal(26)}
+            loading="lazy"
+            alt="MATERIA OLIVA 8"
+          />
+          <img
+            src={materiaOliva9}
+            className="gallery-img"
+            onClick={() => openModal(27)}
+            loading="lazy"
+            alt="MATERIA OLIVA 9"
           />
         </section>
       </main>
