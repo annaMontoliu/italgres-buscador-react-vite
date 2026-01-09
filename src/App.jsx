@@ -31,6 +31,10 @@ import { Portland } from "./colecciones/portland";
 import { Chicago } from "./colecciones/chicago";
 import { Icon } from "./colecciones/icon";
 
+// NUEVAS (BELLEVUE + ULISSE)
+import { Bellevue } from "./colecciones/bellevue";
+import { Ulisse } from "./colecciones/ulisse";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -63,6 +67,10 @@ export function App() {
     if (name === "PORTLAND") setPage("portland");
     if (name === "CHICAGO") setPage("chicago");
     if (name === "ICON") setPage("icon");
+
+    // NUEVAS (BELLEVUE + ULISSE)
+    if (name === "BELLEVUE") setPage("bellevue");
+    if (name === "ULISSE") setPage("ulisse");
   }
 
   function handleGoHome() {
@@ -102,6 +110,10 @@ export function App() {
   if (page === "portland") return <Portland onGoHome={handleGoHome} />;
   if (page === "chicago") return <Chicago onGoHome={handleGoHome} />;
   if (page === "icon") return <Icon onGoHome={handleGoHome} />;
+
+  // NUEVAS (BELLEVUE + ULISSE)
+  if (page === "bellevue") return <Bellevue onGoHome={handleGoHome} />;
+  if (page === "ulisse") return <Ulisse onGoHome={handleGoHome} />;
 
   return null;
 }

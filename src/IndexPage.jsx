@@ -9,7 +9,10 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "B",
-    items: [{ name: "BARCELONA", href: "/colecciones/barcelona.html" }],
+    items: [
+      { name: "BARCELONA", href: "/colecciones/barcelona.html" },
+      { name: "BELLEVUE", href: "/colecciones/bellevue.html" },
+    ],
   },
   {
     letter: "C",
@@ -78,6 +81,10 @@ const COLLECTION_GROUPS = [
       { name: "SYBIL", href: "/colecciones/sybil.html" },
     ],
   },
+  {
+    letter: "U",
+    items: [{ name: "ULISSE", href: "/colecciones/ulisse.html" }],
+  },
 ];
 
 export function IndexPage({ onOpenCollection }) {
@@ -141,6 +148,12 @@ export function IndexPage({ onOpenCollection }) {
         return;
       }
 
+      if (item.name === "BELLEVUE") {
+        e.preventDefault();
+        onOpenCollection("BELLEVUE");
+        return;
+      }
+
       if (item.name === "CHICAGO") {
         e.preventDefault();
         onOpenCollection("CHICAGO");
@@ -162,6 +175,12 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "OH TAKE MOUNTAIN") {
         e.preventDefault();
         onOpenCollection("OH TAKE MOUNTAIN");
+        return;
+      }
+
+      if (item.name === "ULISSE") {
+        e.preventDefault();
+        onOpenCollection("ULISSE");
         return;
       }
 
