@@ -35,6 +35,9 @@ import { Icon } from "./colecciones/icon";
 import { Bellevue } from "./colecciones/bellevue";
 import { Ulisse } from "./colecciones/ulisse";
 
+// NUEVA (DRIPART)
+import { Dripart } from "./colecciones/dripart";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -71,6 +74,9 @@ export function App() {
     // NUEVAS (BELLEVUE + ULISSE)
     if (name === "BELLEVUE") setPage("bellevue");
     if (name === "ULISSE") setPage("ulisse");
+
+    // NUEVA (DRIPART)
+    if (name === "DRIPART") setPage("dripart");
   }
 
   function handleGoHome() {
@@ -114,6 +120,9 @@ export function App() {
   // NUEVAS (BELLEVUE + ULISSE)
   if (page === "bellevue") return <Bellevue onGoHome={handleGoHome} />;
   if (page === "ulisse") return <Ulisse onGoHome={handleGoHome} />;
+
+  // NUEVA (DRIPART)
+  if (page === "dripart") return <Dripart onGoHome={handleGoHome} />;
 
   return null;
 }
