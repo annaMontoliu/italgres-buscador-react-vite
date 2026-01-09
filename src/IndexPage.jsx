@@ -52,7 +52,7 @@ const COLLECTION_GROUPS = [
     letter: "S",
     items: [
       { name: "SHEER", href: "/colecciones/sheer.html" },
-      { name: "SINAI", href: "/colecciones/sinai.html" },
+      { name: "SINAI COEM", href: "/colecciones/sinai-coem.html" },
       { name: "SUPREME", href: "/colecciones/supreme.html" },
       { name: "SYBIL", href: "/colecciones/sybil.html" },
     ],
@@ -96,9 +96,9 @@ export function IndexPage({ onOpenCollection }) {
         return;
       }
 
-      if (item.name === "SINAI") {
+      if (item.name === "SINAI COEM") {
         e.preventDefault();
-        onOpenCollection("SINAI");
+        onOpenCollection("SINAI COEM");
         return;
       }
 

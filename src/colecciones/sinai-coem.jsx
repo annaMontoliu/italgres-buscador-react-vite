@@ -1,18 +1,18 @@
-// src/colecciones/sinai.jsx
+// src/colecciones/sinai-coem.jsx
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-import sinaiAvorio1 from "../assets/imagenes/sinai/sinai-avorio/sinai-avorio-1.jpg";
-import sinaiAvorio2 from "../assets/imagenes/sinai/sinai-avorio/sinai-avorio-2.jpg";
-import sinaiAvorio3 from "../assets/imagenes/sinai/sinai-avorio/sinai-avorio-3.jpg";
+import sinaiCoemAvorio01 from "../assets/imagenes/sinai-coem/sinai-coem-avorio/sinai-coem-avorio-01.jpg";
+import sinaiCoemAvorio02 from "../assets/imagenes/sinai-coem/sinai-coem-avorio/sinai-coem-avorio-02.jpg";
+import sinaiCoemAvorio03 from "../assets/imagenes/sinai-coem/sinai-coem-avorio/sinai-coem-avorio-03.jpg";
 
-// ORDEN EXACTO COMO EN TU HTML ORIGINAL
-const images = [sinaiAvorio1, sinaiAvorio2, sinaiAvorio3];
+// ORDEN EXACTO (modal)
+const images = [sinaiCoemAvorio01, sinaiCoemAvorio02, sinaiCoemAvorio03];
 
-export function Sinai({ onGoHome }) {
+export function SinaiCoem({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -32,7 +32,9 @@ export function Sinai({ onGoHome }) {
   }
 
   function prevImage() {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   }
 
   return (
@@ -42,7 +44,7 @@ export function Sinai({ onGoHome }) {
 
       <main>
         {/* Título */}
-        <h1 className="titulo-coleccion">SINAI</h1>
+        <h1 className="titulo-coleccion">SINAI COEM</h1>
 
         {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout infoUrl="https://www.coem.it/wp-content/uploads/2023/12/COEM-Sinai.pdf" />
@@ -50,28 +52,28 @@ export function Sinai({ onGoHome }) {
         {/* ---- GALERÍA ---- */}
 
         {/* Color AVORIO */}
-        <h3 className="color-title">SINAI AVORIO</h3>
+        <h3 className="color-title">SINAI COEM AVORIO</h3>
         <section className="gallery-grid">
           <img
-            src={sinaiAvorio1}
+            src={sinaiCoemAvorio01}
             className="gallery-img"
             onClick={() => openModal(0)}
             loading="lazy"
-            alt="SINAI AVORIO 1"
+            alt="SINAI COEM AVORIO 1"
           />
           <img
-            src={sinaiAvorio2}
+            src={sinaiCoemAvorio02}
             className="gallery-img"
             onClick={() => openModal(1)}
             loading="lazy"
-            alt="SINAI AVORIO 2"
+            alt="SINAI COEM AVORIO 2"
           />
           <img
-            src={sinaiAvorio3}
+            src={sinaiCoemAvorio03}
             className="gallery-img"
             onClick={() => openModal(2)}
             loading="lazy"
-            alt="SINAI AVORIO 3"
+            alt="SINAI COEM AVORIO 3"
           />
         </section>
       </main>
