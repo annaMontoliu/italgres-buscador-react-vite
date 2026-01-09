@@ -4,6 +4,14 @@ import { Header } from "./components/Header";
 
 const COLLECTION_GROUPS = [
   {
+    letter: "A",
+    items: [{ name: "ARENARIA", href: "/colecciones/arenaria.html" }],
+  },
+  {
+    letter: "B",
+    items: [{ name: "BARCELONA", href: "/colecciones/barcelona.html" }],
+  },
+  {
     letter: "E",
     items: [
       { name: "ELEGANCE PRO", href: "/colecciones/elegance-pro.html" },
@@ -34,6 +42,12 @@ const COLLECTION_GROUPS = [
       { name: "MAPIERRE", href: "/colecciones/mapierre.html" },
       { name: "MATERIA", href: "/colecciones/materia.html" },
       { name: "MOTLEY", href: "/colecciones/motley.html" },
+    ],
+  },
+  {
+    letter: "O",
+    items: [
+      { name: "OH TAKE MOUNTAIN", href: "/colecciones/oh-take-mountain.html" },
     ],
   },
   {
@@ -106,6 +120,24 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "SINAI KTL") {
         e.preventDefault();
         onOpenCollection("SINAI KTL");
+        return;
+      }
+
+      if (item.name === "ARENARIA") {
+        e.preventDefault();
+        onOpenCollection("ARENARIA");
+        return;
+      }
+
+      if (item.name === "BARCELONA") {
+        e.preventDefault();
+        onOpenCollection("BARCELONA");
+        return;
+      }
+
+      if (item.name === "OH TAKE MOUNTAIN") {
+        e.preventDefault();
+        onOpenCollection("OH TAKE MOUNTAIN");
         return;
       }
 
