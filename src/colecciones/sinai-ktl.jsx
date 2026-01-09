@@ -5,7 +5,7 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-import sinaiKtlAlmond01 from "../assets/imagenes/sinai-ktl-almond/sinai-ktl-almond-01.jpg";
+import sinaiKtlAlmond01 from "../assets/imagenes/sinai-ktl/sinai-ktl-almond/sinai-ktl-almond-01.jpg";
 
 // ORDEN EXACTO COMO EN TU HTML ORIGINAL
 const images = [sinaiKtlAlmond01];
@@ -30,7 +30,9 @@ export function SinaiKtl({ onGoHome }) {
   }
 
   function prevImage() {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   }
 
   return (
