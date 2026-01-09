@@ -5,11 +5,59 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-import materiaGesso1 from "../assets/imagenes/materia/gesso/materia-gesso-01.jpg";
-import materiaSeta1 from "../assets/imagenes/materia/seta/materia-seta-01.jpg";
+
+// GESSO (5)
+import materiaGesso1 from "../assets/imagenes/materia/gesso/materia_gesso-01.jpg";
+import materiaGesso2 from "../assets/imagenes/materia/gesso/materia_gesso-02.jpg";
+import materiaGesso3 from "../assets/imagenes/materia/gesso/materia_gesso-03.jpg";
+import materiaGesso4 from "../assets/imagenes/materia/gesso/materia_gesso-04.jpg";
+import materiaGesso5 from "../assets/imagenes/materia/gesso/materia_gesso-05.jpg";
+
+// SETA (6)
+import materiaSeta1 from "../assets/imagenes/materia/seta/materia_seta-01.jpg";
+import materiaSeta2 from "../assets/imagenes/materia/seta/materia_seta-02.jpg";
+import materiaSeta3 from "../assets/imagenes/materia/seta/materia_seta-03.jpg";
+import materiaSeta4 from "../assets/imagenes/materia/seta/materia_seta-04.jpg";
+import materiaSeta5 from "../assets/imagenes/materia/seta/materia_seta-05.jpg";
+import materiaSeta6 from "../assets/imagenes/materia/seta/materia_seta-06.jpg";
+
+// CENERE (8)
+import materiaCenere1 from "../assets/imagenes/materia/cenere/materia_cenere-01.jpg";
+import materiaCenere2 from "../assets/imagenes/materia/cenere/materia_cenere-02.jpg";
+import materiaCenere3 from "../assets/imagenes/materia/cenere/materia_cenere-03.jpg";
+import materiaCenere4 from "../assets/imagenes/materia/cenere/materia_cenere-04.jpg";
+import materiaCenere5 from "../assets/imagenes/materia/cenere/materia_cenere-05.jpg";
+import materiaCenere6 from "../assets/imagenes/materia/cenere/materia_cenere-06.jpg";
+import materiaCenere7 from "../assets/imagenes/materia/cenere/materia_cenere-07.jpg";
+import materiaCenere8 from "../assets/imagenes/materia/cenere/materia_cenere-08.jpg";
 
 // ORDEN EXACTO DE LAS IMÁGENES
-const images = [materiaGesso1, materiaSeta1];
+const images = [
+  // GESSO
+  materiaGesso1,
+  materiaGesso2,
+  materiaGesso3,
+  materiaGesso4,
+  materiaGesso5,
+
+  // SETA
+  materiaSeta1,
+  materiaSeta2,
+  materiaSeta3,
+  materiaSeta4,
+  materiaSeta5,
+  materiaSeta6,
+
+  // CENERE
+  materiaCenere1,
+  materiaCenere2,
+  materiaCenere3,
+  materiaCenere4,
+  materiaCenere5,
+  materiaCenere6,
+  materiaCenere7,
+  materiaCenere8,
+];
 
 export function Materia({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,6 +110,34 @@ export function Materia({ onGoHome }) {
             loading="lazy"
             alt="MATERIA GESSO 1"
           />
+          <img
+            src={materiaGesso2}
+            className="gallery-img"
+            onClick={() => openModal(1)}
+            loading="lazy"
+            alt="MATERIA GESSO 2"
+          />
+          <img
+            src={materiaGesso3}
+            className="gallery-img"
+            onClick={() => openModal(2)}
+            loading="lazy"
+            alt="MATERIA GESSO 3"
+          />
+          <img
+            src={materiaGesso4}
+            className="gallery-img"
+            onClick={() => openModal(3)}
+            loading="lazy"
+            alt="MATERIA GESSO 4"
+          />
+          <img
+            src={materiaGesso5}
+            className="gallery-img"
+            onClick={() => openModal(4)}
+            loading="lazy"
+            alt="MATERIA GESSO 5"
+          />
         </section>
 
         {/* Color SETA */}
@@ -70,16 +146,106 @@ export function Materia({ onGoHome }) {
           <img
             src={materiaSeta1}
             className="gallery-img"
-            onClick={() => openModal(1)}
+            onClick={() => openModal(5)}
             loading="lazy"
             alt="MATERIA SETA 1"
           />
+          <img
+            src={materiaSeta2}
+            className="gallery-img"
+            onClick={() => openModal(6)}
+            loading="lazy"
+            alt="MATERIA SETA 2"
+          />
+          <img
+            src={materiaSeta3}
+            className="gallery-img"
+            onClick={() => openModal(7)}
+            loading="lazy"
+            alt="MATERIA SETA 3"
+          />
+          <img
+            src={materiaSeta4}
+            className="gallery-img"
+            onClick={() => openModal(8)}
+            loading="lazy"
+            alt="MATERIA SETA 4"
+          />
+          <img
+            src={materiaSeta5}
+            className="gallery-img"
+            onClick={() => openModal(9)}
+            loading="lazy"
+            alt="MATERIA SETA 5"
+          />
+          <img
+            src={materiaSeta6}
+            className="gallery-img"
+            onClick={() => openModal(10)}
+            loading="lazy"
+            alt="MATERIA SETA 6"
+          />
         </section>
 
-        {/* Color CENERE (sin imágenes de momento) */}
+        {/* Color CENERE */}
         <h3 className="color-title">MATERIA CENERE</h3>
         <section className="gallery-grid">
-          {/* Añade aquí las imágenes de CENERE cuando las tengas */}
+          <img
+            src={materiaCenere1}
+            className="gallery-img"
+            onClick={() => openModal(11)}
+            loading="lazy"
+            alt="MATERIA CENERE 1"
+          />
+          <img
+            src={materiaCenere2}
+            className="gallery-img"
+            onClick={() => openModal(12)}
+            loading="lazy"
+            alt="MATERIA CENERE 2"
+          />
+          <img
+            src={materiaCenere3}
+            className="gallery-img"
+            onClick={() => openModal(13)}
+            loading="lazy"
+            alt="MATERIA CENERE 3"
+          />
+          <img
+            src={materiaCenere4}
+            className="gallery-img"
+            onClick={() => openModal(14)}
+            loading="lazy"
+            alt="MATERIA CENERE 4"
+          />
+          <img
+            src={materiaCenere5}
+            className="gallery-img"
+            onClick={() => openModal(15)}
+            loading="lazy"
+            alt="MATERIA CENERE 5"
+          />
+          <img
+            src={materiaCenere6}
+            className="gallery-img"
+            onClick={() => openModal(16)}
+            loading="lazy"
+            alt="MATERIA CENERE 6"
+          />
+          <img
+            src={materiaCenere7}
+            className="gallery-img"
+            onClick={() => openModal(17)}
+            loading="lazy"
+            alt="MATERIA CENERE 7"
+          />
+          <img
+            src={materiaCenere8}
+            className="gallery-img"
+            onClick={() => openModal(18)}
+            loading="lazy"
+            alt="MATERIA CENERE 8"
+          />
         </section>
       </main>
 
