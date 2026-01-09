@@ -18,6 +18,9 @@ body {
   padding: 0;
   background: var(--paper);
   font-family: Roboto, Arial, sans-serif;
+
+  /* 👇 NUEVO: espacio para el header fijo (evita que tape contenido) */
+  padding-top: 90px;
 }
 
 /* ----------------------------- */
@@ -138,7 +141,7 @@ nav a {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 90px 16px 2.5rem; /* espacio para header fijo */
+  padding: 1.5rem 16px 2.5rem; /* 👈 vuelve a estar normal (ya empuja el body) */
 }
 
 h1.titulo-coleccion {
@@ -276,8 +279,8 @@ h3.color-title {
     height: 70px;
   }
 
-  main {
-    padding-top: 70px;
+  body {
+    padding-top: 70px; /* 👈 se adapta a la altura del logo */
   }
 
   .gallery-grid {
@@ -294,8 +297,8 @@ h3.color-title {
     height: 50px;
   }
 
-  main {
-    padding-top: 50px;
+  body {
+    padding-top: 50px; /* 👈 se adapta a la altura del logo */
   }
 
   .gallery-grid {
