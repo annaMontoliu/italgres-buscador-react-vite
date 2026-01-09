@@ -21,10 +21,15 @@ import { Palermo } from "./colecciones/palermo";
 import { Mapierre } from "./colecciones/mapierre";
 import { Kora } from "./colecciones/kora";
 
-// NUEVAS
+// NUEVAS (bloque anterior)
 import { Arenaria } from "./colecciones/arenaria";
 import { Barcelona } from "./colecciones/barcelona";
 import { OhTakeMountain } from "./colecciones/oh-take-mountain";
+
+// NUEVAS (este bloque)
+import { Portland } from "./colecciones/portland";
+import { Chicago } from "./colecciones/chicago";
+import { Icon } from "./colecciones/icon";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -49,10 +54,15 @@ export function App() {
     if (name === "MAPIERRE") setPage("mapierre");
     if (name === "KORA") setPage("kora");
 
-    // NUEVAS
+    // NUEVAS (bloque anterior)
     if (name === "ARENARIA") setPage("arenaria");
     if (name === "BARCELONA") setPage("barcelona");
     if (name === "OH TAKE MOUNTAIN") setPage("oh-take-mountain");
+
+    // NUEVAS (este bloque)
+    if (name === "PORTLAND") setPage("portland");
+    if (name === "CHICAGO") setPage("chicago");
+    if (name === "ICON") setPage("icon");
   }
 
   function handleGoHome() {
@@ -82,11 +92,16 @@ export function App() {
   if (page === "mapierre") return <Mapierre onGoHome={handleGoHome} />;
   if (page === "kora") return <Kora onGoHome={handleGoHome} />;
 
-  // NUEVAS
+  // NUEVAS (bloque anterior)
   if (page === "arenaria") return <Arenaria onGoHome={handleGoHome} />;
   if (page === "barcelona") return <Barcelona onGoHome={handleGoHome} />;
   if (page === "oh-take-mountain")
     return <OhTakeMountain onGoHome={handleGoHome} />;
+
+  // NUEVAS (este bloque)
+  if (page === "portland") return <Portland onGoHome={handleGoHome} />;
+  if (page === "chicago") return <Chicago onGoHome={handleGoHome} />;
+  if (page === "icon") return <Icon onGoHome={handleGoHome} />;
 
   return null;
 }

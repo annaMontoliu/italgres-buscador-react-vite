@@ -12,6 +12,10 @@ const COLLECTION_GROUPS = [
     items: [{ name: "BARCELONA", href: "/colecciones/barcelona.html" }],
   },
   {
+    letter: "C",
+    items: [{ name: "CHICAGO", href: "/colecciones/chicago.html" }],
+  },
+  {
     letter: "E",
     items: [
       { name: "ELEGANCE PRO", href: "/colecciones/elegance-pro.html" },
@@ -25,6 +29,7 @@ const COLLECTION_GROUPS = [
   {
     letter: "I",
     items: [
+      { name: "ICON", href: "/colecciones/icon.html" },
       { name: "IMPERIAL STONE", href: "/colecciones/imperial-stone.html" },
     ],
   },
@@ -55,6 +60,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "PALERMO", href: "/colecciones/palermo.html" },
       { name: "PIERRE VIVE", href: "/colecciones/pierre-vive.html" },
+      { name: "PORTLAND", href: "/colecciones/portland.html" },
       { name: "PULPIS", href: "/colecciones/pulpis.html" },
     ],
   },
@@ -132,6 +138,24 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "BARCELONA") {
         e.preventDefault();
         onOpenCollection("BARCELONA");
+        return;
+      }
+
+      if (item.name === "CHICAGO") {
+        e.preventDefault();
+        onOpenCollection("CHICAGO");
+        return;
+      }
+
+      if (item.name === "ICON") {
+        e.preventDefault();
+        onOpenCollection("ICON");
+        return;
+      }
+
+      if (item.name === "PORTLAND") {
+        e.preventDefault();
+        onOpenCollection("PORTLAND");
         return;
       }
 
