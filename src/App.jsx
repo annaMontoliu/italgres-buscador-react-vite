@@ -6,6 +6,7 @@ import { Lucena } from "./colecciones/lucena";
 import { ElegancePro } from "./colecciones/elegance-pro";
 import { Elysian } from "./colecciones/elysian";
 import { SinaiCoem } from "./colecciones/sinai-coem";
+import { SinaiKtl } from "./colecciones/sinai-ktl";
 import { Glocal } from "./colecciones/glocal";
 import { Materia } from "./colecciones/materia";
 import { Sheer } from "./colecciones/sheer";
@@ -28,6 +29,7 @@ export function App() {
     if (name === "ELEGANCE PRO") setPage("elegance-pro");
     if (name === "ELYSIAN") setPage("elysian");
     if (name === "SINAI COEM") setPage("sinai-coem");
+    if (name === "SINAI KTL") setPage("sinai-ktl");
     if (name === "GLOCAL") setPage("glocal");
     if (name === "MATERIA") setPage("materia");
     if (name === "MOTLEY") setPage("motley");
@@ -54,6 +56,7 @@ export function App() {
   if (page === "elegance-pro") return <ElegancePro onGoHome={handleGoHome} />;
   if (page === "elysian") return <Elysian onGoHome={handleGoHome} />;
   if (page === "sinai-coem") return <SinaiCoem onGoHome={handleGoHome} />;
+  if (page === "sinai-ktl") return <SinaiKtl onGoHome={handleGoHome} />;
   if (page === "glocal") return <Glocal onGoHome={handleGoHome} />;
   if (page === "materia") return <Materia onGoHome={handleGoHome} />;
   if (page === "sheer") return <Sheer onGoHome={handleGoHome} />;

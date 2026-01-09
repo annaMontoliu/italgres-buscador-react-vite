@@ -53,6 +53,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "SHEER", href: "/colecciones/sheer.html" },
       { name: "SINAI COEM", href: "/colecciones/sinai-coem.html" },
+      { name: "SINAI KTL", href: "/colecciones/sinai-ktl.html" },
       { name: "SUPREME", href: "/colecciones/supreme.html" },
       { name: "SYBIL", href: "/colecciones/sybil.html" },
     ],
@@ -99,6 +100,12 @@ export function IndexPage({ onOpenCollection }) {
       if (item.name === "SINAI COEM") {
         e.preventDefault();
         onOpenCollection("SINAI COEM");
+        return;
+      }
+
+      if (item.name === "SINAI KTL") {
+        e.preventDefault();
+        onOpenCollection("SINAI KTL");
         return;
       }
 
