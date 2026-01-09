@@ -45,11 +45,11 @@ export function Arenaria({ onGoHome }) {
         {/* Título */}
         <h1 className="titulo-coleccion">ARENARIA</h1>
 
-    
         {/* ---- GALERÍA ---- */}
 
         {/* Color BIANCO */}
         <h3 className="color-title">ARENARIA BIANCO</h3>
+        <ColeccionLayout infoUrl="https://www.porcelain4top.it/en/top-60" />
         <section className="gallery-grid">
           <img
             src={arenariaBianco01}
@@ -60,18 +60,9 @@ export function Arenaria({ onGoHome }) {
           />
         </section>
 
-        {/* Botón MORE INFO BIANCO */}
-        <a
-          href="https://www.porcelain4top.it/en/top-60"
-          target="_blank"
-          rel="noreferrer"
-          className="more-info-btn"
-        >
-          MORE INFO
-        </a>
-
         {/* Color GRIGIO */}
         <h3 className="color-title">ARENARIA GRIGIO</h3>
+        <ColeccionLayout infoUrl="https://www.porcelain4top.it/en/top-62" />
         <section className="gallery-grid">
           <img
             src={arenariaGrigio01}
@@ -81,16 +72,6 @@ export function Arenaria({ onGoHome }) {
             alt="ARENARIA GRIGIO 1"
           />
         </section>
-
-        {/* Botón MORE INFO GRIGIO */}
-        <a
-          href="https://www.porcelain4top.it/en/top-62"
-          target="_blank"
-          rel="noreferrer"
-          className="more-info-btn"
-        >
-          MORE INFO
-        </a>
       </main>
 
       {/* ---- MODAL REUTILIZABLE ---- */}
