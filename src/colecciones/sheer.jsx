@@ -34,6 +34,8 @@ import sheerGreyDune01 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-dune
 import sheerLeaves01 from "../assets/imagenes/sheer/sheer-leaves/sheer-leaves-01.jpg";
 import sheerLeaves02 from "../assets/imagenes/sheer/sheer-leaves/sheer-leaves-02.jpg";
 import sheerLeaves03 from "../assets/imagenes/sheer/sheer-leaves/sheer-leaves-03.jpg";
+import sheerLeaves04 from "../assets/imagenes/sheer/sheer-leaves/sheer-leaves-04.jpg";
+import sheerLeaves05 from "../assets/imagenes/sheer/sheer-leaves/sheer-leaves-05.jpg";
 
 // ================= SHEER RUST =================
 import sheerRust01 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-01.jpg";
@@ -41,6 +43,7 @@ import sheerRust02 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-02.jpg";
 import sheerRust03 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-03.jpg";
 import sheerRust04 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-04.jpg";
 import sheerRust05 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-05.jpg";
+import sheerRust06 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-06.jpg";
 
 // ORDEN EXACTO COMO EN LA PÁGINA (y por tanto en el modal)
 const images = [
@@ -69,6 +72,8 @@ const images = [
   sheerLeaves01,
   sheerLeaves02,
   sheerLeaves03,
+  sheerLeaves04,
+  sheerLeaves05,
 
   // RUST
   sheerRust01,
@@ -76,6 +81,7 @@ const images = [
   sheerRust03,
   sheerRust04,
   sheerRust05,
+  sheerRust06,
 ];
 
 export function Sheer({ onGoHome }) {
@@ -98,7 +104,9 @@ export function Sheer({ onGoHome }) {
   }
 
   function prevImage() {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   }
 
   return (
@@ -259,6 +267,20 @@ export function Sheer({ onGoHome }) {
             loading="lazy"
             alt="SHEER LEAVES 3"
           />
+          <img
+            src={sheerLeaves04}
+            className="gallery-img"
+            onClick={() => openModal(18)}
+            loading="lazy"
+            alt="SHEER LEAVES 4"
+          />
+          <img
+            src={sheerLeaves05}
+            className="gallery-img"
+            onClick={() => openModal(19)}
+            loading="lazy"
+            alt="SHEER LEAVES 5"
+          />
         </section>
 
         {/* SHEER RUST */}
@@ -267,37 +289,44 @@ export function Sheer({ onGoHome }) {
           <img
             src={sheerRust01}
             className="gallery-img"
-            onClick={() => openModal(18)}
+            onClick={() => openModal(20)}
             loading="lazy"
             alt="SHEER RUST 1"
           />
           <img
             src={sheerRust02}
             className="gallery-img"
-            onClick={() => openModal(19)}
+            onClick={() => openModal(21)}
             loading="lazy"
             alt="SHEER RUST 2"
           />
           <img
             src={sheerRust03}
             className="gallery-img"
-            onClick={() => openModal(20)}
+            onClick={() => openModal(22)}
             loading="lazy"
             alt="SHEER RUST 3"
           />
           <img
             src={sheerRust04}
             className="gallery-img"
-            onClick={() => openModal(21)}
+            onClick={() => openModal(23)}
             loading="lazy"
             alt="SHEER RUST 4"
           />
           <img
             src={sheerRust05}
             className="gallery-img"
-            onClick={() => openModal(22)}
+            onClick={() => openModal(24)}
             loading="lazy"
             alt="SHEER RUST 5"
+          />
+          <img
+            src={sheerRust06}
+            className="gallery-img"
+            onClick={() => openModal(25)}
+            loading="lazy"
+            alt="SHEER RUST 6"
           />
         </section>
       </main>
