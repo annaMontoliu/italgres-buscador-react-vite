@@ -38,6 +38,9 @@ import { Ulisse } from "./colecciones/ulisse";
 // NUEVA (DRIPART)
 import { Dripart } from "./colecciones/dripart";
 
+// ✅ NUEVA (OXYD)
+import { Oxyd } from "./colecciones/oxyd";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -77,6 +80,9 @@ export function App() {
 
     // NUEVA (DRIPART)
     if (name === "DRIPART") setPage("dripart");
+
+    // ✅ NUEVA (OXYD)
+    if (name === "OXYD") setPage("oxyd");
   }
 
   function handleGoHome() {
@@ -123,6 +129,9 @@ export function App() {
 
   // NUEVA (DRIPART)
   if (page === "dripart") return <Dripart onGoHome={handleGoHome} />;
+
+  // ✅ NUEVA (OXYD)
+  if (page === "oxyd") return <Oxyd onGoHome={handleGoHome} />;
 
   return null;
 }
