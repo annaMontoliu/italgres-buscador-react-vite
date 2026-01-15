@@ -25,10 +25,10 @@ import oxydNegro2 from "../assets/imagenes/oxyd/oxyd-negro/oxyd-negro-02.jpg";
 import oxydNegro3 from "../assets/imagenes/oxyd/oxyd-negro/oxyd-negro-03.jpg";
 
 // IMPORTS TACOS (showroom)
-import tacoOxydBianco from "../assets/imagenes/oxyd/tacos/taco-oxyd-bianco.jpg";
-import tacoOxydGrigio from "../assets/imagenes/oxyd/tacos/taco-oxyd-grigio.jpg";
-import tacoOxydMarrone from "../assets/imagenes/oxyd/tacos/taco-oxyd-marrone.jpg";
-import tacoOxydNegro from "../assets/imagenes/oxyd/tacos/taco-oxyd-negro.jpg";
+import tacoOxydBianco from "../assets/imagenes/oxyd/oxyd-tacos/taco-oxyd-bianco.jpg";
+import tacoOxydGrigio from "../assets/imagenes/oxyd/oxyd-tacos/taco-oxyd-grigio.jpg";
+import tacoOxydMarrone from "../assets/imagenes/oxyd/oxyd-tacos/taco-oxyd-marrone.jpg";
+import tacoOxydNegro from "../assets/imagenes/oxyd/oxyd-tacos/taco-oxyd-negro.jpg";
 
 // ORDEN EXACTO (primero Bianco, luego Grigio, Marrone y Negro)
 const images = [
