@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
+import { ShowroomColors } from "../components/ShowroomColors";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
 import oxydBianco1 from "../assets/imagenes/oxyd/oxyd-bianco/oxyd-bianco-01.jpg";
@@ -22,6 +23,12 @@ import oxydMarrone3 from "../assets/imagenes/oxyd/oxyd-marrone/oxyd-marrone-03.j
 import oxydNegro1 from "../assets/imagenes/oxyd/oxyd-negro/oxyd-negro-01.jpg";
 import oxydNegro2 from "../assets/imagenes/oxyd/oxyd-negro/oxyd-negro-02.jpg";
 import oxydNegro3 from "../assets/imagenes/oxyd/oxyd-negro/oxyd-negro-03.jpg";
+
+// IMPORTS TACOS (showroom)
+import tacoOxydBianco from "../assets/imagenes/oxyd/tacos/taco-oxyd-bianco.jpg";
+import tacoOxydGrigio from "../assets/imagenes/oxyd/tacos/taco-oxyd-grigio.jpg";
+import tacoOxydMarrone from "../assets/imagenes/oxyd/tacos/taco-oxyd-marrone.jpg";
+import tacoOxydNegro from "../assets/imagenes/oxyd/tacos/taco-oxyd-negro.jpg";
 
 // ORDEN EXACTO (primero Bianco, luego Grigio, Marrone y Negro)
 const images = [
@@ -63,7 +70,9 @@ export function Oxyd({ onGoHome }) {
   }
 
   function prevImage() {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   }
 
   return (
@@ -74,6 +83,17 @@ export function Oxyd({ onGoHome }) {
       <main>
         {/* Título */}
         <h1 className="titulo-coleccion">OXYD</h1>
+
+        {/* SHOWROOM COLORS (TACOS) */}
+        <ShowroomColors
+          title="showroom colors"
+          items={[
+            { label: "BIANCO", thumb: tacoOxydBianco },
+            { label: "GRIGIO", thumb: tacoOxydGrigio },
+            { label: "MARRONE", thumb: tacoOxydMarrone },
+            { label: "NEGRO", thumb: tacoOxydNegro },
+          ]}
+        />
 
         {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout infoUrl="https://www.caemdordini.it/public/storage/189368/imola-oxyd-colori-2025.pdf" />

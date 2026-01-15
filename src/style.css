@@ -309,3 +309,61 @@ h3.color-title {
     height: 260px;
   }
 }
+/* =========================
+   SHOWROOM COLORS (TACOS)
+   ========================= */
+
+.showroom-colors {
+  margin: 1.5rem 0 1.25rem;
+}
+
+.showroom-colors__title {
+  font-weight: 700;
+  text-transform: lowercase; /* como tu mockup */
+  margin: 0 0 0.75rem 0;
+}
+
+.showroom-colors__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ centra siempre */
+  gap: 22px;
+  max-width: 560px; /* ✅ limita para que nunca haya más de 5 en fila */
+}
+
+.showroom-colors__item {
+  width: 92px; /* tamaño “taco” */
+  text-align: center;
+}
+
+.showroom-colors__thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.showroom-colors__label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* Responsive: en móvil reducimos tamaños */
+@media (max-width: 520px) {
+  .showroom-colors__grid {
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .showroom-colors__item {
+    width: 84px;
+  }
+
+  .showroom-colors__thumb {
+    width: 62px;
+    height: 62px;
+  }
+}
