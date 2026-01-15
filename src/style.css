@@ -1,7 +1,7 @@
 :root {
-  --brand:#f68e1c;
-  --ink:#4c4844;
-  --paper:#dddee0;
+  --brand: #f68e1c;
+  --ink: #4c4844;
+  --paper: #dddee0;
 }
 
 /* Reset básico */
@@ -18,6 +18,8 @@ body {
   padding: 0;
   background: var(--paper);
   font-family: Roboto, Arial, sans-serif;
+
+  /* espacio para el header fijo (evita que tape contenido) */
   padding-top: 90px;
 }
 
@@ -31,6 +33,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 32px;
+
+  /* HEADER FIJO */
   position: fixed;
   top: 0;
   left: 0;
@@ -67,6 +71,7 @@ nav a {
   margin: 0 auto;
 }
 
+/* Título COLLECTIONS */
 .index-page h1 {
   text-align: center;
   font-size: 2.6rem;
@@ -76,6 +81,7 @@ nav a {
   font-weight: normal;
 }
 
+/* Buscador */
 .index-page input[type="search"] {
   padding: 0.9rem;
   font-size: 1.4rem;
@@ -83,11 +89,13 @@ nav a {
   max-width: 500px;
   border: 2.5px solid var(--brand);
   border-radius: 6px;
+  color: #000;
   background-color: #fff;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2rem auto;
   display: block;
 }
 
+/* Letras del índice */
 .index-page .letter-heading {
   font-size: 1.6rem;
   color: var(--brand);
@@ -96,6 +104,7 @@ nav a {
   margin-bottom: 0.8rem;
 }
 
+/* Lista colecciones */
 .index-page ul.collection-list {
   list-style: none;
   padding: 0;
@@ -113,11 +122,16 @@ nav a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
+  transition: color 0.3s;
   font-weight: 500;
 }
 
 .index-page ul.collection-list li a:hover {
   color: var(--brand);
+}
+
+.hidden {
+  display: none;
 }
 
 /* ----------------------------- */
@@ -127,7 +141,7 @@ nav a {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 16px 2.5rem;
+  padding: 1.5rem 16px 2.5rem; /* normal */
 }
 
 h1.titulo-coleccion {
@@ -190,7 +204,6 @@ h1.titulo-coleccion {
   text-transform: uppercase;
 }
 
-
 .showroom-colors__grid {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +254,12 @@ h3.color-title {
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------- */
@@ -258,18 +277,95 @@ h3.color-title {
   padding: 20px;
 }
 
+#modalImage {
+  max-width: 92vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.close,
+.arrow {
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+
+.close {
+  top: 10vh;
+  right: 4vw;
+}
+
+.arrow.left {
+  top: 50%;
+  left: 4vw;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  top: 50%;
+  right: 4vw;
+  transform: translateY(-50%);
+}
+
 /* ----------------------------- */
 /* RESPONSIVE                    */
 /* ----------------------------- */
 
 @media (max-width: 900px) {
-  header img { height: 70px; }
-  body { padding-top: 70px; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  header img {
+    height: 70px;
+  }
+
+  body {
+    padding-top: 70px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-img {
+    height: 230px;
+  }
 }
 
 @media (max-width: 600px) {
-  header img { height: 50px; }
-  body { padding-top: 50px; }
-  .gallery-grid { grid-template-columns: 1fr; }
+  header img {
+    height: 50px;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-img {
+    height: 260px;
+  }
+}
+
+/* Responsive específico tacos (opcional) */
+@media (max-width: 520px) {
+  .showroom-colors__grid {
+    gap: 16px;
+  }
+
+  .showroom-colors__item {
+    width: 84px;
+  }
+
+  .showroom-colors__thumb {
+    width: 62px;
+    height: 62px;
+  }
 }
