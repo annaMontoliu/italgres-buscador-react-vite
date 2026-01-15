@@ -1,5 +1,5 @@
 // src/components/ShowroomColors.jsx
-export function ShowroomColors({ title = "showroom colors", items = [] }) {
+export function ShowroomColors({ title = "SHOWROOM COLORS", items = [] }) {
   if (!items.length) return null;
 
   return (
