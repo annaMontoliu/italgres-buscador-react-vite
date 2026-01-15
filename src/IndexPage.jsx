@@ -2,7 +2,24 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
 
-const COLLECTION_GROUPS = [
+
+  const COLLECTION_GROUPS = [
+  {
+    letter: "A",
+    items: [{ name: "ARENARIA" }],
+  },
+  {
+    letter: "B",
+    items: [{ name: "BARCELONA" }, { name: "BELLEVUE" }],
+  },
+  {
+    letter: "C",
+    items: [{ name: "CHICAGO" }],
+  },
+  {
+    letter: "D",
+    items: [{ name: "DRIPART" }],
+  },
   {
     letter: "E",
     items: [{ name: "ELEGANCE PRO" }, { name: "ELYSIAN" }],
@@ -13,7 +30,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "I",
-    items: [{ name: "IMPERIAL STONE" }],
+    items: [{ name: "ICON" }, { name: "IMPERIAL STONE" }],
+  },
+  {
+    letter: "K",
+    items: [{ name: "KORA" }],
   },
   {
     letter: "L",
@@ -21,17 +42,41 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "M",
-    items: [{ name: "MATERIA" }, { name: "MOTLEY" }],
+    items: [{ name: "MAPIERRE" }, { name: "MATERIA" }, { name: "MOTLEY" }],
   },
   {
     letter: "O",
-    items: [{ name: "OXYD" }], // ✅ NUEVA COLECCIÓN AÑADIDA AQUÍ
+    items: [{ name: "OH TAKE MOUNTAIN" }, { name: "OXYD" }],
+  },
+  {
+    letter: "P",
+    items: [
+      { name: "PALERMO" },
+      { name: "PIERRE VIVE" },
+      { name: "PORTLAND" },
+      { name: "PULPIS" },
+    ],
+  },
+  {
+    letter: "R",
+    items: [{ name: "RIVERSIDE" }],
   },
   {
     letter: "S",
-    items: [{ name: "SHEER" }, { name: "SINAI" }],
+    items: [
+      { name: "SHEER" },
+      { name: "SINAI COEM" },
+      { name: "SINAI KTL" },
+      { name: "SUPREME" },
+      { name: "SYBIL" },
+    ],
+  },
+  {
+    letter: "U",
+    items: [{ name: "ULISSE" }],
   },
 ];
+
 
 export function IndexPage({ onOpenCollection }) {
   const [search, setSearch] = useState("");
