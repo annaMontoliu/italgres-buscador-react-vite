@@ -187,7 +187,9 @@ h1.titulo-coleccion {
   color: var(--ink);
   font-weight: 700;
   margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
 }
+
 
 .showroom-colors__grid {
   display: flex;
