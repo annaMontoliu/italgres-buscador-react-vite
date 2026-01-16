@@ -17,7 +17,7 @@ import { Sybil } from "./colecciones/sybil";
 import { Pulpis } from "./colecciones/pulpis";
 import { PierreVive } from "./colecciones/pierre-vive";
 import { Riverside } from "./colecciones/riverside";
-import { Palermo } from "./colecciones/palermo"; // ✅ corregido
+import { Palermo } from "./colecciones/palermo";
 import { Mapierre } from "./colecciones/mapierre";
 import { Kora } from "./colecciones/kora";
 
@@ -77,7 +77,7 @@ export function App() {
     if (name === "CHICAGO") setPage("chicago");
     if (name === "ICON") setPage("icon");
 
-    // NUEVAS
+    // BELLEVUE + ULISSE
     if (name === "BELLEVUE") setPage("bellevue");
     if (name === "ULISSE") setPage("ulisse");
 
@@ -108,7 +108,8 @@ export function App() {
   if (page === "sheer") return <Sheer onGoHome={handleGoHome} />;
   if (page === "motley") return <Motley onGoHome={handleGoHome} />;
   if (page === "supreme") return <Supreme onGoHome={handleGoHome} />;
-  if (page === "imperial-stone") return <ImperialStone onGoHome={handleGoHome} />;
+  if (page === "imperial-stone")
+    return <ImperialStone onGoHome={handleGoHome} />;
   if (page === "sybil") return <Sybil onGoHome={handleGoHome} />;
   if (page === "pulpis") return <Pulpis onGoHome={handleGoHome} />;
   if (page === "pierre-vive") return <PierreVive onGoHome={handleGoHome} />;
@@ -120,7 +121,8 @@ export function App() {
   // NUEVAS
   if (page === "arenaria") return <Arenaria onGoHome={handleGoHome} />;
   if (page === "barcelona") return <Barcelona onGoHome={handleGoHome} />;
-  if (page === "oh-take-mountain") return <OhTakeMountain onGoHome={handleGoHome} />;
+  if (page === "oh-take-mountain")
+    return <OhTakeMountain onGoHome={handleGoHome} />;
 
   if (page === "portland") return <Portland onGoHome={handleGoHome} />;
   if (page === "chicago") return <Chicago onGoHome={handleGoHome} />;
@@ -138,4 +140,4 @@ export function App() {
   return null;
 }
 
-
+export default App;
