@@ -21,7 +21,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "E",
-    items: [{ name: "ELEGANCE PRO" }, { name: "ELYSIAN" }],
+    items: [
+      { name: "ELEGANCE PRO" },
+      { name: "ELYSIAN" },
+      { name: "ERAWAN" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "G",
@@ -33,11 +37,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "J",
-    items: [{ name: "JATOBA" }], // ✅ NUEVA
+    items: [{ name: "JATOBA" }, { name: "JURUPA" }], // ✅ JURUPA
   },
   {
     letter: "K",
-    items: [{ name: "KORA" }, { name: "KAIZEN" }], // ✅ KAIZEN
+    items: [{ name: "KORA" }, { name: "KAIZEN" }],
   },
   {
     letter: "L",
@@ -45,7 +49,13 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "M",
-    items: [{ name: "MAPIERRE" }, { name: "MATERIA" }, { name: "MOTLEY" }],
+    items: [
+      { name: "MAPIERRE" },
+      { name: "MATERIA" },
+      { name: "MOTLEY" },
+      { name: "MAJESTIC" },   // ✅ NUEVA
+      { name: "MOON CREAM" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "O",
@@ -62,7 +72,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "R",
-    items: [{ name: "RIVERSIDE" }, { name: "RETINA" }], // ✅ RETINA
+    items: [{ name: "RIVERSIDE" }, { name: "RETINA" }, { name: "RIBERA" }], // ✅ RIBERA
   },
   {
     letter: "S",
@@ -80,7 +90,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "V",
-    items: [{ name: "VERBIER" }], // ✅ VERBIER
+    items: [{ name: "VERBIER" }],
   },
 ];
 

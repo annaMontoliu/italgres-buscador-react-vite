@@ -31,11 +31,11 @@ import { Portland } from "./colecciones/portland";
 import { Chicago } from "./colecciones/chicago";
 import { Icon } from "./colecciones/icon";
 
-// NUEVAS (BELLEVUE + ULISSE)
+// BELLEVUE + ULISSE
 import { Bellevue } from "./colecciones/bellevue";
 import { Ulisse } from "./colecciones/ulisse";
 
-// NUEVA (DRIPART)
+// DRIPART
 import { Dripart } from "./colecciones/dripart";
 
 // OXYD
@@ -44,11 +44,18 @@ import { Oxyd } from "./colecciones/oxyd";
 // BELA
 import { Bela } from "./colecciones/bela";
 
-// NUEVAS (KAIZEN, RETINA, JATOBA, VERBIER)
+// KAIZEN, RETINA, JATOBA, VERBIER
 import { Kaizen } from "./colecciones/kaizen";
 import { Retina } from "./colecciones/retina";
 import { Jatoba } from "./colecciones/jatoba";
 import { Verbier } from "./colecciones/verbier";
+
+// NUEVAS (MOON CREAM, RIBERA, ERAWAN, MAJESTIC, JURUPA)
+import { MoonCream } from "./colecciones/moon-cream";
+import { Ribera } from "./colecciones/ribera";
+import { Erawan } from "./colecciones/erawan";
+import { Majestic } from "./colecciones/majestic";
+import { Jurupa } from "./colecciones/jurupa";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -73,12 +80,12 @@ export function App() {
     if (name === "MAPIERRE") setPage("mapierre");
     if (name === "KORA") setPage("kora");
 
-    // NUEVAS (bloque anterior)
+    // NUEVAS PREVIAS
     if (name === "ARENARIA") setPage("arenaria");
     if (name === "BARCELONA") setPage("barcelona");
     if (name === "OH TAKE MOUNTAIN") setPage("oh-take-mountain");
 
-    // NUEVAS (este bloque)
+    // NUEVAS
     if (name === "PORTLAND") setPage("portland");
     if (name === "CHICAGO") setPage("chicago");
     if (name === "ICON") setPage("icon");
@@ -101,6 +108,13 @@ export function App() {
     if (name === "RETINA") setPage("retina");
     if (name === "JATOBA") setPage("jatoba");
     if (name === "VERBIER") setPage("verbier");
+
+    // 🌙 NUEVAS (MOON CREAM, RIBERA, ERAWAN, MAJESTIC, JURUPA)
+    if (name === "MOON CREAM") setPage("moon-cream");
+    if (name === "RIBERA") setPage("ribera");
+    if (name === "ERAWAN") setPage("erawan");
+    if (name === "MAJESTIC") setPage("majestic");
+    if (name === "JURUPA") setPage("jurupa");
   }
 
   function handleGoHome() {
@@ -130,7 +144,7 @@ export function App() {
   if (page === "mapierre") return <Mapierre onGoHome={handleGoHome} />;
   if (page === "kora") return <Kora onGoHome={handleGoHome} />;
 
-  // NUEVAS
+  // NUEVAS PREVIAS
   if (page === "arenaria") return <Arenaria onGoHome={handleGoHome} />;
   if (page === "barcelona") return <Barcelona onGoHome={handleGoHome} />;
   if (page === "oh-take-mountain")
@@ -153,6 +167,13 @@ export function App() {
   if (page === "retina") return <Retina onGoHome={handleGoHome} />;
   if (page === "jatoba") return <Jatoba onGoHome={handleGoHome} />;
   if (page === "verbier") return <Verbier onGoHome={handleGoHome} />;
+
+  // 🌙 NUEVAS (MOON CREAM, RIBERA, ERAWAN, MAJESTIC, JURUPA)
+  if (page === "moon-cream") return <MoonCream onGoHome={handleGoHome} />;
+  if (page === "ribera") return <Ribera onGoHome={handleGoHome} />;
+  if (page === "erawan") return <Erawan onGoHome={handleGoHome} />;
+  if (page === "majestic") return <Majestic onGoHome={handleGoHome} />;
+  if (page === "jurupa") return <Jurupa onGoHome={handleGoHome} />;
 
   return null;
 }
