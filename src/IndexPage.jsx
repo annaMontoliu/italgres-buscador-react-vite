@@ -32,8 +32,12 @@ const COLLECTION_GROUPS = [
     items: [{ name: "ICON" }, { name: "IMPERIAL STONE" }],
   },
   {
+    letter: "J",
+    items: [{ name: "JATOBA" }], // ✅ NUEVA
+  },
+  {
     letter: "K",
-    items: [{ name: "KORA" }],
+    items: [{ name: "KORA" }, { name: "KAIZEN" }], // ✅ KAIZEN
   },
   {
     letter: "L",
@@ -58,7 +62,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "R",
-    items: [{ name: "RIVERSIDE" }],
+    items: [{ name: "RIVERSIDE" }, { name: "RETINA" }], // ✅ RETINA
   },
   {
     letter: "S",
@@ -73,6 +77,10 @@ const COLLECTION_GROUPS = [
   {
     letter: "U",
     items: [{ name: "ULISSE" }],
+  },
+  {
+    letter: "V",
+    items: [{ name: "VERBIER" }], // ✅ VERBIER
   },
 ];
 
@@ -94,7 +102,7 @@ export function IndexPage({ onOpenCollection }) {
   function handleClickCollection(e, item) {
     if (onOpenCollection) {
       e.preventDefault();
-      onOpenCollection(item.name.trim()); // ✅ evita espacios/caracteres raros
+      onOpenCollection(item.name.trim());
     }
   }
 

@@ -44,6 +44,12 @@ import { Oxyd } from "./colecciones/oxyd";
 // BELA
 import { Bela } from "./colecciones/bela";
 
+// NUEVAS (KAIZEN, RETINA, JATOBA, VERBIER)
+import { Kaizen } from "./colecciones/kaizen";
+import { Retina } from "./colecciones/retina";
+import { Jatoba } from "./colecciones/jatoba";
+import { Verbier } from "./colecciones/verbier";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -89,6 +95,12 @@ export function App() {
 
     // BELA
     if (name === "BELA") setPage("bela");
+
+    // KAIZEN, RETINA, JATOBA, VERBIER
+    if (name === "KAIZEN") setPage("kaizen");
+    if (name === "RETINA") setPage("retina");
+    if (name === "JATOBA") setPage("jatoba");
+    if (name === "VERBIER") setPage("verbier");
   }
 
   function handleGoHome() {
@@ -136,6 +148,11 @@ export function App() {
   if (page === "oxyd") return <Oxyd onGoHome={handleGoHome} />;
 
   if (page === "bela") return <Bela onGoHome={handleGoHome} />;
+
+  if (page === "kaizen") return <Kaizen onGoHome={handleGoHome} />;
+  if (page === "retina") return <Retina onGoHome={handleGoHome} />;
+  if (page === "jatoba") return <Jatoba onGoHome={handleGoHome} />;
+  if (page === "verbier") return <Verbier onGoHome={handleGoHome} />;
 
   return null;
 }
