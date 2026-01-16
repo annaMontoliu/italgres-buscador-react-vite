@@ -17,7 +17,7 @@ import { Sybil } from "./colecciones/sybil";
 import { Pulpis } from "./colecciones/pulpis";
 import { PierreVive } from "./colecciones/pierre-vive";
 import { Riverside } from "./colecciones/riverside";
-import { Palermo } from "./colecciones/palermo"];
+import { Palermo } from "./colecciones/palermo"; // ✅ corregido
 import { Mapierre } from "./colecciones/mapierre";
 import { Kora } from "./colecciones/kora";
 
@@ -38,10 +38,10 @@ import { Ulisse } from "./colecciones/ulisse";
 // NUEVA (DRIPART)
 import { Dripart } from "./colecciones/dripart";
 
-// ✅ NUEVA (OXYD)
+// OXYD
 import { Oxyd } from "./colecciones/oxyd";
 
-// ✅ NUEVA (BELA)
+// BELA
 import { Bela } from "./colecciones/bela";
 
 export function App() {
@@ -77,17 +77,17 @@ export function App() {
     if (name === "CHICAGO") setPage("chicago");
     if (name === "ICON") setPage("icon");
 
-    // NUEVAS (BELLEVUE + ULISSE)
+    // NUEVAS
     if (name === "BELLEVUE") setPage("bellevue");
     if (name === "ULISSE") setPage("ulisse");
 
-    // NUEVA (DRIPART)
+    // DRIPART
     if (name === "DRIPART") setPage("dripart");
 
-    // ✅ NUEVA (OXYD)
+    // OXYD
     if (name === "OXYD") setPage("oxyd");
 
-    // ✅ NUEVA (BELA)
+    // BELA
     if (name === "BELA") setPage("bela");
   }
 
@@ -108,8 +108,7 @@ export function App() {
   if (page === "sheer") return <Sheer onGoHome={handleGoHome} />;
   if (page === "motley") return <Motley onGoHome={handleGoHome} />;
   if (page === "supreme") return <Supreme onGoHome={handleGoHome} />;
-  if (page === "imperial-stone")
-    return <ImperialStone onGoHome={handleGoHome} />;
+  if (page === "imperial-stone") return <ImperialStone onGoHome={handleGoHome} />;
   if (page === "sybil") return <Sybil onGoHome={handleGoHome} />;
   if (page === "pulpis") return <Pulpis onGoHome={handleGoHome} />;
   if (page === "pierre-vive") return <PierreVive onGoHome={handleGoHome} />;
@@ -118,31 +117,25 @@ export function App() {
   if (page === "mapierre") return <Mapierre onGoHome={handleGoHome} />;
   if (page === "kora") return <Kora onGoHome={handleGoHome} />;
 
-  // NUEVAS (bloque anterior)
+  // NUEVAS
   if (page === "arenaria") return <Arenaria onGoHome={handleGoHome} />;
   if (page === "barcelona") return <Barcelona onGoHome={handleGoHome} />;
-  if (page === "oh-take-mountain")
-    return <OhTakeMountain onGoHome={handleGoHome} />;
+  if (page === "oh-take-mountain") return <OhTakeMountain onGoHome={handleGoHome} />;
 
-  // NUEVAS (este bloque)
   if (page === "portland") return <Portland onGoHome={handleGoHome} />;
   if (page === "chicago") return <Chicago onGoHome={handleGoHome} />;
   if (page === "icon") return <Icon onGoHome={handleGoHome} />;
 
-  // NUEVAS (BELLEVUE + ULISSE)
   if (page === "bellevue") return <Bellevue onGoHome={handleGoHome} />;
   if (page === "ulisse") return <Ulisse onGoHome={handleGoHome} />;
 
-  // NUEVA (DRIPART)
   if (page === "dripart") return <Dripart onGoHome={handleGoHome} />;
 
-  // ✅ NUEVA (OXYD)
   if (page === "oxyd") return <Oxyd onGoHome={handleGoHome} />;
 
-  // ✅ NUEVA (BELA)
   if (page === "bela") return <Bela onGoHome={handleGoHome} />;
 
   return null;
 }
 
-export default App;
+
