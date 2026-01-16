@@ -17,7 +17,7 @@ import { Sybil } from "./colecciones/sybil";
 import { Pulpis } from "./colecciones/pulpis";
 import { PierreVive } from "./colecciones/pierre-vive";
 import { Riverside } from "./colecciones/riverside";
-import { Palermo } from "./colecciones/palermo";
+import { Palermo } from "./colecciones/palermo"];
 import { Mapierre } from "./colecciones/mapierre";
 import { Kora } from "./colecciones/kora";
 
@@ -40,6 +40,9 @@ import { Dripart } from "./colecciones/dripart";
 
 // ✅ NUEVA (OXYD)
 import { Oxyd } from "./colecciones/oxyd";
+
+// ✅ NUEVA (BELA)
+import { Bela } from "./colecciones/bela";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -83,6 +86,9 @@ export function App() {
 
     // ✅ NUEVA (OXYD)
     if (name === "OXYD") setPage("oxyd");
+
+    // ✅ NUEVA (BELA)
+    if (name === "BELA") setPage("bela");
   }
 
   function handleGoHome() {
@@ -132,6 +138,9 @@ export function App() {
 
   // ✅ NUEVA (OXYD)
   if (page === "oxyd") return <Oxyd onGoHome={handleGoHome} />;
+
+  // ✅ NUEVA (BELA)
+  if (page === "bela") return <Bela onGoHome={handleGoHome} />;
 
   return null;
 }

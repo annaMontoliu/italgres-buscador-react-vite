@@ -2,15 +2,14 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
 
-
-  const COLLECTION_GROUPS = [
+const COLLECTION_GROUPS = [
   {
     letter: "A",
     items: [{ name: "ARENARIA" }],
   },
   {
     letter: "B",
-    items: [{ name: "BARCELONA" }, { name: "BELLEVUE" }],
+    items: [{ name: "BARCELONA" }, { name: "BELA" }, { name: "BELLEVUE" }],
   },
   {
     letter: "C",
@@ -77,7 +76,6 @@ import { Header } from "./components/Header";
   },
 ];
 
-
 export function IndexPage({ onOpenCollection }) {
   const [search, setSearch] = useState("");
 
@@ -86,14 +84,12 @@ export function IndexPage({ onOpenCollection }) {
   const groupsToShow =
     normalizedSearch === ""
       ? COLLECTION_GROUPS
-      : COLLECTION_GROUPS
-          .map((group) => {
-            const filteredItems = group.items.filter((item) =>
-              item.name.toLowerCase().includes(normalizedSearch)
-            );
-            return { ...group, items: filteredItems };
-          })
-          .filter((group) => group.items.length > 0);
+      : COLLECTION_GROUPS.map((group) => {
+          const filteredItems = group.items.filter((item) =>
+            item.name.toLowerCase().includes(normalizedSearch)
+          );
+          return { ...group, items: filteredItems };
+        }).filter((group) => group.items.length > 0);
 
   function handleClickCollection(e, item) {
     if (onOpenCollection) {
