@@ -9,7 +9,12 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "B",
-    items: [{ name: "BARCELONA" }, { name: "BELA" }, { name: "BELLEVUE" }],
+    items: [
+      { name: "BARCELONA" },
+      { name: "BELA" },
+      { name: "BELLEVUE" },
+      { name: "BLOOM" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "C",
@@ -24,12 +29,15 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "ELEGANCE PRO" },
       { name: "ELYSIAN" },
-      { name: "ERAWAN" }, // ✅ NUEVA
+      { name: "ERAWAN" }, // ✅
     ],
   },
   {
     letter: "G",
-    items: [{ name: "GLOCAL" }],
+    items: [
+      { name: "GLIM GEMME" }, // ✅ NUEVA
+      { name: "GLOCAL" },
+    ],
   },
   {
     letter: "I",
@@ -37,11 +45,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "J",
-    items: [{ name: "JATOBA" }, { name: "JURUPA" }], // ✅ JURUPA
+    items: [{ name: "JATOBA" }, { name: "JURUPA" }],
   },
   {
     letter: "K",
-    items: [{ name: "KORA" }, { name: "KAIZEN" }],
+    items: [{ name: "KAIZEN" }, { name: "KORA" }],
   },
   {
     letter: "L",
@@ -50,16 +58,20 @@ const COLLECTION_GROUPS = [
   {
     letter: "M",
     items: [
+      { name: "MAJESTIC" },
       { name: "MAPIERRE" },
       { name: "MATERIA" },
+      { name: "MOON CREAM" },
       { name: "MOTLEY" },
-      { name: "MAJESTIC" },   // ✅ NUEVA
-      { name: "MOON CREAM" }, // ✅ NUEVA
     ],
   },
   {
     letter: "O",
-    items: [{ name: "OH TAKE MOUNTAIN" }, { name: "OXYD" }],
+    items: [
+      { name: "OH TAKE MOUNTAIN" },
+      { name: "OXIDE" }, // ✅ NUEVA
+      { name: "OXYD" },
+    ],
   },
   {
     letter: "P",
@@ -72,7 +84,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "R",
-    items: [{ name: "RIVERSIDE" }, { name: "RETINA" }, { name: "RIBERA" }], // ✅ RIBERA
+    items: [
+      { name: "RIBERA" },
+      { name: "RETINA" },
+      { name: "RIVERSIDE" },
+    ],
   },
   {
     letter: "S",
@@ -85,12 +101,20 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "T",
+    items: [{ name: "THE ROOM" }], // ✅ NUEVA
+  },
+  {
     letter: "U",
     items: [{ name: "ULISSE" }],
   },
   {
     letter: "V",
     items: [{ name: "VERBIER" }],
+  },
+  {
+    letter: "W",
+    items: [{ name: "WOOD FOG" }], // ✅ NUEVA
   },
 ];
 
@@ -102,12 +126,14 @@ export function IndexPage({ onOpenCollection }) {
   const groupsToShow =
     normalizedSearch === ""
       ? COLLECTION_GROUPS
-      : COLLECTION_GROUPS.map((group) => {
-          const filteredItems = group.items.filter((item) =>
-            item.name.toLowerCase().includes(normalizedSearch)
-          );
-          return { ...group, items: filteredItems };
-        }).filter((group) => group.items.length > 0);
+      : COLLECTION_GROUPS
+          .map((group) => {
+            const filteredItems = group.items.filter((item) =>
+              item.name.toLowerCase().includes(normalizedSearch)
+            );
+            return { ...group, items: filteredItems };
+          })
+          .filter((group) => group.items.length > 0);
 
   function handleClickCollection(e, item) {
     if (onOpenCollection) {

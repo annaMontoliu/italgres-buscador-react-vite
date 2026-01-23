@@ -57,6 +57,13 @@ import { Erawan } from "./colecciones/erawan";
 import { Majestic } from "./colecciones/majestic";
 import { Jurupa } from "./colecciones/jurupa";
 
+// ✅ NUEVAS 5 (THE ROOM, BLOOM, GLIM GEMME, OXIDE, WOOD FOG)
+import { TheRoom } from "./colecciones/the-room";
+import { Bloom } from "./colecciones/bloom";
+import { GlimGemme } from "./colecciones/glim-gemme";
+import { Oxide } from "./colecciones/oxide";
+import { WoodFog } from "./colecciones/wood-fog";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -115,6 +122,13 @@ export function App() {
     if (name === "ERAWAN") setPage("erawan");
     if (name === "MAJESTIC") setPage("majestic");
     if (name === "JURUPA") setPage("jurupa");
+
+    // ✅ NUEVAS 5
+    if (name === "THE ROOM") setPage("the-room");
+    if (name === "BLOOM") setPage("bloom");
+    if (name === "GLIM GEMME") setPage("glim-gemme");
+    if (name === "OXIDE") setPage("oxide");
+    if (name === "WOOD FOG") setPage("wood-fog");
   }
 
   function handleGoHome() {
@@ -174,6 +188,13 @@ export function App() {
   if (page === "erawan") return <Erawan onGoHome={handleGoHome} />;
   if (page === "majestic") return <Majestic onGoHome={handleGoHome} />;
   if (page === "jurupa") return <Jurupa onGoHome={handleGoHome} />;
+
+  // ✅ NUEVAS 5
+  if (page === "the-room") return <TheRoom onGoHome={handleGoHome} />;
+  if (page === "bloom") return <Bloom onGoHome={handleGoHome} />;
+  if (page === "glim-gemme") return <GlimGemme onGoHome={handleGoHome} />;
+  if (page === "oxide") return <Oxide onGoHome={handleGoHome} />;
+  if (page === "wood-fog") return <WoodFog onGoHome={handleGoHome} />;
 
   return null;
 }
