@@ -106,7 +106,8 @@ export function Icon({ onGoHome }) {
         />
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="/ICON.pdf" />
+  <ColeccionLayout infoUrl="/pdf/ICON.pdf" />
+
 
         {/* ---- GALERÍA ---- */}
 
