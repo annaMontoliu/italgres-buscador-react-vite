@@ -10,21 +10,21 @@ import theRoomAbsWh from "../assets/imagenes/the-room/the-room-abs-wh.jpg";
 import theRoomBluAq from "../assets/imagenes/the-room/the-room-blu-aq.jpg";
 import theRoomBluJe from "../assets/imagenes/the-room/the-room-blu-je.jpg";
 import theRoomBreDu from "../assets/imagenes/the-room/the-room-bre-du.jpg";
-import theRoomBrePh from "../assets/imagenes/the-room/the-room-bre-ph.jpg";     // antes bre-pl
+import theRoomBrePh from "../assets/imagenes/the-room/the-room-bre-ph.jpg";
 import theRoomCalOy from "../assets/imagenes/the-room/the-room-cal-oy.jpg";
 import theRoomCalPi from "../assets/imagenes/the-room/the-room-cal-pi.jpg";
-import theRoomCreDel from "../assets/imagenes/the-room/the-room-cre-del.jpg";   // antes cre-de
+import theRoomCreDel from "../assets/imagenes/the-room/the-room-cre-del.jpg";
 import theRoomGranAn from "../assets/imagenes/the-room/the-room-gran-an.jpg";
 import theRoomGreRo from "../assets/imagenes/the-room/the-room-gre-ro.jpg";
 import theRoomInfBr from "../assets/imagenes/the-room/the-room-inf-br.jpg";
 import theRoomInvWh from "../assets/imagenes/the-room/the-room-inv-wh.jpg";
-import theRoomInGr from "../assets/imagenes/the-room/the-room-in-gr.jpg";
+import theRoomIriGr from "../assets/imagenes/the-room/the-room-iri-gr.jpg"; // antes in-gr
 import theRoomMonBl from "../assets/imagenes/the-room/the-room-mon-bl.jpg";
-import theRoomOniAr from "../assets/imagenes/the-room/the-room-oni-ar.jpg";     // antes ori-ar
+import theRoomOniAr from "../assets/imagenes/the-room/the-room-oni-ar.jpg";
 import theRoomPanWh from "../assets/imagenes/the-room/the-room-pan-wh.jpg";
 import theRoomPatWh from "../assets/imagenes/the-room/the-room-pat-wh.jpg";
 import theRoomSanPe from "../assets/imagenes/the-room/the-room-san-pe.jpg";
-import theRoomStaVp from "../assets/imagenes/the-room/the-room-sta-vp.jpg";     // antes sta-yp
+import theRoomStaVp from "../assets/imagenes/the-room/the-room-sta-vp.jpg";
 import theRoomTifGr from "../assets/imagenes/the-room/the-room-tif-gr.jpg";
 
 // ORDEN EXACTO (modal)
@@ -41,7 +41,7 @@ const images = [
   theRoomGreRo,
   theRoomInfBr,
   theRoomInvWh,
-  theRoomInGr,
+  theRoomIriGr, // corregido
   theRoomMonBl,
   theRoomOniAr,
   theRoomPanWh,
