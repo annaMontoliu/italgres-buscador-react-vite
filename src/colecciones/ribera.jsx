@@ -5,12 +5,14 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORT FOTOS (2)
+// IMPORT FOTOS (3)
+import riberaWhite1 from "../assets/imagenes/ribera/ribera-white/ribera-white-01.jpg";
+
 import riberaMarfil1 from "../assets/imagenes/ribera/ribera-marfil/ribera-marfil-01.jpg";
 import riberaMarfil2 from "../assets/imagenes/ribera/ribera-marfil/ribera-marfil-02.jpg";
 
-// ORDEN EXACTO
-const images = [riberaMarfil1, riberaMarfil2];
+// ORDEN EXACTO (WHITE primero, luego MARFIL)
+const images = [riberaWhite1, riberaMarfil1, riberaMarfil2];
 
 export function Ribera({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,19 +48,32 @@ export function Ribera({ onGoHome }) {
 
         <ColeccionLayout infoUrl="https://www.grespania.com/es/pdf-collection/433" />
 
+        {/* Color WHITE */}
+        <h3 className="color-title">RIBERA WHITE</h3>
+        <section className="gallery-grid">
+          <img
+            src={riberaWhite1}
+            className="gallery-img"
+            onClick={() => openModal(0)}
+            loading="lazy"
+            alt="RIBERA WHITE 1"
+          />
+        </section>
+
+        {/* Color MARFIL */}
         <h3 className="color-title">RIBERA MARFIL</h3>
         <section className="gallery-grid">
           <img
             src={riberaMarfil1}
             className="gallery-img"
-            onClick={() => openModal(0)}
+            onClick={() => openModal(1)}
             loading="lazy"
             alt="RIBERA MARFIL 1"
           />
           <img
             src={riberaMarfil2}
             className="gallery-img"
-            onClick={() => openModal(1)}
+            onClick={() => openModal(2)}
             loading="lazy"
             alt="RIBERA MARFIL 2"
           />

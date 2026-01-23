@@ -45,7 +45,7 @@ export function Icon({ onGoHome }) {
         <h1 className="titulo-coleccion">ICON</h1>
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="https://leonardoceramica.com/es/colecciones/icon/" />
+       <ColeccionLayout infoUrl="/ICON.pdf" />
 
         {/* ---- GALERÍA ---- */}
 

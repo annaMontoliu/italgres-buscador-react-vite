@@ -270,11 +270,17 @@ h3.color-title {
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 1000;
+
+  /* SUBIMOS z-index PARA TAPAR EL HEADER (que está en 9999) */
+  z-index: 99999;
+
   background: rgba(0, 0, 0, 0.92);
   justify-content: center;
   align-items: center;
   padding: 20px;
+
+  /* Permite swipe horizontal sin cargarte el scroll vertical */
+  touch-action: pan-y;
 }
 
 #modalImage {
@@ -297,9 +303,12 @@ h3.color-title {
   z-index: 10;
 }
 
+/* Cruz un pelín más grande */
 .close {
   top: 10vh;
   right: 4vw;
+  font-size: 46px; /* antes 40px */
+  line-height: 1;
 }
 
 .arrow.left {
