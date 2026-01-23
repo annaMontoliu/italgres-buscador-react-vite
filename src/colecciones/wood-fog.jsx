@@ -12,7 +12,7 @@ import { ImageModal } from "../components/ImageModal";
 // WOOD FOG (5)
 import woodFog01 from "../assets/imagenes/wood-fog/wood-fog-01.jpg";
 import woodFog02 from "../assets/imagenes/wood-fog/wood-fog-02.jpg";
-import woodFog03 from "../assets/imagenes/wood-fog/wood-fog-03.jpg";
+import woodFog03 from "../assets/imagenes/wood-fog/wood-fog-03.jpeg";
 import woodFog04 from "../assets/imagenes/wood-fog/wood-fog-04.jpg";
 import woodFog05 from "../assets/imagenes/wood-fog/wood-fog-05.jpg";
 
