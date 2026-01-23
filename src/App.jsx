@@ -64,6 +64,13 @@ import { GlimGemme } from "./colecciones/glim-gemme";
 import { Oxide } from "./colecciones/oxide";
 import { WoodFog } from "./colecciones/wood-fog";
 
+// ✅ NUEVAS 5 (UNIQUE, BLUE ROMA, CANELA ROMA, NORDIC, FORM CEMENT)
+import { Unique } from "./colecciones/unique";
+import { BlueRoma } from "./colecciones/blue-roma";
+import { CanelaRoma } from "./colecciones/canela-roma";
+import { Nordic } from "./colecciones/nordic";
+import { FormCement } from "./colecciones/form-cement";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -129,6 +136,13 @@ export function App() {
     if (name === "GLIM GEMME") setPage("glim-gemme");
     if (name === "OXIDE") setPage("oxide");
     if (name === "WOOD FOG") setPage("wood-fog");
+
+    // ✅ NUEVAS 5 (este bloque)
+    if (name === "UNIQUE") setPage("unique");
+    if (name === "BLUE ROMA") setPage("blue-roma");
+    if (name === "CANELA ROMA") setPage("canela-roma");
+    if (name === "NORDIC") setPage("nordic");
+    if (name === "FORM CEMENT") setPage("form-cement");
   }
 
   function handleGoHome() {
@@ -195,6 +209,13 @@ export function App() {
   if (page === "glim-gemme") return <GlimGemme onGoHome={handleGoHome} />;
   if (page === "oxide") return <Oxide onGoHome={handleGoHome} />;
   if (page === "wood-fog") return <WoodFog onGoHome={handleGoHome} />;
+
+  // ✅ NUEVAS 5 (este bloque)
+  if (page === "unique") return <Unique onGoHome={handleGoHome} />;
+  if (page === "blue-roma") return <BlueRoma onGoHome={handleGoHome} />;
+  if (page === "canela-roma") return <CanelaRoma onGoHome={handleGoHome} />;
+  if (page === "nordic") return <Nordic onGoHome={handleGoHome} />;
+  if (page === "form-cement") return <FormCement onGoHome={handleGoHome} />;
 
   return null;
 }

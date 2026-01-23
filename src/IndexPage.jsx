@@ -13,12 +13,16 @@ const COLLECTION_GROUPS = [
       { name: "BARCELONA" },
       { name: "BELA" },
       { name: "BELLEVUE" },
-      { name: "BLOOM" }, // ✅ NUEVA
+      { name: "BLOOM" },
+      { name: "BLUE ROMA" }, // ✅ NUEVA
     ],
   },
   {
     letter: "C",
-    items: [{ name: "CHICAGO" }],
+    items: [
+      { name: "CANELA ROMA" }, // ✅ NUEVA
+      { name: "CHICAGO" },
+    ],
   },
   {
     letter: "D",
@@ -29,15 +33,16 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "ELEGANCE PRO" },
       { name: "ELYSIAN" },
-      { name: "ERAWAN" }, // ✅
+      { name: "ERAWAN" },
     ],
   },
   {
+    letter: "F",
+    items: [{ name: "FORM CEMENT" }], // ✅ NUEVA
+  },
+  {
     letter: "G",
-    items: [
-      { name: "GLIM GEMME" }, // ✅ NUEVA
-      { name: "GLOCAL" },
-    ],
+    items: [{ name: "GLIM GEMME" }, { name: "GLOCAL" }],
   },
   {
     letter: "I",
@@ -66,12 +71,12 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
+    letter: "N",
+    items: [{ name: "NORDIC" }], // ✅ NUEVA
+  },
+  {
     letter: "O",
-    items: [
-      { name: "OH TAKE MOUNTAIN" },
-      { name: "OXIDE" }, // ✅ NUEVA
-      { name: "OXYD" },
-    ],
+    items: [{ name: "OH TAKE MOUNTAIN" }, { name: "OXIDE" }, { name: "OXYD" }],
   },
   {
     letter: "P",
@@ -84,11 +89,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "R",
-    items: [
-      { name: "RIBERA" },
-      { name: "RETINA" },
-      { name: "RIVERSIDE" },
-    ],
+    items: [{ name: "RIBERA" }, { name: "RETINA" }, { name: "RIVERSIDE" }],
   },
   {
     letter: "S",
@@ -102,11 +103,14 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "T",
-    items: [{ name: "THE ROOM" }], // ✅ NUEVA
+    items: [{ name: "THE ROOM" }],
   },
   {
     letter: "U",
-    items: [{ name: "ULISSE" }],
+    items: [
+      { name: "ULISSE" },
+      { name: "UNIQUE" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "V",
@@ -114,7 +118,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "W",
-    items: [{ name: "WOOD FOG" }], // ✅ NUEVA
+    items: [{ name: "WOOD FOG" }],
   },
 ];
 
