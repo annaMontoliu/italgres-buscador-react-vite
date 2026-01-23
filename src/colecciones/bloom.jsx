@@ -5,26 +5,24 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-
 // BLOOM STAR WHITE (4)
-import bloomStarWhite01 from "../assets/imagenes/bloom/bloom-star-white-01.jpg";
-import bloomStarWhite02 from "../assets/imagenes/bloom/bloom-star-white-02.jpg";
-import bloomStarWhite03 from "../assets/imagenes/bloom/bloom-star-white-03.jpg";
-import bloomStarWhite04 from "../assets/imagenes/bloom/bloom-star-white-04.jpg";
+import bloomStarWhite01 from "../assets/imagenes/bloom/bloom-star-white/bloom-star-white-01.jpg";
+import bloomStarWhite02 from "../assets/imagenes/bloom/bloom-star-white/bloom-star-white-02.jpg";
+import bloomStarWhite03 from "../assets/imagenes/bloom/bloom-star-white/bloom-star-white-03.jpg";
+import bloomStarWhite04 from "../assets/imagenes/bloom/bloom-star-white/bloom-star-white-04.jpg";
 
 // BLOOM STAR BEIGE (3)
-import bloomStarBeige01 from "../assets/imagenes/bloom/bloom-star-beige-01.jpg";
-import bloomStarBeige02 from "../assets/imagenes/bloom/bloom-star-beige-02.jpg";
-import bloomStarBeige03 from "../assets/imagenes/bloom/bloom-star-beige-03.jpg";
+import bloomStarBeige01 from "../assets/imagenes/bloom/bloom-star-beige/bloom-star-beige-01.jpg";
+import bloomStarBeige02 from "../assets/imagenes/bloom/bloom-star-beige/bloom-star-beige-02.jpg";
+import bloomStarBeige03 from "../assets/imagenes/bloom/bloom-star-beige/bloom-star-beige-03.jpg";
 
 // BLOOM BLUE (2)
-import bloomBlue01 from "../assets/imagenes/bloom/bloom-blue-01.jpg";
-import bloomBlue02 from "../assets/imagenes/bloom/bloom-blue-02.jpg";
+import bloomBlue01 from "../assets/imagenes/bloom/bloom-blue/bloom-blue-01.jpg";
+import bloomBlue02 from "../assets/imagenes/bloom/bloom-blue/bloom-blue-02.jpg";
 
 // BLOOM MENTA (2)
-import bloomMenta01 from "../assets/imagenes/bloom/bloom-menta-01.jpg";
-import bloomMenta02 from "../assets/imagenes/bloom/bloom-menta-02.jpg";
+import bloomMenta01 from "../assets/imagenes/bloom/bloom-menta/bloom-menta-01.jpg";
+import bloomMenta02 from "../assets/imagenes/bloom/bloom-menta/bloom-menta-02.jpg";
 
 // ORDEN EXACTO (modal): STAR WHITE, STAR BEIGE, BLUE, MENTA
 const images = [
@@ -71,17 +69,12 @@ export function Bloom({ onGoHome }) {
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* Título */}
         <h1 className="titulo-coleccion">BLOOM</h1>
 
-        {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout infoUrl="https://www.fapceramiche.com/media/products/documents/collection/Bloom_2025.pdf" />
-
-        {/* ---- GALERÍA ---- */}
 
         {/* STAR WHITE */}
         <h3 className="color-title">BLOOM STAR WHITE</h3>
@@ -115,7 +108,6 @@ export function Bloom({ onGoHome }) {
         </section>
       </main>
 
-      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}
