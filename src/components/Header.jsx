@@ -68,7 +68,7 @@ export function Header({ onGoHome }) {
           onClick={handleTarifaClick}
           rel="noopener noreferrer"
         >
-          TARIFA
+          PRICELIST
         </a>
 
         {/* HOME como lo tenías */}
