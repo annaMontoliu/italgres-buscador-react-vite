@@ -93,12 +93,8 @@ export function ImageModal({
     function onKeyDown(e) {
       if (!isOpen) return;
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowLeft") {
-        onPrev();
-      }
-      if (e.key === "ArrowRight") {
-        onNext();
-      }
+      if (e.key === "ArrowLeft") onPrev();
+      if (e.key === "ArrowRight") onNext();
     }
 
     window.addEventListener("keydown", onKeyDown);
@@ -158,11 +154,6 @@ export function ImageModal({
       role="dialog"
       aria-modal="true"
       aria-label="Vista ampliada"
-      style={{ display: displayStyle }}
-      onClick={() => {
-        resetZoom();
-        onClose();
-      }} // click fuera de la imagen cierra
       onWheel={handleWheel}
       onTouchStart={(e) => {
         if (!isOpen) return;
@@ -298,13 +289,13 @@ export function ImageModal({
         id="modalImage"
         src={images[currentIndex]}
         alt="Imagen ampliada"
-        onClick={(e) => e.stopPropagation()} // evitar que cierre al tocar la imagen
         draggable="false"
+        onClick={(e) => e.stopPropagation()}
         style={{
           transform,
           transformOrigin: "center center",
           userSelect: "none",
-          pointerEvents: "none", // los gestos los controla el contenedor
+          pointerEvents: "auto", // ✅ ya no atraviesa clicks
         }}
       />
 
