@@ -2,7 +2,7 @@
 
 import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 
-const TARIFA_PASSWORD = "anna"; // 👉 aquí puedes cambiar la contraseña
+const TARIFA_PASSWORD = "Anna"; // 👉 aquí puedes cambiar la contraseña
 
 export function Header({ onGoHome }) {
   function handleHomeClick(event) {
