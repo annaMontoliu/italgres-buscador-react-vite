@@ -21,55 +21,47 @@ import { Palermo } from "./colecciones/palermo";
 import { Mapierre } from "./colecciones/mapierre";
 import { Kora } from "./colecciones/kora";
 
-// NUEVAS (bloque anterior)
 import { Arenaria } from "./colecciones/arenaria";
 import { Barcelona } from "./colecciones/barcelona";
 import { OhTakeMountain } from "./colecciones/oh-take-mountain";
 
-// NUEVAS (este bloque)
 import { Portland } from "./colecciones/portland";
 import { Chicago } from "./colecciones/chicago";
 import { Icon } from "./colecciones/icon";
 
-// BELLEVUE + ULISSE
 import { Bellevue } from "./colecciones/bellevue";
 import { Ulisse } from "./colecciones/ulisse";
 
-// DRIPART
 import { Dripart } from "./colecciones/dripart";
 
-// OXYD
 import { Oxyd } from "./colecciones/oxyd";
-
-// BELA
 import { Bela } from "./colecciones/bela";
 
-// KAIZEN, RETINA, JATOBA, VERBIER
 import { Kaizen } from "./colecciones/kaizen";
 import { Retina } from "./colecciones/retina";
 import { Jatoba } from "./colecciones/jatoba";
 import { Verbier } from "./colecciones/verbier";
 
-// NUEVAS (MOON CREAM, RIBERA, ERAWAN, MAJESTIC, JURUPA)
 import { MoonCream } from "./colecciones/moon-cream";
 import { Ribera } from "./colecciones/ribera";
 import { Erawan } from "./colecciones/erawan";
 import { Majestic } from "./colecciones/majestic";
 import { Jurupa } from "./colecciones/jurupa";
 
-// ✅ NUEVAS 5 (THE ROOM, BLOOM, GLIM GEMME, OXIDE, WOOD FOG)
 import { TheRoom } from "./colecciones/the-room";
 import { Bloom } from "./colecciones/bloom";
 import { GlimGemme } from "./colecciones/glim-gemme";
 import { Oxide } from "./colecciones/oxide";
 import { WoodFog } from "./colecciones/wood-fog";
 
-// ✅ NUEVAS 5 (UNIQUE, BLUE ROMA, CANELA ROMA, NORDIC, FORM CEMENT)
 import { Unique } from "./colecciones/unique";
 import { BlueRoma } from "./colecciones/blue-roma";
 import { CanelaRoma } from "./colecciones/canela-roma";
 import { Nordic } from "./colecciones/nordic";
 import { FormCement } from "./colecciones/form-cement";
+
+// 👉 MYCRO
+import { Mycro } from "./colecciones/mycro";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -94,55 +86,46 @@ export function App() {
     if (name === "MAPIERRE") setPage("mapierre");
     if (name === "KORA") setPage("kora");
 
-    // NUEVAS PREVIAS
     if (name === "ARENARIA") setPage("arenaria");
     if (name === "BARCELONA") setPage("barcelona");
     if (name === "OH TAKE MOUNTAIN") setPage("oh-take-mountain");
 
-    // NUEVAS
     if (name === "PORTLAND") setPage("portland");
     if (name === "CHICAGO") setPage("chicago");
     if (name === "ICON") setPage("icon");
 
-    // BELLEVUE + ULISSE
     if (name === "BELLEVUE") setPage("bellevue");
     if (name === "ULISSE") setPage("ulisse");
 
-    // DRIPART
     if (name === "DRIPART") setPage("dripart");
-
-    // OXYD
     if (name === "OXYD") setPage("oxyd");
-
-    // BELA
     if (name === "BELA") setPage("bela");
 
-    // KAIZEN, RETINA, JATOBA, VERBIER
     if (name === "KAIZEN") setPage("kaizen");
     if (name === "RETINA") setPage("retina");
     if (name === "JATOBA") setPage("jatoba");
     if (name === "VERBIER") setPage("verbier");
 
-    // 🌙 NUEVAS (MOON CREAM, RIBERA, ERAWAN, MAJESTIC, JURUPA)
     if (name === "MOON CREAM") setPage("moon-cream");
     if (name === "RIBERA") setPage("ribera");
     if (name === "ERAWAN") setPage("erawan");
     if (name === "MAJESTIC") setPage("majestic");
     if (name === "JURUPA") setPage("jurupa");
 
-    // ✅ NUEVAS 5
     if (name === "THE ROOM") setPage("the-room");
     if (name === "BLOOM") setPage("bloom");
     if (name === "GLIM GEMME") setPage("glim-gemme");
     if (name === "OXIDE") setPage("oxide");
     if (name === "WOOD FOG") setPage("wood-fog");
 
-    // ✅ NUEVAS 5 (este bloque)
     if (name === "UNIQUE") setPage("unique");
     if (name === "BLUE ROMA") setPage("blue-roma");
     if (name === "CANELA ROMA") setPage("canela-roma");
     if (name === "NORDIC") setPage("nordic");
     if (name === "FORM CEMENT") setPage("form-cement");
+
+    // 👉 MYCRO
+    if (name === "MYCRO") setPage("mycro");
   }
 
   function handleGoHome() {
@@ -172,7 +155,6 @@ export function App() {
   if (page === "mapierre") return <Mapierre onGoHome={handleGoHome} />;
   if (page === "kora") return <Kora onGoHome={handleGoHome} />;
 
-  // NUEVAS PREVIAS
   if (page === "arenaria") return <Arenaria onGoHome={handleGoHome} />;
   if (page === "barcelona") return <Barcelona onGoHome={handleGoHome} />;
   if (page === "oh-take-mountain")
@@ -186,9 +168,7 @@ export function App() {
   if (page === "ulisse") return <Ulisse onGoHome={handleGoHome} />;
 
   if (page === "dripart") return <Dripart onGoHome={handleGoHome} />;
-
   if (page === "oxyd") return <Oxyd onGoHome={handleGoHome} />;
-
   if (page === "bela") return <Bela onGoHome={handleGoHome} />;
 
   if (page === "kaizen") return <Kaizen onGoHome={handleGoHome} />;
@@ -196,26 +176,26 @@ export function App() {
   if (page === "jatoba") return <Jatoba onGoHome={handleGoHome} />;
   if (page === "verbier") return <Verbier onGoHome={handleGoHome} />;
 
-  // 🌙 NUEVAS (MOON CREAM, RIBERA, ERAWAN, MAJESTIC, JURUPA)
   if (page === "moon-cream") return <MoonCream onGoHome={handleGoHome} />;
   if (page === "ribera") return <Ribera onGoHome={handleGoHome} />;
   if (page === "erawan") return <Erawan onGoHome={handleGoHome} />;
   if (page === "majestic") return <Majestic onGoHome={handleGoHome} />;
   if (page === "jurupa") return <Jurupa onGoHome={handleGoHome} />;
 
-  // ✅ NUEVAS 5
   if (page === "the-room") return <TheRoom onGoHome={handleGoHome} />;
   if (page === "bloom") return <Bloom onGoHome={handleGoHome} />;
   if (page === "glim-gemme") return <GlimGemme onGoHome={handleGoHome} />;
   if (page === "oxide") return <Oxide onGoHome={handleGoHome} />;
   if (page === "wood-fog") return <WoodFog onGoHome={handleGoHome} />;
 
-  // ✅ NUEVAS 5 (este bloque)
   if (page === "unique") return <Unique onGoHome={handleGoHome} />;
   if (page === "blue-roma") return <BlueRoma onGoHome={handleGoHome} />;
   if (page === "canela-roma") return <CanelaRoma onGoHome={handleGoHome} />;
   if (page === "nordic") return <Nordic onGoHome={handleGoHome} />;
   if (page === "form-cement") return <FormCement onGoHome={handleGoHome} />;
+
+  // 👉 MYCRO
+  if (page === "mycro") return <Mycro onGoHome={handleGoHome} />;
 
   return null;
 }
