@@ -7,62 +7,84 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 import { ShowroomColors } from "../components/ShowroomColors";
 
-// WHITE (WX) - 4
+// =====================
+// WHITE (4)
+// =====================
 import mycroWhite1 from "../assets/imagenes/mycro/mycro-white/mycro-white-01.jpg";
 import mycroWhite2 from "../assets/imagenes/mycro/mycro-white/mycro-white-02.jpg";
 import mycroWhite3 from "../assets/imagenes/mycro/mycro-white/mycro-white-03.jpg";
 import mycroWhite4 from "../assets/imagenes/mycro/mycro-white/mycro-white-04.jpg";
 
-// ARGENTO (AG) - 3
+// =====================
+// ARGENTO (3)
+// =====================
 import mycroArgento1 from "../assets/imagenes/mycro/mycro-argento/mycro-argento-01.jpg";
 import mycroArgento2 from "../assets/imagenes/mycro/mycro-argento/mycro-argento-02.jpg";
 import mycroArgento3 from "../assets/imagenes/mycro/mycro-argento/mycro-argento-03.jpg";
 
-// ALMOND (A) - 2
+// =====================
+// ALMOND (2)
+// =====================
 import mycroAlmond1 from "../assets/imagenes/mycro/mycro-almond/mycro-almond-01.jpg";
 import mycroAlmond2 from "../assets/imagenes/mycro/mycro-almond/mycro-almond-02.jpg";
 
-// BEIGE (B) - 2
+// =====================
+// BEIGE (2)
+// =====================
 import mycroBeige1 from "../assets/imagenes/mycro/mycro-beige/mycro-beige-01.jpg";
 import mycroBeige2 from "../assets/imagenes/mycro/mycro-beige/mycro-beige-02.jpg";
 
-// MIDDLE GREY (MG) - 2
+// =====================
+// MIDDLE GREY (2)
+// =====================
 import mycroMiddleGrey1 from "../assets/imagenes/mycro/mycro-middle-grey/mycro-middle-grey-01.jpg";
 import mycroMiddleGrey2 from "../assets/imagenes/mycro/mycro-middle-grey/mycro-middle-grey-02.jpg";
 
-// GRIGIO NERO (GN) - 3
+// =====================
+// GRIGIO NERO (3)
+// =====================
 import mycroGrigioNero1 from "../assets/imagenes/mycro/mycro-grigio-nero/mycro-grigio-nero-01.jpg";
 import mycroGrigioNero2 from "../assets/imagenes/mycro/mycro-grigio-nero/mycro-grigio-nero-02.jpg";
 import mycroGrigioNero3 from "../assets/imagenes/mycro/mycro-grigio-nero/mycro-grigio-nero-03.jpg";
 
-// TACOS (directamente en /mycro)
+// =====================
+// TACOS (exactos según carpeta)
+// =====================
 import tacoMycroWhite from "../assets/imagenes/mycro/taco-mycro-white.jpg";
 import tacoMycroArgento from "../assets/imagenes/mycro/taco-mycro-argento.jpg";
 import tacoMycroAlmond from "../assets/imagenes/mycro/taco-mycro-almond.jpg";
 import tacoMycroBeige from "../assets/imagenes/mycro/taco-mycro-beige.jpg";
-import tacoMycroMiddleGrey from "../assets/imagenes/mycro/taco-mycro-middel-grey.jpg";
+import tacoMycroMiddleGrey from "../assets/imagenes/mycro/taco-mycro-middle-grey.jpg";
 import tacoMycroGrigioNero from "../assets/imagenes/mycro/taco-mycro-grigio-nero.jpg";
 
-// ORDEN GLOBAL
+// =====================
+// ORDEN GLOBAL MODAL
+// =====================
 const images = [
+  // WHITE
   mycroWhite1,
   mycroWhite2,
   mycroWhite3,
   mycroWhite4,
 
+  // ARGENTO
   mycroArgento1,
   mycroArgento2,
   mycroArgento3,
 
+  // ALMOND
   mycroAlmond1,
   mycroAlmond2,
 
+  // BEIGE
   mycroBeige1,
   mycroBeige2,
 
+  // MIDDLE GREY
   mycroMiddleGrey1,
   mycroMiddleGrey2,
 
+  // GRIGIO NERO
   mycroGrigioNero1,
   mycroGrigioNero2,
   mycroGrigioNero3,
@@ -84,11 +106,11 @@ export function Mycro({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((i) => (i + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex((i) => (i - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
 
   return (
@@ -111,26 +133,25 @@ export function Mycro({ onGoHome }) {
           ]}
         />
 
-        {/* PDF DESDE PUBLIC */}
+        {/* PDF */}
         <ColeccionLayout infoUrl="/pdf/MYCRO.pdf" />
 
-        {/* GALERÍA */}
+        {/* WHITE */}
         <h3 className="color-title">MYCRO WHITE</h3>
         <section className="gallery-grid">
-          {[mycroWhite1, mycroWhite2, mycroWhite3, mycroWhite4].map(
-            (img, i) => (
-              <img
-                key={i}
-                src={img}
-                className="gallery-img"
-                onClick={() => openModal(i)}
-                loading="lazy"
-                alt={`MYCRO WHITE ${i + 1}`}
-              />
-            )
-          )}
+          {[mycroWhite1, mycroWhite2, mycroWhite3, mycroWhite4].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(i)}
+              loading="lazy"
+              alt={`MYCRO WHITE ${i + 1}`}
+            />
+          ))}
         </section>
 
+        {/* ARGENTO */}
         <h3 className="color-title">MYCRO ARGENTO</h3>
         <section className="gallery-grid">
           {[mycroArgento1, mycroArgento2, mycroArgento3].map((img, i) => (
@@ -145,6 +166,7 @@ export function Mycro({ onGoHome }) {
           ))}
         </section>
 
+        {/* ALMOND */}
         <h3 className="color-title">MYCRO ALMOND</h3>
         <section className="gallery-grid">
           {[mycroAlmond1, mycroAlmond2].map((img, i) => (
@@ -159,6 +181,7 @@ export function Mycro({ onGoHome }) {
           ))}
         </section>
 
+        {/* BEIGE */}
         <h3 className="color-title">MYCRO BEIGE</h3>
         <section className="gallery-grid">
           {[mycroBeige1, mycroBeige2].map((img, i) => (
@@ -173,6 +196,7 @@ export function Mycro({ onGoHome }) {
           ))}
         </section>
 
+        {/* MIDDLE GREY */}
         <h3 className="color-title">MYCRO MIDDLE GREY</h3>
         <section className="gallery-grid">
           {[mycroMiddleGrey1, mycroMiddleGrey2].map((img, i) => (
@@ -187,6 +211,7 @@ export function Mycro({ onGoHome }) {
           ))}
         </section>
 
+        {/* GRIGIO NERO */}
         <h3 className="color-title">MYCRO GRIGIO NERO</h3>
         <section className="gallery-grid">
           {[mycroGrigioNero1, mycroGrigioNero2, mycroGrigioNero3].map((img, i) => (
