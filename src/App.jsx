@@ -78,6 +78,10 @@ import { Mycro } from "./colecciones/mycro";
 import { Coralina } from "./colecciones/coralina";
 import { Caementum } from "./colecciones/caementum";
 
+// ✅ NUEVAS (PAPIER, JEWELS)
+import { Papier } from "./colecciones/papier";
+import { Jewels } from "./colecciones/jewels";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -157,6 +161,10 @@ export function App() {
     // ✅ CORALINA + CAEMENTUM
     if (name === "CORALINA") setPage("coralina");
     if (name === "CAEMENTUM") setPage("caementum");
+
+    // ✅ PAPIER + JEWELS
+    if (name === "PAPIER") setPage("papier");
+    if (name === "JEWELS") setPage("jewels");
   }
 
   function handleGoHome() {
@@ -237,6 +245,10 @@ export function App() {
   // ✅ CORALINA + CAEMENTUM
   if (page === "coralina") return <Coralina onGoHome={handleGoHome} />;
   if (page === "caementum") return <Caementum onGoHome={handleGoHome} />;
+
+  // ✅ PAPIER + JEWELS
+  if (page === "papier") return <Papier onGoHome={handleGoHome} />;
+  if (page === "jewels") return <Jewels onGoHome={handleGoHome} />;
 
   return null;
 }

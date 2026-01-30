@@ -14,16 +14,16 @@ const COLLECTION_GROUPS = [
       { name: "BELA" },
       { name: "BELLEVUE" },
       { name: "BLOOM" },
-      { name: "BLUE ROMA" }, // ✅ NUEVA
+      { name: "BLUE ROMA" },
     ],
   },
   {
     letter: "C",
     items: [
-      { name: "CAEMENTUM" }, // ✅ NUEVA
-      { name: "CANELA ROMA" }, // ✅ NUEVA
+      { name: "CAEMENTUM" },
+      { name: "CANELA ROMA" },
       { name: "CHICAGO" },
-      { name: "CORALINA" }, // ✅ NUEVA
+      { name: "CORALINA" },
     ],
   },
   {
@@ -40,7 +40,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "F",
-    items: [{ name: "FORM CEMENT" }], // ✅ NUEVA
+    items: [{ name: "FORM CEMENT" }],
   },
   {
     letter: "G",
@@ -52,7 +52,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "J",
-    items: [{ name: "JATOBA" }, { name: "JURUPA" }],
+    items: [
+      { name: "JATOBA" },
+      { name: "JEWELS" }, // ✅ NUEVA
+      { name: "JURUPA" },
+    ],
   },
   {
     letter: "K",
@@ -75,7 +79,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "N",
-    items: [{ name: "NORDIC" }], // ✅ NUEVA
+    items: [{ name: "NORDIC" }],
   },
   {
     letter: "O",
@@ -85,6 +89,7 @@ const COLLECTION_GROUPS = [
     letter: "P",
     items: [
       { name: "PALERMO" },
+      { name: "PAPIER" }, // ✅ NUEVA
       { name: "PIERRE VIVE" },
       { name: "PORTLAND" },
       { name: "PULPIS" },
@@ -112,7 +117,7 @@ const COLLECTION_GROUPS = [
     letter: "U",
     items: [
       { name: "ULISSE" },
-      { name: "UNIQUE" }, // ✅ NUEVA
+      { name: "UNIQUE" },
     ],
   },
   {
