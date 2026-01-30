@@ -20,8 +20,10 @@ const COLLECTION_GROUPS = [
   {
     letter: "C",
     items: [
+      { name: "CAEMENTUM" }, // ✅ NUEVA
       { name: "CANELA ROMA" }, // ✅ NUEVA
       { name: "CHICAGO" },
+      { name: "CORALINA" }, // ✅ NUEVA
     ],
   },
   {
@@ -60,19 +62,17 @@ const COLLECTION_GROUPS = [
     letter: "L",
     items: [{ name: "LUCENA" }],
   },
- {
-  letter: "M",
-  items: [
-    { name: "MAJESTIC" },
-    { name: "MAPIERRE" },
-    { name: "MATERIA" },
-    { name: "MOON CREAM" },
-    { name: "MOTLEY" },
-    { name: "MYCRO" },
-  ],
-},
-
-
+  {
+    letter: "M",
+    items: [
+      { name: "MAJESTIC" },
+      { name: "MAPIERRE" },
+      { name: "MATERIA" },
+      { name: "MOON CREAM" },
+      { name: "MOTLEY" },
+      { name: "MYCRO" },
+    ],
+  },
   {
     letter: "N",
     items: [{ name: "NORDIC" }], // ✅ NUEVA
