@@ -73,6 +73,7 @@ const COLLECTION_GROUPS = [
       { name: "MAJESTIC" },
       { name: "MAPIERRE" },
       { name: "MATERIA" },
+      { name: "MEMORY" }, // ✅ NUEVA
       { name: "MOON CREAM" },
       { name: "MOTLEY" },
       { name: "MYCRO" },
@@ -103,6 +104,8 @@ const COLLECTION_GROUPS = [
   {
     letter: "S",
     items: [
+      { name: "SANDSTONE" }, // ✅ NUEVA
+      { name: "SEINE" }, // ✅ NUEVA
       { name: "SHEER" },
       { name: "SINAI COEM" },
       { name: "SINAI KTL" },
@@ -115,6 +118,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "TAJ MAHAL" }, // ✅ NUEVA
       { name: "THE ROOM" },
+      { name: "TIVOLI" }, // ✅ NUEVA
       { name: "TWEED STONE" }, // ✅ NUEVA
     ],
   },

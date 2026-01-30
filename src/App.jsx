@@ -87,6 +87,12 @@ import { EnglishStone } from "./colecciones/english-stone";
 import { TajMahal } from "./colecciones/taj-mahal";
 import { TweedStone } from "./colecciones/tweed-stone";
 
+// ✅ NUEVAS (TIVOLI, SEINE, SANDSTONE, MEMORY)
+import { Tivoli } from "./colecciones/tivoli";
+import { Seine } from "./colecciones/seine";
+import { Sandstone } from "./colecciones/sandstone";
+import { Memory } from "./colecciones/memory";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -175,6 +181,12 @@ export function App() {
     if (name === "ENGLISH STONE") setPage("english-stone");
     if (name === "TAJ MAHAL") setPage("taj-mahal");
     if (name === "TWEED STONE") setPage("tweed-stone");
+
+    // ✅ TIVOLI + SEINE + SANDSTONE + MEMORY
+    if (name === "TIVOLI") setPage("tivoli");
+    if (name === "SEINE") setPage("seine");
+    if (name === "SANDSTONE") setPage("sandstone");
+    if (name === "MEMORY") setPage("memory");
   }
 
   function handleGoHome() {
@@ -264,6 +276,12 @@ export function App() {
   if (page === "english-stone") return <EnglishStone onGoHome={handleGoHome} />;
   if (page === "taj-mahal") return <TajMahal onGoHome={handleGoHome} />;
   if (page === "tweed-stone") return <TweedStone onGoHome={handleGoHome} />;
+
+  // ✅ TIVOLI + SEINE + SANDSTONE + MEMORY
+  if (page === "tivoli") return <Tivoli onGoHome={handleGoHome} />;
+  if (page === "seine") return <Seine onGoHome={handleGoHome} />;
+  if (page === "sandstone") return <Sandstone onGoHome={handleGoHome} />;
+  if (page === "memory") return <Memory onGoHome={handleGoHome} />;
 
   return null;
 }
