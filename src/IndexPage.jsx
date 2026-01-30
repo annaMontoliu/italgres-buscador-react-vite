@@ -33,8 +33,9 @@ const COLLECTION_GROUPS = [
   {
     letter: "E",
     items: [
-      { name: "ELEGANCE PRO" },
+      { name: "ELEGANCE PRO" }, // ya estaba
       { name: "ELYSIAN" },
+      { name: "ENGLISH STONE" }, // ✅ NUEVA
       { name: "ERAWAN" },
     ],
   },
@@ -54,7 +55,7 @@ const COLLECTION_GROUPS = [
     letter: "J",
     items: [
       { name: "JATOBA" },
-      { name: "JEWELS" }, // ✅ NUEVA
+      { name: "JEWELS" },
       { name: "JURUPA" },
     ],
   },
@@ -89,7 +90,7 @@ const COLLECTION_GROUPS = [
     letter: "P",
     items: [
       { name: "PALERMO" },
-      { name: "PAPIER" }, // ✅ NUEVA
+      { name: "PAPIER" },
       { name: "PIERRE VIVE" },
       { name: "PORTLAND" },
       { name: "PULPIS" },
@@ -111,7 +112,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "T",
-    items: [{ name: "THE ROOM" }],
+    items: [
+      { name: "TAJ MAHAL" }, // ✅ NUEVA
+      { name: "THE ROOM" },
+      { name: "TWEED STONE" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "U",

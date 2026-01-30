@@ -4,20 +4,52 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
+// =====================
+// IMPORTS DE IMÁGENES
+// =====================
+
+// WHITE (5)
 import eleganceProWhite1 from "../assets/imagenes/elegance-pro/elegance-pro-white/elegance-pro-white-1.jpg";
 import eleganceProWhite2 from "../assets/imagenes/elegance-pro/elegance-pro-white/elegance-pro-white-2.jpg";
 import eleganceProWhite3 from "../assets/imagenes/elegance-pro/elegance-pro-white/elegance-pro-white-3.jpg";
 import eleganceProWhite4 from "../assets/imagenes/elegance-pro/elegance-pro-white/elegance-pro-white-4.jpg";
 import eleganceProWhite5 from "../assets/imagenes/elegance-pro/elegance-pro-white/elegance-pro-white-5.jpg";
 
-// ORDEN EXACTO DE LAS FOTOS DE ELEGANCE PRO WHITE
+// DARK GREY (2)
+import eleganceProDarkGrey1 from "../assets/imagenes/elegance-pro/elegance-pro-dark-grey/elegance-pro-dark-grey-01.jpg";
+import eleganceProDarkGrey2 from "../assets/imagenes/elegance-pro/elegance-pro-dark-grey/elegance-pro-dark-grey-02.jpg";
+
+// ANTRACITA (6)
+import eleganceProAntracita1 from "../assets/imagenes/elegance-pro/elegance-pro-antracita/elegance-pro-antracita-01.jpg";
+import eleganceProAntracita2 from "../assets/imagenes/elegance-pro/elegance-pro-antracita/elegance-pro-antracita-02.jpg";
+import eleganceProAntracita3 from "../assets/imagenes/elegance-pro/elegance-pro-antracita/elegance-pro-antracita-03.jpg";
+import eleganceProAntracita4 from "../assets/imagenes/elegance-pro/elegance-pro-antracita/elegance-pro-antracita-04.jpg";
+import eleganceProAntracita5 from "../assets/imagenes/elegance-pro/elegance-pro-antracita/elegance-pro-antracita-05.jpg";
+import eleganceProAntracita6 from "../assets/imagenes/elegance-pro/elegance-pro-antracita/elegance-pro-antracita-06.jpg";
+
+// =====================
+// ARRAY GLOBAL MODAL
+// ORDEN: WHITE → DARK GREY → ANTRACITA
+// =====================
 const images = [
+  // WHITE
   eleganceProWhite1,
   eleganceProWhite2,
   eleganceProWhite3,
   eleganceProWhite4,
   eleganceProWhite5,
+
+  // DARK GREY
+  eleganceProDarkGrey1,
+  eleganceProDarkGrey2,
+
+  // ANTRACITA
+  eleganceProAntracita1,
+  eleganceProAntracita2,
+  eleganceProAntracita3,
+  eleganceProAntracita4,
+  eleganceProAntracita5,
+  eleganceProAntracita6,
 ];
 
 export function ElegancePro({ onGoHome }) {
@@ -36,73 +68,79 @@ export function ElegancePro({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((i) => (i + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((i) => (i - 1 + images.length) % images.length);
   }
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* Título */}
         <h1 className="titulo-coleccion">ELEGANCE PRO</h1>
 
-        {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout
           infoUrl="https://www.emilgroup.it/emil/prodotti/documenticollezioni_emil/Elegance%20Pro%20Catalogo%202024.12%20Web.pdf"
         />
 
-        {/* ---- GALERÍA ---- */}
-
-        {/* Color ELEGANCE PRO WHITE */}
+        {/* WHITE */}
         <h3 className="color-title">ELEGANCE PRO WHITE</h3>
         <section className="gallery-grid">
-          <img
-            src={eleganceProWhite1}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="ELEGANCE PRO WHITE 1"
-          />
-          <img
-            src={eleganceProWhite2}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="ELEGANCE PRO WHITE 2"
-          />
-          <img
-            src={eleganceProWhite3}
-            className="gallery-img"
-            onClick={() => openModal(2)}
-            loading="lazy"
-            alt="ELEGANCE PRO WHITE 3"
-          />
-          <img
-            src={eleganceProWhite4}
-            className="gallery-img"
-            onClick={() => openModal(3)}
-            loading="lazy"
-            alt="ELEGANCE PRO WHITE 4"
-          />
-          <img
-            src={eleganceProWhite5}
-            className="gallery-img"
-            onClick={() => openModal(4)}
-            loading="lazy"
-            alt="ELEGANCE PRO WHITE 5"
-          />
+          {[eleganceProWhite1, eleganceProWhite2, eleganceProWhite3, eleganceProWhite4, eleganceProWhite5].map(
+            (img, i) => (
+              <img
+                key={i}
+                src={img}
+                className="gallery-img"
+                onClick={() => openModal(i)}
+                loading="lazy"
+                alt={`ELEGANCE PRO WHITE ${i + 1}`}
+              />
+            )
+          )}
+        </section>
+
+        {/* DARK GREY */}
+        <h3 className="color-title">ELEGANCE PRO DARK GREY</h3>
+        <section className="gallery-grid">
+          {[eleganceProDarkGrey1, eleganceProDarkGrey2].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(5 + i)}
+              loading="lazy"
+              alt={`ELEGANCE PRO DARK GREY ${i + 1}`}
+            />
+          ))}
+        </section>
+
+        {/* ANTRACITA */}
+        <h3 className="color-title">ELEGANCE PRO ANTRACITA</h3>
+        <section className="gallery-grid">
+          {[
+            eleganceProAntracita1,
+            eleganceProAntracita2,
+            eleganceProAntracita3,
+            eleganceProAntracita4,
+            eleganceProAntracita5,
+            eleganceProAntracita6,
+          ].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(7 + i)}
+              loading="lazy"
+              alt={`ELEGANCE PRO ANTRACITA ${i + 1}`}
+            />
+          ))}
         </section>
       </main>
 
-      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}

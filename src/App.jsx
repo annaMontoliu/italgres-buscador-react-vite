@@ -82,6 +82,11 @@ import { Caementum } from "./colecciones/caementum";
 import { Papier } from "./colecciones/papier";
 import { Jewels } from "./colecciones/jewels";
 
+// ✅ NUEVAS (ENGLISH STONE, TAJ MAHAL, TWEED STONE)
+import { EnglishStone } from "./colecciones/english-stone";
+import { TajMahal } from "./colecciones/taj-mahal";
+import { TweedStone } from "./colecciones/tweed-stone";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -165,6 +170,11 @@ export function App() {
     // ✅ PAPIER + JEWELS
     if (name === "PAPIER") setPage("papier");
     if (name === "JEWELS") setPage("jewels");
+
+    // ✅ ENGLISH STONE + TAJ MAHAL + TWEED STONE
+    if (name === "ENGLISH STONE") setPage("english-stone");
+    if (name === "TAJ MAHAL") setPage("taj-mahal");
+    if (name === "TWEED STONE") setPage("tweed-stone");
   }
 
   function handleGoHome() {
@@ -249,6 +259,11 @@ export function App() {
   // ✅ PAPIER + JEWELS
   if (page === "papier") return <Papier onGoHome={handleGoHome} />;
   if (page === "jewels") return <Jewels onGoHome={handleGoHome} />;
+
+  // ✅ ENGLISH STONE + TAJ MAHAL + TWEED STONE
+  if (page === "english-stone") return <EnglishStone onGoHome={handleGoHome} />;
+  if (page === "taj-mahal") return <TajMahal onGoHome={handleGoHome} />;
+  if (page === "tweed-stone") return <TweedStone onGoHome={handleGoHome} />;
 
   return null;
 }
