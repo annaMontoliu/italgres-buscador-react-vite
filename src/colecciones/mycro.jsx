@@ -7,74 +7,62 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 import { ShowroomColors } from "../components/ShowroomColors";
 
-// IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-
-// WHITE (WX) - 4 FOTOS
+// WHITE (WX) - 4
 import mycroWhite1 from "../assets/imagenes/mycro/mycro-white/mycro-white-01.jpg";
 import mycroWhite2 from "../assets/imagenes/mycro/mycro-white/mycro-white-02.jpg";
 import mycroWhite3 from "../assets/imagenes/mycro/mycro-white/mycro-white-03.jpg";
 import mycroWhite4 from "../assets/imagenes/mycro/mycro-white/mycro-white-04.jpg";
 
-// ARGENTO (AG) - 3 FOTOS
+// ARGENTO (AG) - 3
 import mycroArgento1 from "../assets/imagenes/mycro/mycro-argento/mycro-argento-01.jpg";
 import mycroArgento2 from "../assets/imagenes/mycro/mycro-argento/mycro-argento-02.jpg";
 import mycroArgento3 from "../assets/imagenes/mycro/mycro-argento/mycro-argento-03.jpg";
 
-// ALMOND (A) - 2 FOTOS
+// ALMOND (A) - 2
 import mycroAlmond1 from "../assets/imagenes/mycro/mycro-almond/mycro-almond-01.jpg";
 import mycroAlmond2 from "../assets/imagenes/mycro/mycro-almond/mycro-almond-02.jpg";
 
-// BEIGE (B) - 2 FOTOS
+// BEIGE (B) - 2
 import mycroBeige1 from "../assets/imagenes/mycro/mycro-beige/mycro-beige-01.jpg";
 import mycroBeige2 from "../assets/imagenes/mycro/mycro-beige/mycro-beige-02.jpg";
 
-// MIDDLE GREY (MG) - 2 FOTOS
+// MIDDLE GREY (MG) - 2
 import mycroMiddleGrey1 from "../assets/imagenes/mycro/mycro-middle-grey/mycro-middle-grey-01.jpg";
 import mycroMiddleGrey2 from "../assets/imagenes/mycro/mycro-middle-grey/mycro-middle-grey-02.jpg";
 
-// GRIGIO NERO (GN) - 3 FOTOS
+// GRIGIO NERO (GN) - 3
 import mycroGrigioNero1 from "../assets/imagenes/mycro/mycro-grigio-nero/mycro-grigio-nero-01.jpg";
 import mycroGrigioNero2 from "../assets/imagenes/mycro/mycro-grigio-nero/mycro-grigio-nero-02.jpg";
 import mycroGrigioNero3 from "../assets/imagenes/mycro/mycro-grigio-nero/mycro-grigio-nero-03.jpg";
 
-// IMPORT PDF (carpeta de pdf)
-// Ajusta la ruta si tu carpeta de pdfs es distinta
-import mycroPdf from "../public/pdf/MYCRO.pdf";
+// TACOS (directamente en /mycro)
+import tacoMycroWhite from "../assets/imagenes/mycro/taco-mycro-white.jpg";
+import tacoMycroArgento from "../assets/imagenes/mycro/taco-mycro-argento.jpg";
+import tacoMycroAlmond from "../assets/imagenes/mycro/taco-mycro-almond.jpg";
+import tacoMycroBeige from "../assets/imagenes/mycro/taco-mycro-beige.jpg";
+import tacoMycroMiddleGrey from "../assets/imagenes/mycro/taco-mycro-middel-grey.jpg";
+import tacoMycroGrigioNero from "../assets/imagenes/mycro/taco-mycro-grigio-nero.jpg";
 
-// IMPORTS TACOS (showroom)
-import tacoMycroWhite from "../assets/imagenes/mycro/mycro-tacos/taco-mycro-white.jpg";
-import tacoMycroArgento from "../assets/imagenes/mycro/mycro-tacos/taco-mycro-argento.jpg";
-import tacoMycroAlmond from "../assets/imagenes/mycro/mycro-tacos/taco-mycro-almond.jpg";
-import tacoMycroBeige from "../assets/imagenes/mycro/mycro-tacos/taco-mycro-beige.jpg";
-import tacoMycroMiddleGrey from "../assets/imagenes/mycro/mycro-tacos/taco-mycro-middle-grey.jpg";
-import tacoMycroGrigioNero from "../assets/imagenes/mycro/mycro-tacos/taco-mycro-grigio-nero.jpg";
-
-// ORDEN EXACTO (WHITE, ARGENTO, ALMOND, BEIGE, MIDDLE GREY, GRIGIO NERO)
+// ORDEN GLOBAL
 const images = [
-  // WHITE (4)
   mycroWhite1,
   mycroWhite2,
   mycroWhite3,
   mycroWhite4,
 
-  // ARGENTO (3)
   mycroArgento1,
   mycroArgento2,
   mycroArgento3,
 
-  // ALMOND (2)
   mycroAlmond1,
   mycroAlmond2,
 
-  // BEIGE (2)
   mycroBeige1,
   mycroBeige2,
 
-  // MIDDLE GREY (2)
   mycroMiddleGrey1,
   mycroMiddleGrey2,
 
-  // GRIGIO NERO (3)
   mycroGrigioNero1,
   mycroGrigioNero2,
   mycroGrigioNero3,
@@ -96,25 +84,21 @@ export function Mycro({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((i) => (i + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((i) => (i - 1 + images.length) % images.length);
   }
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* Título */}
         <h1 className="titulo-coleccion">MYCRO</h1>
 
-        {/* SHOWROOM COLORS (TACOS) */}
+        {/* TACOS */}
         <ShowroomColors
           title="showroom colors"
           items={[
@@ -127,155 +111,97 @@ export function Mycro({ onGoHome }) {
           ]}
         />
 
-        {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl={mycroPdf} />
+        {/* PDF DESDE PUBLIC */}
+        <ColeccionLayout infoUrl="/pdf/MYCRO.pdf" />
 
-        {/* ---- GALERÍA ---- */}
-
-        {/* WHITE (WX) */}
+        {/* GALERÍA */}
         <h3 className="color-title">MYCRO WHITE</h3>
         <section className="gallery-grid">
-          <img
-            src={mycroWhite1}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="MYCRO WHITE 1"
-          />
-          <img
-            src={mycroWhite2}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="MYCRO WHITE 2"
-          />
-          <img
-            src={mycroWhite3}
-            className="gallery-img"
-            onClick={() => openModal(2)}
-            loading="lazy"
-            alt="MYCRO WHITE 3"
-          />
-          <img
-            src={mycroWhite4}
-            className="gallery-img"
-            onClick={() => openModal(3)}
-            loading="lazy"
-            alt="MYCRO WHITE 4"
-          />
+          {[mycroWhite1, mycroWhite2, mycroWhite3, mycroWhite4].map(
+            (img, i) => (
+              <img
+                key={i}
+                src={img}
+                className="gallery-img"
+                onClick={() => openModal(i)}
+                loading="lazy"
+                alt={`MYCRO WHITE ${i + 1}`}
+              />
+            )
+          )}
         </section>
 
-        {/* ARGENTO (AG) */}
         <h3 className="color-title">MYCRO ARGENTO</h3>
         <section className="gallery-grid">
-          <img
-            src={mycroArgento1}
-            className="gallery-img"
-            onClick={() => openModal(4)}
-            loading="lazy"
-            alt="MYCRO ARGENTO 1"
-          />
-          <img
-            src={mycroArgento2}
-            className="gallery-img"
-            onClick={() => openModal(5)}
-            loading="lazy"
-            alt="MYCRO ARGENTO 2"
-          />
-          <img
-            src={mycroArgento3}
-            className="gallery-img"
-            onClick={() => openModal(6)}
-            loading="lazy"
-            alt="MYCRO ARGENTO 3"
-          />
+          {[mycroArgento1, mycroArgento2, mycroArgento3].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(4 + i)}
+              loading="lazy"
+              alt={`MYCRO ARGENTO ${i + 1}`}
+            />
+          ))}
         </section>
 
-        {/* ALMOND (A) */}
         <h3 className="color-title">MYCRO ALMOND</h3>
         <section className="gallery-grid">
-          <img
-            src={mycroAlmond1}
-            className="gallery-img"
-            onClick={() => openModal(7)}
-            loading="lazy"
-            alt="MYCRO ALMOND 1"
-          />
-          <img
-            src={mycroAlmond2}
-            className="gallery-img"
-            onClick={() => openModal(8)}
-            loading="lazy"
-            alt="MYCRO ALMOND 2"
-          />
+          {[mycroAlmond1, mycroAlmond2].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(7 + i)}
+              loading="lazy"
+              alt={`MYCRO ALMOND ${i + 1}`}
+            />
+          ))}
         </section>
 
-        {/* BEIGE (B) */}
         <h3 className="color-title">MYCRO BEIGE</h3>
         <section className="gallery-grid">
-          <img
-            src={mycroBeige1}
-            className="gallery-img"
-            onClick={() => openModal(9)}
-            loading="lazy"
-            alt="MYCRO BEIGE 1"
-          />
-          <img
-            src={mycroBeige2}
-            className="gallery-img"
-            onClick={() => openModal(10)}
-            loading="lazy"
-            alt="MYCRO BEIGE 2"
-          />
+          {[mycroBeige1, mycroBeige2].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(9 + i)}
+              loading="lazy"
+              alt={`MYCRO BEIGE ${i + 1}`}
+            />
+          ))}
         </section>
 
-        {/* MIDDLE GREY (MG) */}
         <h3 className="color-title">MYCRO MIDDLE GREY</h3>
         <section className="gallery-grid">
-          <img
-            src={mycroMiddleGrey1}
-            className="gallery-img"
-            onClick={() => openModal(11)}
-            loading="lazy"
-            alt="MYCRO MIDDLE GREY 1"
-          />
-          <img
-            src={mycroMiddleGrey2}
-            className="gallery-img"
-            onClick={() => openModal(12)}
-            loading="lazy"
-            alt="MYCRO MIDDLE GREY 2"
-          />
+          {[mycroMiddleGrey1, mycroMiddleGrey2].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(11 + i)}
+              loading="lazy"
+              alt={`MYCRO MIDDLE GREY ${i + 1}`}
+            />
+          ))}
         </section>
 
-        {/* GRIGIO NERO (GN) */}
         <h3 className="color-title">MYCRO GRIGIO NERO</h3>
         <section className="gallery-grid">
-          <img
-            src={mycroGrigioNero1}
-            className="gallery-img"
-            onClick={() => openModal(13)}
-            loading="lazy"
-            alt="MYCRO GRIGIO NERO 1"
-          />
-          <img
-            src={mycroGrigioNero2}
-            className="gallery-img"
-            onClick={() => openModal(14)}
-            loading="lazy"
-            alt="MYCRO GRIGIO NERO 2"
-          />
-          <img
-            src={mycroGrigioNero3}
-            className="gallery-img"
-            onClick={() => openModal(15)}
-            loading="lazy"
-            alt="MYCRO GRIGIO NERO 3"
-          />
+          {[mycroGrigioNero1, mycroGrigioNero2, mycroGrigioNero3].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(13 + i)}
+              loading="lazy"
+              alt={`MYCRO GRIGIO NERO ${i + 1}`}
+            />
+          ))}
         </section>
       </main>
 
-      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}
