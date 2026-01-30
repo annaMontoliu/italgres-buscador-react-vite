@@ -47,7 +47,7 @@ export function Coralina({ onGoHome }) {
         <h1 className="titulo-coleccion">CORALINA</h1>
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="https://www.bellacasaceramica.com/gallery/coralina-bellacasa-porcelanico/" />
+        <ColeccionLayout infoUrl= "https://www.bellacasaceramica.com/wp-content/uploads/2018/09/BELLACASA-Coralina-2.pdf"/>
 
         {/* ---- GALERÍA ---- */}
         <h3 className="color-title">CORALINA PERLA</h3>
