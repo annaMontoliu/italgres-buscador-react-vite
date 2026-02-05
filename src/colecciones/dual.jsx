@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMÁGENES DUAL WHITE (8)
+// IMÁGENES DUAL WHITE (7)
 import dualWhite1 from "../assets/imagenes/dual/dual-white/dual-white-01.jpg";
 import dualWhite2 from "../assets/imagenes/dual/dual-white/dual-white-02.jpg";
 import dualWhite3 from "../assets/imagenes/dual/dual-white/dual-white-03.jpg";
@@ -13,7 +13,6 @@ import dualWhite4 from "../assets/imagenes/dual/dual-white/dual-white-04.jpg";
 import dualWhite5 from "../assets/imagenes/dual/dual-white/dual-white-05.jpg";
 import dualWhite6 from "../assets/imagenes/dual/dual-white/dual-white-06.jpg";
 import dualWhite7 from "../assets/imagenes/dual/dual-white/dual-white-07.jpg";
-import dualWhite8 from "../assets/imagenes/dual/dual-white/dual-white-08.jpg";
 
 // ARRAY GLOBAL MODAL (orden exacto)
 const images = [
@@ -24,7 +23,6 @@ const images = [
   dualWhite5,
   dualWhite6,
   dualWhite7,
-  dualWhite8,
 ];
 
 export function Dual({ onGoHome }) {
@@ -57,13 +55,10 @@ export function Dual({ onGoHome }) {
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* TÍTULO */}
         <h1 className="titulo-coleccion">DUAL</h1>
 
-        {/* PDF */}
         <ColeccionLayout infoUrl="/pdf/DUAL.pdf" />
 
-        {/* GALERÍA */}
         <h3 className="color-title">DUAL WHITE</h3>
         <section className="gallery-grid">
           {images.map((img, i) => (
