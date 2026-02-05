@@ -1,15 +1,16 @@
+// src/colecciones/tropical-blue.jsx
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { ColeccionLayout } from "../../components/ColeccionLayout";
-import { ImageModal } from "../../components/ImageModal";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE FOTOS (5)
-import tb1 from "../../assets/imagenes/tropical-blue/tropical-blue-01.jpg";
-import tb2 from "../../assets/imagenes/tropical-blue/tropical-blue-02.jpg";
-import tb3 from "../../assets/imagenes/tropical-blue/tropical-blue-03.jpg";
-import tb4 from "../../assets/imagenes/tropical-blue/tropical-blue-04.jpg";
-import tb5 from "../../assets/imagenes/tropical-blue/tropical-blue-05.jpg";
+import tb1 from "../assets/imagenes/tropical-blue/tropical-blue-01.jpg";
+import tb2 from "../assets/imagenes/tropical-blue/tropical-blue-02.jpg";
+import tb3 from "../assets/imagenes/tropical-blue/tropical-blue-03.jpg";
+import tb4 from "../assets/imagenes/tropical-blue/tropical-blue-04.jpg";
+import tb5 from "../assets/imagenes/tropical-blue/tropical-blue-05.jpg";
 
 // ARRAY GLOBAL
 const images = [tb1, tb2, tb3, tb4, tb5];

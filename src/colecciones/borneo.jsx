@@ -1,13 +1,14 @@
+// src/colecciones/borneo.jsx
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { ColeccionLayout } from "../../components/ColeccionLayout";
-import { ImageModal } from "../../components/ImageModal";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE FOTOS BORNEO WHITE (3)
-import borneoWhite1 from "../../assets/imagenes/borneo/borneo-white/borneo-white-01.jpg";
-import borneoWhite2 from "../../assets/imagenes/borneo/borneo-white/borneo-white-02.jpg";
-import borneoWhite3 from "../../assets/imagenes/borneo/borneo-white/borneo-white-03.jpg";
+import borneoWhite1 from "../assets/imagenes/borneo/borneo-white/borneo-white-01.jpg";
+import borneoWhite2 from "../assets/imagenes/borneo/borneo-white/borneo-white-02.jpg";
+import borneoWhite3 from "../assets/imagenes/borneo/borneo-white/borneo-white-03.jpg";
 
 // ARRAY GLOBAL ORDENADO
 const images = [borneoWhite1, borneoWhite2, borneoWhite3];

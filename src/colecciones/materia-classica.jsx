@@ -1,13 +1,14 @@
+// src/colecciones/materia-classica.jsx
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { ColeccionLayout } from "../../components/ColeccionLayout";
-import { ImageModal } from "../../components/ImageModal";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE FOTOS MATERIA CLASSICA BEIGE (3)
-import materiaBeige1 from "../../assets/imagenes/materia-classica/materia-classica-beige/materia-classica-beige-01.jpg";
-import materiaBeige2 from "../../assets/imagenes/materia-classica/materia-classica-beige/materia-classica-beige-02.jpg";
-import materiaBeige3 from "../../assets/imagenes/materia-classica/materia-classica-beige/materia-classica-beige-03.jpg";
+import materiaBeige1 from "../assets/imagenes/materia-classica/materia-classica-beige/materia-classica-beige-01.jpg";
+import materiaBeige2 from "../assets/imagenes/materia-classica/materia-classica-beige/materia-classica-beige-02.jpg";
+import materiaBeige3 from "../assets/imagenes/materia-classica/materia-classica-beige/materia-classica-beige-03.jpg";
 
 // ARRAY GLOBAL EN ORDEN
 const images = [materiaBeige1, materiaBeige2, materiaBeige3];

@@ -1,25 +1,26 @@
+// src/colecciones/nature-mood.jsx
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { ColeccionLayout } from "../../components/ColeccionLayout";
-import { ImageModal } from "../../components/ImageModal";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE IMÁGENES
 
 // TUNDRA (4)
-import tundra1 from "../../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-01.jpg";
-import tundra2 from "../../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-02.jpg";
-import tundra3 from "../../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-03.jpg";
-import tundra4 from "../../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-04.jpg";
+import tundra1 from "../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-01.jpg";
+import tundra2 from "../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-02.jpg";
+import tundra3 from "../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-03.jpg";
+import tundra4 from "../assets/imagenes/nature-mood/nature-mood-tundra/nature-mood-tundra-04.jpg";
 
 // PLANK 01 (2)
-import plank1 from "../../assets/imagenes/nature-mood/nature-mood-plank-01/nature-mood-plank-01-01.jpg";
-import plank2 from "../../assets/imagenes/nature-mood/nature-mood-plank-01/nature-mood-plank-01-02.jpg";
+import plank1 from "../assets/imagenes/nature-mood/nature-mood-plank-01/nature-mood-plank-01-01.jpg";
+import plank2 from "../assets/imagenes/nature-mood/nature-mood-plank-01/nature-mood-plank-01-02.jpg";
 
 // GLACIER (3)
-import glacier1 from "../../assets/imagenes/nature-mood/nature-mood-glacier/nature-mood-glacier-01.jpg";
-import glacier2 from "../../assets/imagenes/nature-mood/nature-mood-glacier/nature-mood-glacier-02.jpg";
-import glacier3 from "../../assets/imagenes/nature-mood/nature-mood-glacier/nature-mood-glacier-03.jpg";
+import glacier1 from "../assets/imagenes/nature-mood/nature-mood-glacier/nature-mood-glacier-01.jpg";
+import glacier2 from "../assets/imagenes/nature-mood/nature-mood-glacier/nature-mood-glacier-02.jpg";
+import glacier3 from "../assets/imagenes/nature-mood/nature-mood-glacier/nature-mood-glacier-03.jpg";
 
 // ORDEN EXACTO PARA EL MODAL
 const images = [

@@ -1,11 +1,12 @@
+// src/colecciones/green-trees.jsx
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { ColeccionLayout } from "../../components/ColeccionLayout";
-import { ImageModal } from "../../components/ImageModal";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LA FOTO
-import greenTrees1 from "../../assets/imagenes/green-trees/green-trees-01.jpg";
+import greenTrees1 from "../assets/imagenes/green-trees/green-trees-01.jpg";
 
 // ARRAY GLOBAL (solo 1 imagen)
 const images = [greenTrees1];
@@ -49,7 +50,6 @@ export function GreenTrees({ onGoHome }) {
         />
 
         {/* ---- GALERÍA ---- */}
-
         <h3 className="color-title">GREEN TREES</h3>
         <section className="gallery-grid">
           <img
