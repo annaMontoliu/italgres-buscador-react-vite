@@ -1,4 +1,4 @@
-ç// src/App.jsx
+// src/App.jsx
 import { useState } from "react";
 import { IndexPage } from "./IndexPage";
 
@@ -209,8 +209,9 @@ export function App() {
     setPage("home");
   }
 
-  if (page === "home")
+  if (page === "home") {
     return <IndexPage onOpenCollection={handleOpenCollection} />;
+  }
 
   if (page === "lucena") return <Lucena onGoHome={handleGoHome} />;
   if (page === "elegance-pro") return <ElegancePro onGoHome={handleGoHome} />;
@@ -302,7 +303,8 @@ export function App() {
   // ✅ NATURE MOOD, GREEN TREES, TROPICAL BLUE, MATERIA CLASSICA, BORNEO, BOREALIS
   if (page === "nature-mood") return <NatureMood onGoHome={handleGoHome} />;
   if (page === "green-trees") return <GreenTrees onGoHome={handleGoHome} />;
-  if (page === "tropical-blue") return <TropicalBlue onGoHome={handleGoHome} />;
+  if (page === "tropical-blue")
+    return <TropicalBlue onGoHome={handleGoHome} />;
   if (page === "materia-classica")
     return <MateriaClassica onGoHome={handleGoHome} />;
   if (page === "borneo") return <Borneo onGoHome={handleGoHome} />;
