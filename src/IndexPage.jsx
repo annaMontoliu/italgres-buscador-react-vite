@@ -5,7 +5,10 @@ import { Header } from "./components/Header";
 const COLLECTION_GROUPS = [
   {
     letter: "A",
-    items: [{ name: "ARENARIA" }],
+    items: [
+      { name: "ARENARIA" },
+      { name: "ARTE" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "B",
@@ -30,14 +33,17 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "D",
-    items: [{ name: "DRIPART" }],
+    items: [
+      { name: "DRIPART" },
+      { name: "DUAL" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "E",
     items: [
-      { name: "ELEGANCE PRO" }, // ya estaba
+      { name: "ELEGANCE PRO" },
       { name: "ELYSIAN" },
-      { name: "ENGLISH STONE" }, // ✅ NUEVA
+      { name: "ENGLISH STONE" },
       { name: "ERAWAN" },
     ],
   },
@@ -77,10 +83,11 @@ const COLLECTION_GROUPS = [
     letter: "M",
     items: [
       { name: "MAJESTIC" },
+      { name: "MAINSTONE" }, // ✅ NUEVA
       { name: "MAPIERRE" },
       { name: "MATERIA" },
       { name: "MATERIA CLASSICA" },
-      { name: "MEMORY" }, // ✅ NUEVA
+      { name: "MEMORY" },
       { name: "MOON CREAM" },
       { name: "MOTLEY" },
       { name: "MYCRO" },
@@ -104,6 +111,7 @@ const COLLECTION_GROUPS = [
       { name: "PAPIER" },
       { name: "PIERRE VIVE" },
       { name: "PORTLAND" },
+      { name: "PRALINE" }, // ✅ NUEVA
       { name: "PULPIS" },
     ],
   },
@@ -114,11 +122,12 @@ const COLLECTION_GROUPS = [
   {
     letter: "S",
     items: [
-      { name: "SANDSTONE" }, // ✅ NUEVA
-      { name: "SEINE" }, // ✅ NUEVA
+      { name: "SANDSTONE" },
+      { name: "SEINE" },
       { name: "SHEER" },
       { name: "SINAI COEM" },
       { name: "SINAI KTL" },
+      { name: "SUBLIME" }, // ✅ NUEVA
       { name: "SUPREME" },
       { name: "SYBIL" },
     ],
@@ -126,11 +135,11 @@ const COLLECTION_GROUPS = [
   {
     letter: "T",
     items: [
-      { name: "TAJ MAHAL" }, // ✅ NUEVA
+      { name: "TAJ MAHAL" },
       { name: "THE ROOM" },
-      { name: "TIVOLI" }, // ✅ NUEVA
+      { name: "TIVOLI" },
       { name: "TROPICAL BLUE" },
-      { name: "TWEED STONE" }, // ✅ NUEVA
+      { name: "TWEED STONE" },
     ],
   },
   {

@@ -101,6 +101,13 @@ import { MateriaClassica } from "./colecciones/materia-classica";
 import { Borneo } from "./colecciones/borneo";
 import { Borealis } from "./colecciones/borealis";
 
+// ✅ NUEVAS (ARTE, DUAL, MAINSTONE, PRALINE, SUBLIME)
+import { Arte } from "./colecciones/arte";
+import { Dual } from "./colecciones/dual";
+import { Mainstone } from "./colecciones/mainstone";
+import { Praline } from "./colecciones/praline";
+import { Sublime } from "./colecciones/sublime";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -203,6 +210,13 @@ export function App() {
     if (name === "MATERIA CLASSICA") setPage("materia-classica");
     if (name === "BORNEO") setPage("borneo");
     if (name === "BOREALIS") setPage("borealis");
+
+    // ✅ ARTE, DUAL, MAINSTONE, PRALINE, SUBLIME
+    if (name === "ARTE") setPage("arte");
+    if (name === "DUAL") setPage("dual");
+    if (name === "MAINSTONE") setPage("mainstone");
+    if (name === "PRALINE") setPage("praline");
+    if (name === "SUBLIME") setPage("sublime");
   }
 
   function handleGoHome() {
@@ -309,6 +323,13 @@ export function App() {
     return <MateriaClassica onGoHome={handleGoHome} />;
   if (page === "borneo") return <Borneo onGoHome={handleGoHome} />;
   if (page === "borealis") return <Borealis onGoHome={handleGoHome} />;
+
+  // ✅ ARTE, DUAL, MAINSTONE, PRALINE, SUBLIME
+  if (page === "arte") return <Arte onGoHome={handleGoHome} />;
+  if (page === "dual") return <Dual onGoHome={handleGoHome} />;
+  if (page === "mainstone") return <Mainstone onGoHome={handleGoHome} />;
+  if (page === "praline") return <Praline onGoHome={handleGoHome} />;
+  if (page === "sublime") return <Sublime onGoHome={handleGoHome} />;
 
   return null;
 }
