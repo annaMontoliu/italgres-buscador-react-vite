@@ -1,4 +1,4 @@
-// src/App.jsx
+ç// src/App.jsx
 import { useState } from "react";
 import { IndexPage } from "./IndexPage";
 
@@ -92,6 +92,14 @@ import { Tivoli } from "./colecciones/tivoli";
 import { Seine } from "./colecciones/seine";
 import { Sandstone } from "./colecciones/sandstone";
 import { Memory } from "./colecciones/memory";
+
+// ✅ NUEVAS (NATURE MOOD, GREEN TREES, TROPICAL BLUE, MATERIA CLASSICA, BORNEO, BOREALIS)
+import { NatureMood } from "./colecciones/nature-mood";
+import { GreenTrees } from "./colecciones/green-trees";
+import { TropicalBlue } from "./colecciones/tropical-blue";
+import { MateriaClassica } from "./colecciones/materia-classica";
+import { Borneo } from "./colecciones/borneo";
+import { Borealis } from "./colecciones/borealis";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -187,6 +195,14 @@ export function App() {
     if (name === "SEINE") setPage("seine");
     if (name === "SANDSTONE") setPage("sandstone");
     if (name === "MEMORY") setPage("memory");
+
+    // ✅ NATURE MOOD, GREEN TREES, TROPICAL BLUE, MATERIA CLASSICA, BORNEO, BOREALIS
+    if (name === "NATURE MOOD") setPage("nature-mood");
+    if (name === "GREEN TREES") setPage("green-trees");
+    if (name === "TROPICAL BLUE") setPage("tropical-blue");
+    if (name === "MATERIA CLASSICA") setPage("materia-classica");
+    if (name === "BORNEO") setPage("borneo");
+    if (name === "BOREALIS") setPage("borealis");
   }
 
   function handleGoHome() {
@@ -282,6 +298,15 @@ export function App() {
   if (page === "seine") return <Seine onGoHome={handleGoHome} />;
   if (page === "sandstone") return <Sandstone onGoHome={handleGoHome} />;
   if (page === "memory") return <Memory onGoHome={handleGoHome} />;
+
+  // ✅ NATURE MOOD, GREEN TREES, TROPICAL BLUE, MATERIA CLASSICA, BORNEO, BOREALIS
+  if (page === "nature-mood") return <NatureMood onGoHome={handleGoHome} />;
+  if (page === "green-trees") return <GreenTrees onGoHome={handleGoHome} />;
+  if (page === "tropical-blue") return <TropicalBlue onGoHome={handleGoHome} />;
+  if (page === "materia-classica")
+    return <MateriaClassica onGoHome={handleGoHome} />;
+  if (page === "borneo") return <Borneo onGoHome={handleGoHome} />;
+  if (page === "borealis") return <Borealis onGoHome={handleGoHome} />;
 
   return null;
 }

@@ -15,6 +15,8 @@ const COLLECTION_GROUPS = [
       { name: "BELLEVUE" },
       { name: "BLOOM" },
       { name: "BLUE ROMA" },
+      { name: "BOREALIS" },
+      { name: "BORNEO" },
     ],
   },
   {
@@ -45,7 +47,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "G",
-    items: [{ name: "GLIM GEMME" }, { name: "GLOCAL" }],
+    items: [
+      { name: "GLIM GEMME" },
+      { name: "GLOCAL" },
+      { name: "GREEN TREES" },
+    ],
   },
   {
     letter: "I",
@@ -73,6 +79,7 @@ const COLLECTION_GROUPS = [
       { name: "MAJESTIC" },
       { name: "MAPIERRE" },
       { name: "MATERIA" },
+      { name: "MATERIA CLASSICA" },
       { name: "MEMORY" }, // ✅ NUEVA
       { name: "MOON CREAM" },
       { name: "MOTLEY" },
@@ -81,7 +88,10 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "N",
-    items: [{ name: "NORDIC" }],
+    items: [
+      { name: "NATURE MOOD" },
+      { name: "NORDIC" },
+    ],
   },
   {
     letter: "O",
@@ -119,6 +129,7 @@ const COLLECTION_GROUPS = [
       { name: "TAJ MAHAL" }, // ✅ NUEVA
       { name: "THE ROOM" },
       { name: "TIVOLI" }, // ✅ NUEVA
+      { name: "TROPICAL BLUE" },
       { name: "TWEED STONE" }, // ✅ NUEVA
     ],
   },
