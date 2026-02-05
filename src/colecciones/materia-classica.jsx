@@ -49,7 +49,7 @@ export function MateriaClassica({ onGoHome }) {
 
         {/* FINISHES & FORMATS */}
         <ColeccionLayout
-          infoUrl="https://www.fapceramiche.com/media/products/documents/collection/Cat_Materia_Classica_November_2025_web.pd"
+          infoUrl="https://www.fapceramiche.com/media/products/documents/collection/Cat_Materia_Classica_November_2025_web.pdf"
         />
 
         {/* ---- GALERÍA ---- */}
