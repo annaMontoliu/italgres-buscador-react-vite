@@ -7,7 +7,7 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // =====================
-// IMPORT IMÁGENES (exacto según capturas)
+// IMPORT IMÁGENES
 // =====================
 
 // JEWELS 01 (2)
@@ -34,7 +34,7 @@ import jewels1501 from "../assets/imagenes/jewels/jewels-15/jewels-15-01.jpg";
 import jewels1502 from "../assets/imagenes/jewels/jewels-15/jewels-15-02.jpg";
 import jewels1503 from "../assets/imagenes/jewels/jewels-15/jewels-15-03.jpg";
 
-// JEWELS 16 (en captura NO aparece el 02, así que no se importa)
+// JEWELS 16 (11 fotos, sin 02)
 import jewels1601 from "../assets/imagenes/jewels/jewels-16/jewels-16-01.jpg";
 import jewels1603 from "../assets/imagenes/jewels/jewels-16/jewels-16-03.jpg";
 import jewels1604 from "../assets/imagenes/jewels/jewels-16/jewels-16-04.jpg";
@@ -60,11 +60,11 @@ import jewels1901 from "../assets/imagenes/jewels/jewels-19/jewels-19-01.jpg";
 import jewels1902 from "../assets/imagenes/jewels/jewels-19/jewels-19-02.jpg";
 
 // =====================
-// ARRAY GLOBAL MODAL
-// Orden de colores: 16, 14, 02, 12, 15, 19, 01, 17
+// ARRAY GLOBAL (ORDEN EXACTO)
 // =====================
+
 const images = [
-  // 16 (11 en captura)
+  // 16
   jewels1601,
   jewels1603,
   jewels1604,
@@ -77,35 +77,35 @@ const images = [
   jewels1611,
   jewels1612,
 
-  // 14 (3)
+  // 14
   jewels1401,
   jewels1402,
   jewels1403,
 
-  // 02 (3)
+  // 02
   jewels0201,
   jewels0202,
   jewels0203,
 
-  // 12 (3)
+  // 12
   jewels1201,
   jewels1202,
   jewels1203,
 
-  // 15 (3)
+  // 15
   jewels1501,
   jewels1502,
   jewels1503,
 
-  // 19 (2)
+  // 19
   jewels1901,
   jewels1902,
 
-  // 01 (2)
+  // 01
   jewels0101,
   jewels0102,
 
-  // 17 (6)
+  // 17
   jewels1701,
   jewels1702,
   jewels1703,
@@ -146,8 +146,10 @@ export function Jewels({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">JEWELS</h1>
 
-        {/* PDF en public/pdf */}
-        <ColeccionLayout infoUrl="/pdf/JEWELS.pdf" />
+        {/* PDF ENLACE ACTUALIZADO */}
+        <ColeccionLayout 
+          infoUrl="https://mirage-cdn.thron.com/static/YHMHBX_MRG_CAT_JEWELS20_012026_RZIR97.pdf?xseo=&response-content-disposition=inline%3Bfilename%3D%22catalogue-jewels-2-0-pdf.pdf%22"
+        />
 
         {/* JEWELS 16 */}
         <h3 className="color-title">JEWELS 16</h3>
