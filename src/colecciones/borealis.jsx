@@ -1,23 +1,24 @@
+// src/colecciones/borealis.jsx
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { ColeccionLayout } from "../../components/ColeccionLayout";
-import { ImageModal } from "../../components/ImageModal";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE FOTOS BOREALIS INARI (2)
-import borealisInari1 from "../../assets/imagenes/borealis/borealis-inari/borealis-inari-01.jpg";
-import borealisInari2 from "../../assets/imagenes/borealis/borealis-inari/borealis-inari-02.jpg";
+import borealisInari1 from "../assets/imagenes/borealis/borealis-inari/borealis-inari-01.jpg";
+import borealisInari2 from "../assets/imagenes/borealis/borealis-inari/borealis-inari-02.jpg";
 
 // IMPORTS DE FOTOS BOREALIS ABISKO (5)
-import borealisAbisko1 from "../../assets/imagenes/borealis/borealis-abisko/borealis-abisko-01.jpg";
-import borealisAbisko2 from "../../assets/imagenes/borealis/borealis-abisko/borealis-abisko-02.jpg";
-import borealisAbisko3 from "../../assets/imagenes/borealis/borealis-abisko/borealis-abisko-03.jpg";
-import borealisAbisko4 from "../../assets/imagenes/borealis/borealis-abisko/borealis-abisko-04.jpg";
-import borealisAbisko5 from "../../assets/imagenes/borealis/borealis-abisko/borealis-abisko-05.jpg";
+import borealisAbisko1 from "../assets/imagenes/borealis/borealis-abisko/borealis-abisko-01.jpg";
+import borealisAbisko2 from "../assets/imagenes/borealis/borealis-abisko/borealis-abisko-02.jpg";
+import borealisAbisko3 from "../assets/imagenes/borealis/borealis-abisko/borealis-abisko-03.jpg";
+import borealisAbisko4 from "../assets/imagenes/borealis/borealis-abisko/borealis-abisko-04.jpg";
+import borealisAbisko5 from "../assets/imagenes/borealis/borealis-abisko/borealis-abisko-05.jpg";
 
 // IMPORTS DE FOTOS BOREALIS DONEGAL (2)
-import borealisDonegal1 from "../../assets/imagenes/borealis/borealis-donegal/borealis-donegal-01.jpg";
-import borealisDonegal2 from "../../assets/imagenes/borealis/borealis-donegal/borealis-donegal-02.jpg";
+import borealisDonegal1 from "../assets/imagenes/borealis/borealis-donegal/borealis-donegal-01.jpg";
+import borealisDonegal2 from "../assets/imagenes/borealis/borealis-donegal/borealis-donegal-02.jpg";
 
 // ORDEN EXACTO DEL ARRAY (INARI → ABISKO → DONEGAL)
 const images = [
