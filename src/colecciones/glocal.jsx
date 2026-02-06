@@ -22,9 +22,9 @@ import glocal0207 from "../assets/imagenes/glocal/glocal-02/glocal-02-07.jpg";
 import glocal0208 from "../assets/imagenes/glocal/glocal-02/glocal-02-08.jpg";
 import glocal0209 from "../assets/imagenes/glocal/glocal-02/glocal-02-09.jpg";
 
-// TACOS (Showroom)
+// TACOS (Showroom)  ✅ Ajusta extensiones/rutas si Netlify te sigue diciendo "Could not resolve"
 import tacoGlocal01 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-01.jpg";
-import tacoGlocal02 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-02.jpg";
+// import tacoGlocal02 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-02.jpg"; // ❌ NO lo usamos (pedido)
 import tacoGlocal03 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-03.jpg";
 import tacoGlocal04 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-04.jpg";
 import tacoGlocal05 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-05.jpg";
@@ -62,8 +62,8 @@ const images = [
 ];
 
 // TACOS (2 columnas, arriba -> abajo)
+// ❌ quitado GLOCAL 02 (pedido)
 const tacosLeft = [
-  { label: "GLOCAL 02", thumb: tacoGlocal02 },
   { label: "GLOCAL 10", thumb: tacoGlocal10 },
   { label: "GLOCAL 14", thumb: tacoGlocal14 },
   { label: "GLOCAL 18", thumb: tacoGlocal18 },
@@ -116,7 +116,7 @@ export function Glocal({ onGoHome }) {
     twoCols: {
       display: "grid",
       gridTemplateColumns: "1fr 1fr",
-      gap: "24px",
+      gap: "12px", // ✅ más cerca (como "un dedo")
     },
     col: {
       display: "flex",
@@ -150,7 +150,9 @@ export function Glocal({ onGoHome }) {
 
         {/* TACOS (2 columnas) - TODO dentro de glocal.jsx */}
         <section className="showroom-colors">
-          <h3 className="showroom-colors__title">SHOWROOM COLORS</h3>
+          <h3 className="showroom-colors__title" style={{ marginBottom: "10px" }}>
+            SHOWROOM COLORS
+          </h3>
 
           <div style={tacosStyles.twoCols}>
             {/* LEFT COLUMN */}
