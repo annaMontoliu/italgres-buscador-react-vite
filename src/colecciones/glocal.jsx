@@ -6,12 +6,12 @@ import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
 
-// GLOCAL 01 (nuevo color)
+// GLOCAL 01
 import glocal0101 from "../assets/imagenes/glocal/glocal-01/glocal-01-01.jpg";
 import glocal0102 from "../assets/imagenes/glocal/glocal-01/glocal-01-02.jpg";
 import glocal0103 from "../assets/imagenes/glocal/glocal-01/glocal-01-03.jpg";
 
-// GLOCAL 02 (existente + nuevas)
+// GLOCAL 02
 import glocal0201 from "../assets/imagenes/glocal/glocal-02/glocal-02-01.jpg";
 import glocal0202 from "../assets/imagenes/glocal/glocal-02/glocal-02-02.jpg";
 import glocal0203 from "../assets/imagenes/glocal/glocal-02/glocal-02-03.jpg";
@@ -22,9 +22,9 @@ import glocal0207 from "../assets/imagenes/glocal/glocal-02/glocal-02-07.jpg";
 import glocal0208 from "../assets/imagenes/glocal/glocal-02/glocal-02-08.jpg";
 import glocal0209 from "../assets/imagenes/glocal/glocal-02/glocal-02-09.jpg";
 
-// TACOS (Showroom)  ✅ Ajusta extensiones/rutas si Netlify te sigue diciendo "Could not resolve"
+// TACOS (Showroom)
+// OJO: ajusta extensión/ruta si en Netlify da "Could not resolve" (mayúsculas, .JPG, .png, etc.)
 import tacoGlocal01 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-01.jpg";
-// import tacoGlocal02 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-02.jpg"; // ❌ NO lo usamos (pedido)
 import tacoGlocal03 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-03.jpg";
 import tacoGlocal04 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-04.jpg";
 import tacoGlocal05 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-05.jpg";
@@ -45,7 +45,6 @@ import tacoGlocal20 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-20.
 import tacoGlocal21 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-21.jpg";
 
 // ORDEN EXACTO COMO EN TU HTML ORIGINAL
-// (he puesto primero GLOCAL 01 y después GLOCAL 02 para que el modal siga el orden de la página)
 const images = [
   glocal0101,
   glocal0102,
@@ -115,8 +114,9 @@ export function Glocal({ onGoHome }) {
   const tacosStyles = {
     twoCols: {
       display: "grid",
-      gridTemplateColumns: "1fr 1fr",
-      gap: "12px", // ✅ más cerca (como "un dedo")
+      gridTemplateColumns: "auto auto", // ✅ clave: no ocupa 50% + 50%
+      gap: "12px", // ✅ “un dedo”
+      justifyContent: "flex-start", // ✅ pegado al margen izquierdo
     },
     col: {
       display: "flex",
