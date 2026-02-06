@@ -22,6 +22,28 @@ import glocal0207 from "../assets/imagenes/glocal/glocal-02/glocal-02-07.jpg";
 import glocal0208 from "../assets/imagenes/glocal/glocal-02/glocal-02-08.jpg";
 import glocal0209 from "../assets/imagenes/glocal/glocal-02/glocal-02-09.jpg";
 
+// TACOS (Showroom)
+import tacoGlocal01 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-01.jpg";
+import tacoGlocal02 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-02.jpg";
+import tacoGlocal03 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-03.jpg";
+import tacoGlocal04 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-04.jpg";
+import tacoGlocal05 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-05.jpg";
+import tacoGlocal06 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-06.jpg";
+import tacoGlocal07 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-07.jpg";
+import tacoGlocal08 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-08.jpg";
+import tacoGlocal09 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-09.jpg";
+import tacoGlocal10 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-10.jpg";
+import tacoGlocal11 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-11.jpg";
+import tacoGlocal12 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-12.jpg";
+import tacoGlocal13 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-13.jpg";
+import tacoGlocal14 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-14.jpg";
+import tacoGlocal15 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-15.jpg";
+import tacoGlocal16 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-16.jpg";
+import tacoGlocal17 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-17.jpg";
+import tacoGlocal18 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-18.jpg";
+import tacoGlocal20 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-20.jpg";
+import tacoGlocal21 from "../assets/imagenes/glocal/glocal-tacos/taco-glocal-21.jpg";
+
 // ORDEN EXACTO COMO EN TU HTML ORIGINAL
 // (he puesto primero GLOCAL 01 y después GLOCAL 02 para que el modal siga el orden de la página)
 const images = [
@@ -37,6 +59,33 @@ const images = [
   glocal0207,
   glocal0208,
   glocal0209,
+];
+
+// TACOS (2 columnas, arriba -> abajo)
+const tacosLeft = [
+  { label: "GLOCAL 02", thumb: tacoGlocal02 },
+  { label: "GLOCAL 10", thumb: tacoGlocal10 },
+  { label: "GLOCAL 14", thumb: tacoGlocal14 },
+  { label: "GLOCAL 18", thumb: tacoGlocal18 },
+  { label: "GLOCAL 16", thumb: tacoGlocal16 },
+  { label: "GLOCAL 15", thumb: tacoGlocal15 },
+  { label: "GLOCAL 08", thumb: tacoGlocal08 },
+  { label: "GLOCAL 17", thumb: tacoGlocal17 },
+  { label: "GLOCAL 09", thumb: tacoGlocal09 },
+  { label: "GLOCAL 21", thumb: tacoGlocal21 },
+];
+
+const tacosRight = [
+  { label: "GLOCAL 01", thumb: tacoGlocal01 },
+  { label: "GLOCAL 13", thumb: tacoGlocal13 },
+  { label: "GLOCAL 07", thumb: tacoGlocal07 },
+  { label: "GLOCAL 12", thumb: tacoGlocal12 },
+  { label: "GLOCAL 11", thumb: tacoGlocal11 },
+  { label: "GLOCAL 03", thumb: tacoGlocal03 },
+  { label: "GLOCAL 04", thumb: tacoGlocal04 },
+  { label: "GLOCAL 05", thumb: tacoGlocal05 },
+  { label: "GLOCAL 20", thumb: tacoGlocal20 },
+  { label: "GLOCAL 06", thumb: tacoGlocal06 },
 ];
 
 export function Glocal({ onGoHome }) {
@@ -62,6 +111,34 @@ export function Glocal({ onGoHome }) {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   }
 
+  // Estilos inline SOLO para esta página (no tocamos style.css)
+  const tacosStyles = {
+    twoCols: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "24px",
+    },
+    col: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "12px",
+    },
+    colTitle: {
+      margin: "0 0 6px 0",
+    },
+    itemBase: {
+      display: "flex",
+      alignItems: "center",
+      gap: "12px",
+    },
+    leftItem: { justifyContent: "flex-end" },
+    rightItem: { justifyContent: "flex-start" },
+    thumbRight: { order: 1 },
+    labelRight: { order: 2, textAlign: "left" },
+    thumbLeft: { order: 2 },
+    labelLeft: { order: 1, textAlign: "right" },
+  };
+
   return (
     <>
       {/* HEADER GLOBAL */}
@@ -70,6 +147,65 @@ export function Glocal({ onGoHome }) {
       <main>
         {/* Título */}
         <h1 className="titulo-coleccion">GLOCAL</h1>
+
+        {/* TACOS (2 columnas) - TODO dentro de glocal.jsx */}
+        <section className="showroom-colors">
+          <h3 className="showroom-colors__title">SHOWROOM COLORS</h3>
+
+          <div style={tacosStyles.twoCols}>
+            {/* LEFT COLUMN */}
+            <div style={tacosStyles.col}>
+              <h4 style={tacosStyles.colTitle}>LEFT COLUMN</h4>
+
+              {tacosLeft.map((item) => (
+                <div
+                  className="showroom-colors__item"
+                  role="listitem"
+                  key={`left-${item.label}`}
+                  style={{ ...tacosStyles.itemBase, ...tacosStyles.leftItem }}
+                >
+                  <img
+                    src={item.thumb}
+                    alt={item.label}
+                    className="showroom-colors__thumb"
+                    loading="lazy"
+                    draggable="false"
+                    style={tacosStyles.thumbLeft}
+                  />
+                  <div className="showroom-colors__label" style={tacosStyles.labelLeft}>
+                    {item.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* RIGHT COLUMN */}
+            <div style={tacosStyles.col}>
+              <h4 style={tacosStyles.colTitle}>RIGHT COLUMN</h4>
+
+              {tacosRight.map((item) => (
+                <div
+                  className="showroom-colors__item"
+                  role="listitem"
+                  key={`right-${item.label}`}
+                  style={{ ...tacosStyles.itemBase, ...tacosStyles.rightItem }}
+                >
+                  <img
+                    src={item.thumb}
+                    alt={item.label}
+                    className="showroom-colors__thumb"
+                    loading="lazy"
+                    draggable="false"
+                    style={tacosStyles.thumbRight}
+                  />
+                  <div className="showroom-colors__label" style={tacosStyles.labelRight}>
+                    {item.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout
