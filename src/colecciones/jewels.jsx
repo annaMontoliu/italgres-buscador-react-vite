@@ -148,7 +148,7 @@ export function Jewels({ onGoHome }) {
 
         {/* PDF ENLACE ACTUALIZADO */}
         <ColeccionLayout 
-          infoUrl="https://mirage-cdn.thron.com/static/YHMHBX_MRG_CAT_JEWELS20_012026_RZIR97.pdf?xseo=&response-content-disposition=inline%3Bfilename%3D%22catalogue-jewels-2-0-pdf.pdf%22"
+          infoUrl="https://mirage-cdn.thron.com/static/HHVN0G_Mirage_Catalogo_Jewels_Febbraio_2026_Q8LKHD.pdf?xseo=&response-content-disposition=inline%3Bfilename%3D%22catalogue-jewels-2-0-pdf.pdf%22"
         />
 
         {/* JEWELS 16 */}
