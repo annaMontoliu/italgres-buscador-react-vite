@@ -114,6 +114,12 @@ import { Cruise } from "./colecciones/cruise";
 import { PietraEssenza } from "./colecciones/pietra-essenza";
 import { DualTravertine } from "./colecciones/dual-travertine";
 
+// ✅ NUEVAS (MATERA STONE, AVALLON, BAIKAL, SAVOY)
+import { MateraStone } from "./colecciones/matera-stone";
+import { Avallon } from "./colecciones/avallon";
+import { Baikal } from "./colecciones/baikal";
+import { Savoy } from "./colecciones/savoy";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -229,6 +235,12 @@ export function App() {
     if (name === "CRUISE") setPage("cruise");
     if (name === "PIETRA ESSENZA") setPage("pietra-essenza");
     if (name === "DUAL TRAVERTINE") setPage("dual-travertine");
+
+    // ✅ MATERA STONE, AVALLON, BAIKAL, SAVOY
+    if (name === "MATERA STONE") setPage("matera-stone");
+    if (name === "AVALLON") setPage("avallon");
+    if (name === "BAIKAL") setPage("baikal");
+    if (name === "SAVOY") setPage("savoy");
   }
 
   function handleGoHome() {
@@ -350,6 +362,12 @@ export function App() {
     return <PietraEssenza onGoHome={handleGoHome} />;
   if (page === "dual-travertine")
     return <DualTravertine onGoHome={handleGoHome} />;
+
+  // ✅ MATERA STONE, AVALLON, BAIKAL, SAVOY
+  if (page === "matera-stone") return <MateraStone onGoHome={handleGoHome} />;
+  if (page === "avallon") return <Avallon onGoHome={handleGoHome} />;
+  if (page === "baikal") return <Baikal onGoHome={handleGoHome} />;
+  if (page === "savoy") return <Savoy onGoHome={handleGoHome} />;
 
   return null;
 }

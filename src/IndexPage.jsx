@@ -8,12 +8,14 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "ARENARIA" },
       { name: "ARTE" }, // ✅ NUEVA
+      { name: "AVALLON" }, // ✅ NUEVA
     ],
   },
   {
     letter: "B",
     items: [
       { name: "BARCELONA" },
+      { name: "BAIKAL" }, // ✅ NUEVA
       { name: "BELA" },
       { name: "BELLEVUE" },
       { name: "BLOOM" },
@@ -91,6 +93,7 @@ const COLLECTION_GROUPS = [
       { name: "MAJESTIC" },
       { name: "MAINSTONE" }, // ✅ NUEVA
       { name: "MAPIERRE" },
+      { name: "MATERA STONE" }, // ✅ NUEVA
       { name: "MATERIA" },
       { name: "MATERIA CLASSICA" },
       { name: "MEMORY" },
@@ -101,10 +104,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "N",
-    items: [
-      { name: "NATURE MOOD" },
-      { name: "NORDIC" },
-    ],
+    items: [{ name: "NATURE MOOD" }, { name: "NORDIC" }],
   },
   {
     letter: "O",
@@ -130,6 +130,7 @@ const COLLECTION_GROUPS = [
     letter: "S",
     items: [
       { name: "SANDSTONE" },
+      { name: "SAVOY" }, // ✅ NUEVA
       { name: "SEINE" },
       { name: "SHEER" },
       { name: "SINAI COEM" },
@@ -151,10 +152,7 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "U",
-    items: [
-      { name: "ULISSE" },
-      { name: "UNIQUE" },
-    ],
+    items: [{ name: "ULISSE" }, { name: "UNIQUE" }],
   },
   {
     letter: "V",
