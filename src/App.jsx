@@ -108,6 +108,12 @@ import { Mainstone } from "./colecciones/mainstone";
 import { Praline } from "./colecciones/praline";
 import { Sublime } from "./colecciones/sublime";
 
+// ✅ NUEVAS (HOPE, CRUISE, PIETRA ESSENZA, DUAL TRAVERTINE)
+import { Hope } from "./colecciones/hope";
+import { Cruise } from "./colecciones/cruise";
+import { PietraEssenza } from "./colecciones/pietra-essenza";
+import { DualTravertine } from "./colecciones/dual-travertine";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -217,6 +223,12 @@ export function App() {
     if (name === "MAINSTONE") setPage("mainstone");
     if (name === "PRALINE") setPage("praline");
     if (name === "SUBLIME") setPage("sublime");
+
+    // ✅ HOPE, CRUISE, PIETRA ESSENZA, DUAL TRAVERTINE
+    if (name === "HOPE") setPage("hope");
+    if (name === "CRUISE") setPage("cruise");
+    if (name === "PIETRA ESSENZA") setPage("pietra-essenza");
+    if (name === "DUAL TRAVERTINE") setPage("dual-travertine");
   }
 
   function handleGoHome() {
@@ -330,6 +342,14 @@ export function App() {
   if (page === "mainstone") return <Mainstone onGoHome={handleGoHome} />;
   if (page === "praline") return <Praline onGoHome={handleGoHome} />;
   if (page === "sublime") return <Sublime onGoHome={handleGoHome} />;
+
+  // ✅ HOPE, CRUISE, PIETRA ESSENZA, DUAL TRAVERTINE
+  if (page === "hope") return <Hope onGoHome={handleGoHome} />;
+  if (page === "cruise") return <Cruise onGoHome={handleGoHome} />;
+  if (page === "pietra-essenza")
+    return <PietraEssenza onGoHome={handleGoHome} />;
+  if (page === "dual-travertine")
+    return <DualTravertine onGoHome={handleGoHome} />;
 
   return null;
 }

@@ -29,6 +29,7 @@ const COLLECTION_GROUPS = [
       { name: "CANELA ROMA" },
       { name: "CHICAGO" },
       { name: "CORALINA" },
+      { name: "CRUISE" }, // ✅ NUEVA
     ],
   },
   {
@@ -36,6 +37,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "DRIPART" },
       { name: "DUAL" }, // ✅ NUEVA
+      { name: "DUAL TRAVERTINE" }, // ✅ NUEVA
     ],
   },
   {
@@ -58,6 +60,10 @@ const COLLECTION_GROUPS = [
       { name: "GLOCAL" },
       { name: "GREEN TREES" },
     ],
+  },
+  {
+    letter: "H",
+    items: [{ name: "HOPE" }], // ✅ NUEVA
   },
   {
     letter: "I",
@@ -110,6 +116,7 @@ const COLLECTION_GROUPS = [
       { name: "PALERMO" },
       { name: "PAPIER" },
       { name: "PIERRE VIVE" },
+      { name: "PIETRA ESSENZA" }, // ✅ NUEVA
       { name: "PORTLAND" },
       { name: "PRALINE" }, // ✅ NUEVA
       { name: "PULPIS" },
