@@ -378,3 +378,22 @@ h3.color-title {
     height: 62px;
   }
 }
+
+/* ----------------------------- */
+/* AÑADIDO: HOME buscador fijo   */
+/* (esto es lo ÚNICO nuevo)      */
+/* ----------------------------- */
+
+.index-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--paper);
+  padding-top: 0.5rem;
+}
+
+.collections-scroll {
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+  padding-right: 6px;
+}

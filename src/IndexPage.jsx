@@ -193,18 +193,22 @@ export function IndexPage({ onOpenCollection }) {
       <Header />
 
       <main className="index-page">
-        <h1>COLLECTIONS</h1>
+        {/* BLOQUE FIJO: título + buscador */}
+        <div className="index-sticky">
+          <h1>COLLECTIONS</h1>
 
-        <input
-          type="search"
-          id="collectionSearch"
-          placeholder="Search a collection..."
-          autoComplete="off"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+          <input
+            type="search"
+            id="collectionSearch"
+            placeholder="Search a collection..."
+            autoComplete="off"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
 
-        <div id="collectionsContainer">
+        {/* SOLO ESTO HACE SCROLL */}
+        <div id="collectionsContainer" className="collections-scroll">
           {groupsToShow.map((group) => (
             <div
               key={group.letter}
