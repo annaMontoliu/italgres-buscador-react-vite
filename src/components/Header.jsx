@@ -62,6 +62,15 @@ export function Header({ onGoHome }) {
       </a>
 
       <nav>
+        {/* SAMPLE MAP - nuevo botón */}
+        <a
+          href="/pdf/sample-map.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SAMPLE MAP
+        </a>
+
         {/* TARIFA a la izquierda */}
         <a
           href="/docs/tarifa-italgres.xlsx"
