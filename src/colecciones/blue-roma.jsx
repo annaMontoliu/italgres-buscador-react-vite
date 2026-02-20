@@ -9,18 +9,31 @@ import { ImageModal } from "../components/ImageModal";
 // IMPORT IMÁGENES
 // =====================
 
-// BLUE ROMA (6)
+// BLUE ROMA (9)
 import blueRoma01 from "../assets/imagenes/blue-roma/blue-roma-01.jpg";
 import blueRoma02 from "../assets/imagenes/blue-roma/blue-roma-02.jpg";
 import blueRoma03 from "../assets/imagenes/blue-roma/blue-roma-03.jpg";
 import blueRoma04 from "../assets/imagenes/blue-roma/blue-roma-04.jpg";
 import blueRoma05 from "../assets/imagenes/blue-roma/blue-roma-05.jpg";
 import blueRoma06 from "../assets/imagenes/blue-roma/blue-roma-06.jpg";
+import blueRoma07 from "../assets/imagenes/blue-roma/blue-roma-07.jpg";
+import blueRoma08 from "../assets/imagenes/blue-roma/blue-roma-08.jpg";
+import blueRoma09 from "../assets/imagenes/blue-roma/blue-roma-09.jpg";
 
 // =====================
 // ARRAY GLOBAL MODAL
 // =====================
-const images = [blueRoma01, blueRoma02, blueRoma03, blueRoma04, blueRoma05, blueRoma06];
+const images = [
+  blueRoma01, // 0
+  blueRoma02, // 1
+  blueRoma03, // 2
+  blueRoma04, // 3
+  blueRoma05, // 4
+  blueRoma06, // 5
+  blueRoma07, // 6
+  blueRoma08, // 7
+  blueRoma09, // 8
+];
 
 export function BlueRoma({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,6 +77,9 @@ export function BlueRoma({ onGoHome }) {
           <img src={blueRoma04} className="gallery-img" onClick={() => openModal(3)} loading="lazy" alt="BLUE ROMA 04" />
           <img src={blueRoma05} className="gallery-img" onClick={() => openModal(4)} loading="lazy" alt="BLUE ROMA 05" />
           <img src={blueRoma06} className="gallery-img" onClick={() => openModal(5)} loading="lazy" alt="BLUE ROMA 06" />
+          <img src={blueRoma07} className="gallery-img" onClick={() => openModal(6)} loading="lazy" alt="BLUE ROMA 07" />
+          <img src={blueRoma08} className="gallery-img" onClick={() => openModal(7)} loading="lazy" alt="BLUE ROMA 08" />
+          <img src={blueRoma09} className="gallery-img" onClick={() => openModal(8)} loading="lazy" alt="BLUE ROMA 09" />
         </section>
       </main>
 

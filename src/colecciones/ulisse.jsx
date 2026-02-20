@@ -20,14 +20,15 @@ import ulisseNatural02 from "../assets/imagenes/ulisse/ulisse-natural/ulisse-nat
 import ulisseNatural03 from "../assets/imagenes/ulisse/ulisse-natural/ulisse-natural-03.jpg";
 import ulisseNatural04 from "../assets/imagenes/ulisse/ulisse-natural/ulisse-natural-04.jpg";
 
-// PEARL (3)
+// PEARL (4) ✅ +1 nueva
 import ulissePearl01 from "../assets/imagenes/ulisse/ulisse-pearl/ulisse-pearl-01.jpg";
 import ulissePearl02 from "../assets/imagenes/ulisse/ulisse-pearl/ulisse-pearl-02.jpg";
 import ulissePearl03 from "../assets/imagenes/ulisse/ulisse-pearl/ulisse-pearl-03.jpg";
+import ulissePearl04 from "../assets/imagenes/ulisse/ulisse-pearl/ulisse-pearl-04.jpg";
 
 // ORDEN EXACTO (modal)
 const images = [
-  // BEIGE
+  // BEIGE (0–5)
   ulisseBeige01,
   ulisseBeige02,
   ulisseBeige03,
@@ -35,16 +36,17 @@ const images = [
   ulisseBeige05,
   ulisseBeige06,
 
-  // NATURAL
+  // NATURAL (6–9)
   ulisseNatural01,
   ulisseNatural02,
   ulisseNatural03,
   ulisseNatural04,
 
-  // PEARL
+  // PEARL (10–13)
   ulissePearl01,
   ulissePearl02,
   ulissePearl03,
+  ulissePearl04,
 ];
 
 export function Ulisse({ onGoHome }) {
@@ -78,122 +80,40 @@ export function Ulisse({ onGoHome }) {
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* Título */}
         <h1 className="titulo-coleccion">ULISSE</h1>
 
-        {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout infoUrl="https://stnceramica.es/wordpress2/wp-content/uploads/2024/09/STN_FOLLETO_CERSAIE_2024_ULISSE.pdf" />
 
-        {/* ---- GALERÍA ---- */}
-
-        {/* Color BEIGE */}
+        {/* ULISSE BEIGE */}
         <h3 className="color-title">ULISSE BEIGE</h3>
         <section className="gallery-grid">
-          <img
-            src={ulisseBeige01}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="ULISSE BEIGE 1"
-          />
-          <img
-            src={ulisseBeige02}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="ULISSE BEIGE 2"
-          />
-          <img
-            src={ulisseBeige03}
-            className="gallery-img"
-            onClick={() => openModal(2)}
-            loading="lazy"
-            alt="ULISSE BEIGE 3"
-          />
-          <img
-            src={ulisseBeige04}
-            className="gallery-img"
-            onClick={() => openModal(3)}
-            loading="lazy"
-            alt="ULISSE BEIGE 4"
-          />
-          <img
-            src={ulisseBeige05}
-            className="gallery-img"
-            onClick={() => openModal(4)}
-            loading="lazy"
-            alt="ULISSE BEIGE 5"
-          />
-          <img
-            src={ulisseBeige06}
-            className="gallery-img"
-            onClick={() => openModal(5)}
-            loading="lazy"
-            alt="ULISSE BEIGE 6"
-          />
+          <img src={ulisseBeige01} className="gallery-img" onClick={() => openModal(0)} loading="lazy" alt="ULISSE BEIGE 1" />
+          <img src={ulisseBeige02} className="gallery-img" onClick={() => openModal(1)} loading="lazy" alt="ULISSE BEIGE 2" />
+          <img src={ulisseBeige03} className="gallery-img" onClick={() => openModal(2)} loading="lazy" alt="ULISSE BEIGE 3" />
+          <img src={ulisseBeige04} className="gallery-img" onClick={() => openModal(3)} loading="lazy" alt="ULISSE BEIGE 4" />
+          <img src={ulisseBeige05} className="gallery-img" onClick={() => openModal(4)} loading="lazy" alt="ULISSE BEIGE 5" />
+          <img src={ulisseBeige06} className="gallery-img" onClick={() => openModal(5)} loading="lazy" alt="ULISSE BEIGE 6" />
         </section>
 
-        {/* Color NATURAL */}
+        {/* ULISSE NATURAL */}
         <h3 className="color-title">ULISSE NATURAL</h3>
         <section className="gallery-grid">
-          <img
-            src={ulisseNatural01}
-            className="gallery-img"
-            onClick={() => openModal(6)}
-            loading="lazy"
-            alt="ULISSE NATURAL 1"
-          />
-          <img
-            src={ulisseNatural02}
-            className="gallery-img"
-            onClick={() => openModal(7)}
-            loading="lazy"
-            alt="ULISSE NATURAL 2"
-          />
-          <img
-            src={ulisseNatural03}
-            className="gallery-img"
-            onClick={() => openModal(8)}
-            loading="lazy"
-            alt="ULISSE NATURAL 3"
-          />
-          <img
-            src={ulisseNatural04}
-            className="gallery-img"
-            onClick={() => openModal(9)}
-            loading="lazy"
-            alt="ULISSE NATURAL 4"
-          />
+          <img src={ulisseNatural01} className="gallery-img" onClick={() => openModal(6)} loading="lazy" alt="ULISSE NATURAL 1" />
+          <img src={ulisseNatural02} className="gallery-img" onClick={() => openModal(7)} loading="lazy" alt="ULISSE NATURAL 2" />
+          <img src={ulisseNatural03} className="gallery-img" onClick={() => openModal(8)} loading="lazy" alt="ULISSE NATURAL 3" />
+          <img src={ulisseNatural04} className="gallery-img" onClick={() => openModal(9)} loading="lazy" alt="ULISSE NATURAL 4" />
         </section>
 
-        {/* Color PEARL */}
+        {/* ULISSE PEARL */}
         <h3 className="color-title">ULISSE PEARL</h3>
         <section className="gallery-grid">
-          <img
-            src={ulissePearl01}
-            className="gallery-img"
-            onClick={() => openModal(10)}
-            loading="lazy"
-            alt="ULISSE PEARL 1"
-          />
-          <img
-            src={ulissePearl02}
-            className="gallery-img"
-            onClick={() => openModal(11)}
-            loading="lazy"
-            alt="ULISSE PEARL 2"
-          />
-          <img
-            src={ulissePearl03}
-            className="gallery-img"
-            onClick={() => openModal(12)}
-            loading="lazy"
-            alt="ULISSE PEARL 3"
-          />
+          <img src={ulissePearl01} className="gallery-img" onClick={() => openModal(10)} loading="lazy" alt="ULISSE PEARL 1" />
+          <img src={ulissePearl02} className="gallery-img" onClick={() => openModal(11)} loading="lazy" alt="ULISSE PEARL 2" />
+          <img src={ulissePearl03} className="gallery-img" onClick={() => openModal(12)} loading="lazy" alt="ULISSE PEARL 3" />
+          <img src={ulissePearl04} className="gallery-img" onClick={() => openModal(13)} loading="lazy" alt="ULISSE PEARL 4" />
         </section>
       </main>
 
-      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}

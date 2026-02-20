@@ -4,17 +4,16 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-
 // CALAMITE (2)
 import dripartCalamite01 from "../assets/imagenes/dripart/dripart-calamite/dripart-calamite-01.jpg";
 import dripartCalamite02 from "../assets/imagenes/dripart/dripart-calamite/dripart-calamite-02.jpg";
 
-// IRON (4)
+// IRON (5) ✅ +1 nueva
 import dripartIron01 from "../assets/imagenes/dripart/dripart-iron/dripart-iron-01.jpg";
 import dripartIron02 from "../assets/imagenes/dripart/dripart-iron/dripart-iron-02.jpg";
 import dripartIron03 from "../assets/imagenes/dripart/dripart-iron/dripart-iron-03.jpg";
 import dripartIron04 from "../assets/imagenes/dripart/dripart-iron/dripart-iron-04.jpg";
+import dripartIron05 from "../assets/imagenes/dripart/dripart-iron/dripart-iron-05.jpg";
 
 // BRONZE (3)
 import dripartBronze01 from "../assets/imagenes/dripart/dripart-bronze/dripart-bronze-01.jpg";
@@ -35,29 +34,30 @@ import dripartTitaneo03 from "../assets/imagenes/dripart/dripart-titaneo/dripart
 
 // ORDEN EXACTO (modal)
 const images = [
-  // CALAMITE
+  // CALAMITE (0–1)
   dripartCalamite01,
   dripartCalamite02,
 
-  // IRON
+  // IRON (2–6)
   dripartIron01,
   dripartIron02,
   dripartIron03,
   dripartIron04,
+  dripartIron05,
 
-  // BRONZE
+  // BRONZE (7–9)
   dripartBronze01,
   dripartBronze02,
   dripartBronze03,
 
-  // VERDEGRIS
+  // VERDEGRIS (10–14)
   dripartVerdegris01,
   dripartVerdegris02,
   dripartVerdegris03,
   dripartVerdegris04,
   dripartVerdegris05,
 
-  // TITANEO
+  // TITANEO (15–17)
   dripartTitaneo01,
   dripartTitaneo02,
   dripartTitaneo03,
@@ -90,164 +90,57 @@ export function Dripart({ onGoHome }) {
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* Título */}
         <h1 className="titulo-coleccion">DRIPART</h1>
 
-        {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout infoUrl="/pdf/DRIPART.PDF" />
 
-        {/* ---- GALERÍA ---- */}
-
-        {/* Color CALAMITE */}
+        {/* CALAMITE */}
         <h3 className="color-title">DRIPART CALAMITE</h3>
         <section className="gallery-grid">
-          <img
-            src={dripartCalamite01}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="DRIPART CALAMITE 1"
-          />
-          <img
-            src={dripartCalamite02}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="DRIPART CALAMITE 2"
-          />
+          <img src={dripartCalamite01} className="gallery-img" onClick={() => openModal(0)} loading="lazy" alt="DRIPART CALAMITE 1" />
+          <img src={dripartCalamite02} className="gallery-img" onClick={() => openModal(1)} loading="lazy" alt="DRIPART CALAMITE 2" />
         </section>
 
-        {/* Color IRON */}
+        {/* IRON */}
         <h3 className="color-title">DRIPART IRON</h3>
         <section className="gallery-grid">
-          <img
-            src={dripartIron01}
-            className="gallery-img"
-            onClick={() => openModal(2)}
-            loading="lazy"
-            alt="DRIPART IRON 1"
-          />
-          <img
-            src={dripartIron02}
-            className="gallery-img"
-            onClick={() => openModal(3)}
-            loading="lazy"
-            alt="DRIPART IRON 2"
-          />
-          <img
-            src={dripartIron03}
-            className="gallery-img"
-            onClick={() => openModal(4)}
-            loading="lazy"
-            alt="DRIPART IRON 3"
-          />
-          <img
-            src={dripartIron04}
-            className="gallery-img"
-            onClick={() => openModal(5)}
-            loading="lazy"
-            alt="DRIPART IRON 4"
-          />
+          <img src={dripartIron01} className="gallery-img" onClick={() => openModal(2)} loading="lazy" alt="DRIPART IRON 1" />
+          <img src={dripartIron02} className="gallery-img" onClick={() => openModal(3)} loading="lazy" alt="DRIPART IRON 2" />
+          <img src={dripartIron03} className="gallery-img" onClick={() => openModal(4)} loading="lazy" alt="DRIPART IRON 3" />
+          <img src={dripartIron04} className="gallery-img" onClick={() => openModal(5)} loading="lazy" alt="DRIPART IRON 4" />
+          <img src={dripartIron05} className="gallery-img" onClick={() => openModal(6)} loading="lazy" alt="DRIPART IRON 5" />
         </section>
 
-        {/* Color BRONZE */}
+        {/* BRONZE */}
         <h3 className="color-title">DRIPART BRONZE</h3>
         <section className="gallery-grid">
-          <img
-            src={dripartBronze01}
-            className="gallery-img"
-            onClick={() => openModal(6)}
-            loading="lazy"
-            alt="DRIPART BRONZE 1"
-          />
-          <img
-            src={dripartBronze02}
-            className="gallery-img"
-            onClick={() => openModal(7)}
-            loading="lazy"
-            alt="DRIPART BRONZE 2"
-          />
-          <img
-            src={dripartBronze03}
-            className="gallery-img"
-            onClick={() => openModal(8)}
-            loading="lazy"
-            alt="DRIPART BRONZE 3"
-          />
+          <img src={dripartBronze01} className="gallery-img" onClick={() => openModal(7)} loading="lazy" alt="DRIPART BRONZE 1" />
+          <img src={dripartBronze02} className="gallery-img" onClick={() => openModal(8)} loading="lazy" alt="DRIPART BRONZE 2" />
+          <img src={dripartBronze03} className="gallery-img" onClick={() => openModal(9)} loading="lazy" alt="DRIPART BRONZE 3" />
         </section>
 
-        {/* Color VERDEGRIS */}
+        {/* VERDEGRIS */}
         <h3 className="color-title">DRIPART VERDEGRIS</h3>
         <section className="gallery-grid">
-          <img
-            src={dripartVerdegris01}
-            className="gallery-img"
-            onClick={() => openModal(9)}
-            loading="lazy"
-            alt="DRIPART VERDEGRIS 1"
-          />
-          <img
-            src={dripartVerdegris02}
-            className="gallery-img"
-            onClick={() => openModal(10)}
-            loading="lazy"
-            alt="DRIPART VERDEGRIS 2"
-          />
-          <img
-            src={dripartVerdegris03}
-            className="gallery-img"
-            onClick={() => openModal(11)}
-            loading="lazy"
-            alt="DRIPART VERDEGRIS 3"
-          />
-          <img
-            src={dripartVerdegris04}
-            className="gallery-img"
-            onClick={() => openModal(12)}
-            loading="lazy"
-            alt="DRIPART VERDEGRIS 4"
-          />
-          <img
-            src={dripartVerdegris05}
-            className="gallery-img"
-            onClick={() => openModal(13)}
-            loading="lazy"
-            alt="DRIPART VERDEGRIS 5"
-          />
+          <img src={dripartVerdegris01} className="gallery-img" onClick={() => openModal(10)} loading="lazy" alt="DRIPART VERDEGRIS 1" />
+          <img src={dripartVerdegris02} className="gallery-img" onClick={() => openModal(11)} loading="lazy" alt="DRIPART VERDEGRIS 2" />
+          <img src={dripartVerdegris03} className="gallery-img" onClick={() => openModal(12)} loading="lazy" alt="DRIPART VERDEGRIS 3" />
+          <img src={dripartVerdegris04} className="gallery-img" onClick={() => openModal(13)} loading="lazy" alt="DRIPART VERDEGRIS 4" />
+          <img src={dripartVerdegris05} className="gallery-img" onClick={() => openModal(14)} loading="lazy" alt="DRIPART VERDEGRIS 5" />
         </section>
 
-        {/* Color TITANEO */}
+        {/* TITANEO */}
         <h3 className="color-title">DRIPART TITANEO</h3>
         <section className="gallery-grid">
-          <img
-            src={dripartTitaneo01}
-            className="gallery-img"
-            onClick={() => openModal(14)}
-            loading="lazy"
-            alt="DRIPART TITANEO 1"
-          />
-          <img
-            src={dripartTitaneo02}
-            className="gallery-img"
-            onClick={() => openModal(15)}
-            loading="lazy"
-            alt="DRIPART TITANEO 2"
-          />
-          <img
-            src={dripartTitaneo03}
-            className="gallery-img"
-            onClick={() => openModal(16)}
-            loading="lazy"
-            alt="DRIPART TITANEO 3"
-          />
+          <img src={dripartTitaneo01} className="gallery-img" onClick={() => openModal(15)} loading="lazy" alt="DRIPART TITANEO 1" />
+          <img src={dripartTitaneo02} className="gallery-img" onClick={() => openModal(16)} loading="lazy" alt="DRIPART TITANEO 2" />
+          <img src={dripartTitaneo03} className="gallery-img" onClick={() => openModal(17)} loading="lazy" alt="DRIPART TITANEO 3" />
         </section>
       </main>
 
-      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}
