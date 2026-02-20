@@ -26,7 +26,12 @@ import sheerBeigeBloomStar02 from "../assets/imagenes/sheer/sheer-beige/sheer-be
 import sheerBeigeBloomStar03 from "../assets/imagenes/sheer/sheer-beige/sheer-beige-bloom-star/sheer-beige-bloom-star-03.jpg";
 
 // ================= SHEER GREY (PLAIN + STICK + DUNE) =================
+// ✅ añadimos 3 fotos más en PLAIN
 import sheerGreyPlain01 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-plain/sheer-grey-plain-01.jpg";
+import sheerGreyPlain02 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-plain/sheer-grey-plain-02.jpg";
+import sheerGreyPlain03 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-plain/sheer-grey-plain-03.jpg";
+import sheerGreyPlain04 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-plain/sheer-grey-plain-04.jpg";
+
 import sheerGreyStick01 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-stick/sheer-grey-stick-01.jpg";
 import sheerGreyDune01 from "../assets/imagenes/sheer/sheer-grey/sheer-grey-dune/sheer-grey-dune-01.jpg";
 
@@ -48,40 +53,43 @@ import sheerRust06 from "../assets/imagenes/sheer/sheer-rust/sheer-rust-06.jpg";
 // ORDEN EXACTO COMO EN LA PÁGINA (y por tanto en el modal)
 const images = [
   // WHITE (PLAIN + STICK + DUNE)
-  sheerWhitePlain01,
-  sheerWhitePlain02,
-  sheerWhitePlain03,
-  sheerWhiteStick01,
-  sheerWhiteStick02,
-  sheerWhiteDune01,
-  sheerWhiteDune02,
+  sheerWhitePlain01, // 0
+  sheerWhitePlain02, // 1
+  sheerWhitePlain03, // 2
+  sheerWhiteStick01, // 3
+  sheerWhiteStick02, // 4
+  sheerWhiteDune01, // 5
+  sheerWhiteDune02, // 6
 
   // BEIGE
-  sheerBeigeStick01,
-  sheerBeigeStick02,
-  sheerBeigeBloomStar01,
-  sheerBeigeBloomStar02,
-  sheerBeigeBloomStar03,
+  sheerBeigeStick01, // 7
+  sheerBeigeStick02, // 8
+  sheerBeigeBloomStar01, // 9
+  sheerBeigeBloomStar02, // 10
+  sheerBeigeBloomStar03, // 11
 
-  // GREY
-  sheerGreyPlain01,
-  sheerGreyStick01,
-  sheerGreyDune01,
+  // GREY ✅ (PLAIN 01-04 + STICK + DUNE)
+  sheerGreyPlain01, // 12
+  sheerGreyPlain02, // 13
+  sheerGreyPlain03, // 14
+  sheerGreyPlain04, // 15
+  sheerGreyStick01, // 16
+  sheerGreyDune01, // 17
 
-  // LEAVES
-  sheerLeaves01,
-  sheerLeaves02,
-  sheerLeaves03,
-  sheerLeaves04,
-  sheerLeaves05,
+  // LEAVES (se desplaza)
+  sheerLeaves01, // 18
+  sheerLeaves02, // 19
+  sheerLeaves03, // 20
+  sheerLeaves04, // 21
+  sheerLeaves05, // 22
 
-  // RUST
-  sheerRust01,
-  sheerRust02,
-  sheerRust03,
-  sheerRust04,
-  sheerRust05,
-  sheerRust06,
+  // RUST (se desplaza)
+  sheerRust01, // 23
+  sheerRust02, // 24
+  sheerRust03, // 25
+  sheerRust04, // 26
+  sheerRust05, // 27
+  sheerRust06, // 28
 ];
 
 export function Sheer({ onGoHome }) {
@@ -217,7 +225,7 @@ export function Sheer({ onGoHome }) {
           />
         </section>
 
-        {/* SHEER GREY (PLAIN + STICK + DUNE) */}
+        {/* SHEER GREY (PLAIN + STICK + DUNE) ✅ */}
         <h3 className="color-title">SHEER GREY</h3>
         <section className="gallery-grid">
           <img
@@ -228,103 +236,124 @@ export function Sheer({ onGoHome }) {
             alt="SHEER GREY 1"
           />
           <img
-            src={sheerGreyStick01}
+            src={sheerGreyPlain02}
             className="gallery-img"
             onClick={() => openModal(13)}
             loading="lazy"
             alt="SHEER GREY 2"
           />
           <img
-            src={sheerGreyDune01}
+            src={sheerGreyPlain03}
             className="gallery-img"
             onClick={() => openModal(14)}
             loading="lazy"
             alt="SHEER GREY 3"
           />
+          <img
+            src={sheerGreyPlain04}
+            className="gallery-img"
+            onClick={() => openModal(15)}
+            loading="lazy"
+            alt="SHEER GREY 4"
+          />
+          <img
+            src={sheerGreyStick01}
+            className="gallery-img"
+            onClick={() => openModal(16)}
+            loading="lazy"
+            alt="SHEER GREY 5"
+          />
+          <img
+            src={sheerGreyDune01}
+            className="gallery-img"
+            onClick={() => openModal(17)}
+            loading="lazy"
+            alt="SHEER GREY 6"
+          />
         </section>
 
-        {/* SHEER LEAVES */}
+        {/* SHEER LEAVES (índices actualizados) */}
         <h3 className="color-title">SHEER LEAVES</h3>
         <section className="gallery-grid">
           <img
             src={sheerLeaves01}
             className="gallery-img"
-            onClick={() => openModal(15)}
+            onClick={() => openModal(18)}
             loading="lazy"
             alt="SHEER LEAVES 1"
           />
           <img
             src={sheerLeaves02}
             className="gallery-img"
-            onClick={() => openModal(16)}
+            onClick={() => openModal(19)}
             loading="lazy"
             alt="SHEER LEAVES 2"
           />
           <img
             src={sheerLeaves03}
             className="gallery-img"
-            onClick={() => openModal(17)}
+            onClick={() => openModal(20)}
             loading="lazy"
             alt="SHEER LEAVES 3"
           />
           <img
             src={sheerLeaves04}
             className="gallery-img"
-            onClick={() => openModal(18)}
+            onClick={() => openModal(21)}
             loading="lazy"
             alt="SHEER LEAVES 4"
           />
           <img
             src={sheerLeaves05}
             className="gallery-img"
-            onClick={() => openModal(19)}
+            onClick={() => openModal(22)}
             loading="lazy"
             alt="SHEER LEAVES 5"
           />
         </section>
 
-        {/* SHEER RUST */}
+        {/* SHEER RUST (índices actualizados) */}
         <h3 className="color-title">SHEER RUST</h3>
         <section className="gallery-grid">
           <img
             src={sheerRust01}
             className="gallery-img"
-            onClick={() => openModal(20)}
+            onClick={() => openModal(23)}
             loading="lazy"
             alt="SHEER RUST 1"
           />
           <img
             src={sheerRust02}
             className="gallery-img"
-            onClick={() => openModal(21)}
+            onClick={() => openModal(24)}
             loading="lazy"
             alt="SHEER RUST 2"
           />
           <img
             src={sheerRust03}
             className="gallery-img"
-            onClick={() => openModal(22)}
+            onClick={() => openModal(25)}
             loading="lazy"
             alt="SHEER RUST 3"
           />
           <img
             src={sheerRust04}
             className="gallery-img"
-            onClick={() => openModal(23)}
+            onClick={() => openModal(26)}
             loading="lazy"
             alt="SHEER RUST 4"
           />
           <img
             src={sheerRust05}
             className="gallery-img"
-            onClick={() => openModal(24)}
+            onClick={() => openModal(27)}
             loading="lazy"
             alt="SHEER RUST 5"
           />
           <img
             src={sheerRust06}
             className="gallery-img"
-            onClick={() => openModal(25)}
+            onClick={() => openModal(28)}
             loading="lazy"
             alt="SHEER RUST 6"
           />
