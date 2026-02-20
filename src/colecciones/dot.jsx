@@ -5,17 +5,11 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-
 // DOT - DECO GIACHIO (2 fotos)
-import dotDecoGiachio01 from "../assets/imagenes/dot/dot-deco-giachio/dot-deco-giachio-01.jpg";
-import dotDecoGiachio02 from "../assets/imagenes/dot/dot-deco-giachio/dot-deco-giachio-02.jpg";
+import dotDecoGiachio01 from "../assets/imagenes/dot/dot-deco/dot-deco-giachio/dot-deco-giachio-01.jpg";
+import dotDecoGiachio02 from "../assets/imagenes/dot/dot-deco/dot-deco-giachio/dot-deco-giachio-02.jpg";
 
-// ORDEN EXACTO (modal)
-const images = [
-  dotDecoGiachio01, // 0
-  dotDecoGiachio02, // 1
-];
+const images = [dotDecoGiachio01, dotDecoGiachio02];
 
 export function Dot({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,39 +36,20 @@ export function Dot({ onGoHome }) {
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* Título */}
         <h1 className="titulo-coleccion">DOT</h1>
 
-        {/* Bloque FINISHES & FORMATS */}
         <ColeccionLayout infoUrl="https://www.fioranese.it/wp-content/uploads/2018/09/FIORANESE-DOT-by-Andrea-Maffei-4.pdf" />
 
-        {/* ---- GALERÍA ---- */}
-
-        {/* Color DOT DECO GIACHIO */}
         <h3 className="color-title">DOT DECO GIACHIO</h3>
         <section className="gallery-grid">
-          <img
-            src={dotDecoGiachio01}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="DOT DECO GIACHIO 01"
-          />
-          <img
-            src={dotDecoGiachio02}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="DOT DECO GIACHIO 02"
-          />
+          <img src={dotDecoGiachio01} className="gallery-img" onClick={() => openModal(0)} loading="lazy" alt="DOT DECO GIACHIO 01" />
+          <img src={dotDecoGiachio02} className="gallery-img" onClick={() => openModal(1)} loading="lazy" alt="DOT DECO GIACHIO 02" />
         </section>
       </main>
 
-      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}
