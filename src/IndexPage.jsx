@@ -24,7 +24,9 @@ const COLLECTION_GROUPS = [
     letter: "C",
     items: [
       { name: "CAEMENTUM" },
+      { name: "CALIZIA" }, // ✅ NUEVA
       { name: "CANELA ROMA" },
+      { name: "CEMENT" }, // ✅ NUEVA
       { name: "CHICAGO" },
       { name: "CORALINA" },
       { name: "CRUISE" },
@@ -52,17 +54,26 @@ const COLLECTION_GROUPS = [
   { letter: "F", items: [{ name: "FORM CEMENT" }] },
   {
     letter: "G",
-    items: [{ name: "GLIM GEMME" }, { name: "GLOCAL" }, { name: "GREEN TREES" }],
+    items: [
+      { name: "GLIM GEMME" },
+      { name: "GLOCAL" },
+      { name: "GREEN TREES" },
+      { name: "GULHI" }, // ✅ NUEVA
+    ],
   },
   {
     letter: "H",
     items: [
       { name: "HALTON" }, // ✅ NUEVA
+      { name: "HAUTEVILLE" }, // ✅ NUEVA
       { name: "HOPE" },
     ],
   },
   { letter: "I", items: [{ name: "ICON" }, { name: "IMPERIAL STONE" }] },
-  { letter: "J", items: [{ name: "JATOBA" }, { name: "JEWELS" }, { name: "JURUPA" }] },
+  {
+    letter: "J",
+    items: [{ name: "JATOBA" }, { name: "JEWELS" }, { name: "JURUPA" }],
+  },
   { letter: "K", items: [{ name: "KAIZEN" }, { name: "KORA" }] },
   { letter: "L", items: [{ name: "LUCENA" }] },
   {
@@ -102,7 +113,10 @@ const COLLECTION_GROUPS = [
       { name: "PULPIS" },
     ],
   },
-  { letter: "R", items: [{ name: "RIBERA" }, { name: "RETINA" }, { name: "RIVERSIDE" }] },
+  {
+    letter: "R",
+    items: [{ name: "RIBERA" }, { name: "RETINA" }, { name: "RIVERSIDE" }],
+  },
   {
     letter: "S",
     items: [
@@ -128,7 +142,13 @@ const COLLECTION_GROUPS = [
     ],
   },
   { letter: "U", items: [{ name: "ULISSE" }, { name: "UNIQUE" }] },
-  { letter: "V", items: [{ name: "VERBIER" }] },
+  {
+    letter: "V",
+    items: [
+      { name: "VERBIER" },
+      { name: "VINCI" }, // ✅ NUEVA
+    ],
+  },
   { letter: "W", items: [{ name: "WOOD FOG" }] },
 ];
 
