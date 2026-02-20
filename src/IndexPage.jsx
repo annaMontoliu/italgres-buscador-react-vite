@@ -1,21 +1,17 @@
-// src/IndexPage.jsx
-import { useState } from "react";
-import { Header } from "./components/Header";
-
 const COLLECTION_GROUPS = [
   {
     letter: "A",
     items: [
       { name: "ARENARIA" },
-      { name: "ARTE" }, // ✅ NUEVA
-      { name: "AVALLON" }, // ✅ NUEVA
+      { name: "ARTE" },
+      { name: "AVALLON" },
     ],
   },
   {
     letter: "B",
     items: [
       { name: "BARCELONA" },
-      { name: "BAIKAL" }, // ✅ NUEVA
+      { name: "BAIKAL" },
       { name: "BELA" },
       { name: "BELLEVUE" },
       { name: "BLOOM" },
@@ -31,15 +27,17 @@ const COLLECTION_GROUPS = [
       { name: "CANELA ROMA" },
       { name: "CHICAGO" },
       { name: "CORALINA" },
-      { name: "CRUISE" }, // ✅ NUEVA
+      { name: "CRUISE" },
     ],
   },
   {
     letter: "D",
     items: [
+      { name: "DHARA" },     // ✅ NUEVA
+      { name: "DOT" },       // ✅ NUEVA
       { name: "DRIPART" },
-      { name: "DUAL" }, // ✅ NUEVA
-      { name: "DUAL TRAVERTINE" }, // ✅ NUEVA
+      { name: "DUAL" },
+      { name: "DUAL TRAVERTINE" },
     ],
   },
   {
@@ -65,7 +63,10 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "H",
-    items: [{ name: "HOPE" }], // ✅ NUEVA
+    items: [
+      { name: "HALTON" },   // ✅ NUEVA
+      { name: "HOPE" },
+    ],
   },
   {
     letter: "I",
@@ -91,9 +92,9 @@ const COLLECTION_GROUPS = [
     letter: "M",
     items: [
       { name: "MAJESTIC" },
-      { name: "MAINSTONE" }, // ✅ NUEVA
+      { name: "MAINSTONE" },
       { name: "MAPIERRE" },
-      { name: "MATERA STONE" }, // ✅ NUEVA
+      { name: "MATERA STONE" },
       { name: "MATERIA" },
       { name: "MATERIA CLASSICA" },
       { name: "MEMORY" },
@@ -108,7 +109,12 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "O",
-    items: [{ name: "OH TAKE MOUNTAIN" }, { name: "OXIDE" }, { name: "OXYD" }],
+    items: [
+      { name: "OH TAKE MOUNTAIN" },
+      { name: "OREGON" },     // ✅ NUEVA
+      { name: "OXIDE" },
+      { name: "OXYD" },
+    ],
   },
   {
     letter: "P",
@@ -116,9 +122,9 @@ const COLLECTION_GROUPS = [
       { name: "PALERMO" },
       { name: "PAPIER" },
       { name: "PIERRE VIVE" },
-      { name: "PIETRA ESSENZA" }, // ✅ NUEVA
+      { name: "PIETRA ESSENZA" },
       { name: "PORTLAND" },
-      { name: "PRALINE" }, // ✅ NUEVA
+      { name: "PRALINE" },
       { name: "PULPIS" },
     ],
   },
@@ -130,12 +136,12 @@ const COLLECTION_GROUPS = [
     letter: "S",
     items: [
       { name: "SANDSTONE" },
-      { name: "SAVOY" }, // ✅ NUEVA
+      { name: "SAVOY" },
       { name: "SEINE" },
       { name: "SHEER" },
       { name: "SINAI COEM" },
       { name: "SINAI KTL" },
-      { name: "SUBLIME" }, // ✅ NUEVA
+      { name: "SUBLIME" },
       { name: "SUPREME" },
       { name: "SYBIL" },
     ],
@@ -163,72 +169,3 @@ const COLLECTION_GROUPS = [
     items: [{ name: "WOOD FOG" }],
   },
 ];
-
-export function IndexPage({ onOpenCollection }) {
-  const [search, setSearch] = useState("");
-
-  const normalizedSearch = search.toLowerCase().trim();
-
-  const groupsToShow =
-    normalizedSearch === ""
-      ? COLLECTION_GROUPS
-      : COLLECTION_GROUPS
-          .map((group) => {
-            const filteredItems = group.items.filter((item) =>
-              item.name.toLowerCase().includes(normalizedSearch)
-            );
-            return { ...group, items: filteredItems };
-          })
-          .filter((group) => group.items.length > 0);
-
-  function handleClickCollection(e, item) {
-    if (onOpenCollection) {
-      e.preventDefault();
-      onOpenCollection(item.name.trim());
-    }
-  }
-
-  return (
-    <>
-      <Header />
-
-      <main className="index-page">
-        {/* BLOQUE FIJO: título + buscador */}
-        <div className="index-sticky">
-          <h1>COLLECTIONS</h1>
-
-          <input
-            type="search"
-            id="collectionSearch"
-            placeholder="Search a collection..."
-            autoComplete="off"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-
-        {/* SOLO ESTO HACE SCROLL */}
-        <div id="collectionsContainer" className="collections-scroll">
-          {groupsToShow.map((group) => (
-            <div
-              key={group.letter}
-              className="collection-group"
-              data-letter={group.letter}
-            >
-              <div className="letter-heading">{group.letter}</div>
-              <ul className="collection-list">
-                {group.items.map((item) => (
-                  <li key={item.name}>
-                    <a href="#" onClick={(e) => handleClickCollection(e, item)}>
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </main>
-    </>
-  );
-}

@@ -120,6 +120,12 @@ import { Avallon } from "./colecciones/avallon";
 import { Baikal } from "./colecciones/baikal";
 import { Savoy } from "./colecciones/savoy";
 
+// ✅ NUEVAS (DOT, DHARA, OREGON, HALTON)
+import { Dot } from "./colecciones/dot";
+import { Dhara } from "./colecciones/dhara";
+import { Oregon } from "./colecciones/oregon";
+import { Halton } from "./colecciones/halton";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -241,6 +247,12 @@ export function App() {
     if (name === "AVALLON") setPage("avallon");
     if (name === "BAIKAL") setPage("baikal");
     if (name === "SAVOY") setPage("savoy");
+
+    // ✅ NUEVAS (DOT, DHARA, OREGON, HALTON)
+    if (name === "DOT") setPage("dot");
+    if (name === "DHARA") setPage("dhara");
+    if (name === "OREGON") setPage("oregon");
+    if (name === "HALTON") setPage("halton");
   }
 
   function handleGoHome() {
@@ -368,6 +380,12 @@ export function App() {
   if (page === "avallon") return <Avallon onGoHome={handleGoHome} />;
   if (page === "baikal") return <Baikal onGoHome={handleGoHome} />;
   if (page === "savoy") return <Savoy onGoHome={handleGoHome} />;
+
+  // ✅ NUEVAS (DOT, DHARA, OREGON, HALTON)
+  if (page === "dot") return <Dot onGoHome={handleGoHome} />;
+  if (page === "dhara") return <Dhara onGoHome={handleGoHome} />;
+  if (page === "oregon") return <Oregon onGoHome={handleGoHome} />;
+  if (page === "halton") return <Halton onGoHome={handleGoHome} />;
 
   return null;
 }
