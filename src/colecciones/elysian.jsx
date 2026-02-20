@@ -35,7 +35,7 @@ import elysian03_8 from "../assets/imagenes/elysian/elysian-03/elysian-03-08.jpg
 import elysian04_1 from "../assets/imagenes/elysian/elysian-04/elysian-04-1.jpg";
 import elysian04_2 from "../assets/imagenes/elysian/elysian-04/elysian-04-2.jpg";
 import elysian04_3 from "../assets/imagenes/elysian/elysian-04/elysian-04-3.jpg";
-import elysian04_4 from "../assets/imagenes/elysian/elysian-04/elysian-04-4.jpg";
+import elysian04_4 from "../assets/imagenes/elysian/elysian-04/elysian-04-04.jpg";
 import elysian04_5 from "../assets/imagenes/elysian/elysian-04/elysian-04-05.jpg";
 import elysian04_6 from "../assets/imagenes/elysian/elysian-04/elysian-04-06.jpg";
 import elysian04_7 from "../assets/imagenes/elysian/elysian-04/elysian-04-07.jpg";
