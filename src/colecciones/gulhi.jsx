@@ -10,10 +10,10 @@ import { ImageModal } from "../components/ImageModal";
 // =====================
 
 // GULHI PEARL (1)
-import gulhiPearl01 from "../assets/imagenes/gulhi-gemme/gulhi-pearl/gulhi-pearl-01.jpg";
+import gulhiPearl01 from "../assets/imagenes/gulhi/gulhi-pearl/gulhi-pearl-01.jpg";
 
 // GULHI SAND (1)
-import gulhiSand01 from "../assets/imagenes/gulhi-gemme/gulhi-sand/gulhi-sand-01.jpg";
+import gulhiSand01 from "../assets/imagenes/gulhi/gulhi-sand/gulhi-sand-01.jpg";
 
 // =====================
 // ARRAY GLOBAL MODAL
@@ -56,7 +56,6 @@ export function Gulhi({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">GULHI</h1>
 
-        {/* ⚠️ Cambia el nombre si tu PDF no se llama exactamente GULHI.pdf */}
         <ColeccionLayout infoUrl="/pdf/GULHI.pdf" />
 
         {/* GULHI PEARL */}
