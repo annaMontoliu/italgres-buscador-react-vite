@@ -1,11 +1,11 @@
+// src/IndexPage.jsx
+import { useState } from "react";
+import { Header } from "./components/Header";
+
 const COLLECTION_GROUPS = [
   {
     letter: "A",
-    items: [
-      { name: "ARENARIA" },
-      { name: "ARTE" },
-      { name: "AVALLON" },
-    ],
+    items: [{ name: "ARENARIA" }, { name: "ARTE" }, { name: "AVALLON" }],
   },
   {
     letter: "B",
@@ -33,8 +33,8 @@ const COLLECTION_GROUPS = [
   {
     letter: "D",
     items: [
-      { name: "DHARA" },     // ✅ NUEVA
-      { name: "DOT" },       // ✅ NUEVA
+      { name: "DHARA" }, // ✅ NUEVA
+      { name: "DOT" }, // ✅ NUEVA
       { name: "DRIPART" },
       { name: "DUAL" },
       { name: "DUAL TRAVERTINE" },
@@ -49,45 +49,22 @@ const COLLECTION_GROUPS = [
       { name: "ERAWAN" },
     ],
   },
-  {
-    letter: "F",
-    items: [{ name: "FORM CEMENT" }],
-  },
+  { letter: "F", items: [{ name: "FORM CEMENT" }] },
   {
     letter: "G",
-    items: [
-      { name: "GLIM GEMME" },
-      { name: "GLOCAL" },
-      { name: "GREEN TREES" },
-    ],
+    items: [{ name: "GLIM GEMME" }, { name: "GLOCAL" }, { name: "GREEN TREES" }],
   },
   {
     letter: "H",
     items: [
-      { name: "HALTON" },   // ✅ NUEVA
+      { name: "HALTON" }, // ✅ NUEVA
       { name: "HOPE" },
     ],
   },
-  {
-    letter: "I",
-    items: [{ name: "ICON" }, { name: "IMPERIAL STONE" }],
-  },
-  {
-    letter: "J",
-    items: [
-      { name: "JATOBA" },
-      { name: "JEWELS" },
-      { name: "JURUPA" },
-    ],
-  },
-  {
-    letter: "K",
-    items: [{ name: "KAIZEN" }, { name: "KORA" }],
-  },
-  {
-    letter: "L",
-    items: [{ name: "LUCENA" }],
-  },
+  { letter: "I", items: [{ name: "ICON" }, { name: "IMPERIAL STONE" }] },
+  { letter: "J", items: [{ name: "JATOBA" }, { name: "JEWELS" }, { name: "JURUPA" }] },
+  { letter: "K", items: [{ name: "KAIZEN" }, { name: "KORA" }] },
+  { letter: "L", items: [{ name: "LUCENA" }] },
   {
     letter: "M",
     items: [
@@ -103,15 +80,12 @@ const COLLECTION_GROUPS = [
       { name: "MYCRO" },
     ],
   },
-  {
-    letter: "N",
-    items: [{ name: "NATURE MOOD" }, { name: "NORDIC" }],
-  },
+  { letter: "N", items: [{ name: "NATURE MOOD" }, { name: "NORDIC" }] },
   {
     letter: "O",
     items: [
       { name: "OH TAKE MOUNTAIN" },
-      { name: "OREGON" },     // ✅ NUEVA
+      { name: "OREGON" }, // ✅ NUEVA
       { name: "OXIDE" },
       { name: "OXYD" },
     ],
@@ -128,10 +102,7 @@ const COLLECTION_GROUPS = [
       { name: "PULPIS" },
     ],
   },
-  {
-    letter: "R",
-    items: [{ name: "RIBERA" }, { name: "RETINA" }, { name: "RIVERSIDE" }],
-  },
+  { letter: "R", items: [{ name: "RIBERA" }, { name: "RETINA" }, { name: "RIVERSIDE" }] },
   {
     letter: "S",
     items: [
@@ -156,16 +127,75 @@ const COLLECTION_GROUPS = [
       { name: "TWEED STONE" },
     ],
   },
-  {
-    letter: "U",
-    items: [{ name: "ULISSE" }, { name: "UNIQUE" }],
-  },
-  {
-    letter: "V",
-    items: [{ name: "VERBIER" }],
-  },
-  {
-    letter: "W",
-    items: [{ name: "WOOD FOG" }],
-  },
+  { letter: "U", items: [{ name: "ULISSE" }, { name: "UNIQUE" }] },
+  { letter: "V", items: [{ name: "VERBIER" }] },
+  { letter: "W", items: [{ name: "WOOD FOG" }] },
 ];
+
+export function IndexPage({ onOpenCollection }) {
+  const [search, setSearch] = useState("");
+  const normalizedSearch = search.toLowerCase().trim();
+
+  const groupsToShow =
+    normalizedSearch === ""
+      ? COLLECTION_GROUPS
+      : COLLECTION_GROUPS
+          .map((group) => {
+            const filteredItems = group.items.filter((item) =>
+              item.name.toLowerCase().includes(normalizedSearch)
+            );
+            return { ...group, items: filteredItems };
+          })
+          .filter((group) => group.items.length > 0);
+
+  function handleClickCollection(e, item) {
+    if (onOpenCollection) {
+      e.preventDefault();
+      onOpenCollection(item.name.trim());
+    }
+  }
+
+  return (
+    <>
+      <Header />
+
+      <main className="index-page">
+        <div className="index-sticky">
+          <h1>COLLECTIONS</h1>
+
+          <input
+            type="search"
+            id="collectionSearch"
+            placeholder="Search a collection..."
+            autoComplete="off"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+
+        <div id="collectionsContainer" className="collections-scroll">
+          {groupsToShow.map((group) => (
+            <div
+              key={group.letter}
+              className="collection-group"
+              data-letter={group.letter}
+            >
+              <div className="letter-heading">{group.letter}</div>
+              <ul className="collection-list">
+                {group.items.map((item) => (
+                  <li key={item.name}>
+                    <a href="#" onClick={(e) => handleClickCollection(e, item)}>
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </main>
+    </>
+  );
+}
+
+export default IndexPage;
