@@ -91,6 +91,13 @@ import { Hauteville } from "./colecciones/hauteville";
 import { Vinci } from "./colecciones/vinci";
 import { Cement } from "./colecciones/cement";
 
+// ✅ NUEVAS (EMOTION, FLUID MULTICOLOR, TATTOO, CASSERO, COSMOPOLITAN)
+import { Emotion } from "./colecciones/emotion";
+import { FluidMulticolor } from "./colecciones/fluid-multicolor";
+import { Tattoo } from "./colecciones/tattoo";
+import { Cassero } from "./colecciones/cassero";
+import { Cosmopolitan } from "./colecciones/cosmopolitan";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -183,6 +190,13 @@ export function App() {
     if (name === "HAUTEVILLE") setPage("hauteville");
     if (name === "VINCI") setPage("vinci");
     if (name === "CEMENT") setPage("cement");
+
+    // ✅ NUEVAS (EMOTION, FLUID MULTICOLOR, TATTOO, CASSERO, COSMOPOLITAN)
+    if (name === "EMOTION") setPage("emotion");
+    if (name === "FLUID MULTICOLOR") setPage("fluid-multicolor");
+    if (name === "TATTOO") setPage("tattoo");
+    if (name === "CASSERO") setPage("cassero");
+    if (name === "COSMOPOLITAN") setPage("cosmopolitan");
   }
 
   function handleGoHome() {
@@ -287,6 +301,12 @@ export function App() {
   if (page === "hauteville") return <Hauteville onGoHome={handleGoHome} />;
   if (page === "vinci") return <Vinci onGoHome={handleGoHome} />;
   if (page === "cement") return <Cement onGoHome={handleGoHome} />;
+  if (page === "emotion") return <Emotion onGoHome={handleGoHome} />;
+  if (page === "fluid-multicolor")
+    return <FluidMulticolor onGoHome={handleGoHome} />;
+  if (page === "tattoo") return <Tattoo onGoHome={handleGoHome} />;
+  if (page === "cassero") return <Cassero onGoHome={handleGoHome} />;
+  if (page === "cosmopolitan") return <Cosmopolitan onGoHome={handleGoHome} />;
 
   return null;
 }

@@ -24,19 +24,21 @@ const COLLECTION_GROUPS = [
     letter: "C",
     items: [
       { name: "CAEMENTUM" },
-      { name: "CALIZIA" }, // ✅ NUEVA
+      { name: "CALIZIA" }, 
       { name: "CANELA ROMA" },
-      { name: "CEMENT" }, // ✅ NUEVA
+      { name: "CASSERO" }, 
+      { name: "CEMENT" }, 
       { name: "CHICAGO" },
       { name: "CORALINA" },
+      { name: "COSMOPOLITAN" }, 
       { name: "CRUISE" },
     ],
   },
   {
     letter: "D",
     items: [
-      { name: "DHARA" }, // ✅ NUEVA
-      { name: "DOT" }, // ✅ NUEVA
+      { name: "DHARA" },
+      { name: "DOT" }, 
       { name: "DRIPART" },
       { name: "DUAL" },
       { name: "DUAL TRAVERTINE" },
@@ -47,25 +49,32 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "ELEGANCE PRO" },
       { name: "ELYSIAN" },
+      { name: "EMOTION" }, 
       { name: "ENGLISH STONE" },
       { name: "ERAWAN" },
     ],
   },
-  { letter: "F", items: [{ name: "FORM CEMENT" }] },
+  {
+    letter: "F",
+    items: [
+      { name: "FLUID MULTICOLOR" }, 
+      { name: "FORM CEMENT" },
+    ],
+  },
   {
     letter: "G",
     items: [
       { name: "GLIM GEMME" },
       { name: "GLOCAL" },
       { name: "GREEN TREES" },
-      { name: "GULHI" }, // ✅ NUEVA
+      { name: "GULHI" }, 
     ],
   },
   {
     letter: "H",
     items: [
-      { name: "HALTON" }, // ✅ NUEVA
-      { name: "HAUTEVILLE" }, // ✅ NUEVA
+      { name: "HALTON" }, 
+      { name: "HAUTEVILLE" }, 
       { name: "HOPE" },
     ],
   },
@@ -96,7 +105,7 @@ const COLLECTION_GROUPS = [
     letter: "O",
     items: [
       { name: "OH TAKE MOUNTAIN" },
-      { name: "OREGON" }, // ✅ NUEVA
+      { name: "OREGON" }, 
       { name: "OXIDE" },
       { name: "OXYD" },
     ],
@@ -135,6 +144,7 @@ const COLLECTION_GROUPS = [
     letter: "T",
     items: [
       { name: "TAJ MAHAL" },
+      { name: "TATTOO" }, 
       { name: "THE ROOM" },
       { name: "TIVOLI" },
       { name: "TROPICAL BLUE" },
@@ -146,7 +156,7 @@ const COLLECTION_GROUPS = [
     letter: "V",
     items: [
       { name: "VERBIER" },
-      { name: "VINCI" }, // ✅ NUEVA
+      { name: "VINCI" }, 
     ],
   },
   { letter: "W", items: [{ name: "WOOD FOG" }] },
