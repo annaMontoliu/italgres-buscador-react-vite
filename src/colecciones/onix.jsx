@@ -11,7 +11,6 @@ import { ImageModal } from "../components/ImageModal";
 // =====================
 
 // ONIX GREEN (4)
-import onixGreen01 from "../assets/imagenes/onix/onix-green/onix-green-01.jpg";
 import onixGreen02 from "../assets/imagenes/onix/onix-green/onix-green-02.jpg";
 import onixGreen03 from "../assets/imagenes/onix/onix-green/onix-green-03.jpg";
 import onixGreen04 from "../assets/imagenes/onix/onix-green/onix-green-04.jpg";
