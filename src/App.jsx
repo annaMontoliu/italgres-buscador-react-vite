@@ -98,6 +98,16 @@ import { Tattoo } from "./colecciones/tattoo";
 import { Cassero } from "./colecciones/cassero";
 import { Cosmopolitan } from "./colecciones/cosmopolitan";
 
+// ✅ NUEVAS (ARTIC, ARKEN, CUARZO RENO, DISTRITO, INCISA, ONIX, SILVERLINE, CIVIC)
+import { Artic } from "./colecciones/artic";
+import { Arken } from "./colecciones/arken";
+import { CuarzoReno } from "./colecciones/cuarzo-reno";
+import { Distrito } from "./colecciones/distrito";
+import { Incisa } from "./colecciones/incisa";
+import { Onix } from "./colecciones/onix";
+import { Silverline } from "./colecciones/silverline";
+import { Civic } from "./colecciones/civic";
+
 export function App() {
   const [page, setPage] = useState("home");
 
@@ -197,6 +207,16 @@ export function App() {
     if (name === "TATTOO") setPage("tattoo");
     if (name === "CASSERO") setPage("cassero");
     if (name === "COSMOPOLITAN") setPage("cosmopolitan");
+
+    // ✅ NUEVAS (ARTIC, ARKEN, CUARZO RENO, DISTRITO, INCISA, ONIX, SILVERLINE, CIVIC)
+    if (name === "ARTIC") setPage("artic");
+    if (name === "ARKEN") setPage("arken");
+    if (name === "CUARZO RENO") setPage("cuarzo-reno");
+    if (name === "DISTRITO") setPage("distrito");
+    if (name === "INCISA") setPage("incisa");
+    if (name === "ONIX") setPage("onix");
+    if (name === "SILVERLINE") setPage("silverline");
+    if (name === "CIVIC") setPage("civic");
   }
 
   function handleGoHome() {
@@ -308,7 +328,15 @@ export function App() {
   if (page === "cassero") return <Cassero onGoHome={handleGoHome} />;
   if (page === "cosmopolitan") return <Cosmopolitan onGoHome={handleGoHome} />;
 
+  // ✅ NUEVAS (ARTIC, ARKEN, CUARZO RENO, DISTRITO, INCISA, ONIX, SILVERLINE, CIVIC)
+  if (page === "artic") return <Artic onGoHome={handleGoHome} />;
+  if (page === "arken") return <Arken onGoHome={handleGoHome} />;
+  if (page === "cuarzo-reno") return <CuarzoReno onGoHome={handleGoHome} />;
+  if (page === "distrito") return <Distrito onGoHome={handleGoHome} />;
+  if (page === "incisa") return <Incisa onGoHome={handleGoHome} />;
+  if (page === "onix") return <Onix onGoHome={handleGoHome} />;
+  if (page === "silverline") return <Silverline onGoHome={handleGoHome} />;
+  if (page === "civic") return <Civic onGoHome={handleGoHome} />;
+
   return null;
 }
-
-export default App;

@@ -5,7 +5,13 @@ import { Header } from "./components/Header";
 const COLLECTION_GROUPS = [
   {
     letter: "A",
-    items: [{ name: "ARENARIA" }, { name: "ARTE" }, { name: "AVALLON" }],
+    items: [
+      { name: "ARENARIA" },
+      { name: "ARTE" },
+      { name: "ARTIC" }, 
+      { name: "ARKEN" }, 
+      { name: "AVALLON" },
+    ],
   },
   {
     letter: "B",
@@ -24,21 +30,24 @@ const COLLECTION_GROUPS = [
     letter: "C",
     items: [
       { name: "CAEMENTUM" },
-      { name: "CALIZIA" }, 
+      { name: "CALIZIA" },
       { name: "CANELA ROMA" },
-      { name: "CASSERO" }, 
-      { name: "CEMENT" }, 
+      { name: "CASSERO" },
+      { name: "CEMENT" },
       { name: "CHICAGO" },
+      { name: "CIVIC" },
       { name: "CORALINA" },
-      { name: "COSMOPOLITAN" }, 
+      { name: "COSMOPOLITAN" },
       { name: "CRUISE" },
+      { name: "CUARZO RENO" }, 
     ],
   },
   {
     letter: "D",
     items: [
       { name: "DHARA" },
-      { name: "DOT" }, 
+      { name: "DOT" },
+      { name: "DISTRITO" }, 
       { name: "DRIPART" },
       { name: "DUAL" },
       { name: "DUAL TRAVERTINE" },
@@ -49,17 +58,14 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "ELEGANCE PRO" },
       { name: "ELYSIAN" },
-      { name: "EMOTION" }, 
+      { name: "EMOTION" },
       { name: "ENGLISH STONE" },
       { name: "ERAWAN" },
     ],
   },
   {
     letter: "F",
-    items: [
-      { name: "FLUID MULTICOLOR" }, 
-      { name: "FORM CEMENT" },
-    ],
+    items: [{ name: "FLUID MULTICOLOR" }, { name: "FORM CEMENT" }],
   },
   {
     letter: "G",
@@ -67,18 +73,21 @@ const COLLECTION_GROUPS = [
       { name: "GLIM GEMME" },
       { name: "GLOCAL" },
       { name: "GREEN TREES" },
-      { name: "GULHI" }, 
+      { name: "GULHI" },
     ],
   },
   {
     letter: "H",
+    items: [{ name: "HALTON" }, { name: "HAUTEVILLE" }, { name: "HOPE" }],
+  },
+  {
+    letter: "I",
     items: [
-      { name: "HALTON" }, 
-      { name: "HAUTEVILLE" }, 
-      { name: "HOPE" },
+      { name: "ICON" },
+      { name: "IMPERIAL STONE" },
+      { name: "INCISA" },
     ],
   },
-  { letter: "I", items: [{ name: "ICON" }, { name: "IMPERIAL STONE" }] },
   {
     letter: "J",
     items: [{ name: "JATOBA" }, { name: "JEWELS" }, { name: "JURUPA" }],
@@ -105,7 +114,8 @@ const COLLECTION_GROUPS = [
     letter: "O",
     items: [
       { name: "OH TAKE MOUNTAIN" },
-      { name: "OREGON" }, 
+      { name: "ONIX" }, 
+      { name: "OREGON" },
       { name: "OXIDE" },
       { name: "OXYD" },
     ],
@@ -133,6 +143,7 @@ const COLLECTION_GROUPS = [
       { name: "SAVOY" },
       { name: "SEINE" },
       { name: "SHEER" },
+      { name: "SILVERLINE" }, 
       { name: "SINAI COEM" },
       { name: "SINAI KTL" },
       { name: "SUBLIME" },
@@ -144,7 +155,7 @@ const COLLECTION_GROUPS = [
     letter: "T",
     items: [
       { name: "TAJ MAHAL" },
-      { name: "TATTOO" }, 
+      { name: "TATTOO" },
       { name: "THE ROOM" },
       { name: "TIVOLI" },
       { name: "TROPICAL BLUE" },
@@ -154,10 +165,7 @@ const COLLECTION_GROUPS = [
   { letter: "U", items: [{ name: "ULISSE" }, { name: "UNIQUE" }] },
   {
     letter: "V",
-    items: [
-      { name: "VERBIER" },
-      { name: "VINCI" }, 
-    ],
+    items: [{ name: "VERBIER" }, { name: "VINCI" }],
   },
   { letter: "W", items: [{ name: "WOOD FOG" }] },
 ];
