@@ -10,10 +10,10 @@ import { ImageModal } from "../components/ImageModal";
 // /src/assets/imagenes/cuarzo-reno/cuarzo-reno/
 // =====================
 
-import cuarzoReno01 from "../assets/imagenes/cuarzo-reno/cuarzo-reno/cuarzo-reno-01.jpg";
-import cuarzoReno02 from "../assets/imagenes/cuarzo-reno/cuarzo-reno/cuarzo-reno-02.jpg";
-import cuarzoReno03 from "../assets/imagenes/cuarzo-reno/cuarzo-reno/cuarzo-reno-03.jpg";
-import cuarzoReno04 from "../assets/imagenes/cuarzo-reno/cuarzo-reno/cuarzo-reno-04.jpg";
+import cuarzoReno01 from "../assets/imagenes/cuarzo-reno/cuarzo-reno-01.jpg";
+import cuarzoReno02 from "../assets/imagenes/cuarzo-reno/cuarzo-reno-02.jpg";
+import cuarzoReno03 from "../assets/imagenes/cuarzo-reno/cuarzo-reno-03.jpg";
+import cuarzoReno04 from "../assets/imagenes/cuarzo-reno/cuarzo-reno-04.jpg";
 
 const images = [
   cuarzoReno01, // 0
