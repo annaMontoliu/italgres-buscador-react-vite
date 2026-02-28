@@ -10,17 +10,16 @@ import { ImageModal } from "../components/ImageModal";
 // /src/assets/imagenes/onix/onix-green/
 // =====================
 
-// ONIX GREEN (4)
+// ONIX GREEN (3)
 import onixGreen02 from "../assets/imagenes/onix/onix-green/onix-green-02.jpg";
 import onixGreen03 from "../assets/imagenes/onix/onix-green/onix-green-03.jpg";
 import onixGreen04 from "../assets/imagenes/onix/onix-green/onix-green-04.jpg";
 
 // ORDEN EXACTO (modal)
 const images = [
-  onixGreen01, // 0
-  onixGreen02, // 1
-  onixGreen03, // 2
-  onixGreen04, // 3
+  onixGreen02, // 0
+  onixGreen03, // 1
+  onixGreen04, // 2
 ];
 
 export function Onix({ onGoHome }) {
@@ -61,30 +60,23 @@ export function Onix({ onGoHome }) {
         <h3 className="color-title">ONIX GREEN</h3>
         <section className="gallery-grid">
           <img
-            src={onixGreen01}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="ONIX GREEN 01"
-          />
-          <img
             src={onixGreen02}
             className="gallery-img"
-            onClick={() => openModal(1)}
+            onClick={() => openModal(0)}
             loading="lazy"
             alt="ONIX GREEN 02"
           />
           <img
             src={onixGreen03}
             className="gallery-img"
-            onClick={() => openModal(2)}
+            onClick={() => openModal(1)}
             loading="lazy"
             alt="ONIX GREEN 03"
           />
           <img
             src={onixGreen04}
             className="gallery-img"
-            onClick={() => openModal(3)}
+            onClick={() => openModal(2)}
             loading="lazy"
             alt="ONIX GREEN 04"
           />
