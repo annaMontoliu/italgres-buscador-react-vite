@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 /* ----------------------------- */
 /* BODY (global)                 */
 /* ----------------------------- */
@@ -32,7 +36,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
+
+  /* ✅ más limpio y adaptable */
+  padding: 8px 12px;
+  gap: 10px;
+  flex-wrap: wrap; /* ✅ clave: evita que los botones se salgan en móvil */
 
   /* HEADER FIJO */
   position: fixed;
@@ -43,22 +51,37 @@ header {
 }
 
 header img {
-  height: 90px;
+  height: 64px;     /* ✅ base más compacta */
+  max-width: 44vw;  /* ✅ evita que el logo “coma” el header en móvil */
+  object-fit: contain;
 }
 
 nav {
   display: flex;
-  gap: 32px;
-  margin-right: 24px;
+  gap: 10px;          /* ✅ antes 32px */
+  margin-right: 0;    /* ✅ antes 24px */
+  flex: 1;
+  justify-content: flex-end;
+  flex-wrap: wrap;    /* ✅ clave: permite bajar a segunda línea */
 }
 
 nav a {
   color: var(--brand);
   font-weight: bold;
   background-color: white;
-  padding: 0.5rem 2.2rem;
-  border-radius: 5px;
   text-decoration: none;
+
+  /* ✅ botones más “app” y tocables */
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  white-space: nowrap;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------- */
@@ -245,21 +268,36 @@ h3.color-title {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px; /* ✅ un poco más compacto */
 }
 
 .gallery-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px; /* ✅ más moderno */
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
 }
 
-.gallery-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+/* Hover solo en dispositivos con hover real */
+@media (hover: hover) and (pointer: fine) {
+  .gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Feedback táctil */
+@media (hover: none) {
+  .gallery-img:hover {
+    transform: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+  }
+  .gallery-img:active {
+    transform: scale(0.98);
+  }
 }
 
 /* ----------------------------- */
@@ -307,7 +345,7 @@ h3.color-title {
 .close {
   top: 10vh;
   right: 4vw;
-  font-size: 46px; /* antes 40px */
+  font-size: 46px;
   line-height: 1;
 }
 
@@ -329,11 +367,16 @@ h3.color-title {
 
 @media (max-width: 900px) {
   header img {
-    height: 70px;
+    height: 56px;
   }
 
   body {
-    padding-top: 70px;
+    padding-top: 84px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 10px 12px;
   }
 
   .gallery-grid {
@@ -346,12 +389,28 @@ h3.color-title {
 }
 
 @media (max-width: 600px) {
+  /* ✅ en móvil: logo arriba, botones abajo centrados */
   header img {
     height: 50px;
+    max-width: 70vw;
   }
 
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    flex: 1;            /* ✅ 3 botones se reparten el ancho */
+    max-width: 180px;
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+
+  /* ✅ header ocupa 2 filas → subimos padding-top */
   body {
-    padding-top: 50px;
+    padding-top: 118px;
   }
 
   .gallery-grid {
@@ -360,6 +419,15 @@ h3.color-title {
 
   .gallery-img {
     height: 260px;
+  }
+}
+
+/* iPhone SE / muy estrechos */
+@media (max-width: 380px) {
+  nav a {
+    font-size: 12px;
+    min-height: 38px;
+    padding: 9px 8px;
   }
 }
 
@@ -381,7 +449,6 @@ h3.color-title {
 
 /* ----------------------------- */
 /* AÑADIDO: HOME buscador fijo   */
-/* (esto es lo ÚNICO nuevo)      */
 /* ----------------------------- */
 
 .index-sticky {
