@@ -318,6 +318,10 @@ export function Glocal({ onGoHome }) {
       gridTemplateColumns: "auto auto",
       gap: "12px",
       justifyContent: "flex-start",
+
+      // ✅ NUEVO: desplazamos el bloque de tacos a la derecha (evita corte del texto en móvil)
+      paddingLeft: "14px",
+      paddingRight: "6px",
     },
     col: {
       display: "flex",
