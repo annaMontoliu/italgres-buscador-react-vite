@@ -90,15 +90,11 @@ import { Calizia } from "./colecciones/calizia";
 import { Hauteville } from "./colecciones/hauteville";
 import { Vinci } from "./colecciones/vinci";
 import { Cement } from "./colecciones/cement";
-
-// ✅ NUEVAS (EMOTION, FLUID MULTICOLOR, TATTOO, CASSERO, COSMOPOLITAN)
 import { Emotion } from "./colecciones/emotion";
 import { FluidMulticolor } from "./colecciones/fluid-multicolor";
 import { Tattoo } from "./colecciones/tattoo";
 import { Cassero } from "./colecciones/cassero";
 import { Cosmopolitan } from "./colecciones/cosmopolitan";
-
-// ✅ NUEVAS (ARTIC, ARKEN, CUARZO RENO, DISTRITO, INCISA, ONIX, SILVERLINE, CIVIC)
 import { Artic } from "./colecciones/artic";
 import { Arken } from "./colecciones/arken";
 import { CuarzoReno } from "./colecciones/cuarzo-reno";
@@ -107,6 +103,14 @@ import { Incisa } from "./colecciones/incisa";
 import { Onix } from "./colecciones/onix";
 import { Silverline } from "./colecciones/silverline";
 import { Civic } from "./colecciones/civic";
+import { Blanco } from "./colecciones/blanco";
+import { Cottage } from "./colecciones/cottage";
+import { Duomo } from "./colecciones/duomo";
+import { LuminaStone } from "./colecciones/lumina-stone";
+import { Micra } from "./colecciones/micra";
+import { Mitica } from "./colecciones/mitica";
+import { Oxo } from "./colecciones/oxo";
+import { Surface } from "./colecciones/surface";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -200,15 +204,11 @@ export function App() {
     if (name === "HAUTEVILLE") setPage("hauteville");
     if (name === "VINCI") setPage("vinci");
     if (name === "CEMENT") setPage("cement");
-
-    // ✅ NUEVAS (EMOTION, FLUID MULTICOLOR, TATTOO, CASSERO, COSMOPOLITAN)
     if (name === "EMOTION") setPage("emotion");
     if (name === "FLUID MULTICOLOR") setPage("fluid-multicolor");
     if (name === "TATTOO") setPage("tattoo");
     if (name === "CASSERO") setPage("cassero");
     if (name === "COSMOPOLITAN") setPage("cosmopolitan");
-
-    // ✅ NUEVAS (ARTIC, ARKEN, CUARZO RENO, DISTRITO, INCISA, ONIX, SILVERLINE, CIVIC)
     if (name === "ARTIC") setPage("artic");
     if (name === "ARKEN") setPage("arken");
     if (name === "CUARZO RENO") setPage("cuarzo-reno");
@@ -217,6 +217,14 @@ export function App() {
     if (name === "ONIX") setPage("onix");
     if (name === "SILVERLINE") setPage("silverline");
     if (name === "CIVIC") setPage("civic");
+    if (name === "BLANCO") setPage("blanco");
+    if (name === "COTTAGE") setPage("cottage");
+    if (name === "DUOMO") setPage("duomo");
+    if (name === "LUMINA STONE") setPage("lumina-stone");
+    if (name === "MICRA") setPage("micra");
+    if (name === "MITICA") setPage("mitica");
+    if (name === "OXO") setPage("oxo");
+    if (name === "SURFACE") setPage("surface");
   }
 
   function handleGoHome() {
@@ -327,8 +335,6 @@ export function App() {
   if (page === "tattoo") return <Tattoo onGoHome={handleGoHome} />;
   if (page === "cassero") return <Cassero onGoHome={handleGoHome} />;
   if (page === "cosmopolitan") return <Cosmopolitan onGoHome={handleGoHome} />;
-
-  // ✅ NUEVAS (ARTIC, ARKEN, CUARZO RENO, DISTRITO, INCISA, ONIX, SILVERLINE, CIVIC)
   if (page === "artic") return <Artic onGoHome={handleGoHome} />;
   if (page === "arken") return <Arken onGoHome={handleGoHome} />;
   if (page === "cuarzo-reno") return <CuarzoReno onGoHome={handleGoHome} />;
@@ -337,6 +343,14 @@ export function App() {
   if (page === "onix") return <Onix onGoHome={handleGoHome} />;
   if (page === "silverline") return <Silverline onGoHome={handleGoHome} />;
   if (page === "civic") return <Civic onGoHome={handleGoHome} />;
+  if (page === "blanco") return <Blanco onGoHome={handleGoHome} />;
+  if (page === "cottage") return <Cottage onGoHome={handleGoHome} />;
+  if (page === "duomo") return <Duomo onGoHome={handleGoHome} />;
+  if (page === "lumina-stone") return <LuminaStone onGoHome={handleGoHome} />;
+  if (page === "micra") return <Micra onGoHome={handleGoHome} />;
+  if (page === "mitica") return <Mitica onGoHome={handleGoHome} />;
+  if (page === "oxo") return <Oxo onGoHome={handleGoHome} />;
+  if (page === "surface") return <Surface onGoHome={handleGoHome} />;
 
   return null;
 }
