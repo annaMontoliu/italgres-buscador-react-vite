@@ -47,7 +47,7 @@ export function Duomo({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">DUOMO</h1>
 
-        <ColeccionLayout infoUrl="/public/pdf/DUOMO.pdf" />
+        <ColeccionLayout infoUrl="/pdf/DUOMO.pdf" />
 
         {/* Color BLANCO */}
         <h3 className="color-title">DUOMO BLANCO</h3>

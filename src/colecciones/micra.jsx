@@ -85,7 +85,7 @@ export function Micra({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">MICRA</h1>
 
-        <ColeccionLayout infoUrl="/public/pdf/MICRA.pdf" />
+        <ColeccionLayout infoUrl="/pdf/MICRA.pdf" />
 
         <h3 className="color-title">MICRA</h3>
         <section className="gallery-grid">
