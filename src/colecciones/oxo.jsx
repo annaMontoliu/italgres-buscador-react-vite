@@ -41,7 +41,7 @@ export function Oxo({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">OXO</h1>
 
-        <ColeccionLayout infoUrl="/public/pdf/OXO.pdf" />
+        <ColeccionLayout infoUrl="/pdf/OXO.pdf" />
 
         {/* Color OXO GIGA GRIS */}
         <h3 className="color-title">OXO GIGA GRIS</h3>
