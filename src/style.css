@@ -565,7 +565,12 @@ h3.color-title {
   margin: 0 0 16px 0;
 }
 
-.boutique-cabinets,
+.boutique-cabinets {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
 .boutique-drawers {
   display: flex;
   flex-wrap: wrap;
@@ -587,7 +592,8 @@ h3.color-title {
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  min-width: 62px;
+  width: 100%;
+  text-align: center;
   padding: 12px 18px;
   border-radius: 6px;
   cursor: pointer;
@@ -606,6 +612,7 @@ h3.color-title {
 
 .boutique-pill--drawer {
   min-width: 74px;
+  width: auto;
 }
 
 .boutique-cards,
