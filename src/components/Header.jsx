@@ -63,6 +63,17 @@ export function Header({ onGoHome, onOpenBoutique }) {
       </a>
 
       <nav>
+        {/* HOME */}
+        <a href="/index.html" onClick={handleHomeClick}>
+          HOME
+        </a>
+
+        {/* BOUTIQUE */}
+        <a href="/boutique" onClick={handleBoutiqueClick}>
+          BOUTIQUE
+        </a>
+
+        {/* SAMPLE MAP */}
         <a
           href="/pdf/sample-map.pdf"
           target="_blank"
@@ -71,14 +82,7 @@ export function Header({ onGoHome, onOpenBoutique }) {
           SAMPLE MAP
         </a>
 
-        <a href="/index.html" onClick={handleHomeClick}>
-          HOME
-        </a>
-
-        <a href="/boutique" onClick={handleBoutiqueClick}>
-          BOUTIQUE
-        </a>
-
+        {/* PRICELIST */}
         <a
           href="/docs/tarifa-italgres.xlsx"
           onClick={handleTarifaClick}
