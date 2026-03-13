@@ -1,4 +1,3 @@
-// src/boutique.jsx
 import { useMemo, useState } from "react";
 import { Header } from "./components/Header";
 
@@ -10,65 +9,8 @@ const boutiqueDrawers = {
       name: "DUST",
       format: '2"x8"',
       brand: "ELIOS",
-      locations: ["A1", "C4", "H2"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    },
-    {
-      name: "BECK",
-      format: '4"x4"',
-      brand: "CIFRE",
       locations: ["A1"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80",
-    },
-  ],
-  A2: [
-    {
-      name: "BRUTALIST",
-      format: '2"x9"',
-      brand: "AMADIS",
-      locations: ["A2", "F6"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
-    },
-  ],
-  B3: [
-    {
-      name: "DUST",
-      format: '2"x8"',
-      brand: "ELIOS",
-      locations: ["A1", "C4", "H2"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    },
-    {
-      name: "SEVILLA",
-      format: '2"x8"',
-      brand: "ELIOS",
-      locations: ["B3"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    },
-  ],
-  C4: [
-    {
-      name: "DUST",
-      format: '2"x8"',
-      brand: "ELIOS",
-      locations: ["A1", "C4", "H2"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    },
-  ],
-  H2: [
-    {
-      name: "DUST",
-      format: '2"x8"',
-      brand: "ELIOS",
-      locations: ["A1", "C4", "H2"],
-      thumbnail:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+      thumbnail: "/src/assets/imagenes/dust/dust-01.jpg",
     },
   ],
 };
@@ -78,33 +20,8 @@ const boutiqueCollections = [
     name: "DUST",
     format: '2"x8"',
     brand: "ELIOS",
-    locations: ["A1", "C4", "H2"],
-    thumbnail:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "BECK",
-    format: '4"x4"',
-    brand: "CIFRE",
     locations: ["A1"],
-    thumbnail:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "BRUTALIST",
-    format: '2"x9"',
-    brand: "AMADIS",
-    locations: ["A2", "F6"],
-    thumbnail:
-      "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "SEVILLA",
-    format: '2"x8"',
-    brand: "ELIOS",
-    locations: ["B3"],
-    thumbnail:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    thumbnail: "/src/assets/imagenes/dust/dust-01.jpg",
   },
 ];
 
@@ -155,6 +72,7 @@ export function Boutique({ onOpenCollection }) {
 
         <section className="boutique-layout">
           <div className="boutique-left">
+
             <p className="boutique-section-label">BOUTIQUE</p>
 
             <div className="boutique-cabinets">
@@ -238,6 +156,7 @@ export function Boutique({ onOpenCollection }) {
           </div>
 
           <aside className="boutique-right">
+
             <label htmlFor="boutique-search" className="boutique-search-label">
               SEARCH COLLECTION
             </label>
@@ -290,6 +209,7 @@ export function Boutique({ onOpenCollection }) {
               </div>
             )}
           </aside>
+
         </section>
       </main>
     </>

@@ -720,3 +720,30 @@ h3.color-title {
     order: 2;
   }
 }
+
+.boutique-breadcrumb{
+  color:var(--brand);
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.boutique-collection-header{
+  margin-bottom:40px;
+}
+
+.boutique-title{
+  font-size:48px;
+  letter-spacing:4px;
+  margin:0 0 10px 0;
+  color:var(--ink);
+}
+
+.boutique-format{
+  margin:0;
+  font-size:18px;
+}
+
+.boutique-location{
+  margin:4px 0 18px 0;
+  color:var(--ink);
+}
