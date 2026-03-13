@@ -200,9 +200,15 @@ export function IndexPage({ onOpenCollection }) {
     }
   }
 
+  function handleOpenBoutique() {
+    if (onOpenCollection) {
+      onOpenCollection("BOUTIQUE");
+    }
+  }
+
   return (
     <>
-      <Header />
+      <Header onOpenBoutique={handleOpenBoutique} />
 
       <main className="index-page">
         <div className="index-sticky">
