@@ -116,6 +116,7 @@ import { Dust } from "./colecciones/dust";
 
 export function App() {
   const [page, setPage] = useState("home");
+  const [previousPage, setPreviousPage] = useState("home");
   const [swipeX, setSwipeX] = useState(0);
   const [isDraggingSwipe, setIsDraggingSwipe] = useState(false);
 
@@ -124,12 +125,24 @@ export function App() {
   const trackingSwipe = useRef(false);
   const swipeTimeout = useRef(null);
 
+  function goToPage(nextPage) {
+    if (nextPage === page) return;
+    setPreviousPage(page);
+    setPage(nextPage);
+  }
+
   useEffect(() => {
     function handleGlobalGoHome() {
+      if (page !== "home") {
+        setPreviousPage(page);
+      }
       setPage("home");
     }
 
     function handleGlobalGoBoutique() {
+      if (page !== "boutique") {
+        setPreviousPage(page);
+      }
       setPage("boutique");
     }
 
@@ -176,6 +189,7 @@ export function App() {
       const touch = e.changedTouches[0];
       const deltaX = touch.clientX - touchStartX.current;
       const deltaY = Math.abs(touch.clientY - touchStartY.current);
+      const targetPage = previousPage || "home";
       const shouldGoBack = deltaX > window.innerWidth * 0.28 && deltaY < 120;
 
       trackingSwipe.current = false;
@@ -189,7 +203,9 @@ export function App() {
         }
 
         swipeTimeout.current = window.setTimeout(() => {
-          setPage("home");
+          const currentPage = page;
+          setPage(targetPage);
+          setPreviousPage(currentPage);
           setSwipeX(0);
         }, 220);
       } else {
@@ -214,258 +230,280 @@ export function App() {
         clearTimeout(swipeTimeout.current);
       }
     };
-  }, [page]);
+  }, [page, previousPage]);
 
   function handleOpenCollection(name) {
-    if (name === "BOUTIQUE") setPage("boutique");
-    if (name === "DUST") setPage("dust");
+    if (name === "BOUTIQUE") goToPage("boutique");
+    if (name === "DUST") goToPage("dust");
 
-    if (name === "LUCENA") setPage("lucena");
-    if (name === "ELEGANCE PRO") setPage("elegance-pro");
-    if (name === "ELYSIAN") setPage("elysian");
-    if (name === "SINAI COEM") setPage("sinai-coem");
-    if (name === "SINAI KTL") setPage("sinai-ktl");
-    if (name === "GLOCAL") setPage("glocal");
-    if (name === "MATERIA") setPage("materia");
-    if (name === "MOTLEY") setPage("motley");
-    if (name === "SHEER") setPage("sheer");
-    if (name === "SUPREME") setPage("supreme");
-    if (name === "IMPERIAL STONE") setPage("imperial-stone");
-    if (name === "SYBIL") setPage("sybil");
-    if (name === "PULPIS") setPage("pulpis");
-    if (name === "PIERRE VIVE") setPage("pierre-vive");
-    if (name === "RIVERSIDE") setPage("riverside");
-    if (name === "PALERMO") setPage("palermo");
-    if (name === "MAPIERRE") setPage("mapierre");
-    if (name === "KORA") setPage("kora");
-    if (name === "ARENARIA") setPage("arenaria");
-    if (name === "BARCELONA") setPage("barcelona");
-    if (name === "OH TAKE MOUNTAIN") setPage("oh-take-mountain");
-    if (name === "PORTLAND") setPage("portland");
-    if (name === "CHICAGO") setPage("chicago");
-    if (name === "ICON") setPage("icon");
-    if (name === "BELLEVUE") setPage("bellevue");
-    if (name === "ULISSE") setPage("ulisse");
-    if (name === "DRIPART") setPage("dripart");
-    if (name === "OXYD") setPage("oxyd");
-    if (name === "BELA") setPage("bela");
-    if (name === "KAIZEN") setPage("kaizen");
-    if (name === "RETINA") setPage("retina");
-    if (name === "JATOBA") setPage("jatoba");
-    if (name === "VERBIER") setPage("verbier");
-    if (name === "MOON CREAM") setPage("moon-cream");
-    if (name === "RIBERA") setPage("ribera");
-    if (name === "ERAWAN") setPage("erawan");
-    if (name === "MAJESTIC") setPage("majestic");
-    if (name === "JURUPA") setPage("jurupa");
-    if (name === "THE ROOM") setPage("the-room");
-    if (name === "BLOOM") setPage("bloom");
-    if (name === "GLIM GEMME") setPage("glim-gemme");
-    if (name === "OXIDE") setPage("oxide");
-    if (name === "WOOD FOG") setPage("wood-fog");
-    if (name === "UNIQUE") setPage("unique");
-    if (name === "BLUE ROMA") setPage("blue-roma");
-    if (name === "CANELA ROMA") setPage("canela-roma");
-    if (name === "NORDIC") setPage("nordic");
-    if (name === "FORM CEMENT") setPage("form-cement");
-    if (name === "MYCRO") setPage("mycro");
-    if (name === "CORALINA") setPage("coralina");
-    if (name === "CAEMENTUM") setPage("caementum");
-    if (name === "PAPIER") setPage("papier");
-    if (name === "JEWELS") setPage("jewels");
-    if (name === "ENGLISH STONE") setPage("english-stone");
-    if (name === "TAJ MAHAL") setPage("taj-mahal");
-    if (name === "TWEED STONE") setPage("tweed-stone");
-    if (name === "TIVOLI") setPage("tivoli");
-    if (name === "SEINE") setPage("seine");
-    if (name === "SANDSTONE") setPage("sandstone");
-    if (name === "MEMORY") setPage("memory");
-    if (name === "NATURE MOOD") setPage("nature-mood");
-    if (name === "GREEN TREES") setPage("green-trees");
-    if (name === "TROPICAL BLUE") setPage("tropical-blue");
-    if (name === "MATERIA CLASSICA") setPage("materia-classica");
-    if (name === "BORNEO") setPage("borneo");
-    if (name === "BOREALIS") setPage("borealis");
-    if (name === "ARTE") setPage("arte");
-    if (name === "DUAL") setPage("dual");
-    if (name === "MAINSTONE") setPage("mainstone");
-    if (name === "PRALINE") setPage("praline");
-    if (name === "SUBLIME") setPage("sublime");
-    if (name === "HOPE") setPage("hope");
-    if (name === "CRUISE") setPage("cruise");
-    if (name === "PIETRA ESSENZA") setPage("pietra-essenza");
-    if (name === "DUAL TRAVERTINE") setPage("dual-travertine");
-    if (name === "MATERA STONE") setPage("matera-stone");
-    if (name === "AVALLON") setPage("avallon");
-    if (name === "BAIKAL") setPage("baikal");
-    if (name === "SAVOY") setPage("savoy");
-    if (name === "DOT") setPage("dot");
-    if (name === "DHARA") setPage("dhara");
-    if (name === "OREGON") setPage("oregon");
-    if (name === "HALTON") setPage("halton");
-    if (name === "GULHI") setPage("gulhi");
-    if (name === "CALIZIA") setPage("calizia");
-    if (name === "HAUTEVILLE") setPage("hauteville");
-    if (name === "VINCI") setPage("vinci");
-    if (name === "CEMENT") setPage("cement");
-    if (name === "EMOTION") setPage("emotion");
-    if (name === "FLUID MULTICOLOR") setPage("fluid-multicolor");
-    if (name === "TATTOO") setPage("tattoo");
-    if (name === "CASSERO") setPage("cassero");
-    if (name === "COSMOPOLITAN") setPage("cosmopolitan");
-    if (name === "ARTIC") setPage("artic");
-    if (name === "ARKEN") setPage("arken");
-    if (name === "CUARZO RENO") setPage("cuarzo-reno");
-    if (name === "DISTRITO") setPage("distrito");
-    if (name === "INCISA") setPage("incisa");
-    if (name === "ONIX") setPage("onix");
-    if (name === "SILVERLINE") setPage("silverline");
-    if (name === "CIVIC") setPage("civic");
-    if (name === "BLANCO") setPage("blanco");
-    if (name === "COTTAGE") setPage("cottage");
-    if (name === "DUOMO") setPage("duomo");
-    if (name === "LUMINA STONE") setPage("lumina-stone");
-    if (name === "MICRA") setPage("micra");
-    if (name === "MITICA") setPage("mitica");
-    if (name === "OXO") setPage("oxo");
-    if (name === "SURFACE") setPage("surface");
+    if (name === "LUCENA") goToPage("lucena");
+    if (name === "ELEGANCE PRO") goToPage("elegance-pro");
+    if (name === "ELYSIAN") goToPage("elysian");
+    if (name === "SINAI COEM") goToPage("sinai-coem");
+    if (name === "SINAI KTL") goToPage("sinai-ktl");
+    if (name === "GLOCAL") goToPage("glocal");
+    if (name === "MATERIA") goToPage("materia");
+    if (name === "MOTLEY") goToPage("motley");
+    if (name === "SHEER") goToPage("sheer");
+    if (name === "SUPREME") goToPage("supreme");
+    if (name === "IMPERIAL STONE") goToPage("imperial-stone");
+    if (name === "SYBIL") goToPage("sybil");
+    if (name === "PULPIS") goToPage("pulpis");
+    if (name === "PIERRE VIVE") goToPage("pierre-vive");
+    if (name === "RIVERSIDE") goToPage("riverside");
+    if (name === "PALERMO") goToPage("palermo");
+    if (name === "MAPIERRE") goToPage("mapierre");
+    if (name === "KORA") goToPage("kora");
+    if (name === "ARENARIA") goToPage("arenaria");
+    if (name === "BARCELONA") goToPage("barcelona");
+    if (name === "OH TAKE MOUNTAIN") goToPage("oh-take-mountain");
+    if (name === "PORTLAND") goToPage("portland");
+    if (name === "CHICAGO") goToPage("chicago");
+    if (name === "ICON") goToPage("icon");
+    if (name === "BELLEVUE") goToPage("bellevue");
+    if (name === "ULISSE") goToPage("ulisse");
+    if (name === "DRIPART") goToPage("dripart");
+    if (name === "OXYD") goToPage("oxyd");
+    if (name === "BELA") goToPage("bela");
+    if (name === "KAIZEN") goToPage("kaizen");
+    if (name === "RETINA") goToPage("retina");
+    if (name === "JATOBA") goToPage("jatoba");
+    if (name === "VERBIER") goToPage("verbier");
+    if (name === "MOON CREAM") goToPage("moon-cream");
+    if (name === "RIBERA") goToPage("ribera");
+    if (name === "ERAWAN") goToPage("erawan");
+    if (name === "MAJESTIC") goToPage("majestic");
+    if (name === "JURUPA") goToPage("jurupa");
+    if (name === "THE ROOM") goToPage("the-room");
+    if (name === "BLOOM") goToPage("bloom");
+    if (name === "GLIM GEMME") goToPage("glim-gemme");
+    if (name === "OXIDE") goToPage("oxide");
+    if (name === "WOOD FOG") goToPage("wood-fog");
+    if (name === "UNIQUE") goToPage("unique");
+    if (name === "BLUE ROMA") goToPage("blue-roma");
+    if (name === "CANELA ROMA") goToPage("canela-roma");
+    if (name === "NORDIC") goToPage("nordic");
+    if (name === "FORM CEMENT") goToPage("form-cement");
+    if (name === "MYCRO") goToPage("mycro");
+    if (name === "CORALINA") goToPage("coralina");
+    if (name === "CAEMENTUM") goToPage("caementum");
+    if (name === "PAPIER") goToPage("papier");
+    if (name === "JEWELS") goToPage("jewels");
+    if (name === "ENGLISH STONE") goToPage("english-stone");
+    if (name === "TAJ MAHAL") goToPage("taj-mahal");
+    if (name === "TWEED STONE") goToPage("tweed-stone");
+    if (name === "TIVOLI") goToPage("tivoli");
+    if (name === "SEINE") goToPage("seine");
+    if (name === "SANDSTONE") goToPage("sandstone");
+    if (name === "MEMORY") goToPage("memory");
+    if (name === "NATURE MOOD") goToPage("nature-mood");
+    if (name === "GREEN TREES") goToPage("green-trees");
+    if (name === "TROPICAL BLUE") goToPage("tropical-blue");
+    if (name === "MATERIA CLASSICA") goToPage("materia-classica");
+    if (name === "BORNEO") goToPage("borneo");
+    if (name === "BOREALIS") goToPage("borealis");
+    if (name === "ARTE") goToPage("arte");
+    if (name === "DUAL") goToPage("dual");
+    if (name === "MAINSTONE") goToPage("mainstone");
+    if (name === "PRALINE") goToPage("praline");
+    if (name === "SUBLIME") goToPage("sublime");
+    if (name === "HOPE") goToPage("hope");
+    if (name === "CRUISE") goToPage("cruise");
+    if (name === "PIETRA ESSENZA") goToPage("pietra-essenza");
+    if (name === "DUAL TRAVERTINE") goToPage("dual-travertine");
+    if (name === "MATERA STONE") goToPage("matera-stone");
+    if (name === "AVALLON") goToPage("avallon");
+    if (name === "BAIKAL") goToPage("baikal");
+    if (name === "SAVOY") goToPage("savoy");
+    if (name === "DOT") goToPage("dot");
+    if (name === "DHARA") goToPage("dhara");
+    if (name === "OREGON") goToPage("oregon");
+    if (name === "HALTON") goToPage("halton");
+    if (name === "GULHI") goToPage("gulhi");
+    if (name === "CALIZIA") goToPage("calizia");
+    if (name === "HAUTEVILLE") goToPage("hauteville");
+    if (name === "VINCI") goToPage("vinci");
+    if (name === "CEMENT") goToPage("cement");
+    if (name === "EMOTION") goToPage("emotion");
+    if (name === "FLUID MULTICOLOR") goToPage("fluid-multicolor");
+    if (name === "TATTOO") goToPage("tattoo");
+    if (name === "CASSERO") goToPage("cassero");
+    if (name === "COSMOPOLITAN") goToPage("cosmopolitan");
+    if (name === "ARTIC") goToPage("artic");
+    if (name === "ARKEN") goToPage("arken");
+    if (name === "CUARZO RENO") goToPage("cuarzo-reno");
+    if (name === "DISTRITO") goToPage("distrito");
+    if (name === "INCISA") goToPage("incisa");
+    if (name === "ONIX") goToPage("onix");
+    if (name === "SILVERLINE") goToPage("silverline");
+    if (name === "CIVIC") goToPage("civic");
+    if (name === "BLANCO") goToPage("blanco");
+    if (name === "COTTAGE") goToPage("cottage");
+    if (name === "DUOMO") goToPage("duomo");
+    if (name === "LUMINA STONE") goToPage("lumina-stone");
+    if (name === "MICRA") goToPage("micra");
+    if (name === "MITICA") goToPage("mitica");
+    if (name === "OXO") goToPage("oxo");
+    if (name === "SURFACE") goToPage("surface");
   }
 
-  function renderCurrentPage() {
-    if (page === "home") {
+  function renderPage(targetPage) {
+    if (targetPage === "home") {
       return <IndexPage onOpenCollection={handleOpenCollection} />;
     }
 
-    if (page === "boutique") {
+    if (targetPage === "boutique") {
       return <Boutique onOpenCollection={handleOpenCollection} />;
     }
 
-    if (page === "lucena") return <Lucena />;
-    if (page === "dust") return <Dust />;
-    if (page === "elegance-pro") return <ElegancePro />;
-    if (page === "elysian") return <Elysian />;
-    if (page === "sinai-coem") return <SinaiCoem />;
-    if (page === "sinai-ktl") return <SinaiKtl />;
-    if (page === "glocal") return <Glocal />;
-    if (page === "materia") return <Materia />;
-    if (page === "sheer") return <Sheer />;
-    if (page === "motley") return <Motley />;
-    if (page === "supreme") return <Supreme />;
-    if (page === "imperial-stone") return <ImperialStone />;
-    if (page === "sybil") return <Sybil />;
-    if (page === "pulpis") return <Pulpis />;
-    if (page === "pierre-vive") return <PierreVive />;
-    if (page === "riverside") return <Riverside />;
-    if (page === "palermo") return <Palermo />;
-    if (page === "mapierre") return <Mapierre />;
-    if (page === "kora") return <Kora />;
-    if (page === "arenaria") return <Arenaria />;
-    if (page === "barcelona") return <Barcelona />;
-    if (page === "oh-take-mountain") return <OhTakeMountain />;
-    if (page === "portland") return <Portland />;
-    if (page === "chicago") return <Chicago />;
-    if (page === "icon") return <Icon />;
-    if (page === "bellevue") return <Bellevue />;
-    if (page === "ulisse") return <Ulisse />;
-    if (page === "dripart") return <Dripart />;
-    if (page === "oxyd") return <Oxyd />;
-    if (page === "bela") return <Bela />;
-    if (page === "kaizen") return <Kaizen />;
-    if (page === "retina") return <Retina />;
-    if (page === "jatoba") return <Jatoba />;
-    if (page === "verbier") return <Verbier />;
-    if (page === "moon-cream") return <MoonCream />;
-    if (page === "ribera") return <Ribera />;
-    if (page === "erawan") return <Erawan />;
-    if (page === "majestic") return <Majestic />;
-    if (page === "jurupa") return <Jurupa />;
-    if (page === "the-room") return <TheRoom />;
-    if (page === "bloom") return <Bloom />;
-    if (page === "glim-gemme") return <GlimGemme />;
-    if (page === "oxide") return <Oxide />;
-    if (page === "wood-fog") return <WoodFog />;
-    if (page === "unique") return <Unique />;
-    if (page === "blue-roma") return <BlueRoma />;
-    if (page === "canela-roma") return <CanelaRoma />;
-    if (page === "nordic") return <Nordic />;
-    if (page === "form-cement") return <FormCement />;
-    if (page === "mycro") return <Mycro />;
-    if (page === "coralina") return <Coralina />;
-    if (page === "caementum") return <Caementum />;
-    if (page === "papier") return <Papier />;
-    if (page === "jewels") return <Jewels />;
-    if (page === "english-stone") return <EnglishStone />;
-    if (page === "taj-mahal") return <TajMahal />;
-    if (page === "tweed-stone") return <TweedStone />;
-    if (page === "tivoli") return <Tivoli />;
-    if (page === "seine") return <Seine />;
-    if (page === "sandstone") return <Sandstone />;
-    if (page === "memory") return <Memory />;
-    if (page === "nature-mood") return <NatureMood />;
-    if (page === "green-trees") return <GreenTrees />;
-    if (page === "tropical-blue") return <TropicalBlue />;
-    if (page === "materia-classica") return <MateriaClassica />;
-    if (page === "borneo") return <Borneo />;
-    if (page === "borealis") return <Borealis />;
-    if (page === "arte") return <Arte />;
-    if (page === "dual") return <Dual />;
-    if (page === "mainstone") return <Mainstone />;
-    if (page === "praline") return <Praline />;
-    if (page === "sublime") return <Sublime />;
-    if (page === "hope") return <Hope />;
-    if (page === "cruise") return <Cruise />;
-    if (page === "pietra-essenza") return <PietraEssenza />;
-    if (page === "dual-travertine") return <DualTravertine />;
-    if (page === "matera-stone") return <MateraStone />;
-    if (page === "avallon") return <Avallon />;
-    if (page === "baikal") return <Baikal />;
-    if (page === "savoy") return <Savoy />;
-    if (page === "dot") return <Dot />;
-    if (page === "dhara") return <Dhara />;
-    if (page === "oregon") return <Oregon />;
-    if (page === "halton") return <Halton />;
-    if (page === "gulhi") return <Gulhi />;
-    if (page === "calizia") return <Calizia />;
-    if (page === "hauteville") return <Hauteville />;
-    if (page === "vinci") return <Vinci />;
-    if (page === "cement") return <Cement />;
-    if (page === "emotion") return <Emotion />;
-    if (page === "fluid-multicolor") return <FluidMulticolor />;
-    if (page === "tattoo") return <Tattoo />;
-    if (page === "cassero") return <Cassero />;
-    if (page === "cosmopolitan") return <Cosmopolitan />;
-    if (page === "artic") return <Artic />;
-    if (page === "arken") return <Arken />;
-    if (page === "cuarzo-reno") return <CuarzoReno />;
-    if (page === "distrito") return <Distrito />;
-    if (page === "incisa") return <Incisa />;
-    if (page === "onix") return <Onix />;
-    if (page === "silverline") return <Silverline />;
-    if (page === "civic") return <Civic />;
-    if (page === "blanco") return <Blanco />;
-    if (page === "cottage") return <Cottage />;
-    if (page === "duomo") return <Duomo />;
-    if (page === "lumina-stone") return <LuminaStone />;
-    if (page === "micra") return <Micra />;
-    if (page === "mitica") return <Mitica />;
-    if (page === "oxo") return <Oxo />;
-    if (page === "surface") return <Surface />;
+    if (targetPage === "lucena") return <Lucena />;
+    if (targetPage === "dust") return <Dust />;
+    if (targetPage === "elegance-pro") return <ElegancePro />;
+    if (targetPage === "elysian") return <Elysian />;
+    if (targetPage === "sinai-coem") return <SinaiCoem />;
+    if (targetPage === "sinai-ktl") return <SinaiKtl />;
+    if (targetPage === "glocal") return <Glocal />;
+    if (targetPage === "materia") return <Materia />;
+    if (targetPage === "sheer") return <Sheer />;
+    if (targetPage === "motley") return <Motley />;
+    if (targetPage === "supreme") return <Supreme />;
+    if (targetPage === "imperial-stone") return <ImperialStone />;
+    if (targetPage === "sybil") return <Sybil />;
+    if (targetPage === "pulpis") return <Pulpis />;
+    if (targetPage === "pierre-vive") return <PierreVive />;
+    if (targetPage === "riverside") return <Riverside />;
+    if (targetPage === "palermo") return <Palermo />;
+    if (targetPage === "mapierre") return <Mapierre />;
+    if (targetPage === "kora") return <Kora />;
+    if (targetPage === "arenaria") return <Arenaria />;
+    if (targetPage === "barcelona") return <Barcelona />;
+    if (targetPage === "oh-take-mountain") return <OhTakeMountain />;
+    if (targetPage === "portland") return <Portland />;
+    if (targetPage === "chicago") return <Chicago />;
+    if (targetPage === "icon") return <Icon />;
+    if (targetPage === "bellevue") return <Bellevue />;
+    if (targetPage === "ulisse") return <Ulisse />;
+    if (targetPage === "dripart") return <Dripart />;
+    if (targetPage === "oxyd") return <Oxyd />;
+    if (targetPage === "bela") return <Bela />;
+    if (targetPage === "kaizen") return <Kaizen />;
+    if (targetPage === "retina") return <Retina />;
+    if (targetPage === "jatoba") return <Jatoba />;
+    if (targetPage === "verbier") return <Verbier />;
+    if (targetPage === "moon-cream") return <MoonCream />;
+    if (targetPage === "ribera") return <Ribera />;
+    if (targetPage === "erawan") return <Erawan />;
+    if (targetPage === "majestic") return <Majestic />;
+    if (targetPage === "jurupa") return <Jurupa />;
+    if (targetPage === "the-room") return <TheRoom />;
+    if (targetPage === "bloom") return <Bloom />;
+    if (targetPage === "glim-gemme") return <GlimGemme />;
+    if (targetPage === "oxide") return <Oxide />;
+    if (targetPage === "wood-fog") return <WoodFog />;
+    if (targetPage === "unique") return <Unique />;
+    if (targetPage === "blue-roma") return <BlueRoma />;
+    if (targetPage === "canela-roma") return <CanelaRoma />;
+    if (targetPage === "nordic") return <Nordic />;
+    if (targetPage === "form-cement") return <FormCement />;
+    if (targetPage === "mycro") return <Mycro />;
+    if (targetPage === "coralina") return <Coralina />;
+    if (targetPage === "caementum") return <Caementum />;
+    if (targetPage === "papier") return <Papier />;
+    if (targetPage === "jewels") return <Jewels />;
+    if (targetPage === "english-stone") return <EnglishStone />;
+    if (targetPage === "taj-mahal") return <TajMahal />;
+    if (targetPage === "tweed-stone") return <TweedStone />;
+    if (targetPage === "tivoli") return <Tivoli />;
+    if (targetPage === "seine") return <Seine />;
+    if (targetPage === "sandstone") return <Sandstone />;
+    if (targetPage === "memory") return <Memory />;
+    if (targetPage === "nature-mood") return <NatureMood />;
+    if (targetPage === "green-trees") return <GreenTrees />;
+    if (targetPage === "tropical-blue") return <TropicalBlue />;
+    if (targetPage === "materia-classica") return <MateriaClassica />;
+    if (targetPage === "borneo") return <Borneo />;
+    if (targetPage === "borealis") return <Borealis />;
+    if (targetPage === "arte") return <Arte />;
+    if (targetPage === "dual") return <Dual />;
+    if (targetPage === "mainstone") return <Mainstone />;
+    if (targetPage === "praline") return <Praline />;
+    if (targetPage === "sublime") return <Sublime />;
+    if (targetPage === "hope") return <Hope />;
+    if (targetPage === "cruise") return <Cruise />;
+    if (targetPage === "pietra-essenza") return <PietraEssenza />;
+    if (targetPage === "dual-travertine") return <DualTravertine />;
+    if (targetPage === "matera-stone") return <MateraStone />;
+    if (targetPage === "avallon") return <Avallon />;
+    if (targetPage === "baikal") return <Baikal />;
+    if (targetPage === "savoy") return <Savoy />;
+    if (targetPage === "dot") return <Dot />;
+    if (targetPage === "dhara") return <Dhara />;
+    if (targetPage === "oregon") return <Oregon />;
+    if (targetPage === "halton") return <Halton />;
+    if (targetPage === "gulhi") return <Gulhi />;
+    if (targetPage === "calizia") return <Calizia />;
+    if (targetPage === "hauteville") return <Hauteville />;
+    if (targetPage === "vinci") return <Vinci />;
+    if (targetPage === "cement") return <Cement />;
+    if (targetPage === "emotion") return <Emotion />;
+    if (targetPage === "fluid-multicolor") return <FluidMulticolor />;
+    if (targetPage === "tattoo") return <Tattoo />;
+    if (targetPage === "cassero") return <Cassero />;
+    if (targetPage === "cosmopolitan") return <Cosmopolitan />;
+    if (targetPage === "artic") return <Artic />;
+    if (targetPage === "arken") return <Arken />;
+    if (targetPage === "cuarzo-reno") return <CuarzoReno />;
+    if (targetPage === "distrito") return <Distrito />;
+    if (targetPage === "incisa") return <Incisa />;
+    if (targetPage === "onix") return <Onix />;
+    if (targetPage === "silverline") return <Silverline />;
+    if (targetPage === "civic") return <Civic />;
+    if (targetPage === "blanco") return <Blanco />;
+    if (targetPage === "cottage") return <Cottage />;
+    if (targetPage === "duomo") return <Duomo />;
+    if (targetPage === "lumina-stone") return <LuminaStone />;
+    if (targetPage === "micra") return <Micra />;
+    if (targetPage === "mitica") return <Mitica />;
+    if (targetPage === "oxo") return <Oxo />;
+    if (targetPage === "surface") return <Surface />;
 
     return null;
   }
 
   return (
-    <div style={{ overflowX: "hidden", background: "#fff" }}>
+    <div
+      style={{
+        position: "relative",
+        overflowX: "hidden",
+        minHeight: "100vh",
+      }}
+    >
+      {page !== "home" && previousPage && previousPage !== page && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            zIndex: 1,
+            minHeight: "100vh",
+          }}
+        >
+          {renderPage(previousPage)}
+        </div>
+      )}
+
       <div
         style={{
+          position: "relative",
+          zIndex: 2,
           minHeight: "100vh",
           transform: `translateX(${swipeX}px)`,
           transition: isDraggingSwipe ? "none" : "transform 0.22s ease-out",
           willChange: "transform",
-          background: "#fff",
+          boxShadow:
+            swipeX > 0 ? "0 0 30px rgba(0, 0, 0, 0.12)" : "none",
         }}
       >
-        {renderCurrentPage()}
+        {renderPage(page)}
       </div>
     </div>
   );
