@@ -234,6 +234,10 @@ export function App() {
     setPage("home");
   }
 
+  function handleGoBoutique() {
+    setPage("boutique");
+  }
+
   if (page === "home") {
     return <IndexPage onOpenCollection={handleOpenCollection} />;
   }
@@ -242,6 +246,7 @@ export function App() {
     return (
       <Boutique
         onGoHome={handleGoHome}
+        onOpenBoutique={handleGoBoutique}
         onOpenCollection={handleOpenCollection}
       />
     );

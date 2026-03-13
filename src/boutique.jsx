@@ -108,7 +108,7 @@ const boutiqueCollections = [
   },
 ];
 
-export function Boutique({ onGoHome, onOpenCollection }) {
+export function Boutique({ onGoHome, onOpenBoutique, onOpenCollection }) {
   const [selectedCabinet, setSelectedCabinet] = useState(null);
   const [selectedDrawer, setSelectedDrawer] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -126,10 +126,6 @@ export function Boutique({ onGoHome, onOpenCollection }) {
 
   function handleSelectDrawer(drawer) {
     setSelectedDrawer((prev) => (prev === drawer ? null : drawer));
-  }
-
-  function handleOpenBoutique(event) {
-    event.preventDefault();
   }
 
   const visibleDrawers = selectedCabinet
@@ -152,7 +148,7 @@ export function Boutique({ onGoHome, onOpenCollection }) {
 
   return (
     <>
-      <Header onGoHome={onGoHome} onOpenBoutique={handleOpenBoutique} />
+      <Header onGoHome={onGoHome} onOpenBoutique={onOpenBoutique} />
 
       <main>
         <h1 className="titulo-coleccion">BOUTIQUE AREA</h1>
