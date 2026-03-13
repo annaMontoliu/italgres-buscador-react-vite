@@ -92,7 +92,7 @@ nav a {
 
 /* Buscador */
 .index-page input[type="search"] {
-  padding: 0.9rem;
+  padding: 0.9rem 1rem;
   font-size: 1.4rem;
   width: 100%;
   max-width: 500px;
@@ -102,6 +102,12 @@ nav a {
   background-color: #fff;
   margin: 0 auto 2rem auto;
   display: block;
+  font-family: inherit;
+}
+
+.index-page input[type="search"]::placeholder {
+  color: var(--brand);
+  opacity: 1;
 }
 
 /* Letras del índice */
@@ -546,7 +552,7 @@ h3.color-title {
 }
 
 .boutique-right {
-  padding-top: 62px;
+  padding-top: 24px;
 }
 
 .boutique-section-label,
@@ -682,7 +688,7 @@ h3.color-title {
   font-size: 1rem;
   border: 2px solid var(--brand);
   border-radius: 6px;
-  color: var(--brand);
+  color: #000;
   background: #fff;
   margin-bottom: 18px;
   font-family: inherit;
