@@ -4,7 +4,7 @@ import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 
 const TARIFA_PASSWORD = "Anna"; // 👉 aquí puedes cambiar la contraseña
 
-export function Header({ onGoHome }) {
+export function Header({ onGoHome, onOpenBoutique }) {
   function handleHomeClick(event) {
     if (onGoHome) {
       event.preventDefault();
@@ -12,28 +12,30 @@ export function Header({ onGoHome }) {
     }
   }
 
+  function handleBoutiqueClick(event) {
+    event.preventDefault();
+
+    if (onOpenBoutique) {
+      onOpenBoutique();
+    }
+  }
+
   function handleTarifaClick(event) {
     event.preventDefault();
 
-    // 1) Pedimos la contraseña
     const input = window.prompt("Introduce la contraseña de comerciales:");
 
-    // Si cancela el prompt, no hacemos nada
     if (input === null) return;
 
-    // Si la contraseña es incorrecta, avisamos y salimos
     if (input !== TARIFA_PASSWORD) {
       alert("Contraseña incorrecta");
       return;
     }
 
-    // 2) Si la contraseña es correcta, abrimos la ventanita con la tarifa
-
     const baseUrl = window.location.origin;
     const filePath = "/docs/tarifa-italgres.xlsx";
     const fileUrl = `${baseUrl}${filePath}`;
 
-    // Si estamos en localhost → abrimos directamente el archivo
     if (baseUrl.includes("localhost") || baseUrl.includes("127.0.0.1")) {
       window.open(
         fileUrl,
@@ -43,7 +45,6 @@ export function Header({ onGoHome }) {
       return;
     }
 
-    // Si estamos en producción (Netlify, dominio real...) → usar visor de Microsoft
     const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(
       fileUrl
     )}`;
@@ -62,7 +63,6 @@ export function Header({ onGoHome }) {
       </a>
 
       <nav>
-        {/* SAMPLE MAP - nuevo botón */}
         <a
           href="/pdf/sample-map.pdf"
           target="_blank"
@@ -71,18 +71,20 @@ export function Header({ onGoHome }) {
           SAMPLE MAP
         </a>
 
-        {/* TARIFA a la izquierda */}
+        <a href="/index.html" onClick={handleHomeClick}>
+          HOME
+        </a>
+
+        <a href="/boutique" onClick={handleBoutiqueClick}>
+          BOUTIQUE
+        </a>
+
         <a
           href="/docs/tarifa-italgres.xlsx"
           onClick={handleTarifaClick}
           rel="noopener noreferrer"
         >
           PRICELIST
-        </a>
-
-        {/* HOME como lo tenías */}
-        <a href="/index.html" onClick={handleHomeClick}>
-          HOME
         </a>
       </nav>
     </header>

@@ -1,6 +1,7 @@
 // src/App.jsx
 import { useState } from "react";
 import { IndexPage } from "./IndexPage";
+import { Boutique } from "./boutique";
 
 import { Lucena } from "./colecciones/lucena";
 import { ElegancePro } from "./colecciones/elegance-pro";
@@ -116,6 +117,8 @@ export function App() {
   const [page, setPage] = useState("home");
 
   function handleOpenCollection(name) {
+    if (name === "BOUTIQUE") setPage("boutique");
+
     if (name === "LUCENA") setPage("lucena");
     if (name === "ELEGANCE PRO") setPage("elegance-pro");
     if (name === "ELYSIAN") setPage("elysian");
@@ -233,6 +236,15 @@ export function App() {
 
   if (page === "home") {
     return <IndexPage onOpenCollection={handleOpenCollection} />;
+  }
+
+  if (page === "boutique") {
+    return (
+      <Boutique
+        onGoHome={handleGoHome}
+        onOpenCollection={handleOpenCollection}
+      />
+    );
   }
 
   if (page === "lucena") return <Lucena onGoHome={handleGoHome} />;
@@ -354,4 +366,5 @@ export function App() {
 
   return null;
 }
+
 export default App;
