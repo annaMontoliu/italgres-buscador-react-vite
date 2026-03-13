@@ -86,7 +86,18 @@ nav a:active {
 
 /* separadores verticales entre botones */
 nav a:not(:first-child) {
-  border-left: 0.4px solid rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+nav a:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%);
 }
 
 /* ----------------------------- */
@@ -397,7 +408,18 @@ h3.color-title {
   }
 
   nav a:not(:first-child) {
-    border-left: 0.4px solid rgba(255, 255, 255, 0.35);
+    position: relative;
+  }
+
+  nav a:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-50%);
   }
 
   .gallery-grid {
