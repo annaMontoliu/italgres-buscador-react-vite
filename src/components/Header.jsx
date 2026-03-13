@@ -1,23 +1,22 @@
 // src/components/Header.jsx
 
+import { useState } from "react";
 import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 
 const TARIFA_PASSWORD = "Anna"; // 👉 aquí puedes cambiar la contraseña
 
 export function Header() {
-
-  const path = window.location.pathname;
-
-  const isHome = path === "/" || path.includes("index");
-  const isBoutique = path.includes("boutique");
+  const [activeMenu, setActiveMenu] = useState("home");
 
   function handleHomeClick(event) {
     event.preventDefault();
+    setActiveMenu("home");
     window.dispatchEvent(new CustomEvent("go-home"));
   }
 
   function handleBoutiqueClick(event) {
     event.preventDefault();
+    setActiveMenu("boutique");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -83,7 +82,7 @@ export function Header() {
         <a
           href="/boutique"
           onClick={handleBoutiqueClick}
-          className={isBoutique ? "is-active" : ""}
+          className={activeMenu === "boutique" ? "is-active" : ""}
         >
           BOUTIQUE
         </a>
@@ -91,7 +90,7 @@ export function Header() {
         <a
           href="/index.html"
           onClick={handleHomeClick}
-          className={isHome ? "is-active" : ""}
+          className={activeMenu === "home" ? "is-active" : ""}
         >
           HOME
         </a>
