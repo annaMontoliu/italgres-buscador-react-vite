@@ -747,3 +747,45 @@ h3.color-title {
   margin:4px 0 18px 0;
   color:var(--ink);
 }
+
+.breadcrumb-boutique {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.breadcrumb-link,
+.breadcrumb-current,
+.breadcrumb-separator {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.breadcrumb-link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #6f6f6f;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--brand);
+}
+
+.breadcrumb-current {
+  color: #6f6f6f;
+  font-weight: 700;
+}
+
+.breadcrumb-separator {
+  color: #6f6f6f;
+}
+
+.boutique-title {
+  text-align: left;
+}

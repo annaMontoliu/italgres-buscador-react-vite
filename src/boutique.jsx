@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Header } from "./components/Header";
+import dust01 from "./assets/imagenes/dust/dust-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -10,7 +11,7 @@ const boutiqueDrawers = {
       format: '2"x8"',
       brand: "ELIOS",
       locations: ["A1"],
-      thumbnail: "/src/assets/imagenes/dust/dust-01.jpg",
+      thumbnail: dust01,
     },
   ],
 };
@@ -21,7 +22,7 @@ const boutiqueCollections = [
     format: '2"x8"',
     brand: "ELIOS",
     locations: ["A1"],
-    thumbnail: "/src/assets/imagenes/dust/dust-01.jpg",
+    thumbnail: dust01,
   },
 ];
 
@@ -29,6 +30,22 @@ export function Boutique({ onOpenCollection }) {
   const [selectedCabinet, setSelectedCabinet] = useState(null);
   const [selectedDrawer, setSelectedDrawer] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    const savedCabinet = sessionStorage.getItem("boutiqueCabinet");
+    const savedDrawer = sessionStorage.getItem("boutiqueDrawer");
+
+    if (savedCabinet) {
+      setSelectedCabinet(savedCabinet);
+    }
+
+    if (savedDrawer) {
+      setSelectedDrawer(savedDrawer);
+    }
+
+    sessionStorage.removeItem("boutiqueCabinet");
+    sessionStorage.removeItem("boutiqueDrawer");
+  }, []);
 
   function handleSelectCabinet(letter) {
     if (selectedCabinet === letter) {
@@ -72,7 +89,6 @@ export function Boutique({ onOpenCollection }) {
 
         <section className="boutique-layout">
           <div className="boutique-left">
-
             <p className="boutique-section-label">BOUTIQUE</p>
 
             <div className="boutique-cabinets">
@@ -156,7 +172,6 @@ export function Boutique({ onOpenCollection }) {
           </div>
 
           <aside className="boutique-right">
-
             <label htmlFor="boutique-search" className="boutique-search-label">
               SEARCH COLLECTION
             </label>
@@ -209,7 +224,6 @@ export function Boutique({ onOpenCollection }) {
               </div>
             )}
           </aside>
-
         </section>
       </main>
     </>

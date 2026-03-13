@@ -1,10 +1,8 @@
-// src/colecciones/dust.jsx
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE IMÁGENES
 import dust01 from "../assets/imagenes/dust/dust-01.jpg";
 import dust02 from "../assets/imagenes/dust/dust-02.jpg";
 import dust03 from "../assets/imagenes/dust/dust-03.jpg";
@@ -43,7 +41,7 @@ const images = [
   dust17,
 ];
 
-export function Dust({ onGoHome }) {
+export function Dust() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -66,29 +64,57 @@ export function Dust({ onGoHome }) {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
 
+  function goToBoutique() {
+    sessionStorage.removeItem("boutiqueCabinet");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
+  function goToCabinetA() {
+    sessionStorage.setItem("boutiqueCabinet", "A");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
+  function goToDrawerA1() {
+    sessionStorage.setItem("boutiqueCabinet", "A");
+    sessionStorage.setItem("boutiqueDrawer", "A1");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
   return (
     <>
       <Header />
 
       <main>
-
-        {/* MIGAS DE PAN */}
         <div className="breadcrumb-boutique">
-          Boutique &gt; A &gt; A1 &gt; DUST
+          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+            BOUTIQUE
+          </button>
+          <span className="breadcrumb-separator">/</span>
+
+          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
+            A
+          </button>
+          <span className="breadcrumb-separator">/</span>
+
+          <button type="button" className="breadcrumb-link" onClick={goToDrawerA1}>
+            A1
+          </button>
+          <span className="breadcrumb-separator">/</span>
+
+          <span className="breadcrumb-current">DUST</span>
         </div>
 
-        {/* TITULO */}
         <h1 className="titulo-coleccion boutique-title">DUST</h1>
 
         <div className="boutique-info">
-          <p>2"x8" (ELIOS)</p>
-          <p>A-1</p>
+          <p>2"x8" · ELIOS</p>
+          <p>A1</p>
         </div>
 
-        {/* BOTON MORE INFO */}
         <ColeccionLayout infoUrl="https://eliosceramica.com/wp-content/uploads/2023/10/DUST_catalogo.pdf" />
 
-        {/* GALERIA */}
         <section className="gallery-grid">
           {images.map((img, index) => (
             <img
