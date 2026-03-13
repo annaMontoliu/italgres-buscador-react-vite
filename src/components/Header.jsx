@@ -1,10 +1,34 @@
 // src/components/Header.jsx
 
+import { useState, useEffect } from "react";
 import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 
-const TARIFA_PASSWORD = "Anna"; // 👉 aquí puedes cambiar la contraseña
+const TARIFA_PASSWORD = "Anna";
 
 export function Header() {
+
+  const [activeMenu, setActiveMenu] = useState("home");
+
+  useEffect(() => {
+
+    function handleHome() {
+      setActiveMenu("home");
+    }
+
+    function handleBoutique() {
+      setActiveMenu("boutique");
+    }
+
+    window.addEventListener("go-home", handleHome);
+    window.addEventListener("go-boutique", handleBoutique);
+
+    return () => {
+      window.removeEventListener("go-home", handleHome);
+      window.removeEventListener("go-boutique", handleBoutique);
+    };
+
+  }, []);
+
   function handleHomeClick(event) {
     event.preventDefault();
     window.dispatchEvent(new CustomEvent("go-home"));
@@ -40,9 +64,7 @@ export function Header() {
       return;
     }
 
-    const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(
-      fileUrl
-    )}`;
+    const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(fileUrl)}`;
 
     window.open(
       viewerUrl,
@@ -58,6 +80,7 @@ export function Header() {
       </a>
 
       <nav>
+
         <a
           href="/docs/tarifa-italgres.xlsx"
           onClick={handleTarifaClick}
@@ -74,13 +97,22 @@ export function Header() {
           SAMPLE MAP
         </a>
 
-        <a href="/boutique" onClick={handleBoutiqueClick}>
+        <a
+          href="/boutique"
+          onClick={handleBoutiqueClick}
+          className={activeMenu === "boutique" ? "is-active" : ""}
+        >
           BOUTIQUE
         </a>
 
-        <a href="/index.html" onClick={handleHomeClick}>
+        <a
+          href="/index.html"
+          onClick={handleHomeClick}
+          className={activeMenu === "home" ? "is-active" : ""}
+        >
           HOME
         </a>
+
       </nav>
     </header>
   );
