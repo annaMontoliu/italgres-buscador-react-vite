@@ -1,5 +1,5 @@
 // src/App.jsx
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { IndexPage } from "./IndexPage";
 import { Boutique } from "./boutique";
 
@@ -116,6 +116,9 @@ import { Dust } from "./colecciones/dust";
 
 export function App() {
   const [page, setPage] = useState("home");
+  const touchStartX = useRef(0);
+  const touchStartY = useRef(0);
+  const trackingSwipe = useRef(false);
 
   useEffect(() => {
     function handleGlobalGoHome() {
@@ -126,12 +129,46 @@ export function App() {
       setPage("boutique");
     }
 
+    function handleTouchStart(e) {
+      if (window.innerWidth > 1024) return;
+      if (e.touches.length !== 1) return;
+
+      const touch = e.touches[0];
+
+      if (touch.clientX <= 30) {
+        trackingSwipe.current = true;
+        touchStartX.current = touch.clientX;
+        touchStartY.current = touch.clientY;
+      } else {
+        trackingSwipe.current = false;
+      }
+    }
+
+    function handleTouchEnd(e) {
+      if (window.innerWidth > 1024) return;
+      if (!trackingSwipe.current) return;
+
+      const touch = e.changedTouches[0];
+      const deltaX = touch.clientX - touchStartX.current;
+      const deltaY = Math.abs(touch.clientY - touchStartY.current);
+
+      if (deltaX > 80 && deltaY < 80) {
+        setPage("home");
+      }
+
+      trackingSwipe.current = false;
+    }
+
     window.addEventListener("go-home", handleGlobalGoHome);
     window.addEventListener("go-boutique", handleGlobalGoBoutique);
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
 
     return () => {
       window.removeEventListener("go-home", handleGlobalGoHome);
       window.removeEventListener("go-boutique", handleGlobalGoBoutique);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
 
