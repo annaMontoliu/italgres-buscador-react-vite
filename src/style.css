@@ -70,19 +70,24 @@ nav a {
   white-space: nowrap;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   height: 100%;
-
+  font-size: 1.03rem;
+  line-height: 1;
   transition: color 0.25s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active,
+nav a.is-active,
+nav a[aria-current="page"] {
   color: var(--brand);
 }
 
 /* separadores verticales entre botones */
-
 nav a:not(:first-child) {
-  border-left: 1px solid rgba(255,255,255,0.35);
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
   padding-left: 24px;
 }
 
@@ -374,10 +379,28 @@ h3.color-title {
 
   nav a {
     background: transparent;
-    padding: 0;
+    padding: 0 16px;
     border-radius: 0;
-    font-size: 0.9rem;
+    font-size: 0.98rem;
     line-height: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.25s ease;
+  }
+
+  nav a:hover,
+  nav a:active,
+  nav a.is-active,
+  nav a[aria-current="page"] {
+    color: var(--brand);
+  }
+
+  nav a:not(:first-child) {
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
   }
 
   .gallery-grid {
@@ -440,7 +463,8 @@ h3.color-title {
     width: 30px;
     height: 30px;
     background: #fff;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     -webkit-mask-size: contain;
@@ -448,6 +472,14 @@ h3.color-title {
     mask-position: center;
     mask-size: contain;
     opacity: 0.95;
+    transition: background-color 0.25s ease;
+  }
+
+  nav a:hover::before,
+  nav a:active::before,
+  nav a.is-active::before,
+  nav a[aria-current="page"]::before {
+    background: var(--brand);
   }
 
   /* 1) PRICELIST */
@@ -737,31 +769,31 @@ h3.color-title {
   }
 }
 
-.boutique-breadcrumb{
-  color:var(--brand);
-  font-weight:600;
-  margin-bottom:20px;
+.boutique-breadcrumb {
+  color: var(--brand);
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.boutique-collection-header{
-  margin-bottom:40px;
+.boutique-collection-header {
+  margin-bottom: 40px;
 }
 
-.boutique-title{
-  font-size:48px;
-  letter-spacing:4px;
-  margin:0 0 10px 0;
-  color:var(--ink);
+.boutique-title {
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin: 0 0 10px 0;
+  color: var(--ink);
 }
 
-.boutique-format{
-  margin:0;
-  font-size:18px;
+.boutique-format {
+  margin: 0;
+  font-size: 18px;
 }
 
-.boutique-location{
-  margin:4px 0 18px 0;
-  color:var(--ink);
+.boutique-location {
+  margin: 4px 0 18px 0;
+  color: var(--ink);
 }
 
 .breadcrumb-boutique {

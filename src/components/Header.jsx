@@ -5,6 +5,12 @@ import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 const TARIFA_PASSWORD = "Anna"; // 👉 aquí puedes cambiar la contraseña
 
 export function Header() {
+
+  const path = window.location.pathname;
+
+  const isHome = path === "/" || path.includes("index");
+  const isBoutique = path.includes("boutique");
+
   function handleHomeClick(event) {
     event.preventDefault();
     window.dispatchEvent(new CustomEvent("go-home"));
@@ -74,11 +80,19 @@ export function Header() {
           SAMPLE MAP
         </a>
 
-        <a href="/boutique" onClick={handleBoutiqueClick}>
+        <a
+          href="/boutique"
+          onClick={handleBoutiqueClick}
+          className={isBoutique ? "is-active" : ""}
+        >
           BOUTIQUE
         </a>
 
-        <a href="/index.html" onClick={handleHomeClick}>
+        <a
+          href="/index.html"
+          onClick={handleHomeClick}
+          className={isHome ? "is-active" : ""}
+        >
           HOME
         </a>
       </nav>
