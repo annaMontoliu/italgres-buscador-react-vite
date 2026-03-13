@@ -216,7 +216,7 @@ h1.titulo-coleccion {
 .showroom-colors__grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* mismo arranque que galería */
+  justify-content: flex-start;
   gap: 22px;
   max-width: 100%;
 }
@@ -279,16 +279,11 @@ h3.color-title {
   display: none;
   position: fixed;
   inset: 0;
-
-  /* SUBIMOS z-index PARA TAPAR EL HEADER (que está en 9999) */
   z-index: 99999;
-
   background: rgba(0, 0, 0, 0.92);
   justify-content: center;
   align-items: center;
   padding: 20px;
-
-  /* Permite swipe horizontal sin cargarte el scroll vertical */
   touch-action: pan-y;
 }
 
@@ -312,11 +307,10 @@ h3.color-title {
   z-index: 10;
 }
 
-/* Cruz un pelín más grande */
 .close {
   top: 10vh;
   right: 4vw;
-  font-size: 46px; /* antes 40px */
+  font-size: 46px;
   line-height: 1;
 }
 
@@ -369,10 +363,6 @@ h3.color-title {
 
   .gallery-img {
     height: 230px;
-  }
-
-  .boutique-layout {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -555,6 +545,10 @@ h3.color-title {
   padding: 24px;
 }
 
+.boutique-right {
+  padding-top: 62px;
+}
+
 .boutique-section-label,
 .boutique-search-label,
 .boutique-subtitle {
@@ -688,14 +682,38 @@ h3.color-title {
   font-size: 1rem;
   border: 2px solid var(--brand);
   border-radius: 6px;
-  color: #000;
+  color: var(--brand);
   background: #fff;
   margin-bottom: 18px;
   font-family: inherit;
+}
+
+.boutique-search-input::placeholder {
+  color: var(--brand);
+  opacity: 1;
 }
 
 .boutique-empty {
   margin: 0;
   color: var(--ink);
   font-size: 0.98rem;
+}
+
+/* ----------------------------- */
+/* BOUTIQUE TABLET Y MÓVIL       */
+/* ----------------------------- */
+
+@media (max-width: 900px) {
+  .boutique-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .boutique-left {
+    order: 1;
+  }
+
+  .boutique-right {
+    order: 2;
+    padding-top: 24px;
+  }
 }
