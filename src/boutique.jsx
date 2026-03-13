@@ -108,7 +108,7 @@ const boutiqueCollections = [
   },
 ];
 
-export function Boutique({ onGoHome, onOpenBoutique, onOpenCollection }) {
+export function Boutique({ onOpenCollection }) {
   const [selectedCabinet, setSelectedCabinet] = useState(null);
   const [selectedDrawer, setSelectedDrawer] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -148,7 +148,7 @@ export function Boutique({ onGoHome, onOpenBoutique, onOpenCollection }) {
 
   return (
     <>
-      <Header onGoHome={onGoHome} onOpenBoutique={onOpenBoutique} />
+      <Header />
 
       <main>
         <h1 className="titulo-coleccion">BOUTIQUE AREA</h1>

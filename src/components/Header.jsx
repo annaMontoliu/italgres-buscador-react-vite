@@ -4,20 +4,15 @@ import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 
 const TARIFA_PASSWORD = "Anna"; // 👉 aquí puedes cambiar la contraseña
 
-export function Header({ onGoHome, onOpenBoutique }) {
+export function Header() {
   function handleHomeClick(event) {
-    if (onGoHome) {
-      event.preventDefault();
-      onGoHome();
-    }
+    event.preventDefault();
+    window.dispatchEvent(new CustomEvent("go-home"));
   }
 
   function handleBoutiqueClick(event) {
     event.preventDefault();
-
-    if (onOpenBoutique) {
-      onOpenBoutique();
-    }
+    window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   function handleTarifaClick(event) {
@@ -63,7 +58,6 @@ export function Header({ onGoHome, onOpenBoutique }) {
       </a>
 
       <nav>
-        {/* PRICELIST */}
         <a
           href="/docs/tarifa-italgres.xlsx"
           onClick={handleTarifaClick}
@@ -72,7 +66,6 @@ export function Header({ onGoHome, onOpenBoutique }) {
           PRICELIST
         </a>
 
-        {/* SAMPLE MAP */}
         <a
           href="/pdf/sample-map.pdf"
           target="_blank"
@@ -81,12 +74,10 @@ export function Header({ onGoHome, onOpenBoutique }) {
           SAMPLE MAP
         </a>
 
-        {/* BOUTIQUE */}
         <a href="/boutique" onClick={handleBoutiqueClick}>
           BOUTIQUE
         </a>
 
-        {/* HOME */}
         <a href="/index.html" onClick={handleHomeClick}>
           HOME
         </a>
