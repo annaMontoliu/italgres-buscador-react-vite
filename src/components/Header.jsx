@@ -6,11 +6,9 @@ import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 const TARIFA_PASSWORD = "Anna";
 
 export function Header() {
-
   const [activeMenu, setActiveMenu] = useState("home");
 
   useEffect(() => {
-
     function handleHome() {
       setActiveMenu("home");
     }
@@ -26,16 +24,17 @@ export function Header() {
       window.removeEventListener("go-home", handleHome);
       window.removeEventListener("go-boutique", handleBoutique);
     };
-
   }, []);
 
   function handleHomeClick(event) {
     event.preventDefault();
+    setActiveMenu("home");
     window.dispatchEvent(new CustomEvent("go-home"));
   }
 
   function handleBoutiqueClick(event) {
     event.preventDefault();
+    setActiveMenu("boutique");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -64,7 +63,9 @@ export function Header() {
       return;
     }
 
-    const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(fileUrl)}`;
+    const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(
+      fileUrl
+    )}`;
 
     window.open(
       viewerUrl,
@@ -80,7 +81,6 @@ export function Header() {
       </a>
 
       <nav>
-
         <a
           href="/docs/tarifa-italgres.xlsx"
           onClick={handleTarifaClick}
@@ -112,7 +112,6 @@ export function Header() {
         >
           HOME
         </a>
-
       </nav>
     </header>
   );
