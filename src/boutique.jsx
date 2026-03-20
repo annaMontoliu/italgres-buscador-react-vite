@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Header } from "./components/Header";
 import dust01 from "./assets/imagenes/dust/dust-01.jpg";
+import beck01 from "./assets/imagenes/beck/beck-01.jpg";
+import brutalist01 from "./assets/imagenes/brutalist/brutalist-01.jpg";
+import longStick01 from "./assets/imagenes/long-stick/long-stick-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -14,6 +17,29 @@ const boutiqueDrawers = {
       thumbnail: dust01,
     },
   ],
+  A2: [
+    {
+      name: "BECK",
+      format: '4"x4"',
+      brand: "CIFRE",
+      locations: ["A2"],
+      thumbnail: beck01,
+    },
+    {
+      name: "BRUTALIST",
+      format: "2''X9''",
+      brand: "AMADIS",
+      locations: ["A2"],
+      thumbnail: brutalist01,
+    },
+    {
+      name: "LONG STICK",
+      format: "1''X18''",
+      brand: "AMADIS",
+      locations: ["A2"],
+      thumbnail: longStick01,
+    },
+  ],
 };
 
 const boutiqueCollections = [
@@ -23,6 +49,27 @@ const boutiqueCollections = [
     brand: "ELIOS",
     locations: ["A1"],
     thumbnail: dust01,
+  },
+  {
+    name: "BECK",
+    format: '4"x4"',
+    brand: "CIFRE",
+    locations: ["A2"],
+    thumbnail: beck01,
+  },
+  {
+    name: "BRUTALIST",
+    format: "2''X9''",
+    brand: "AMADIS",
+    locations: ["A2"],
+    thumbnail: brutalist01,
+  },
+  {
+    name: "LONG STICK",
+    format: "1''X18''",
+    brand: "AMADIS",
+    locations: ["A2"],
+    thumbnail: longStick01,
   },
 ];
 

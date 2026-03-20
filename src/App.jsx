@@ -114,6 +114,9 @@ import { Mitica } from "./colecciones/mitica";
 import { Oxo } from "./colecciones/oxo";
 import { Surface } from "./colecciones/surface";
 import { Dust } from "./colecciones/dust";
+import { Beck } from "./colecciones/beck";
+import { Brutalist } from "./colecciones/brutalist";
+import { LongStick } from "./colecciones/long-stick";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -285,6 +288,9 @@ export function App() {
     if (name === "MITICA") setPage("mitica");
     if (name === "OXO") setPage("oxo");
     if (name === "SURFACE") setPage("surface");
+    if (name === "BECK") setPage("beck");
+    if (name === "BRUTALIST") setPage("brutalist");
+    if (name === "LONG STICK") setPage("long-stick");
   }
 
   if (page === "home") {
@@ -405,6 +411,9 @@ export function App() {
   if (page === "mitica") return <Mitica />;
   if (page === "oxo") return <Oxo />;
   if (page === "surface") return <Surface />;
+  if (page === "beck") return <Beck />;
+  if (page === "brutalist") return <Brutalist />;
+  if (page === "long-stick") return <LongStick />;
 
   return null;
 }
