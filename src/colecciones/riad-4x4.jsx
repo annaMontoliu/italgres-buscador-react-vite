@@ -27,7 +27,7 @@ const images = [
   riad10,
 ];
 
-export function Riad() {
+export function Riad4x4() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -99,7 +99,6 @@ export function Riad() {
           <p>A4 · D3</p>
         </div>
 
-        {/* PDF interno */}
         <ColeccionLayout infoUrl="/pdf/RIAD.pdf" />
 
         <section className="gallery-grid">

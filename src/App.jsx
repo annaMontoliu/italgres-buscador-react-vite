@@ -123,7 +123,7 @@ import { Glint } from "./colecciones/glint";
 import { Argila } from "./colecciones/argila";
 import { Joy } from "./colecciones/joy";
 import { Provenza } from "./colecciones/provenza";
-import { Riad } from "./colecciones/riad";
+import { Riad4x4 } from "./colecciones/riad-4x4";
 import { Zelij4x4 } from "./colecciones/zelij-4x4";
 import { ZelijMate4x4 } from "./colecciones/zelij-mate-4x4";
 import { ZelijSpecial4x4 } from "./colecciones/zelij-special-4x4";
@@ -307,7 +307,7 @@ export function App() {
     if (name === "ARGILA") setPage("argila");
     if (name === "JOY") setPage("joy");
     if (name === "PROVENZA") setPage("provenza");
-    if (name === "RIAD") setPage("riad");
+    if (name === "RIAD") setPage("riad-4x4");
     if (name === "ZELIJ") setPage("zelij-4x4");
     if (name === "ZELIJ MATE") setPage("zelij-mate-4x4");
     if (name === "ZELIJ SPECIAL") setPage("zelij-special-4x4");
@@ -440,7 +440,7 @@ export function App() {
   if (page === "argila") return <Argila />;
   if (page === "joy") return <Joy />;
   if (page === "provenza") return <Provenza />;
-  if (page === "riad") return <Riad />;
+  if (page === "riad-4x4") return <Riad4x4 />;
   if (page === "zelij-4x4") return <Zelij4x4 />;
   if (page === "zelij-mate-4x4") return <ZelijMate4x4 />;
   if (page === "zelij-special-4x4") return <ZelijSpecial4x4 />;
