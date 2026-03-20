@@ -3,9 +3,9 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import andrasy01 from "../assets/imagenes/andrassy/andrasy-01.jpg";
-import andrasy02 from "../assets/imagenes/andrassy/andrasy-02.jpg";
-import andrasy03 from "../assets/imagenes/andrassy/andrasy-03.jpg";
+import andrasy01 from "../assets/imagenes/andrassy/andrassy-01.jpg";
+import andrasy02 from "../assets/imagenes/andrassy/andrassy-02.jpg";
+import andrasy03 from "../assets/imagenes/andrassy/andrassy-03.jpg";
 
 const images = [andrasy01, andrasy02, andrasy03];
 
