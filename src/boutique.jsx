@@ -14,6 +14,18 @@ import riad01 from "./assets/imagenes/riad/riad-4x4/riad-4x4-01.jpg";
 import zelij01 from "./assets/imagenes/zelij/zelij-4x4/zelij-4x4-01.jpg";
 import zelijMate01 from "./assets/imagenes/zelij/zelij-mate/zelij-mate-4x4/zelij-mate-4x4-01.jpg";
 import zelijSpecial01 from "./assets/imagenes/zelij/zelij-special/zelij-special-4x4/zelij-special-4x4-01.jpg";
+import andrasy01 from "./assets/imagenes/andrassy/andrasy-01.jpg";
+import beltri01 from "./assets/imagenes/beltri/beltri-01.jpg";
+import blomknopp01 from "./assets/imagenes/blomknopp/blomknopp-01.jpg";
+import bucareli01 from "./assets/imagenes/bucareli/bucareli-01.jpg";
+import bulnes01 from "./assets/imagenes/bulnes/bulnes-01.jpg";
+import cestio01 from "./assets/imagenes/cestio/cestio-01.jpg";
+import comillas01 from "./assets/imagenes/comillas/comillas-01.jpg";
+import creta01 from "./assets/imagenes/creta/creta-01.jpg";
+import eliseos01 from "./assets/imagenes/eliseos/eliseos-01.jpg";
+import florentina01 from "./assets/imagenes/florentina/florentina-01.jpg";
+import gibert01 from "./assets/imagenes/gibert/gibert-01.jpg";
+import goroka01 from "./assets/imagenes/goroka/goroka-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -124,6 +136,116 @@ const boutiqueDrawers = {
       thumbnail: zelijSpecial01,
     },
   ],
+
+    A5: [
+    {
+      name: "ANDRASSY",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: andrasy01,
+    },
+    {
+      name: "BELTRI",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: beltri01,
+    },
+    {
+      name: "BLOMKNOPP",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: blomknopp01,
+    },
+    {
+      name: "BUCARELI",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: bucareli01,
+    },
+    {
+      name: "BULNES",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: bulnes01,
+    },
+    {
+      name: "CESTIO",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: cestio01,
+    },
+    {
+      name: "COMILLAS",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: comillas01,
+    },
+    {
+      name: "CRETA",
+      format: "2''X10''",
+      brand: "PORTOBELLO",
+      locations: ["A5", "F5"],
+      thumbnail: creta01,
+    },
+    {
+      name: "ELISEOS",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: eliseos01,
+    },
+    {
+      name: "FLORENTINA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: florentina01,
+    },
+    {
+      name: "GIBERT",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: gibert01,
+    },
+    {
+      name: "GOROKA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: goroka01,
+    },
+  ],
+    C5: [
+    {
+      name: "ANDRASSY",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: andrasy01,
+    },
+    {
+      name: "BUCARELI",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: bucareli01,
+    },
+    {
+      name: "ELISEOS",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: eliseos01,
+    },
+  ],
     D3: [
     {
       name: "RIAD",
@@ -131,6 +253,43 @@ const boutiqueDrawers = {
       brand: "HARMONY",
       locations: ["A4", "D3"],
       thumbnail: riad01,
+    },
+  ],
+    F5: [
+    {
+      name: "COMILLAS",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: comillas01,
+    },
+    {
+      name: "CRETA",
+      format: "2''X10''",
+      brand: "PORTOBELLO",
+      locations: ["A5", "F5"],
+      thumbnail: creta01,
+    },
+    {
+      name: "FLORENTINA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: florentina01,
+    },
+    {
+      name: "GIBERT",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: gibert01,
+    },
+    {
+      name: "GOROKA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: goroka01,
     },
   ],
 };
@@ -233,6 +392,90 @@ const boutiqueCollections = [
     brand: "CEVICA",
     locations: ["A4"],
     thumbnail: zelijSpecial01,
+  },
+    {
+    name: "ANDRASSY",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: andrasy01,
+  },
+  {
+    name: "BELTRI",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: beltri01,
+  },
+  {
+    name: "BLOMKNOPP",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: blomknopp01,
+  },
+  {
+    name: "BUCARELI",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: bucareli01,
+  },
+  {
+    name: "BULNES",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: bulnes01,
+  },
+  {
+    name: "CESTIO",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: cestio01,
+  },
+  {
+    name: "COMILLAS",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: comillas01,
+  },
+  {
+    name: "CRETA",
+    format: "2''X10''",
+    brand: "PORTOBELLO",
+    locations: ["A5", "F5"],
+    thumbnail: creta01,
+  },
+  {
+    name: "ELISEOS",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: eliseos01,
+  },
+  {
+    name: "FLORENTINA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: florentina01,
+  },
+  {
+    name: "GIBERT",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: gibert01,
+  },
+  {
+    name: "GOROKA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: goroka01,
   },
 ];
 

@@ -127,6 +127,18 @@ import { Riad4x4 } from "./colecciones/riad-4x4";
 import { Zelij4x4 } from "./colecciones/zelij-4x4";
 import { ZelijMate4x4 } from "./colecciones/zelij-mate-4x4";
 import { ZelijSpecial4x4 } from "./colecciones/zelij-special-4x4";
+import { Andrassy } from "./colecciones/andrassy";
+import { Beltri } from "./colecciones/beltri";
+import { Blomknopp } from "./colecciones/blomknopp";
+import { Bucareli } from "./colecciones/bucareli";
+import { Bulnes } from "./colecciones/bulnes";
+import { Cestio } from "./colecciones/cestio";
+import { Comillas } from "./colecciones/comillas";
+import { Creta } from "./colecciones/creta";
+import { Eliseos } from "./colecciones/eliseos";
+import { Florentina } from "./colecciones/florentina";
+import { Gibert } from "./colecciones/gibert";
+import { Goroka } from "./colecciones/goroka";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -311,6 +323,18 @@ export function App() {
     if (name === "ZELIJ") setPage("zelij-4x4");
     if (name === "ZELIJ MATE") setPage("zelij-mate-4x4");
     if (name === "ZELIJ SPECIAL") setPage("zelij-special-4x4");
+    if (name === "ANDRASSY") setPage("andrassy");
+    if (name === "BELTRI") setPage("beltri");
+    if (name === "BLOMKNOPP") setPage("blomknopp");
+    if (name === "BUCARELI") setPage("bucareli");
+    if (name === "BULNES") setPage("bulnes");
+    if (name === "CESTIO") setPage("cestio");
+    if (name === "COMILLAS") setPage("comillas");
+    if (name === "CRETA") setPage("creta");
+    if (name === "ELISEOS") setPage("eliseos");
+    if (name === "FLORENTINA") setPage("florentina");
+    if (name === "GIBERT") setPage("gibert");
+    if (name === "GOROKA") setPage("goroka");
   }
 
   if (page === "home") {
@@ -444,6 +468,18 @@ export function App() {
   if (page === "zelij-4x4") return <Zelij4x4 />;
   if (page === "zelij-mate-4x4") return <ZelijMate4x4 />;
   if (page === "zelij-special-4x4") return <ZelijSpecial4x4 />;
+  if (page === "andrassy") return <Andrassy />;
+  if (page === "beltri") return <Beltri />;
+  if (page === "blomknopp") return <Blomknopp />;
+  if (page === "bucareli") return <Bucareli />;
+  if (page === "bulnes") return <Bulnes />;
+  if (page === "cestio") return <Cestio />;
+  if (page === "comillas") return <Comillas />;
+  if (page === "creta") return <Creta />;
+  if (page === "eliseos") return <Eliseos />;
+  if (page === "florentina") return <Florentina />;
+  if (page === "gibert") return <Gibert />;
+  if (page === "goroka") return <Goroka />;
 
   return null;
 }
