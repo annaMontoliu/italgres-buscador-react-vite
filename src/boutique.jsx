@@ -14,7 +14,7 @@ import riad01 from "./assets/imagenes/riad/riad-4x4/riad-4x4-01.jpg";
 import zelij01 from "./assets/imagenes/zelij/zelij-4x4/zelij-4x4-01.jpg";
 import zelijMate01 from "./assets/imagenes/zelij/zelij-mate/zelij-mate-4x4/zelij-mate-4x4-01.jpg";
 import zelijSpecial01 from "./assets/imagenes/zelij/zelij-special/zelij-special-4x4/zelij-special-4x4-01.jpg";
-import andrasy01 from "./assets/imagenes/andrassy/andrasy-01.jpg";
+import andrasy01 from "./assets/imagenes/andrassy/andrassy-01.jpg";
 import beltri01 from "./assets/imagenes/beltri/beltri-01.jpg";
 import blomknopp01 from "./assets/imagenes/blomknopp/blomknopp-01.jpg";
 import bucareli01 from "./assets/imagenes/bucareli/bucareli-01.jpg";
