@@ -120,6 +120,13 @@ import { LongStick } from "./colecciones/long-stick";
 import { Alma } from "./colecciones/alma";
 import { Alure } from "./colecciones/alure";
 import { Glint } from "./colecciones/glint";
+import { Argila } from "./colecciones/argila";
+import { Joy } from "./colecciones/joy";
+import { Provenza } from "./colecciones/provenza";
+import { Riad } from "./colecciones/riad";
+import { Zelij4x4 } from "./colecciones/zelij-4x4";
+import { ZelijMate4x4 } from "./colecciones/zelij-mate-4x4";
+import { ZelijSpecial4x4 } from "./colecciones/zelij-special-4x4";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -297,6 +304,13 @@ export function App() {
     if (name === "ALMA") setPage("alma");
     if (name === "ALURE") setPage("alure");
     if (name === "GLINT") setPage("glint");
+    if (name === "ARGILA") setPage("argila");
+    if (name === "JOY") setPage("joy");
+    if (name === "PROVENZA") setPage("provenza");
+    if (name === "RIAD") setPage("riad");
+    if (name === "ZELIJ") setPage("zelij-4x4");
+    if (name === "ZELIJ MATE") setPage("zelij-mate-4x4");
+    if (name === "ZELIJ SPECIAL") setPage("zelij-special-4x4");
   }
 
   if (page === "home") {
@@ -423,6 +437,13 @@ export function App() {
   if (page === "alma") return <Alma />;
   if (page === "alure") return <Alure />;
   if (page === "glint") return <Glint />;
+  if (page === "argila") return <Argila />;
+  if (page === "joy") return <Joy />;
+  if (page === "provenza") return <Provenza />;
+  if (page === "riad") return <Riad />;
+  if (page === "zelij-4x4") return <Zelij4x4 />;
+  if (page === "zelij-mate-4x4") return <ZelijMate4x4 />;
+  if (page === "zelij-special-4x4") return <ZelijSpecial4x4 />;
 
   return null;
 }

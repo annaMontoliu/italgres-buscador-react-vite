@@ -7,6 +7,13 @@ import longStick01 from "./assets/imagenes/long-stick/long-stick-01.jpg";
 import alma01 from "./assets/imagenes/alma/alma-01.jpg";
 import alure01 from "./assets/imagenes/alure/alure-01.jpg";
 import glint01 from "./assets/imagenes/glint/glint-01.jpg";
+import argila01 from "./assets/imagenes/argila/argila-01.jpg";
+import joy01 from "./assets/imagenes/joy/joy-01.jpg";
+import provenza01 from "./assets/imagenes/provenza/provenza-01.jpg";
+import riad01 from "./assets/imagenes/riad/riad-4x4/riad-4x4-01.jpg";
+import zelij01 from "./assets/imagenes/zelij/zelij-4x4/zelij-4x4-01.jpg";
+import zelijMate01 from "./assets/imagenes/zelij/zelij-mate/zelij-mate-4x4/zelij-mate-4x4-01.jpg";
+import zelijSpecial01 from "./assets/imagenes/zelij/zelij-special/zelij-special-4x4/zelij-special-4x4-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -66,6 +73,66 @@ const boutiqueDrawers = {
       thumbnail: glint01,
     },
   ],
+    A4: [
+    {
+      name: "ARGILA",
+      format: "4''X4''",
+      brand: "LIFE CERAMICA",
+      locations: ["A4"],
+      thumbnail: argila01,
+    },
+    {
+      name: "JOY",
+      format: "4''X4''",
+      brand: "LIFE CERAMICA",
+      locations: ["A4"],
+      thumbnail: joy01,
+    },
+    {
+      name: "PROVENZA",
+      format: '4"x4"',
+      brand: "CEVICA",
+      locations: ["A4"],
+      thumbnail: provenza01,
+    },
+    {
+      name: "RIAD",
+      format: "4''X4''",
+      brand: "HARMONY",
+      locations: ["A4", "D3"],
+      thumbnail: riad01,
+    },
+    {
+      name: "ZELIJ",
+      format: '4"x4"',
+      brand: "HARMONY",
+      locations: ["A4"],
+      thumbnail: zelij01,
+    },
+    {
+      name: "ZELIJ MATE",
+      format: '4"x4"',
+      brand: "CEVICA",
+      locations: ["A4"],
+      thumbnail: zelijMate01,
+    },
+    {
+      name: "ZELIJ SPECIAL",
+      format: '4"x4"',
+      brand: "CEVICA",
+      locations: ["A4"],
+      thumbnail: zelijSpecial01,
+    },
+  ],
+    D3: [
+    {
+      name: "RIAD",
+      format: "4''X4''",
+      brand: "HARMONY",
+      locations: ["A4", "D3"],
+      thumbnail: riad01,
+    },
+  ],
 };
 
 const boutiqueCollections = [
@@ -117,6 +184,55 @@ const boutiqueCollections = [
     brand: "HARMONY",
     locations: ["A3"],
     thumbnail: glint01,
+  },
+    {
+    name: "ARGILA",
+    format: "4''X4''",
+    brand: "LIFE CERAMICA",
+    locations: ["A4"],
+    thumbnail: argila01,
+  },
+  {
+    name: "JOY",
+    format: "4''X4''",
+    brand: "LIFE CERAMICA",
+    locations: ["A4"],
+    thumbnail: joy01,
+  },
+  {
+    name: "PROVENZA",
+    format: '4"x4"',
+    brand: "CEVICA",
+    locations: ["A4"],
+    thumbnail: provenza01,
+  },
+  {
+    name: "RIAD",
+    format: "4''X4''",
+    brand: "HARMONY",
+    locations: ["A4", "D3"],
+    thumbnail: riad01,
+  },
+  {
+    name: "ZELIJ",
+    format: '4"x4"',
+    brand: "HARMONY",
+    locations: ["A4"],
+    thumbnail: zelij01,
+  },
+  {
+    name: "ZELIJ MATE",
+    format: '4"x4"',
+    brand: "CEVICA",
+    locations: ["A4"],
+    thumbnail: zelijMate01,
+  },
+  {
+    name: "ZELIJ SPECIAL",
+    format: '4"x4"',
+    brand: "CEVICA",
+    locations: ["A4"],
+    thumbnail: zelijSpecial01,
   },
 ];
 
