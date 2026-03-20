@@ -4,6 +4,9 @@ import dust01 from "./assets/imagenes/dust/dust-01.jpg";
 import beck01 from "./assets/imagenes/beck/beck-01.jpg";
 import brutalist01 from "./assets/imagenes/brutalist/brutalist-01.jpg";
 import longStick01 from "./assets/imagenes/long-stick/long-stick-01.jpg";
+import alma01 from "./assets/imagenes/alma/alma-01.jpg";
+import alure01 from "./assets/imagenes/alure/alure-01.jpg";
+import glint01 from "./assets/imagenes/glint/glint-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -40,6 +43,29 @@ const boutiqueDrawers = {
       thumbnail: longStick01,
     },
   ],
+    A3: [
+    {
+      name: "ALMA",
+      format: "3''X8''",
+      brand: "CIFRE",
+      locations: ["A3"],
+      thumbnail: alma01,
+    },
+    {
+      name: "ALURE",
+      format: "3''X8''",
+      brand: "CIFRE",
+      locations: ["A3"],
+      thumbnail: alure01,
+    },
+    {
+      name: "GLINT",
+      format: "2''X6''",
+      brand: "HARMONY",
+      locations: ["A3"],
+      thumbnail: glint01,
+    },
+  ],
 };
 
 const boutiqueCollections = [
@@ -70,6 +96,27 @@ const boutiqueCollections = [
     brand: "AMADIS",
     locations: ["A2"],
     thumbnail: longStick01,
+  },
+    {
+    name: "ALMA",
+    format: "3''X8''",
+    brand: "CIFRE",
+    locations: ["A3"],
+    thumbnail: alma01,
+  },
+  {
+    name: "ALURE",
+    format: "3''X8''",
+    brand: "CIFRE",
+    locations: ["A3"],
+    thumbnail: alure01,
+  },
+  {
+    name: "GLINT",
+    format: "2''X6''",
+    brand: "HARMONY",
+    locations: ["A3"],
+    thumbnail: glint01,
   },
 ];
 

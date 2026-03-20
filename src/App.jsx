@@ -117,6 +117,9 @@ import { Dust } from "./colecciones/dust";
 import { Beck } from "./colecciones/beck";
 import { Brutalist } from "./colecciones/brutalist";
 import { LongStick } from "./colecciones/long-stick";
+import { Alma } from "./colecciones/alma";
+import { Alure } from "./colecciones/alure";
+import { Glint } from "./colecciones/glint";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -291,6 +294,9 @@ export function App() {
     if (name === "BECK") setPage("beck");
     if (name === "BRUTALIST") setPage("brutalist");
     if (name === "LONG STICK") setPage("long-stick");
+    if (name === "ALMA") setPage("alma");
+    if (name === "ALURE") setPage("alure");
+    if (name === "GLINT") setPage("glint");
   }
 
   if (page === "home") {
@@ -414,6 +420,9 @@ export function App() {
   if (page === "beck") return <Beck />;
   if (page === "brutalist") return <Brutalist />;
   if (page === "long-stick") return <LongStick />;
+  if (page === "alma") return <Alma />;
+  if (page === "alure") return <Alure />;
+  if (page === "glint") return <Glint />;
 
   return null;
 }
