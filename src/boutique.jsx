@@ -26,6 +26,17 @@ import eliseos01 from "./assets/imagenes/eliseos/eliseos-01.jpg";
 import florentina01 from "./assets/imagenes/florentina/florentina-01.jpg";
 import gibert01 from "./assets/imagenes/gibert/gibert-01.jpg";
 import goroka01 from "./assets/imagenes/goroka/goroka-01.jpg";
+import intermix01 from "./assets/imagenes/intermix/intermix-01.jpg";
+import jimbaran01 from "./assets/imagenes/jimbaran/jimbaran-01.jpg";
+import jujol01 from "./assets/imagenes/jujol/jujol-01.jpg";
+import linden01 from "./assets/imagenes/linden/linden-01.jpg";
+import llagostera01 from "./assets/imagenes/llagostera/llagostera-01.jpg";
+import lighthouse01 from "./assets/imagenes/lighthouse/lighthouse-01.jpg";
+import macaya01 from "./assets/imagenes/macaya/macaya-01.jpg";
+import norvins01 from "./assets/imagenes/norvins/norvins-01.jpg";
+import nusa01 from "./assets/imagenes/nusa/nusa-01.jpg";
+import orchard01 from "./assets/imagenes/orchard/orchard-01.jpg";
+
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -222,7 +233,77 @@ const boutiqueDrawers = {
       locations: ["A5", "F5"],
       thumbnail: goroka01,
     },
-  ],
+     {
+    name: "INTERMIX",
+    format: "6''X6''",
+    brand: "PORTOBELLO",
+    locations: ["A5"],
+    thumbnail: intermix01,
+  },
+  {
+    name: "JIMBARAN",
+    format: "8''x8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: jimbaran01,
+  },
+  {
+    name: "JUJOL",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: jujol01,
+  },
+  {
+    name: "LIGHTHOUSE",
+    format: "2''X10''",
+    brand: "PORTOBELLO",
+    locations: ["A5"],
+    thumbnail: lighthouse01,
+  },
+  {
+    name: "LINDEN",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: linden01,
+  },
+  {
+    name: "LLAGOSTERA",
+    format: "8''x8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: llagostera01,
+  },
+  {
+    name: "MACAYA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: macaya01,
+  },
+  {
+    name: "NORVINS",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: norvins01,
+  },
+  {
+    name: "NUSA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: nusa01,
+  },
+  {
+    name: "ORCHARD",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5"],
+    thumbnail: orchard01,
+  },
+],
     C5: [
     {
       name: "ANDRASSY",
@@ -291,6 +372,49 @@ const boutiqueDrawers = {
       locations: ["A5", "F5"],
       thumbnail: goroka01,
     },
+    {
+    name: "COMILLAS",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: comillas01,
+  },
+  {
+    name: "CRETA",
+    format: "2''X10''",
+    brand: "PORTOBELLO",
+    locations: ["A5", "F5"],
+    thumbnail: creta01,
+  },
+  {
+    name: "FLORENTINA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: florentina01,
+  },
+  {
+    name: "GIBERT",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: gibert01,
+  },
+  {
+    name: "GOROKA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: goroka01,
+  },
+  {
+    name: "LLAGOSTERA",
+    format: "8''x8''",
+    brand: "VIVES",
+    locations: ["A5", "F5"],
+    thumbnail: llagostera01,
+  },
+
   ],
 };
 
@@ -477,6 +601,76 @@ const boutiqueCollections = [
     locations: ["A5", "F5"],
     thumbnail: goroka01,
   },
+  {
+  name: "INTERMIX",
+  format: "6''X6''",
+  brand: "PORTOBELLO",
+  locations: ["A5"],
+  thumbnail: intermix01,
+},
+{
+  name: "JIMBARAN",
+  format: "8''x8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: jimbaran01,
+},
+{
+  name: "JUJOL",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: jujol01,
+},
+{
+  name: "LIGHTHOUSE",
+  format: "2''X10''",
+  brand: "PORTOBELLO",
+  locations: ["A5"],
+  thumbnail: lighthouse01,
+},
+{
+  name: "LINDEN",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: linden01,
+},
+{
+  name: "LLAGOSTERA",
+  format: "8''x8''",
+  brand: "VIVES",
+  locations: ["A5", "F5"],
+  thumbnail: llagostera01,
+},
+{
+  name: "MACAYA",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: macaya01,
+},
+{
+  name: "NORVINS",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: norvins01,
+},
+{
+  name: "NUSA",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: nusa01,
+},
+{
+  name: "ORCHARD",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5"],
+  thumbnail: orchard01,
+},
 ];
 
 export function Boutique({ onOpenCollection }) {

@@ -143,6 +143,16 @@ import { Doncella } from "./colecciones/doncella";
 import { Crisp } from "./colecciones/crisp";
 import { DecoArt } from "./colecciones/deco-art";
 import { Flax } from "./colecciones/flax";
+import { Intermix } from "./colecciones/intermix";
+import { Jimbaran } from "./colecciones/jimbaran";
+import { Jujol } from "./colecciones/jujol";
+import { Linden } from "./colecciones/linden";
+import { Llagostera } from "./colecciones/llagostera";
+import { Lighthouse } from "./colecciones/lighthouse";
+import { Macaya } from "./colecciones/macaya";
+import { Norvins } from "./colecciones/norvins";
+import { Nusa } from "./colecciones/nusa";
+import { Orchard } from "./colecciones/orchard";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -344,6 +354,16 @@ export function App() {
     if (name === "CRISP") setPage("crisp");
     if (name === "DECO ART") setPage("deco-art");
     if (name === "FLAX") setPage("flax");
+    if (name === "INTERMIX") setPage("intermix");
+    if (name === "JIMBARAN") setPage("jimbaran");
+    if (name === "JUJOL") setPage("jujol");
+    if (name === "LINDEN") setPage("linden");
+    if (name === "LLAGOSTERA") setPage("llagostera");
+    if (name === "LIGHTHOUSE") setPage("lighthouse");
+    if (name === "MACAYA") setPage("macaya");
+    if (name === "NORVINS") setPage("norvins");
+    if (name === "NUSA") setPage("nusa");
+    if (name === "ORCHARD") setPage("orchard");
   }
 
   if (page === "home") {
@@ -494,6 +514,16 @@ export function App() {
   if (page === "crisp") return <Crisp />;
   if (page === "deco-art") return <DecoArt />;
   if (page === "flax") return <Flax />;
+  if (page === "intermix") return <Intermix />;
+  if (page === "jimbaran") return <Jimbaran />;
+  if (page === "jujol") return <Jujol />;
+  if (page === "linden") return <Linden />;
+  if (page === "llagostera") return <Llagostera />;
+  if (page === "lighthouse") return <Lighthouse />;
+  if (page === "macaya") return <Macaya />;
+  if (page === "norvins") return <Norvins />;
+  if (page === "nusa") return <Nusa />;
+  if (page === "orchard") return <Orchard />;
 
   return null;
 }
