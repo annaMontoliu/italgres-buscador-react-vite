@@ -40,6 +40,7 @@ const COLLECTION_GROUPS = [
       { name: "CORALINA" },
       { name: "COSMOPOLITAN" },
       { name: "COTTAGE" },
+      { name: "CRISP" },
       { name: "CRUISE" },
       { name: "CUARZO RENO" },
     ],
@@ -47,7 +48,9 @@ const COLLECTION_GROUPS = [
   {
     letter: "D",
     items: [
+      { name: "DECO ART" },
       { name: "DHARA" },
+      { name: "DONCELLA" },
       { name: "DOT" },
       { name: "DISTRITO" },
       { name: "DRIPART" },
@@ -114,7 +117,14 @@ const COLLECTION_GROUPS = [
       { name: "MYCRO" },
     ],
   },
-  { letter: "N", items: [{ name: "NATURE MOOD" }, { name: "NORDIC" }] },
+  {
+    letter: "N",
+    items: [
+      { name: "NATURE MOOD" },
+      { name: "NORDIC" },
+      { name: "NORTHON" },
+    ],
+  },
   {
     letter: "O",
     items: [

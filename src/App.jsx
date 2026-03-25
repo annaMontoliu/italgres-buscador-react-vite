@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 
 import { IndexPage } from "./IndexPage";
 import { Boutique } from "./boutique";
-
 import { Lucena } from "./colecciones/lucena";
 import { ElegancePro } from "./colecciones/elegance-pro";
 import { Elysian } from "./colecciones/elysian";
@@ -139,6 +138,10 @@ import { Eliseos } from "./colecciones/eliseos";
 import { Florentina } from "./colecciones/florentina";
 import { Gibert } from "./colecciones/gibert";
 import { Goroka } from "./colecciones/goroka";
+import { Northon } from "./colecciones/northon";
+import { Doncella } from "./colecciones/doncella";
+import { Crisp } from "./colecciones/crisp";
+import { DecoArt } from "./colecciones/deco-art";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -335,6 +338,10 @@ export function App() {
     if (name === "FLORENTINA") setPage("florentina");
     if (name === "GIBERT") setPage("gibert");
     if (name === "GOROKA") setPage("goroka");
+    if (name === "NORTHON") setPage("northon");
+    if (name === "DONCELLA") setPage("doncella");
+    if (name === "CRISP") setPage("crisp");
+    if (name === "DECO ART") setPage("deco-art");
   }
 
   if (page === "home") {
@@ -480,6 +487,10 @@ export function App() {
   if (page === "florentina") return <Florentina />;
   if (page === "gibert") return <Gibert />;
   if (page === "goroka") return <Goroka />;
+  if (page === "northon") return <Northon />;
+  if (page === "doncella") return <Doncella />;
+  if (page === "crisp") return <Crisp />;
+  if (page === "deco-art") return <DecoArt />;
 
   return null;
 }
