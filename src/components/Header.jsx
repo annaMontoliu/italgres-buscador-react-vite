@@ -83,8 +83,6 @@ export function Header() {
           href="/docs/tarifa-italgres.xlsx"
           onClick={handleTarifaClick}
           rel="noopener noreferrer"
-          data-icon="💲"
-          aria-label="PRICELIST"
         >
           PRICELIST
         </a>
@@ -93,8 +91,6 @@ export function Header() {
           href="/pdf/sample-map.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          data-icon="📍"
-          aria-label="SAMPLE MAP"
         >
           SAMPLE MAP
         </a>
@@ -103,8 +99,6 @@ export function Header() {
           href="/boutique"
           onClick={handleBoutiqueClick}
           className={activeMenu === "boutique" ? "is-active" : ""}
-          data-icon="🛍️"
-          aria-label="BOUTIQUE"
         >
           BOUTIQUE
         </a>
@@ -113,8 +107,6 @@ export function Header() {
           href="/index.html"
           onClick={handleHomeClick}
           className={activeMenu === "home" ? "is-active" : ""}
-          data-icon="🏠"
-          aria-label="HOME"
         >
           HOME
         </a>
