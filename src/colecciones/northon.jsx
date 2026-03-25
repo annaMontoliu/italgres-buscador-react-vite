@@ -5,8 +5,8 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-import northonLightGrey1 from "../assets/imagenes/northon/northon-light-grey/northon-light-grey-1.jpg";
-import northonLightGrey2 from "../assets/imagenes/northon/northon-light-grey/northon-light-grey-2.jpg";
+import northonLightGrey1 from "../assets/imagenes/northon/northon-light-grey/northon-light-grey-01.jpg";
+import northonLightGrey2 from "../assets/imagenes/northon/northon-light-grey/northon-light-grey-02.jpg";
 
 // ORDEN EXACTO COMO EN TU HTML ORIGINAL
 const images = [
