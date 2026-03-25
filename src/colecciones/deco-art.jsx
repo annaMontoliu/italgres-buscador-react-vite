@@ -6,7 +6,7 @@ import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
 import decoArtEden1 from "../assets/imagenes/deco-art/deco-art-eden/deco-art-eden-01.jpg";
-import decoArtGarden1 from "../assets/imagenes/deco-art/deco-art-garden/deco-art-garden-01.jpg";
+import decoArtGarden1 from "../assets/imagenes/deco-art/deco-art-garden/deco-art-garden-01.png";
 import decoArtSavage1 from "../assets/imagenes/deco-art/deco-art-savage/deco-art-savage-01.jpg";
 
 // ORDEN EXACTO COMO EN TU HTML ORIGINAL
