@@ -142,6 +142,7 @@ import { Northon } from "./colecciones/northon";
 import { Doncella } from "./colecciones/doncella";
 import { Crisp } from "./colecciones/crisp";
 import { DecoArt } from "./colecciones/deco-art";
+import { Flax } from "./colecciones/flax";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -342,6 +343,7 @@ export function App() {
     if (name === "DONCELLA") setPage("doncella");
     if (name === "CRISP") setPage("crisp");
     if (name === "DECO ART") setPage("deco-art");
+    if (name === "FLAX") setPage("flax");
   }
 
   if (page === "home") {
@@ -491,6 +493,7 @@ export function App() {
   if (page === "doncella") return <Doncella />;
   if (page === "crisp") return <Crisp />;
   if (page === "deco-art") return <DecoArt />;
+  if (page === "flax") return <Flax />;
 
   return null;
 }

@@ -71,7 +71,11 @@ const COLLECTION_GROUPS = [
   },
   {
     letter: "F",
-    items: [{ name: "FLUID MULTICOLOR" }, { name: "FORM CEMENT" }],
+    items: [
+      { name: "FLAX" },
+      { name: "FLUID MULTICOLOR" }, 
+      { name: "FORM CEMENT" }
+    ],
   },
   {
     letter: "G",
