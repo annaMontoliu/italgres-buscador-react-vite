@@ -820,16 +820,16 @@ nav a:nth-child(3)::after {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-size: 1.35rem;
 }
 
 .breadcrumb-link,
 .breadcrumb-current,
 .breadcrumb-separator {
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
 .breadcrumb-link {
