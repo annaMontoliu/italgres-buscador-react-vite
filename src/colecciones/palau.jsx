@@ -1,18 +1,13 @@
-// src/colecciones/palau.jsx
-
 import { useState } from "react";
-
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE LAS FOTOS
 import palau1 from "../assets/imagenes/palau/palau-01.jpg";
 import palau2 from "../assets/imagenes/palau/palau-02.jpg";
 import palau3 from "../assets/imagenes/palau/palau-03.jpg";
 import palau4 from "../assets/imagenes/palau/palau-04.jpg";
 
-// ARRAY IMÁGENES
 const images = [
   palau1,
   palau2,
@@ -20,7 +15,7 @@ const images = [
   palau4,
 ];
 
-export function Palau({ onGoHome }) {
+export function Palau() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -36,38 +31,64 @@ export function Palau({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  }
+
+  function goToBoutique() {
+    sessionStorage.removeItem("boutiqueCabinet");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
+  function goToCabinetA() {
+    sessionStorage.setItem("boutiqueCabinet", "A");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
+  function goToDrawerA5() {
+    sessionStorage.setItem("boutiqueCabinet", "A");
+    sessionStorage.setItem("boutiqueDrawer", "A5");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
-        {/* BLOQUE BOUTIQUE */}
-        <div className="boutique-header">
-          <div className="breadcrumbs">
-            <span>BOUTIQUE</span> / <span>A</span> / <span>A5</span> / <span>PALAU</span>
-          </div>
+        <div className="breadcrumb-boutique">
+          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+            BOUTIQUE
+          </button>
+          <span className="breadcrumb-separator">/</span>
 
-          <h1 className="titulo-coleccion">PALAU</h1>
+          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
+            A
+          </button>
+          <span className="breadcrumb-separator">/</span>
 
-          <p className="coleccion-info">8''X8'' · VIVES</p>
-          <p className="coleccion-ubicacion">A5</p>
+          <button type="button" className="breadcrumb-link" onClick={goToDrawerA5}>
+            A5
+          </button>
+          <span className="breadcrumb-separator">/</span>
 
-          <a href="/PALAU.pdf" target="_blank" className="btn-more-info">
-            MORE INFO
-          </a>
+          <span className="breadcrumb-current">PALAU</span>
         </div>
 
-        {/* FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="/PALAU.pdf" />
+        <h1 className="titulo-coleccion boutique-title">PALAU</h1>
 
-        {/* GALERÍA */}
+        <div className="boutique-info">
+          <p>8''X8'' · VIVES</p>
+          <p>A5</p>
+        </div>
+
+        <ColeccionLayout infoUrl="/pdf/PALAU.pdf" />
+
         <section className="gallery-grid">
           {images.map((img, index) => (
             <img
