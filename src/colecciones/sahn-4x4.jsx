@@ -6,14 +6,8 @@ import { ImageModal } from "../components/ImageModal";
 import sahn1 from "../assets/imagenes/sahn/sahn-4x4/sahn-4x4-01.jpg";
 import sahn2 from "../assets/imagenes/sahn/sahn-4x4/sahn-4x4-02.jpg";
 import sahn3 from "../assets/imagenes/sahn/sahn-4x4/sahn-4x4-03.jpg";
-import sahn4 from "../assets/imagenes/sahn/sahn-4x4/sahn-4x4-04.jpg";
 
-const images = [
-  sahn1,
-  sahn2,
-  sahn3,
-  sahn4,
-];
+const images = [sahn1, sahn2, sahn3];
 
 export function Sahn4x4() {
   const [isModalOpen, setIsModalOpen] = useState(false);
