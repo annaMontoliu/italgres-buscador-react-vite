@@ -448,6 +448,7 @@ A9: [
     locations: ["A9"],
     thumbnail: zellige01,
   },
+  ],
   A10: [
   {
     name: "BETHEL",
@@ -542,7 +543,6 @@ A9: [
   },
 ],
   
-],
 B7: [
   {
     name: "SAHN",
