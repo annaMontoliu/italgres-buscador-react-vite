@@ -51,6 +51,19 @@ import trame01 from "./assets/imagenes/trame-di-pietra/trame-di-pietra-01.jpg";
 import blaze01 from "./assets/imagenes/blaze/blaze-01.jpg";
 import sahn01 from "./assets/imagenes/sahn/sahn-4x4/sahn-4x4-01.jpg";
 import zellige01 from "./assets/imagenes/zellige/zellige-01.jpg";
+import bethel01 from "./assets/imagenes/bethel/bethel-01.jpg";
+import bonnie01 from "./assets/imagenes/bonnie/bonnie-01.jpg";
+import carnegie01 from "./assets/imagenes/carnegie/carnegie-01.jpg";
+import cavern01 from "./assets/imagenes/cavern/cavern-01.jpg";
+import ferus01 from "./assets/imagenes/ferus/ferus-01.jpg";
+import fluxus01 from "./assets/imagenes/fluxus/fluxus-01.jpg";
+import hisbalit01 from "./assets/imagenes/hisbalit/hisbalit-01.jpg";
+import marquee01 from "./assets/imagenes/marquee/marquee-01.jpg";
+import popart01 from "./assets/imagenes/popart/popart-01.jpg";
+import saville01 from "./assets/imagenes/saville/saville-01.jpg";
+import sixties01 from "./assets/imagenes/sixties/sixties-01.jpg";
+import quecto01 from "./assets/imagenes/quecto/quecto-01.jpg";
+import zepto01 from "./assets/imagenes/zepto/zepto-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -435,6 +448,100 @@ A9: [
     locations: ["A9"],
     thumbnail: zellige01,
   },
+  A10: [
+  {
+    name: "BETHEL",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: bethel01,
+  },
+  {
+    name: "BONNIE",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: bonnie01,
+  },
+  {
+    name: "CARNEGIE",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: carnegie01,
+  },
+  {
+    name: "CAVERN",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: cavern01,
+  },
+  {
+    name: "FERUS",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: ferus01,
+  },
+  {
+    name: "FLUXUS",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: fluxus01,
+  },
+  {
+    name: "HISBALIT MOSAICO",
+    format: "1''X1''",
+    brand: "HISBALIT",
+    locations: ["A10"],
+    thumbnail: hisbalit01,
+  },
+  {
+    name: "MARQUEE",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: marquee01,
+  },
+  {
+    name: "POPART",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: popart01,
+  },
+  {
+    name: "SAVILLE",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: saville01,
+  },
+  {
+    name: "SIXTIES",
+    format: "6''X6''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: sixties01,
+  },
+  {
+    name: "QUECTO",
+    format: "5''X5''",
+    brand: "VIVES",
+    locations: ["A10", "C4"],
+    thumbnail: quecto01,
+  },
+  {
+    name: "ZEPTO",
+    format: "2''X5''",
+    brand: "VIVES",
+    locations: ["A10"],
+    thumbnail: zepto01,
+  },
+],
+  
 ],
 B7: [
   {
@@ -443,6 +550,15 @@ B7: [
     brand: "HARMONY",
     locations: ["A9", "B7"],
     thumbnail: sahn01,
+  },
+],
+C4: [
+  {
+    name: "QUECTO",
+    format: "5''X5''",
+    brand: "VIVES",
+    locations: ["A10", "C4"],
+    thumbnail: quecto01,
   },
 ],
 
@@ -911,6 +1027,97 @@ const boutiqueCollections = [
   brand: "CIFRE",
   locations: ["A9"],
   thumbnail: zellige01,
+},
+{
+  name: "BETHEL",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: bethel01,
+},
+{
+  name: "BONNIE",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: bonnie01,
+},
+{
+  name: "CARNEGIE",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: carnegie01,
+},
+{
+  name: "CAVERN",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: cavern01,
+},
+{
+  name: "FERUS",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: ferus01,
+},
+{
+  name: "FLUXUS",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: fluxus01,
+},
+{
+  name: "HISBALIT MOSAICO",
+  format: "1''X1''",
+  brand: "HISBALIT",
+  locations: ["A10"],
+  thumbnail: hisbalit01,
+},
+{
+  name: "MARQUEE",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: marquee01,
+},
+{
+  name: "POPART",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: popart01,
+},
+{
+  name: "SAVILLE",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: saville01,
+},
+{
+  name: "SIXTIES",
+  format: "6''X6''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: sixties01,
+},
+{
+  name: "QUECTO",
+  format: "5''X5''",
+  brand: "VIVES",
+  locations: ["A10", "C4"],
+  thumbnail: quecto01,
+},
+{
+  name: "ZEPTO",
+  format: "2''X5''",
+  brand: "VIVES",
+  locations: ["A10"],
+  thumbnail: zepto01,
 },
 ];
 

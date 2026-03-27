@@ -168,6 +168,19 @@ import { TrameDiPietra } from "./colecciones/trame-di-pietra";
 import { Blaze } from "./colecciones/blaze";
 import { Sahn4x4 } from "./colecciones/sahn-4x4";
 import { Zellige } from "./colecciones/zellige";
+import { Bethel } from "./colecciones/bethel";
+import { Bonnie } from "./colecciones/bonnie";
+import { Carnegie } from "./colecciones/carnegie";
+import { Cavern } from "./colecciones/cavern";
+import { Ferus } from "./colecciones/ferus";
+import { Fluxus } from "./colecciones/fluxus";
+import { HisbalitMosaico } from "./colecciones/hisbalit-mosaico";
+import { Marquee } from "./colecciones/marquee";
+import { Popart } from "./colecciones/popart";
+import { Saville } from "./colecciones/saville";
+import { Sixties } from "./colecciones/sixties";
+import { Quecto } from "./colecciones/quecto";
+import { Zepto } from "./colecciones/zepto";
 
 
 export function App() {
@@ -395,6 +408,19 @@ export function App() {
     if (name === "BLAZE") setPage("blaze");
     if (name === "SAHN") setPage("sahn-4x4");
     if (name === "ZELLIGE") setPage("zellige");
+    if (name === "BETHEL") setPage("bethel");
+    if (name === "BONNIE") setPage("bonnie");
+    if (name === "CARNEGIE") setPage("carnegie");
+    if (name === "CAVERN") setPage("cavern");
+    if (name === "FERUS") setPage("ferus");
+    if (name === "FLUXUS") setPage("fluxus");
+    if (name === "HISBALIT MOSAICO") setPage("hisbalit-mosaico");
+    if (name === "MARQUEE") setPage("marquee");
+    if (name === "POPART") setPage("popart");
+    if (name === "SAVILLE") setPage("saville");
+    if (name === "SIXTIES") setPage("sixties");
+    if (name === "QUECTO") setPage("quecto");
+    if (name === "ZEPTO") setPage("zepto");
   }
 
   if (page === "home") {
@@ -570,6 +596,19 @@ export function App() {
   if (page === "blaze") return <Blaze />;
   if (page === "sahn-4x4") return <Sahn4x4 />;
   if (page === "zellige") return <Zellige />;
+  if (page === "bethel") return <Bethel />;
+  if (page === "bonnie") return <Bonnie />;
+  if (page === "carnegie") return <Carnegie />;
+  if (page === "cavern") return <Cavern />;
+  if (page === "ferus") return <Ferus />;
+  if (page === "fluxus") return <Fluxus />;
+  if (page === "hisbalit-mosaico") return <HisbalitMosaico />;
+  if (page === "marquee") return <Marquee />;
+  if (page === "popart") return <Popart />;
+  if (page === "saville") return <Saville />;
+  if (page === "sixties") return <Sixties />;
+  if (page === "quecto") return <Quecto />;
+  if (page === "zepto") return <Zepto />;
 
 
   return null;
