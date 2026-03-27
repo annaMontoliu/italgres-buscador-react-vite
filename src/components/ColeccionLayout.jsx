@@ -8,7 +8,7 @@ export function ColeccionLayout({ infoUrl }) {
 
         <a
           href={infoUrl}
-          className="btn-more-info"
+          className="button info-button btn-more-info"
           target="_blank"
           rel="noopener noreferrer"
         >

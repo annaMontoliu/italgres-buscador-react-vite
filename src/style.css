@@ -857,3 +857,15 @@ nav a:nth-child(3)::after {
 .boutique-title {
   text-align: left;
 }
+
+/* BOTÓN MORE INFO GLOBAL */
+.btn-more-info {
+  background-color: #ff6a00 !important;
+  color: #fff !important;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-more-info:hover {
+  background-color: #e65c00 !important;
+}
