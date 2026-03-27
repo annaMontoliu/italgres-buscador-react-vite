@@ -6,11 +6,9 @@ export function ColeccionLayout({ infoUrl }) {
       <div className="info-box">
         <h2>FINISHES & FORMATS</h2>
 
-        {/* Antes el href="#" lo rellenaba include-partials.js.
-            Ahora lo controlamos con la prop infoUrl. */}
         <a
           href={infoUrl}
-          className="button info-button"
+          className="btn-more-info"
           target="_blank"
           rel="noopener noreferrer"
         >
