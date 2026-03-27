@@ -153,6 +153,15 @@ import { Macaya } from "./colecciones/macaya";
 import { Norvins } from "./colecciones/norvins";
 import { Nusa } from "./colecciones/nusa";
 import { Orchard } from "./colecciones/orchard";
+import { OrganicClay } from "./colecciones/organic-clay";
+import { Palau } from "./colecciones/palau";
+import { Suanzes } from "./colecciones/suanzes";
+import { Terralma } from "./colecciones/terralma";
+import { Tuban } from "./colecciones/tuban";
+import { Tulban } from "./colecciones/tulban";
+import { Ubud } from "./colecciones/ubud";
+import { Valvanera } from "./colecciones/valvanera";
+import { Vivant } from "./colecciones/vivant";
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -364,6 +373,15 @@ export function App() {
     if (name === "NORVINS") setPage("norvins");
     if (name === "NUSA") setPage("nusa");
     if (name === "ORCHARD") setPage("orchard");
+    if (name === "ORGANIC CLAY") setPage("organic-clay");
+    if (name === "PALAU") setPage("palau");
+    if (name === "SUANZES") setPage("suanzes");
+    if (name === "TERRALMA") setPage("terralma");
+    if (name === "TUBAN") setPage("tuban");
+    if (name === "TULBAN") setPage("tulban");
+    if (name === "UBUD") setPage("ubud");
+    if (name === "VALVANERA") setPage("valvanera");
+    if (name === "VIVANT") setPage("vivant");
   }
 
   if (page === "home") {
@@ -524,6 +542,16 @@ export function App() {
   if (page === "norvins") return <Norvins />;
   if (page === "nusa") return <Nusa />;
   if (page === "orchard") return <Orchard />;
+  if (page === "organic-clay") return <OrganicClay />;
+  if (page === "palau") return <Palau />;
+  if (page === "suanzes") return <Suanzes />;
+  if (page === "terralma") return <Terralma />;
+  if (page === "tuban") return <Tuban />;
+  if (page === "tulban") return <Tulban />;
+  if (page === "ubud") return <Ubud />;
+  if (page === "valvanera") return <Valvanera />;
+  if (page === "vivant") return <Vivant />;
+
 
   return null;
 }
