@@ -59,6 +59,7 @@ const boutiqueDrawers = {
       thumbnail: dust01,
     },
   ],
+
   A2: [
     {
       name: "BECK",
@@ -82,7 +83,8 @@ const boutiqueDrawers = {
       thumbnail: longStick01,
     },
   ],
-    A3: [
+
+  A3: [
     {
       name: "ALMA",
       format: "3''X8''",
@@ -105,7 +107,8 @@ const boutiqueDrawers = {
       thumbnail: glint01,
     },
   ],
-    A4: [
+
+  A4: [
     {
       name: "ARGILA",
       format: "4''X4''",
@@ -157,7 +160,7 @@ const boutiqueDrawers = {
     },
   ],
 
-    A5: [
+  A5: [
     {
       name: "ANDRASSY",
       format: "8''X8''",
@@ -242,141 +245,143 @@ const boutiqueDrawers = {
       locations: ["A5", "F5"],
       thumbnail: goroka01,
     },
-     {
-    name: "INTERMIX",
-    format: "6''X6''",
-    brand: "PORTOBELLO",
-    locations: ["A5"],
-    thumbnail: intermix01,
-  },
-  {
-    name: "JIMBARAN",
-    format: "8''x8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: jimbaran01,
-  },
-  {
-    name: "JUJOL",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: jujol01,
-  },
-  {
-    name: "LIGHTHOUSE",
-    format: "2''X10''",
-    brand: "PORTOBELLO",
-    locations: ["A5"],
-    thumbnail: lighthouse01,
-  },
-  {
-    name: "LINDEN",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: linden01,
-  },
-  {
-    name: "LLAGOSTERA",
-    format: "8''x8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: llagostera01,
-  },
-  {
-    name: "MACAYA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: macaya01,
-  },
-  {
-    name: "NORVINS",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: norvins01,
-  },
-  {
-    name: "NUSA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: nusa01,
-  },
-  {
-    name: "ORCHARD",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5"],
-    thumbnail: orchard01,
-  },
-  {
-  name: "ORGANIC CLAY",
-  format: `2''X10''`,
-  brand: "PORTOBELLO",
-  locations: ["A5"],
-  thumbnail: organicClay01,
-},
-{
-  name: "PALAU",
-  format: `8''X8''`,
-  brand: "VIVES",
-  locations: ["A5"],
-  thumbnail: palau01,
-},
-{
-  name: "SUANZES",
-  format: `8''X8''`,
-  brand: "VIVES",
-  locations: ["A5", "C5"],
-  thumbnail: suanzes01,
-},
-{
-  name: "TERRALMA",
-  format: `3''X14''`,
-  brand: "PORTOBELLO",
-  locations: ["A5"],
-  thumbnail: terralma01,
-},
-{
-  name: "TUBAN",
-  format: `8''X8''`,
-  brand: "VIVES",
-  locations: ["A5", "C5", "F5"],
-  thumbnail: tuban01,
-},
-{
-  name: "TULBAN",
-  format: `8''X8''`,
-  brand: "VIVES",
-  locations: ["A5"],
-  thumbnail: tulban01,
-},
-{
-  name: "UBUD",
-  format: `8''X8''`,
-  brand: "VIVES",
-  locations: ["A5"],
-  thumbnail: ubud01,
-},
-{
-  name: "VALVANERA",
-  format: `8''X8''`,
-  brand: "VIVES",
-  locations: ["A5", "F5"],
-  thumbnail: valvanera01,
-},
-{
-  name: "VIVANT",
-  format: `3''X10''`,
-  brand: "PORTOBELLO",
-  locations: ["A5"],
-  thumbnail: vivant01,
-},
-],
-    C5: [
+    {
+      name: "INTERMIX",
+      format: "6''X6''",
+      brand: "PORTOBELLO",
+      locations: ["A5"],
+      thumbnail: intermix01,
+    },
+    {
+      name: "JIMBARAN",
+      format: "8''x8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: jimbaran01,
+    },
+    {
+      name: "JUJOL",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: jujol01,
+    },
+    {
+      name: "LIGHTHOUSE",
+      format: "2''X10''",
+      brand: "PORTOBELLO",
+      locations: ["A5"],
+      thumbnail: lighthouse01,
+    },
+    {
+      name: "LINDEN",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: linden01,
+    },
+    {
+      name: "LLAGOSTERA",
+      format: "8''x8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: llagostera01,
+    },
+    {
+      name: "MACAYA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: macaya01,
+    },
+    {
+      name: "NORVINS",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: norvins01,
+    },
+    {
+      name: "NUSA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: nusa01,
+    },
+    {
+      name: "ORCHARD",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: orchard01,
+    },
+
+    {
+      name: "ORGANIC CLAY",
+      format: "2''X10''",
+      brand: "PORTOBELLO",
+      locations: ["A5"],
+      thumbnail: organicClay01,
+    },
+    {
+      name: "PALAU",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: palau01,
+    },
+    {
+      name: "SUANZES",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: suanzes01,
+    },
+    {
+      name: "TERRALMA",
+      format: "3''X14''",
+      brand: "PORTOBELLO",
+      locations: ["A5"],
+      thumbnail: terralma01,
+    },
+    {
+      name: "TUBAN",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5", "F5"],
+      thumbnail: tuban01,
+    },
+    {
+      name: "TULBAN",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: tulban01,
+    },
+    {
+      name: "UBUD",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5"],
+      thumbnail: ubud01,
+    },
+    {
+      name: "VALVANERA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: valvanera01,
+    },
+    {
+      name: "VIVANT",
+      format: "3''X10''",
+      brand: "PORTOBELLO",
+      locations: ["A5"],
+      thumbnail: vivant01,
+    },
+  ],
+
+  C5: [
     {
       name: "ANDRASSY",
       format: "8''X8''",
@@ -398,45 +403,23 @@ const boutiqueDrawers = {
       locations: ["A5", "C5"],
       thumbnail: eliseos01,
     },
-    C5: [
-  {
-    name: "ANDRASSY",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "C5"],
-    thumbnail: andrasy01,
-  },
-  {
-    name: "BUCARELI",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "C5"],
-    thumbnail: bucareli01,
-  },
-  {
-    name: "ELISEOS",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "C5"],
-    thumbnail: eliseos01,
-  },
-  {
-    name: "SUANZES",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "C5"],
-    thumbnail: suanzes01,
-  },
-  {
-    name: "TUBAN",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "C5", "F5"],
-    thumbnail: tuban01,
-  },
-],
+    {
+      name: "SUANZES",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5"],
+      thumbnail: suanzes01,
+    },
+    {
+      name: "TUBAN",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5", "F5"],
+      thumbnail: tuban01,
+    },
   ],
-    D3: [
+
+  D3: [
     {
       name: "RIAD",
       format: "4''X4''",
@@ -445,7 +428,8 @@ const boutiqueDrawers = {
       thumbnail: riad01,
     },
   ],
-    F5: [
+
+  F5: [
     {
       name: "COMILLAS",
       format: "8''X8''",
@@ -482,107 +466,26 @@ const boutiqueDrawers = {
       thumbnail: goroka01,
     },
     {
-    name: "COMILLAS",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: comillas01,
-  },
-  {
-    name: "CRETA",
-    format: "2''X10''",
-    brand: "PORTOBELLO",
-    locations: ["A5", "F5"],
-    thumbnail: creta01,
-  },
-  {
-    name: "FLORENTINA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: florentina01,
-  },
-  {
-    name: "GIBERT",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: gibert01,
-  },
-  {
-    name: "GOROKA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: goroka01,
-  },
-  {
-    name: "LLAGOSTERA",
-    format: "8''x8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: llagostera01,
-  },
-  F5: [
-  {
-    name: "COMILLAS",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: comillas01,
-  },
-  {
-    name: "CRETA",
-    format: "2''X10''",
-    brand: "PORTOBELLO",
-    locations: ["A5", "F5"],
-    thumbnail: creta01,
-  },
-  {
-    name: "FLORENTINA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: florentina01,
-  },
-  {
-    name: "GIBERT",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: gibert01,
-  },
-  {
-    name: "GOROKA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: goroka01,
-  },
-  {
-    name: "LLAGOSTERA",
-    format: "8''x8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: llagostera01,
-  },
-  {
-    name: "TUBAN",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "C5", "F5"],
-    thumbnail: tuban01,
-  },
-  {
-    name: "VALVANERA",
-    format: "8''X8''",
-    brand: "VIVES",
-    locations: ["A5", "F5"],
-    thumbnail: valvanera01,
-  },
-],
-
-
+      name: "LLAGOSTERA",
+      format: "8''x8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: llagostera01,
+    },
+    {
+      name: "TUBAN",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "C5", "F5"],
+      thumbnail: tuban01,
+    },
+    {
+      name: "VALVANERA",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["A5", "F5"],
+      thumbnail: valvanera01,
+    },
   ],
 };
 
