@@ -162,6 +162,13 @@ import { Tulban } from "./colecciones/tulban";
 import { Ubud } from "./colecciones/ubud";
 import { Valvanera } from "./colecciones/valvanera";
 import { Vivant } from "./colecciones/vivant";
+import { Tears } from "./colecciones/tears";
+import { Terre } from "./colecciones/terre";
+import { TrameDiPietra } from "./colecciones/trame-di-pietra";
+import { Blaze } from "./colecciones/blaze";
+import { Sahn4x4 } from "./colecciones/sahn-4x4";
+import { Zellige } from "./colecciones/zellige";
+
 
 export function App() {
   const [page, setPage] = useState("home");
@@ -382,6 +389,12 @@ export function App() {
     if (name === "UBUD") setPage("ubud");
     if (name === "VALVANERA") setPage("valvanera");
     if (name === "VIVANT") setPage("vivant");
+    if (name === "TEARS") setPage("tears");
+    if (name === "TERRE") setPage("terre");
+    if (name === "TRAME DI PIETRA") setPage("trame-di-pietra");
+    if (name === "BLAZE") setPage("blaze");
+    if (name === "SAHN") setPage("sahn-4x4");
+    if (name === "ZELLIGE") setPage("zellige");
   }
 
   if (page === "home") {
@@ -551,6 +564,12 @@ export function App() {
   if (page === "ubud") return <Ubud />;
   if (page === "valvanera") return <Valvanera />;
   if (page === "vivant") return <Vivant />;
+  if (page === "tears") return <Tears />;
+  if (page === "terre") return <Terre />;
+  if (page === "trame-di-pietra") return <TrameDiPietra />;
+  if (page === "blaze") return <Blaze />;
+  if (page === "sahn-4x4") return <Sahn4x4 />;
+  if (page === "zellige") return <Zellige />;
 
 
   return null;

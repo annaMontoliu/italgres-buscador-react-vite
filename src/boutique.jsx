@@ -45,6 +45,12 @@ import tulban01 from "./assets/imagenes/tulban/tulban-01.jpg";
 import ubud01 from "./assets/imagenes/ubud/ubud-01.jpg";
 import valvanera01 from "./assets/imagenes/valvanera/valvanera-01.jpg";
 import vivant01 from "./assets/imagenes/vivant/vivant-01.jpg";
+import tears01 from "./assets/imagenes/tears/tears-01.jpg";
+import terre01 from "./assets/imagenes/terre/terre-01.jpg";
+import trame01 from "./assets/imagenes/trame-di-pietra/trame-di-pietra-01.jpg";
+import blaze01 from "./assets/imagenes/blaze/blaze-01.jpg";
+import sahn01 from "./assets/imagenes/sahn/sahn-4x4/sahn-4x4-01.jpg";
+import zellige01 from "./assets/imagenes/zellige/zellige-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -380,6 +386,65 @@ const boutiqueDrawers = {
       thumbnail: vivant01,
     },
   ],
+  A6: [
+  {
+    name: "TEARS",
+    format: "5''X5''",
+    brand: "LIFE",
+    locations: ["A6"],
+    thumbnail: tears01,
+  },
+],
+A7: [
+  {
+    name: "TERRE",
+    format: "2''X6''",
+    brand: "CEVICA",
+    locations: ["A7"],
+    thumbnail: terre01,
+  },
+],
+A8: [
+  {
+    name: "TRAME DI PIETRA",
+    format: "3''X6''",
+    brand: "TRAME DI PIETRA",
+    locations: ["A8"],
+    thumbnail: trame01,
+  },
+],
+A9: [
+  {
+    name: "BLAZE",
+    format: "4''X4''",
+    brand: "CIFRE",
+    locations: ["A9"],
+    thumbnail: blaze01,
+  },
+  {
+    name: "SAHN",
+    format: "4''X4''",
+    brand: "HARMONY",
+    locations: ["A9", "B7"],
+    thumbnail: sahn01,
+  },
+  {
+    name: "ZELLIGE",
+    format: "4''X4''",
+    brand: "CIFRE",
+    locations: ["A9"],
+    thumbnail: zellige01,
+  },
+],
+B7: [
+  {
+    name: "SAHN",
+    format: "4''X4''",
+    brand: "HARMONY",
+    locations: ["A9", "B7"],
+    thumbnail: sahn01,
+  },
+],
 
   C5: [
     {
@@ -804,6 +869,48 @@ const boutiqueCollections = [
   brand: "PORTOBELLO",
   locations: ["A5"],
   thumbnail: vivant01,
+},
+{
+  name: "TEARS",
+  format: "5''X5''",
+  brand: "LIFE",
+  locations: ["A6"],
+  thumbnail: tears01,
+},
+{
+  name: "TERRE",
+  format: "2''X6''",
+  brand: "CEVICA",
+  locations: ["A7"],
+  thumbnail: terre01,
+},
+{
+  name: "TRAME DI PIETRA",
+  format: "3''X6''",
+  brand: "TRAME DI PIETRA",
+  locations: ["A8"],
+  thumbnail: trame01,
+},
+{
+  name: "BLAZE",
+  format: "4''X4''",
+  brand: "CIFRE",
+  locations: ["A9"],
+  thumbnail: blaze01,
+},
+{
+  name: "SAHN",
+  format: "4''X4''",
+  brand: "HARMONY",
+  locations: ["A9", "B7"],
+  thumbnail: sahn01,
+},
+{
+  name: "ZELLIGE",
+  format: "4''X4''",
+  brand: "CIFRE",
+  locations: ["A9"],
+  thumbnail: zellige01,
 },
 ];
 
