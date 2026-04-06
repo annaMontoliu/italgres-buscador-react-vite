@@ -3,11 +3,11 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import zelij01 from "../assets/imagenes/zelij/zelij-4x4/zelij-4x4-01.jpg";
-import zelij02 from "../assets/imagenes/zelij/zelij-4x4/zelij-4x4-02.jpg";
-import zelij03 from "../assets/imagenes/zelij/zelij-4x4/zelij-4x4-03.jpg";
-import zelij04 from "../assets/imagenes/zelij/zelij-4x4/zelij-4x4-04.jpg";
-import zelij05 from "../assets/imagenes/zelij/zelij-4x4/zelij-4x4-05.jpg";
+import zelij01 from "../assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4/zelij-glossy-4x4-01.jpg";
+import zelij02 from "../assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4/zelij-glossy-4x4-02.jpg";
+import zelij03 from "../assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4/zelij-glossy-4x4-03.jpg";
+import zelij04 from "../assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4/zelij-glossy-4x4-04.jpg";
+import zelij05 from "../assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4/zelij-glossy-4x4-05.jpg";
 
 const images = [
   zelij01,
@@ -82,7 +82,7 @@ export function Zelij4x4() {
           <span className="breadcrumb-current">ZELIJ</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">ZELIJ</h1>
+        <h1 className="titulo-coleccion boutique-title">ZELIJ GLOSSY 4''X4''</h1>
 
         <div className="boutique-info">
           <p>4''x4'' · HARMONY</p>
