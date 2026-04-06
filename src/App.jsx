@@ -181,6 +181,9 @@ import { Saville } from "./colecciones/saville";
 import { Sixties } from "./colecciones/sixties";
 import { Quecto } from "./colecciones/quecto";
 import { Zepto } from "./colecciones/zepto";
+import { ZelijGlossy2x8 } from "./colecciones/zelij-glossy-2x8";
+import { ZelijMate2x8 } from "./colecciones/zelij-mate-2x8";
+import { ZelijSpecial2x8 } from "./colecciones/zelij-special-2x8";
 
 
 export function App() {
@@ -421,6 +424,9 @@ export function App() {
     if (name === "SIXTIES") setPage("sixties");
     if (name === "QUECTO") setPage("quecto");
     if (name === "ZEPTO") setPage("zepto");
+    if (name === "ZELIJ GLOSSY 2x8") setPage("zelij-glossy-2x8");
+    if (name === "ZELIJ MATE 2x8") setPage("zelij-mate-2x8");
+    if (name === "ZELIJ SPECIAL 2x8") setPage("zelij-special-2x8");
   }
 
   if (page === "home") {
@@ -609,6 +615,12 @@ export function App() {
   if (page === "sixties") return <Sixties />;
   if (page === "quecto") return <Quecto />;
   if (page === "zepto") return <Zepto />;
+  if (page === "zelij-4x4") return <Zelij4x4 />;
+  if (page === "zelij-mate-4x4") return <ZelijMate4x4 />;
+  if (page === "zelij-special-4x4") return <ZelijSpecial4x4 />;
+  if (page === "zelij-glossy-2x8") return <ZelijGlossy2x8 />;
+  if (page === "zelij-mate-2x8") return <ZelijMate2x8 />;
+  if (page === "zelij-special-2x8") return <ZelijSpecial2x8 />;
 
 
   return null;

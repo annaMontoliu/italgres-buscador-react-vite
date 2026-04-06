@@ -64,6 +64,9 @@ import saville01 from "./assets/imagenes/saville/saville-01.jpg";
 import sixties01 from "./assets/imagenes/sixties/sixties-01.jpg";
 import quecto01 from "./assets/imagenes/quecto/quecto-01.jpg";
 import zepto01 from "./assets/imagenes/zepto/zepto-01.jpg";
+import zelijGlossy2x801 from "./assets/imagenes/zelij/zelij-glossy/zelij-glossy-2x8/zelij-glossy-2x8-01.jpg";
+import zelijMate2x801 from "./assets/imagenes/zelij/zelij-mate/zelij-mate-2x8/zelij-mate-2x8-01.jpg";
+import zelijSpecial2x801 from "./assets/imagenes/zelij/zelij-special/zelij-special-2x8/zelij-special-2x8-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -157,7 +160,7 @@ const boutiqueDrawers = {
       thumbnail: riad01,
     },
     {
-      name: "ZELIJ GLOSSY 4''X4''",
+      name: "ZELIJ GLOSSY",
       format: '4"x4"',
       brand: "HARMONY",
       locations: ["A4"],
@@ -540,6 +543,30 @@ A9: [
     brand: "VIVES",
     locations: ["A10"],
     thumbnail: zepto01,
+  },
+],
+
+B1: [
+  {
+    name: "ZELIJ GLOSSY 2x8",
+    format: '2"x8"',
+    brand: "CEVICA",
+    locations: ["B1"],
+    thumbnail: zelijGlossy2x801,
+  },
+  {
+    name: "ZELIJ MATE 2x8",
+    format: '2"x8"',
+    brand: "CEVICA",
+    locations: ["B1"],
+    thumbnail: zelijMate2x801,
+  },
+  {
+    name: "ZELIJ SPECIAL 2x8",
+    format: '2"x8"',
+    brand: "CEVICA",
+    locations: ["B1"],
+    thumbnail: zelijSpecial2x801,
   },
 ],
   
@@ -1118,7 +1145,29 @@ const boutiqueCollections = [
   brand: "VIVES",
   locations: ["A10"],
   thumbnail: zepto01,
+  },
+{
+  name: "ZELIJ GLOSSY 2x8",
+  format: '2"x8"',
+  brand: "CEVICA",
+  locations: ["B1"],
+  thumbnail: zelijGlossy2x801,
 },
+{
+  name: "ZELIJ MATE 2x8",
+  format: '2"x8"',
+  brand: "CEVICA",
+  locations: ["B1"],
+  thumbnail: zelijMate2x801,
+},
+{
+  name: "ZELIJ SPECIAL 2x8",
+  format: '2"x8"',
+  brand: "CEVICA",
+  locations: ["B1"],
+  thumbnail: zelijSpecial2x801,
+},
+
 ];
 
 export function Boutique({ onOpenCollection }) {
