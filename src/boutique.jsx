@@ -11,7 +11,7 @@ import argila01 from "./assets/imagenes/argila/argila-01.jpg";
 import joy01 from "./assets/imagenes/joy/joy-01.jpg";
 import provenza01 from "./assets/imagenes/provenza/provenza-01.jpg";
 import riad01 from "./assets/imagenes/riad/riad-4x4/riad-4x4-01.jpg";
-import zelij01 from "./assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4-01.jpg";
+import zelij01 from "./assets/imagenes/zelij/zelij-glossy/zelij-glossy-4x4/zelij-glossy-4x4-01.jpg";
 import zelijMate01 from "./assets/imagenes/zelij/zelij-mate/zelij-mate-4x4/zelij-mate-4x4-01.jpg";
 import zelijSpecial01 from "./assets/imagenes/zelij/zelij-special/zelij-special-4x4/zelij-special-4x4-01.jpg";
 import andrasy01 from "./assets/imagenes/andrassy/andrassy-01.jpg";
