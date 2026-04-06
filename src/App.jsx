@@ -189,6 +189,11 @@ import { Land } from "./colecciones/land";
 import { Legacy3x10 } from "./colecciones/legacy-3x10";
 import { Rabat } from "./colecciones/rabat";
 import { Rustic } from "./colecciones/rustic";
+import { Jazba } from "./colecciones/jazba";
+import { Glow } from "./colecciones/glow";
+import { AlaskaCevica } from "./colecciones/alaska-cevica";
+import { BaliCerlat } from "./colecciones/bali-cerlat";
+import { Gouache } from "./colecciones/gouache";
 
 
 export function App() {
@@ -437,6 +442,11 @@ export function App() {
     if (name === "LEGACY 3X10") setPage("legacy-3x10");
     if (name === "RABAT") setPage("rabat");
     if (name === "RUSTIC") setPage("rustic");
+    if (name === "JAZBA") setPage("jazba");
+    if (name === "GLOW") setPage("glow");
+    if (name === "ALASKA CEVICA") setPage("alaska-cevica");
+    if (name === "BALI CERLAT") setPage("bali-cerlat");
+    if (name === "GOUACHE") setPage("gouache");
   }
 
   if (page === "home") {
@@ -636,6 +646,11 @@ export function App() {
   if (page === "legacy-3x10") return <Legacy3x10 />;
   if (page === "rabat") return <Rabat />;
   if (page === "rustic") return <Rustic />;
+  if (page === "jazba") return <Jazba />;
+  if (page === "glow") return <Glow />;
+  if (page === "alaska-cevica") return <AlaskaCevica />;
+  if (page === "bali-cerlat") return <BaliCerlat />;
+  if (page === "gouache") return <Gouache />;
   
 
 

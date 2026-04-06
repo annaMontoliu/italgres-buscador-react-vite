@@ -72,6 +72,11 @@ import land01 from "./assets/imagenes/land/land-01.jpg";
 import legacy3x1001 from "./assets/imagenes/legacy/legacy-3x10/legacy-3x10-01.jpg";
 import rabat01 from "./assets/imagenes/rabat/rabat-01.jpg";
 import rustic01 from "./assets/imagenes/rustic/rustic-01.jpg";
+import jazba01 from "./assets/imagenes/jazba/jazba-01.jpg";
+import glow01 from "./assets/imagenes/glow/glow-01.jpg";
+import alaskaCevica01 from "./assets/imagenes/alaska-cevica/alaska-cevica-01.png";
+import bali01 from "./assets/imagenes/bali-cerlat/bali-cerlat-01.jpg";
+import gouache01 from "./assets/imagenes/gouache/gouache-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -611,6 +616,49 @@ B2: [
     thumbnail: rustic01,
   },
 ],
+B3: [
+  {
+    name: "JAZBA",
+    format: "2x10",
+    brand: "CIFRE",
+    locations: ["B3"],
+    thumbnail: jazba01,
+  },
+],
+
+B4: [
+  {
+    name: "GLOW",
+    format: "2x20",
+    brand: "LIFE CERAMICA",
+    locations: ["B4"],
+    thumbnail: glow01,
+  },
+  {
+    name: "ALASKA CEVICA",
+    format: "3x12",
+    brand: "CEVICA",
+    locations: ["B4", "C8"],
+    thumbnail: alaskaCevica01,
+  },
+],
+
+B5: [
+  {
+    name: "BALI CERLAT",
+    format: "6x6",
+    brand: "CERLAT",
+    locations: ["B5", "D9", "G5"],
+    thumbnail: bali01,
+  },
+  {
+    name: "GOUACHE",
+    format: "6x6",
+    brand: "PORTOBELLO",
+    locations: ["B5"],
+    thumbnail: gouache01,
+  },
+],
 
 B7: [
   {
@@ -631,7 +679,7 @@ C4: [
   },
 ],
 
-  C5: [
+C5: [
     {
       name: "ANDRASSY",
       format: "8''X8''",
@@ -669,6 +717,16 @@ C4: [
     },
   ],
 
+  C8: [
+  {
+    name: "ALASKA CEVICA",
+    format: "3x12",
+    brand: "CEVICA",
+    locations: ["B4", "C8"],
+    thumbnail: alaskaCevica01,
+  },
+],
+
   D3: [
     {
       name: "RIAD",
@@ -678,6 +736,16 @@ C4: [
       thumbnail: riad01,
     },
   ],
+
+  D9: [
+  {
+    name: "BALI CERLAT",
+    format: "6x6",
+    brand: "CERLAT",
+    locations: ["B5", "D9", "G5"],
+    thumbnail: bali01,
+  },
+],
 
   F5: [
     {
@@ -737,6 +805,15 @@ C4: [
       thumbnail: valvanera01,
     },
   ],
+  G5: [
+  {
+    name: "BALI CERLAT",
+    format: "6x6",
+    brand: "CERLAT",
+    locations: ["B5", "D9", "G5"],
+    thumbnail: bali01,
+  },
+],
 };
 
 const boutiqueCollections = [
@@ -1243,6 +1320,41 @@ const boutiqueCollections = [
   brand: "CEVICA",
   locations: ["B2"],
   thumbnail: rustic01,
+},
+{
+  name: "JAZBA",
+  format: "2x10",
+  brand: "CIFRE",
+  locations: ["B3"],
+  thumbnail: jazba01,
+},
+{
+  name: "GLOW",
+  format: "2x20",
+  brand: "LIFE CERAMICA",
+  locations: ["B4"],
+  thumbnail: glow01,
+},
+{
+  name: "ALASKA CEVICA",
+  format: "3x12",
+  brand: "CEVICA",
+  locations: ["B4", "C8"],
+  thumbnail: alaskaCevica01,
+},
+{
+  name: "BALI CERLAT",
+  format: "6x6",
+  brand: "CERLAT",
+  locations: ["B5", "D9", "G5"],
+  thumbnail: bali01,
+},
+{
+  name: "GOUACHE",
+  format: "6x6",
+  brand: "PORTOBELLO",
+  locations: ["B5"],
+  thumbnail: gouache01,
 },
 
 ];
