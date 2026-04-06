@@ -67,6 +67,11 @@ import zepto01 from "./assets/imagenes/zepto/zepto-01.jpg";
 import zelijGlossy2x801 from "./assets/imagenes/zelij/zelij-glossy/zelij-glossy-2x8/zelij-glossy-2x8-01.jpg";
 import zelijMate2x801 from "./assets/imagenes/zelij/zelij-mate/zelij-mate-2x8/zelij-mate-2x8-01.jpg";
 import zelijSpecial2x801 from "./assets/imagenes/zelij/zelij-special/zelij-special-2x8/zelij-special-2x8-01.jpg";
+import lagoon01 from "./assets/imagenes/lagoon/lagoon-01.jpg";
+import land01 from "./assets/imagenes/land/land-01.jpg";
+import legacy3x1001 from "./assets/imagenes/legacy/legacy-3x10/legacy-3x10-01.jpg";
+import rabat01 from "./assets/imagenes/rabat/rabat-01.jpg";
+import rustic01 from "./assets/imagenes/rustic/rustic-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -569,7 +574,44 @@ B1: [
     thumbnail: zelijSpecial2x801,
   },
 ],
-  
+B2: [
+  {
+    name: "LAGOON",
+    format: "3''x10''",
+    brand: "HARMONY",
+    locations: ["B2"],
+    thumbnail: lagoon01,
+  },
+  {
+    name: "LAND",
+    format: "2x7",
+    brand: "HARMONY",
+    locations: ["B2"],
+    thumbnail: land01,
+  },
+  {
+    name: "LEGACY 3X10",
+    format: "3x10",
+    brand: "HARMONY",
+    locations: ["B2"],
+    thumbnail: legacy3x1001,
+  },
+  {
+    name: "RABAT",
+    format: "2x10",
+    brand: "HARMONY",
+    locations: ["B2"],
+    thumbnail: rabat01,
+  },
+  {
+    name: "RUSTIC",
+    format: "2x20",
+    brand: "CEVICA",
+    locations: ["B2"],
+    thumbnail: rustic01,
+  },
+],
+
 B7: [
   {
     name: "SAHN",
@@ -1166,6 +1208,41 @@ const boutiqueCollections = [
   brand: "CEVICA",
   locations: ["B1"],
   thumbnail: zelijSpecial2x801,
+},
+{
+  name: "LAGOON",
+  format: "3''x10''",
+  brand: "HARMONY",
+  locations: ["B2"],
+  thumbnail: lagoon01,
+},
+{
+  name: "LAND",
+  format: "2x7",
+  brand: "HARMONY",
+  locations: ["B2"],
+  thumbnail: land01,
+},
+{
+  name: "LEGACY 3X10",
+  format: "3x10",
+  brand: "HARMONY",
+  locations: ["B2"],
+  thumbnail: legacy3x1001,
+},
+{
+  name: "RABAT",
+  format: "2x10",
+  brand: "HARMONY",
+  locations: ["B2"],
+  thumbnail: rabat01,
+},
+{
+  name: "RUSTIC",
+  format: "2x20",
+  brand: "CEVICA",
+  locations: ["B2"],
+  thumbnail: rustic01,
 },
 
 ];

@@ -184,6 +184,11 @@ import { Zepto } from "./colecciones/zepto";
 import { ZelijGlossy2x8 } from "./colecciones/zelij-glossy-2x8";
 import { ZelijMate2x8 } from "./colecciones/zelij-mate-2x8";
 import { ZelijSpecial2x8 } from "./colecciones/zelij-special-2x8";
+import { Lagoon } from "./colecciones/lagoon";
+import { Land } from "./colecciones/land";
+import { Legacy3x10 } from "./colecciones/legacy-3x10";
+import { Rabat } from "./colecciones/rabat";
+import { Rustic } from "./colecciones/rustic";
 
 
 export function App() {
@@ -427,6 +432,11 @@ export function App() {
     if (name === "ZELIJ GLOSSY 2x8") setPage("zelij-glossy-2x8");
     if (name === "ZELIJ MATE 2x8") setPage("zelij-mate-2x8");
     if (name === "ZELIJ SPECIAL 2x8") setPage("zelij-special-2x8");
+    if (name === "LAGOON") setPage("lagoon");
+    if (name === "LAND") setPage("land");
+    if (name === "LEGACY 3X10") setPage("legacy-3x10");
+    if (name === "RABAT") setPage("rabat");
+    if (name === "RUSTIC") setPage("rustic");
   }
 
   if (page === "home") {
@@ -621,6 +631,12 @@ export function App() {
   if (page === "zelij-glossy-2x8") return <ZelijGlossy2x8 />;
   if (page === "zelij-mate-2x8") return <ZelijMate2x8 />;
   if (page === "zelij-special-2x8") return <ZelijSpecial2x8 />;
+  if (page === "lagoon") return <Lagoon />;
+  if (page === "land") return <Land />;
+  if (page === "legacy-3x10") return <Legacy3x10 />;
+  if (page === "rabat") return <Rabat />;
+  if (page === "rustic") return <Rustic />;
+  
 
 
   return null;
