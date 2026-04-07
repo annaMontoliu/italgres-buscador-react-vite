@@ -80,6 +80,12 @@ import gouache01 from "./assets/imagenes/gouache/gouache-01.jpg";
 import habana01 from "./assets/imagenes/habana/habana-01.jpg";
 import legacy6x601 from "./assets/imagenes/legacy/legacy-6x6/legacy-6x6-01.jpg";
 import nexus01 from "./assets/imagenes/nexus/nexus-01.jpg";
+import dyroy3x801 from "./assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-01.jpg";
+import dyroy4x401 from "./assets/imagenes/dyroy/dyroy-4x4/dyroy-4x4-01.jpg";
+import sahn3x801 from "./assets/imagenes/sahn/sahn-3x8/sahn-3x8-01.jpg";
+import industrial01 from "./assets/imagenes/industrial/industrial-01.jpg";
+import bari01 from "./assets/imagenes/bari/bari-01.jpg";
+import scale01 from "./assets/imagenes/scale/scale-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -683,6 +689,22 @@ B5: [
     thumbnail: nexus01,
   },
 ],
+B6: [
+  {
+    name: "DYROY 3X8",
+    format: "3X8",
+    brand: "HARMONY",
+    locations: ["B6"],
+    thumbnail: dyroy3x801,
+  },
+  {
+    name: "DYROY 4X4",
+    format: "4X4",
+    brand: "HARMONY",
+    locations: ["B6"],
+    thumbnail: dyroy4x401,
+  },
+],
 B7: [
   {
     name: "SAHN",
@@ -690,6 +712,40 @@ B7: [
     brand: "HARMONY",
     locations: ["A9", "B7"],
     thumbnail: sahn01,
+  },
+  {
+    name: "SAHN 3X8",
+    format: "3X8",
+    brand: "HARMONY",
+    locations: ["B7"],
+    thumbnail: sahn3x801,
+  },
+],
+B8: [
+  {
+    name: "INDUSTRIAL",
+    format: "3X12",
+    brand: "CIFRE",
+    locations: ["B8"],
+    thumbnail: industrial01,
+  },
+],
+B9: [
+  {
+    name: "BARI",
+    format: "2X10",
+    brand: "HARMONY",
+    locations: ["B9"],
+    thumbnail: bari01,
+  },
+],
+B10: [
+  {
+    name: "SCALE",
+    format: "4X5",
+    brand: "LIFE CERAMICA",
+    locations: ["B10"],
+    thumbnail: scale01,
   },
 ],
 C4: [
@@ -1389,6 +1445,48 @@ const boutiqueCollections = [
   brand: "CERLAT",
   locations: ["B5"],
   thumbnail: nexus01,
+},
+{
+  name: "DYROY 3X8",
+  format: "3X8",
+  brand: "HARMONY",
+  locations: ["B6"],
+  thumbnail: dyroy3x801,
+},
+{
+  name: "DYROY 4X4",
+  format: "4X4",
+  brand: "HARMONY",
+  locations: ["B6"],
+  thumbnail: dyroy4x401,
+},
+{
+  name: "INDUSTRIAL",
+  format: "3X12",
+  brand: "CIFRE",
+  locations: ["B8"],
+  thumbnail: industrial01,
+},
+{
+  name: "BARI",
+  format: "2X10",
+  brand: "HARMONY",
+  locations: ["B9"],
+  thumbnail: bari01,
+},
+{
+  name: "SCALE",
+  format: "4X5",
+  brand: "LIFE CERAMICA",
+  locations: ["B10"],
+  thumbnail: scale01,
+},
+{
+  name: "SAHN",
+  format: "3X8",
+  brand: "HARMONY",
+  locations: ["B7"],
+  thumbnail: sahn3x801,
 },
 
 ];
