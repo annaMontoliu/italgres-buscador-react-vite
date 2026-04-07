@@ -197,7 +197,6 @@ import { Gouache } from "./colecciones/gouache";
 import { Habana } from "./colecciones/habana";
 import { Legacy6x6 } from "./colecciones/legacy-6x6";
 import { Nexus } from "./colecciones/nexus";
-import { Dyroy3x8 } from "./colecciones/dyroy-3x8";
 import { Dyroy4x4 } from "./colecciones/dyroy-4x4";
 import { Sahn3x8 } from "./colecciones/sahn-3x8";
 import { Industrial } from "./colecciones/industrial";
@@ -459,7 +458,6 @@ export function App() {
     if (name === "HABANA") setPage("habana");
     if (name === "LEGACY 6X6") setPage("legacy-6x6");
     if (name === "NEXUS") setPage("nexus");
-    if (name === "DYROY 3X8") setPage("dyroy-3x8");
     if (name === "DYROY 4X4") setPage("dyroy-4x4");
     if (name === "SAHN 3X8") setPage("sahn-3x8");
     if (name === "INDUSTRIAL") setPage("industrial");
@@ -672,7 +670,6 @@ export function App() {
   if (page === "habana") return <Habana />;
   if (page === "legacy-6x6") return <Legacy6x6 />;
   if (page === "nexus") return <Nexus />;
-  if (page === "dyroy-3x8") return <Dyroy3x8 />;
   if (page === "dyroy-4x4") return <Dyroy4x4 />;
   if (page === "sahn-3x8") return <Sahn3x8 />;
   if (page === "industrial") return <Industrial />;
