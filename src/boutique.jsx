@@ -80,7 +80,7 @@ import gouache01 from "./assets/imagenes/gouache/gouache-01.jpg";
 import habana01 from "./assets/imagenes/habana/habana-01.jpg";
 import legacy6x601 from "./assets/imagenes/legacy/legacy-6x6/legacy-6x6-01.jpg";
 import nexus01 from "./assets/imagenes/nexus/nexus-01.jpg";
-import dyroy3x801 from "./assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-01.jpg";
+import dyroy3x801 from "./assets/imagenes/dyroy/dyroy-3x8/dyroy-3X8-01.jpg";
 import dyroy4x401 from "./assets/imagenes/dyroy/dyroy-4x4/dyroy-4x4-01.jpg";
 import sahn3x801 from "./assets/imagenes/sahn/sahn-3x8/sahn-3x8-01.jpg";
 import industrial01 from "./assets/imagenes/industrial/industrial-01.jpg";

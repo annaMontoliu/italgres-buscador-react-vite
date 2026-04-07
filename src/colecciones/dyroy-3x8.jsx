@@ -4,7 +4,7 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS IMÁGENES
-import dyroy01 from "../assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-01.jpg";
+import dyroy01 from "../assets/imagenes/dyroy/dyroy-3x8/dyroy-3X8-01.jpg";
 import dyroy02 from "../assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-02.jpg";
 import dyroy03 from "../assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-03.jpg";
 import dyroy04 from "../assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-04.jpg";
