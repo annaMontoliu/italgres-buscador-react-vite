@@ -648,7 +648,7 @@ B5: [
     name: "BALI CERLAT",
     format: "6x6",
     brand: "CERLAT",
-    locations: ["B5", "D9", "G5"],
+    locations: ["B5", "G5"],
     thumbnail: bali01,
   },
   {
@@ -800,7 +800,7 @@ C5: [
     name: "BALI CERLAT",
     format: "6x6",
     brand: "CERLAT",
-    locations: ["B5", "D9", "G5"],
+    locations: ["B5", "G5"],
     thumbnail: bali01,
   },
 ],
