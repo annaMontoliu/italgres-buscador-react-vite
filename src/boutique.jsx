@@ -737,16 +737,6 @@ C5: [
     },
   ],
 
-  D9: [
-  {
-    name: "BALI CERLAT",
-    format: "6x6",
-    brand: "CERLAT",
-    locations: ["B5", "D9", "G5"],
-    thumbnail: bali01,
-  },
-],
-
   F5: [
     {
       name: "COMILLAS",
@@ -1346,7 +1336,7 @@ const boutiqueCollections = [
   name: "BALI CERLAT",
   format: "6x6",
   brand: "CERLAT",
-  locations: ["B5", "D9", "G5"],
+  locations: ["B5", "G5"],
   thumbnail: bali01,
 },
 {

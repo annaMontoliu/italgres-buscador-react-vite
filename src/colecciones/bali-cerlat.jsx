@@ -90,7 +90,7 @@ export function BaliCerlat({ onGoHome }) {
 
         <div className="boutique-info">
           <p>6x6 · CERLAT</p>
-          <p>B5 · D9 · G5</p>
+          <p>B5 · G5</p>
         </div>
 
         <ColeccionLayout infoUrl="https://www.azulejosmijares.com/wp-content/uploads/bali.pdf" />
