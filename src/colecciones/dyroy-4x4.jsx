@@ -5,7 +5,7 @@ import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS IMÁGENES
 import dyroy01 from "../assets/imagenes/dyroy/dyroy-4x4/dyroy-4x4-01.jpg";
-import dyroy02 from "../assets/imagenes/dyroy/dyroy-4x4/dyroy-4x4-02.jpg";
+import dyroy02 from "../assets/imagenes/dyroy/dyroy-4x4/dyroy-prueba-4x4-02.jpg";
 
 // ARRAY IMÁGENES
 const images = [
