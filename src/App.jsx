@@ -194,6 +194,9 @@ import { Glow } from "./colecciones/glow";
 import { AlaskaCevica } from "./colecciones/alaska-cevica";
 import { BaliCerlat } from "./colecciones/bali-cerlat";
 import { Gouache } from "./colecciones/gouache";
+import { Habana } from "./colecciones/habana";
+import { Legacy6x6 } from "./colecciones/legacy-6x6";
+import { Nexus } from "./colecciones/nexus";
 
 
 export function App() {
@@ -447,6 +450,9 @@ export function App() {
     if (name === "ALASKA CEVICA") setPage("alaska-cevica");
     if (name === "BALI CERLAT") setPage("bali-cerlat");
     if (name === "GOUACHE") setPage("gouache");
+    if (name === "HABANA") setPage("habana");
+    if (name === "LEGACY 6X6") setPage("legacy-6x6");
+    if (name === "NEXUS") setPage("nexus");
   }
 
   if (page === "home") {
@@ -651,6 +657,9 @@ export function App() {
   if (page === "alaska-cevica") return <AlaskaCevica />;
   if (page === "bali-cerlat") return <BaliCerlat />;
   if (page === "gouache") return <Gouache />;
+  if (page === "habana") return <Habana />;
+  if (page === "legacy-6x6") return <Legacy6x6 />;
+  if (page === "nexus") return <Nexus />;
   
 
 

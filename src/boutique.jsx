@@ -77,6 +77,9 @@ import glow01 from "./assets/imagenes/glow/glow-01.jpg";
 import alaskaCevica01 from "./assets/imagenes/alaska-cevica/alaska-cevica-01.png";
 import bali01 from "./assets/imagenes/bali-cerlat/bali-cerlat-01.jpg";
 import gouache01 from "./assets/imagenes/gouache/gouache-01.jpg";
+import habana01 from "./assets/imagenes/habana/habana-01.jpg";
+import legacy6x601 from "./assets/imagenes/legacy/legacy-6x6/legacy-6x6-01.jpg";
+import nexus01 from "./assets/imagenes/nexus/nexus-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -658,8 +661,28 @@ B5: [
     locations: ["B5"],
     thumbnail: gouache01,
   },
+  {
+    name: "HABANA",
+    format: "8x8",
+    brand: "CEVICA",
+    locations: ["B5"],
+    thumbnail: habana01,
+  },
+  {
+    name: "LEGACY 6X6",
+    format: "6x6",
+    brand: "HARMONY",
+    locations: ["B5"],
+    thumbnail: legacy6x601,
+  },
+  {
+    name: "NEXUS",
+    format: "7x7",
+    brand: "CERLAT",
+    locations: ["B5"],
+    thumbnail: nexus01,
+  },
 ],
-
 B7: [
   {
     name: "SAHN",
@@ -1345,6 +1368,27 @@ const boutiqueCollections = [
   brand: "PORTOBELLO",
   locations: ["B5"],
   thumbnail: gouache01,
+},
+{
+  name: "HABANA",
+  format: "8x8",
+  brand: "CEVICA",
+  locations: ["B5"],
+  thumbnail: habana01,
+},
+{
+  name: "LEGACY 6X6",
+  format: "6x6",
+  brand: "HARMONY",
+  locations: ["B5"],
+  thumbnail: legacy6x601,
+},
+{
+  name: "NEXUS",
+  format: "7x7",
+  brand: "CERLAT",
+  locations: ["B5"],
+  thumbnail: nexus01,
 },
 
 ];
