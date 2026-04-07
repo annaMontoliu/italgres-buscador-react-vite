@@ -109,7 +109,7 @@ export function Jazba({ onGoHome }) {
           <p>B3</p>
         </div>
 
-        <ColeccionLayout infoUrl="https://www.cevica.es/wp-content/uploads/RUSTIC.pdf" />
+        <ColeccionLayout infoUrl="https://cifreceramica.com/pdf-coleccion/JAZBA/" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
