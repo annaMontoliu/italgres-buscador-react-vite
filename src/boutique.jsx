@@ -85,6 +85,7 @@ import sahn3x801 from "./assets/imagenes/sahn/sahn-3x8/sahn-3x8-01.jpg";
 import industrial01 from "./assets/imagenes/industrial/industrial-01.jpg";
 import bari01 from "./assets/imagenes/bari/bari-01.jpg";
 import scale01 from "./assets/imagenes/scale/scale-01.jpg";
+import dyroy3x801 from "./assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-01.jpg";
 
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
@@ -689,6 +690,13 @@ B5: [
   },
 ],
 B6: [
+   {
+    name: "DYROY 3X8",
+    format: "3X8",
+    brand: "HARMONY",
+    locations: ["B6"],
+    thumbnail: dyroy3x801,
+  },
   {
     name: "DYROY 4X4",
     format: "4X4",
@@ -1473,6 +1481,13 @@ const boutiqueCollections = [
   brand: "HARMONY",
   locations: ["B7"],
   thumbnail: sahn3x801,
+},
+{
+  name: "DYROY 3X8",
+  format: "3X8",
+  brand: "HARMONY",
+  locations: ["B6"],
+  thumbnail: dyroy3x801,
 },
 
 ];
