@@ -202,7 +202,7 @@ import { Sahn3x8 } from "./colecciones/sahn-3x8";
 import { Industrial } from "./colecciones/industrial";
 import { Bari } from "./colecciones/bari";
 import { Scale } from "./colecciones/scale";
-import { Dyroy3x8 } from "./colecciones/dyroy-3x8";
+
 
 
 export function App() {
@@ -464,7 +464,7 @@ export function App() {
     if (name === "INDUSTRIAL") setPage("industrial");
     if (name === "BARI") setPage("bari");
     if (name === "SCALE") setPage("scale");
-    if (name === "DYROY 3X8") setPage("dyroy-3x8");
+
   }
 
   if (page === "home") {
@@ -677,9 +677,6 @@ export function App() {
   if (page === "industrial") return <Industrial />;
   if (page === "bari") return <Bari />;
   if (page === "scale") return <Scale />;
-  if (page === "dyroy-3x8") return <Dyroy3x8 />;
- 
-  
 
 
   return null;
