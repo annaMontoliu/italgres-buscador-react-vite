@@ -203,6 +203,21 @@ import { Industrial } from "./colecciones/industrial";
 import { Bari } from "./colecciones/bari";
 import { Scale } from "./colecciones/scale";
 import { Dyroy3x8 } from "./colecciones/dyroy-3x8";
+import { Antic2x6 } from "./colecciones/antic-2x6";
+import { AnticPastels2x6 } from "./colecciones/antic-pastels-2x6";
+import { Dreams } from "./colecciones/dreams";
+import { Boom } from "./colecciones/boom";
+import { GoodVibes } from "./colecciones/good-vibes";
+import { ManhattanHex } from "./colecciones/manhattan-hex";
+import { PanalBrocat } from "./colecciones/panal-brocat";
+import { Poitiers } from "./colecciones/poitiers";
+import { Guido } from "./colecciones/guido";
+import { Javea } from "./colecciones/javea";
+import { Lia } from "./colecciones/lia";
+import { Luca } from "./colecciones/luca";
+import { Pasadena } from "./colecciones/pasadena";
+import { Salou } from "./colecciones/salou";
+import { Tera } from "./colecciones/tera";
 
 
 
@@ -466,6 +481,21 @@ export function App() {
     if (name === "INDUSTRIAL") setPage("industrial");
     if (name === "BARI") setPage("bari");
     if (name === "SCALE") setPage("scale");
+    if (name === "ANTIC 2X6") setPage("antic-2x6");
+    if (name === "ANTIC PASTELS 2X6") setPage("antic-pastels-2x6");
+    if (name === "DREAMS") setPage("dreams");
+    if (name === "BOOM") setPage("boom");
+    if (name === "GOOD VIBES") setPage("good-vibes");
+    if (name === "MANHATTAN HEX") setPage("manhattan-hex");
+    if (name === "PANAL BROCAT") setPage("panal-brocat");
+    if (name === "POITIERS") setPage("poitiers");
+    if (name === "GUIDO") setPage("guido");
+    if (name === "JAVEA") setPage("javea");
+    if (name === "LIA") setPage("lia");
+    if (name === "LUCA") setPage("luca");
+    if (name === "PASADENA") setPage("pasadena");
+    if (name === "SALOU") setPage("salou");
+    if (name === "TERA") setPage("tera");
 
   }
 
@@ -680,7 +710,21 @@ export function App() {
   if (page === "industrial") return <Industrial />;
   if (page === "bari") return <Bari />;
   if (page === "scale") return <Scale />;
-
+  if (page === "antic-2x6") return <Antic2x6 />;
+  if (page === "antic-pastels-2x6") return <AnticPastels2x6 />;
+  if (page === "dreams") return <Dreams />;
+  if (page === "boom") return <Boom />;
+  if (page === "good-vibes") return <GoodVibes />;
+  if (page === "manhattan-hex") return <ManhattanHex />;
+  if (page === "panal-brocat") return <PanalBrocat />;
+  if (page === "poitiers") return <Poitiers />;
+  if (page === "guido") return <Guido />;
+  if (page === "javea") return <Javea />;
+  if (page === "lia") return <Lia />;
+  if (page === "luca") return <Luca />;
+  if (page === "pasadena") return <Pasadena />;
+  if (page === "salou") return <Salou />;
+  if (page === "tera") return <Tera />;
 
   return null;
 }

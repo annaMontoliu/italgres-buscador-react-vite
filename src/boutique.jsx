@@ -86,6 +86,21 @@ import industrial01 from "./assets/imagenes/industrial/industrial-01.jpg";
 import bari01 from "./assets/imagenes/bari/bari-01.jpg";
 import scale01 from "./assets/imagenes/scale/scale-01.jpg";
 import dyroy3x801 from "./assets/imagenes/dyroy/dyroy-3x8/dyroy-3x8-1.jpg";
+import antic01 from "./assets/imagenes/antic/antic/antic-2x6/antic-2x6-01.jpg";
+import anticPastels01 from "./assets/imagenes/antic/antic-pastels/antic-pastels-2x6/antic-pastels-2x6-01.jpg";
+import dreams01 from "./assets/imagenes/dreams/dreams-01.jpg";
+import boom01 from "./assets/imagenes/boom/boom-01.jpg";
+import goodVibes01 from "./assets/imagenes/good-vibes/good-vibes-01.jpg";
+import manhattanHex01 from "./assets/imagenes/manhattan/manhattan-hex/manhattan-hex-01.jpg";
+import panalBrocat01 from "./assets/imagenes/panal-brocat/panal-brocat-01.jpg";
+import poitiers01 from "./assets/imagenes/poitiers/poitiers-01.jpg";
+import guido01 from "./assets/imagenes/guido/guido-01.jpg";
+import javea01 from "./assets/imagenes/javea/javea-01.jpg";
+import lia01 from "./assets/imagenes/lia/lia-01.jpg";
+import luca01 from "./assets/imagenes/luca/luca-01.jpg";
+import pasadena01 from "./assets/imagenes/pasadena/pasadena-01.jpg";
+import salou01 from "./assets/imagenes/salou/salou-01.jpg";
+import tera01 from "./assets/imagenes/tera/tera-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -748,6 +763,68 @@ B10: [
     thumbnail: scale01,
   },
 ],
+C1: [
+  {
+    name: "ANTIC 2X6",
+    format: "2''X6''",
+    brand: "CEVICA",
+    locations: ["C1"],
+    thumbnail: antic01,
+  },
+  {
+    name: "ANTIC PASTELS 2X6",
+    format: "2''x6''",
+    brand: "CEVICA",
+    locations: ["C1"],
+    thumbnail: anticPastels01,
+  },
+  {
+    name: "DREAMS",
+    format: "2''X6''",
+    brand: "LIFE CERAMICA",
+    locations: ["C1"],
+    thumbnail: dreams01,
+  },
+],
+C2: [
+  {
+    name: "BOOM",
+    format: "5''X6''",
+    brand: "CEVICA",
+    locations: ["C2"],
+    thumbnail: boom01,
+  },
+  {
+    name: "GOOD VIBES",
+    format: "5''x6''",
+    brand: "CEVICA",
+    locations: ["C2"],
+    thumbnail: goodVibes01,
+  },
+  {
+    name: "MANHATTAN HEX",
+    format: "5''x6''",
+    brand: "CEVICA",
+    locations: ["C2", "C6"],
+    thumbnail: manhattanHex01,
+  },
+  {
+    name: "PANAL BROCAT",
+    format: "6''x7''",
+    brand: "NATUCER",
+    locations: ["C2"],
+    thumbnail: panalBrocat01,
+  },
+],
+C3: [
+  {
+    name: "POITIERS",
+    format: "2''X10'' y 3''X6''",
+    brand: "HARMONY",
+    locations: ["C3"],
+    thumbnail: poitiers01,
+  },
+],
 C4: [
   {
     name: "QUECTO",
@@ -756,8 +833,56 @@ C4: [
     locations: ["A10", "C4"],
     thumbnail: quecto01,
   },
+  {
+    name: "GUIDO",
+    format: "3''X12''",
+    brand: "VIVES",
+    locations: ["C4"],
+    thumbnail: guido01,
+  },
+  {
+    name: "JAVEA",
+    format: "3''X12''",
+    brand: "VIVES",
+    locations: ["C4"],
+    thumbnail: javea01,
+  },
+  {
+    name: "LIA",
+    format: "3''X12''",
+    brand: "VIVES",
+    locations: ["C4"],
+    thumbnail: lia01,
+  },
+  {
+    name: "LUCA",
+    format: "3''X12''",
+    brand: "VIVES",
+    locations: ["C4"],
+    thumbnail: luca01,
+  },
+  {
+    name: "PASADENA",
+    format: "3''X10''",
+    brand: "HARMONY",
+    locations: ["C4"],
+    thumbnail: pasadena01,
+  },
+  {
+    name: "SALOU",
+    format: "3''X12''",
+    brand: "VIVES",
+    locations: ["C4"],
+    thumbnail: salou01,
+  },
+  {
+    name: "TERA",
+    format: "5''X5''",
+    brand: "VIVES",
+    locations: ["C4"],
+    thumbnail: tera01,
+  },
 ],
-
 C5: [
     {
       name: "ANDRASSY",
@@ -795,6 +920,15 @@ C5: [
       thumbnail: tuban01,
     },
   ],
+  C6: [
+  {
+    name: "MANHATTAN HEX",
+    format: "5''x6''",
+    brand: "CEVICA",
+    locations: ["C2", "C6"],
+    thumbnail: manhattanHex01,
+  },
+],
 
   C8: [
   {
@@ -1488,6 +1622,111 @@ const boutiqueCollections = [
   brand: "HARMONY",
   locations: ["B7"],
   thumbnail: sahn3x801,
+},
+{
+  name: "ANTIC 2X6",
+  format: "2''X6''",
+  brand: "CEVICA",
+  locations: ["C1"],
+  thumbnail: antic01,
+},
+{
+  name: "ANTIC PASTELS 2X6",
+  format: "2''x6''",
+  brand: "CEVICA",
+  locations: ["C1"],
+  thumbnail: anticPastels01,
+},
+{
+  name: "DREAMS",
+  format: "2''X6''",
+  brand: "LIFE CERAMICA",
+  locations: ["C1"],
+  thumbnail: dreams01,
+},
+{
+  name: "BOOM",
+  format: "5''X6''",
+  brand: "CEVICA",
+  locations: ["C2"],
+  thumbnail: boom01,
+},
+{
+  name: "GOOD VIBES",
+  format: "5''x6''",
+  brand: "CEVICA",
+  locations: ["C2"],
+  thumbnail: goodVibes01,
+},
+{
+  name: "MANHATTAN HEX",
+  format: "5''x6''",
+  brand: "CEVICA",
+  locations: ["C2", "C6"],
+  thumbnail: manhattanHex01,
+},
+{
+  name: "PANAL BROCAT",
+  format: "6''x7''",
+  brand: "NATUCER",
+  locations: ["C2"],
+  thumbnail: panalBrocat01,
+},
+{
+  name: "POITIERS",
+  format: "2''X10'' & 3''X6''",
+  brand: "HARMONY",
+  locations: ["C3"],
+  thumbnail: poitiers01,
+},
+{
+  name: "GUIDO",
+  format: "3''X12''",
+  brand: "VIVES",
+  locations: ["C4"],
+  thumbnail: guido01,
+},
+{
+  name: "JAVEA",
+  format: "3''X12''",
+  brand: "VIVES",
+  locations: ["C4"],
+  thumbnail: javea01,
+},
+{
+  name: "LIA",
+  format: "3''X12''",
+  brand: "VIVES",
+  locations: ["C4"],
+  thumbnail: lia01,
+},
+{
+  name: "LUCA",
+  format: "3''X12''",
+  brand: "VIVES",
+  locations: ["C4"],
+  thumbnail: luca01,
+},
+{
+  name: "PASADENA",
+  format: "3''X10''",
+  brand: "HARMONY",
+  locations: ["C4"],
+  thumbnail: pasadena01,
+},
+{
+  name: "SALOU",
+  format: "3''X12''",
+  brand: "VIVES",
+  locations: ["C4"],
+  thumbnail: salou01,
+},
+{
+  name: "TERA",
+  format: "5''X5''",
+  brand: "VIVES",
+  locations: ["C4"],
+  thumbnail: tera01,
 },
 
 
