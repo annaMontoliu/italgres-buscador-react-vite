@@ -218,6 +218,20 @@ import { Luca } from "./colecciones/luca";
 import { Pasadena } from "./colecciones/pasadena";
 import { Salou } from "./colecciones/salou";
 import { Tera } from "./colecciones/tera";
+import { Alameda } from "./colecciones/alameda";
+import { Halvmane } from "./colecciones/halvmane";
+import { Juvel } from "./colecciones/juvel";
+import { Tre } from "./colecciones/tre";
+import { ManhattanBrick } from "./colecciones/manhattan-brick";
+import { Amazon } from "./colecciones/amazon";
+import { Brunei } from "./colecciones/brunei";
+import { Boheme } from "./colecciones/boheme";
+import { Capri } from "./colecciones/capri";
+import { Manila } from "./colecciones/manila";
+import { OnaHidra } from "./colecciones/ona-hidra";
+import { PopHidra } from "./colecciones/pop-hidra";
+import { Prisma } from "./colecciones/prisma";
+import { Urban } from "./colecciones/urban";
 
 
 
@@ -496,6 +510,20 @@ export function App() {
     if (name === "PASADENA") setPage("pasadena");
     if (name === "SALOU") setPage("salou");
     if (name === "TERA") setPage("tera");
+    if (name === "ALAMEDA") setPage("alameda");
+    if (name === "HALVMANE") setPage("halvmane");
+    if (name === "JUVEL") setPage("juvel");
+    if (name === "TRE") setPage("tre");
+    if (name === "MANHATTAN BRICK") setPage("manhattan-brick");
+    if (name === "AMAZON") setPage("amazon");
+    if (name === "BRUNEI") setPage("brunei");
+    if (name === "BOHEME") setPage("boheme");
+    if (name === "CAPRI") setPage("capri");
+    if (name === "MANILA") setPage("manila");
+    if (name === "ONA HIDRA") setPage("ona-hidra");
+    if (name === "POP HIDRA") setPage("pop-hidra");
+    if (name === "PRISMA") setPage("prisma");
+    if (name === "URBAN") setPage("urban");
 
   }
 
@@ -725,6 +753,20 @@ export function App() {
   if (page === "pasadena") return <Pasadena />;
   if (page === "salou") return <Salou />;
   if (page === "tera") return <Tera />;
+  if (page === "alameda") return <Alameda />;
+  if (page === "halvmane") return <Halvmane />;
+  if (page === "juvel") return <Juvel />;
+  if (page === "tre") return <Tre />;
+  if (page === "manhattan-brick") return <ManhattanBrick />;
+  if (page === "amazon") return <Amazon />;
+  if (page === "brunei") return <Brunei />;
+  if (page === "boheme") return <Boheme />;
+  if (page === "capri") return <Capri />;
+  if (page === "manila") return <Manila />;
+  if (page === "ona-hidra") return <OnaHidra />;
+  if (page === "pop-hidra") return <PopHidra />;
+  if (page === "prisma") return <Prisma />;
+  if (page === "urban") return <Urban />;
 
   return null;
 }

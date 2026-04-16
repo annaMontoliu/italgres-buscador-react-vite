@@ -12,6 +12,9 @@ export function Bulnes() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const currentCabinet = sessionStorage.getItem("boutiqueCabinet") || "A";
+  const currentDrawer = sessionStorage.getItem("boutiqueDrawer") || "A5";
+
   function openModal(index) {
     setCurrentIndex(index);
     setIsModalOpen(true);
@@ -37,15 +40,15 @@ export function Bulnes() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetA() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
+  function goToCurrentCabinet() {
+    sessionStorage.setItem("boutiqueCabinet", currentCabinet);
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerA5() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
-    sessionStorage.setItem("boutiqueDrawer", "A5");
+  function goToCurrentDrawer() {
+    sessionStorage.setItem("boutiqueCabinet", currentCabinet);
+    sessionStorage.setItem("boutiqueDrawer", currentDrawer);
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -55,18 +58,30 @@ export function Bulnes() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
-            A
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCurrentCabinet}
+          >
+            {currentCabinet}
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawerA5}>
-            A5
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCurrentDrawer}
+          >
+            {currentDrawer}
           </button>
           <span className="breadcrumb-separator">/</span>
 
@@ -77,7 +92,7 @@ export function Bulnes() {
 
         <div className="boutique-info">
           <p>8''X8'' · VIVES</p>
-          <p>A5</p>
+          <p>A5 · C5</p>
         </div>
 
         <ColeccionLayout infoUrl="/pdf/BULNES.pdf" />

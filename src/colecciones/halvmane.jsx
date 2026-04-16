@@ -1,20 +1,17 @@
+// src/colecciones/halvmane.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import blomknopp01 from "../assets/imagenes/blomknopp/blomknopp-01.jpg";
-import blomknopp02 from "../assets/imagenes/blomknopp/blomknopp-02.jpg";
-import blomknopp03 from "../assets/imagenes/blomknopp/blomknopp-03.jpg";
+import halvmane01 from "../assets/imagenes/halvmane/halvmane-01.jpg";
 
-const images = [blomknopp01, blomknopp02, blomknopp03];
+const images = [halvmane01];
 
-export function Blomknopp() {
+export function Halvmane() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const currentCabinet = sessionStorage.getItem("boutiqueCabinet") || "A";
-  const currentDrawer = sessionStorage.getItem("boutiqueDrawer") || "A5";
 
   function openModal(index) {
     setCurrentIndex(index);
@@ -41,15 +38,15 @@ export function Blomknopp() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCurrentCabinet() {
-    sessionStorage.setItem("boutiqueCabinet", currentCabinet);
+  function goToCabinetC() {
+    sessionStorage.setItem("boutiqueCabinet", "C");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCurrentDrawer() {
-    sessionStorage.setItem("boutiqueCabinet", currentCabinet);
-    sessionStorage.setItem("boutiqueDrawer", currentDrawer);
+  function goToDrawerC5() {
+    sessionStorage.setItem("boutiqueCabinet", "C");
+    sessionStorage.setItem("boutiqueDrawer", "C5");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -59,44 +56,32 @@ export function Blomknopp() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button
-            type="button"
-            className="breadcrumb-link"
-            onClick={goToBoutique}
-          >
+          <button className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button
-            type="button"
-            className="breadcrumb-link"
-            onClick={goToCurrentCabinet}
-          >
-            {currentCabinet}
+          <button className="breadcrumb-link" onClick={goToCabinetC}>
+            C
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button
-            type="button"
-            className="breadcrumb-link"
-            onClick={goToCurrentDrawer}
-          >
-            {currentDrawer}
+          <button className="breadcrumb-link" onClick={goToDrawerC5}>
+            C5
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">BLOMKNOPP</span>
+          <span className="breadcrumb-current">HALVMANE</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">BLOMKNOPP</h1>
+        <h1 className="titulo-coleccion boutique-title">HALVMANE</h1>
 
         <div className="boutique-info">
           <p>8''X8'' · VIVES</p>
-          <p>A5 · C5</p>
+          <p>C5</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/BLOMKNOPP.pdf" />
+        <ColeccionLayout infoUrl="/pdf/HALVMANE.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -106,7 +91,7 @@ export function Blomknopp() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`BLOMKNOPP ${index + 1}`}
+              alt={`HALVMANE ${index + 1}`}
             />
           ))}
         </section>

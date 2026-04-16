@@ -101,6 +101,20 @@ import luca01 from "./assets/imagenes/luca/luca-01.jpg";
 import pasadena01 from "./assets/imagenes/pasadena/pasadena-01.jpg";
 import salou01 from "./assets/imagenes/salou/salou-01.jpg";
 import tera01 from "./assets/imagenes/tera/tera-01.jpg";
+import alameda01 from "./assets/imagenes/alameda/alameda-01.jpg";
+import halvmane01 from "./assets/imagenes/halvmane/halvmane-01.jpg";
+import juvel01 from "./assets/imagenes/juvel/juvel-01.jpg";
+import tre01 from "./assets/imagenes/tre/tre-01.jpg";
+import manhattanBrick01 from "./assets/imagenes/manhattan/manhattan-brick/manhattan-brick-01.jpg";
+import amazon01 from "./assets/imagenes/amazon/amazon-01.jpg";
+import brunei01 from "./assets/imagenes/brunei/brunei-01.jpg";
+import boheme01 from "./assets/imagenes/boheme/boheme-01.jpg";
+import capri01 from "./assets/imagenes/capri/capri-01.jpg";
+import manila01 from "./assets/imagenes/manila/manila-01.jpg";
+import onaHidra01 from "./assets/imagenes/ona-hidra/ona-hidra-01.jpg";
+import popHidra01 from "./assets/imagenes/pop-hidra/pop-hidra-01.jpg";
+import prisma01 from "./assets/imagenes/prisma/prisma-01.jpg";
+import urban01 from "./assets/imagenes/urban/urban-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -884,49 +898,171 @@ C4: [
   },
 ],
 C5: [
-    {
-      name: "ANDRASSY",
-      format: "8''X8''",
-      brand: "VIVES",
-      locations: ["A5", "C5"],
-      thumbnail: andrasy01,
-    },
-    {
-      name: "BUCARELI",
-      format: "8''X8''",
-      brand: "VIVES",
-      locations: ["A5", "C5"],
-      thumbnail: bucareli01,
-    },
-    {
-      name: "ELISEOS",
-      format: "8''X8''",
-      brand: "VIVES",
-      locations: ["A5", "C5"],
-      thumbnail: eliseos01,
-    },
-    {
-      name: "SUANZES",
-      format: "8''X8''",
-      brand: "VIVES",
-      locations: ["A5", "C5"],
-      thumbnail: suanzes01,
-    },
-    {
-      name: "TUBAN",
-      format: "8''X8''",
-      brand: "VIVES",
-      locations: ["A5", "C5", "F5"],
-      thumbnail: tuban01,
-    },
-  ],
-  C6: [
+  {
+    name: "ANDRASSY",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: andrasy01,
+  },
+  {
+    name: "BUCARELI",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: bucareli01,
+  },
+  {
+    name: "ELISEOS",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: eliseos01,
+  },
+  {
+    name: "SUANZES",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: suanzes01,
+  },
+  {
+    name: "TUBAN",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5", "F5"],
+    thumbnail: tuban01,
+  },
+
+  // NUEVAS
+  {
+    name: "ALAMEDA",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["C5"],
+    thumbnail: alameda01,
+  },
+  {
+    name: "BLOMKNOPP",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: blomknopp01,
+  },
+  {
+    name: "BULNES",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["A5", "C5"],
+    thumbnail: bulnes01,
+  },
+  {
+    name: "HALVMANE",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["C5"],
+    thumbnail: halvmane01,
+  },
+  {
+    name: "JUVEL",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["C5"],
+    thumbnail: juvel01,
+  },
+  {
+    name: "TRE",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["C5"],
+    thumbnail: tre01,
+  },
+],
+
+C6: [
   {
     name: "MANHATTAN HEX",
     format: "5''x6''",
     brand: "CEVICA",
     locations: ["C2", "C6"],
     thumbnail: manhattanHex01,
+  },
+  {
+    name: "MANHATTAN BRICK",
+    format: "2''x20''",
+    brand: "CEVICA",
+    locations: ["C6"],
+    thumbnail: manhattanBrick01,
+  },
+],
+
+C7: [
+  {
+    name: "AMAZON",
+    format: "2''X8''",
+    brand: "CEVICA",
+    locations: ["C7"],
+    thumbnail: amazon01,
+  },
+  {
+    name: "BRUNEI",
+    format: "2''X10''",
+    brand: "CERLAT",
+    locations: ["C7"],
+    thumbnail: brunei01,
+  },
+],
+C9: [
+  {
+    name: "BOHEME",
+    format: "2''X8''",
+    brand: "CEVICA",
+    locations: ["C9"],
+    thumbnail: boheme01,
+  },
+],
+C10: [
+  {
+    name: "CAPRI",
+    format: "5''X5''",
+    brand: "CIFRE",
+    locations: ["C10"],
+    thumbnail: capri01,
+  },
+  {
+    name: "MANILA",
+    format: "5''X5''",
+    brand: "CIFRE",
+    locations: ["C10"],
+    thumbnail: manila01,
+  },
+  {
+    name: "ONA HIDRA",
+    format: "5''X5''",
+    brand: "CIFRE",
+    locations: ["C10"],
+    thumbnail: onaHidra01,
+  },
+  {
+    name: "POP HIDRA",
+    format: "5''X5''",
+    brand: "CIFRE",
+    locations: ["C10"],
+    thumbnail: popHidra01,
+  },
+  {
+    name: "PRISMA",
+    format: "5''X5''",
+    brand: "CIFRE",
+    locations: ["C10"],
+    thumbnail: prisma01,
+  },
+  {
+    name: "URBAN",
+    format: "5''X5''",
+    brand: "CIFRE",
+    locations: ["C10"],
+    thumbnail: urban01,
   },
 ],
 
@@ -1727,6 +1863,118 @@ const boutiqueCollections = [
   brand: "VIVES",
   locations: ["C4"],
   thumbnail: tera01,
+},
+{
+  name: "ALAMEDA",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["C5"],
+  thumbnail: alameda01,
+},
+{
+  name: "BLOMKNOPP",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5", "C5"],
+  thumbnail: blomknopp01,
+},
+{
+  name: "BULNES",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["A5", "C5"],
+  thumbnail: bulnes01,
+},
+{
+  name: "HALVMANE",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["C5"],
+  thumbnail: halvmane01,
+},
+{
+  name: "JUVEL",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["C5"],
+  thumbnail: juvel01,
+},
+{
+  name: "TRE",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["C5"],
+  thumbnail: tre01,
+},
+{
+  name: "MANHATTAN BRICK",
+  format: "2''x20''",
+  brand: "CEVICA",
+  locations: ["C6"],
+  thumbnail: manhattanBrick01,
+},
+{
+  name: "AMAZON",
+  format: "2''X8''",
+  brand: "CEVICA",
+  locations: ["C7"],
+  thumbnail: amazon01,
+},
+{
+  name: "BRUNEI",
+  format: "2''X10''",
+  brand: "CERLAT",
+  locations: ["C7"],
+  thumbnail: brunei01,
+},
+{
+  name: "BOHEME",
+  format: "2''X8''",
+  brand: "CEVICA",
+  locations: ["C9"],
+  thumbnail: boheme01,
+},
+{
+  name: "CAPRI",
+  format: "5''X5''",
+  brand: "CIFRE",
+  locations: ["C10"],
+  thumbnail: capri01,
+},
+{
+  name: "MANILA",
+  format: "5''X5''",
+  brand: "CIFRE",
+  locations: ["C10"],
+  thumbnail: manila01,
+},
+{
+  name: "ONA HIDRA",
+  format: "5''X5''",
+  brand: "CIFRE",
+  locations: ["C10"],
+  thumbnail: onaHidra01,
+},
+{
+  name: "POP HIDRA",
+  format: "5''X5''",
+  brand: "CIFRE",
+  locations: ["C10"],
+  thumbnail: popHidra01,
+},
+{
+  name: "PRISMA",
+  format: "5''X5''",
+  brand: "CIFRE",
+  locations: ["C10"],
+  thumbnail: prisma01,
+},
+{
+  name: "URBAN",
+  format: "5''X5''",
+  brand: "CIFRE",
+  locations: ["C10"],
+  thumbnail: urban01,
 },
 
 
