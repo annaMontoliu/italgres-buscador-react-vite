@@ -115,6 +115,20 @@ import onaHidra01 from "./assets/imagenes/ona-hidra/ona-hidra-01.jpg";
 import popHidra01 from "./assets/imagenes/pop-hidra/pop-hidra-01.jpg";
 import prisma01 from "./assets/imagenes/prisma/prisma-01.jpg";
 import urban01 from "./assets/imagenes/urban/urban-01.jpg";
+import intermatexSmall01 from "./assets/imagenes/intermatex/intermatex-small-mosaicos/intermatex-small-mosaicos-01.jpg";
+import ona01 from "./assets/imagenes/ona/ona-01.jpg";
+import bow01 from "./assets/imagenes/bow/bow-01.jpg";
+import intermatexBig01 from "./assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-01.jpg";
+import riad3x801 from "./assets/imagenes/riad/riad-3x8/riad-3x8-01.jpg";
+import fold01 from "./assets/imagenes/fold/fold-01.jpg";
+import antic5x501 from "./assets/imagenes/antic/antic/antic-5x5/antic-5x5-01.jpg";
+import lins01 from "./assets/imagenes/lins/lins-01.jpg";
+import moos01 from "./assets/imagenes/moos/moos-01.jpg";
+import timeless01 from "./assets/imagenes/timeless/timeless-01.jpg";
+import baliCifre01 from "./assets/imagenes/bali-cifre/bali-cifre-01.jpg";
+import beach01 from "./assets/imagenes/beach/beach-01.jpg";
+import keystone01 from "./assets/imagenes/keystone/keystone-01.jpg";
+import myDesign01 from "./assets/imagenes/my-design/my-design-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -454,7 +468,7 @@ const boutiqueDrawers = {
     name: "TEARS",
     format: "5''X5''",
     brand: "LIFE",
-    locations: ["A6"],
+    locations: ["A6", "D6"],
     thumbnail: tears01,
   },
 ],
@@ -1076,15 +1090,147 @@ C10: [
   },
 ],
 
-  D3: [
-    {
-      name: "RIAD",
-      format: "4''X4''",
-      brand: "HARMONY",
-      locations: ["A4", "D3"],
-      thumbnail: riad01,
-    },
-  ],
+D1: [
+  {
+    name: "INTERMATEX SMALL MOSAICOS",
+    format: "",
+    brand: "INTERMATEX",
+    locations: ["D1"],
+    thumbnail: intermatexSmall01,
+  },
+  {
+    name: "ONA",
+    format: "5''X18''",
+    brand: "HARMONY",
+    locations: ["D1"],
+    thumbnail: ona01,
+  },
+],
+
+D2: [
+  {
+    name: "BOW",
+    format: "6''X18''",
+    brand: "HARMONY",
+    locations: ["D2"],
+    thumbnail: bow01,
+  },
+  {
+    name: "INTERMATEX BIG MOSAICOS",
+    format: "",
+    brand: "INTERMATEX",
+    locations: ["D2"],
+    thumbnail: intermatexBig01,
+  },
+],
+
+D3: [
+  {
+    name: "RIAD",
+    format: "4''X4''",
+    brand: "HARMONY",
+    locations: ["A4", "D3"],
+    thumbnail: riad01,
+  },
+  {
+    name: "RIAD 3X8",
+    format: "3''X8''",
+    brand: "HARMONY",
+    locations: ["D3"],
+    thumbnail: riad3x801,
+  },
+],
+
+D4: [
+  {
+    name: "FOLD",
+    format: "6''X15''",
+    brand: "HARMONY",
+    locations: ["D4"],
+    thumbnail: fold01,
+  },
+],
+
+D5: [
+  {
+    name: "ANTIC 5''X5''",
+    format: "5''x5''",
+    brand: "CEVICA",
+    locations: ["D5"],
+    thumbnail: antic5x501,
+  },
+  {
+    name: "LINS",
+    format: "8''x8''",
+    brand: "HARMONY",
+    locations: ["D5"],
+    thumbnail: lins01,
+  },
+],
+
+D6: [
+  {
+    name: "TEARS",
+    format: "5''X5''",
+    brand: "LIFE",
+    locations: ["A6", "D6"],
+    thumbnail: tears01,
+  },
+],
+
+D7: [
+  {
+    name: "MOOS",
+    format: "5''x5''",
+    brand: "CIFRE",
+    locations: ["D7"],
+    thumbnail: moos01,
+  },
+],
+
+D8: [
+  {
+    name: "TIMELESS",
+    format: "3''X12''",
+    brand: "CIFRE",
+    locations: ["D8", "H3"],
+    thumbnail: timeless01,
+  },
+],
+
+D9: [
+  {
+    name: "BALI CIFRE",
+    format: "6''x6''",
+    brand: "CIFRE",
+    locations: ["D9"],
+    thumbnail: baliCifre01,
+  },
+  {
+    name: "BEACH",
+    format: "6''X6''",
+    brand: "CIFRE",
+    locations: ["D9"],
+    thumbnail: beach01,
+  },
+  {
+    name: "KEYSTONE",
+    format: "6''X6''",
+    brand: "CIFRE",
+    locations: ["D9"],
+    thumbnail: keystone01,
+  },
+],
+
+D10: [
+  {
+    name: "MY DESIGN",
+    format: "9''x9''",
+    brand: "CERLAT",
+    locations: ["D10"],
+    thumbnail: myDesign01,
+  },
+],
 
   F5: [
     {
@@ -1470,13 +1616,6 @@ const boutiqueCollections = [
   brand: "PORTOBELLO",
   locations: ["A5"],
   thumbnail: vivant01,
-},
-{
-  name: "TEARS",
-  format: "5''X5''",
-  brand: "LIFE",
-  locations: ["A6"],
-  thumbnail: tears01,
 },
 {
   name: "TERRE",
@@ -1975,6 +2114,111 @@ const boutiqueCollections = [
   brand: "CIFRE",
   locations: ["C10"],
   thumbnail: urban01,
+},
+{
+  name: "TEARS",
+  format: "5''X5''",
+  brand: "LIFE",
+  locations: ["A6", "D6"],
+  thumbnail: tears01,
+},
+{
+  name: "INTERMATEX SMALL MOSAICOS",
+  format: "",
+  brand: "INTERMATEX",
+  locations: ["D1"],
+  thumbnail: intermatexSmall01,
+},
+{
+  name: "ONA",
+  format: "5''X18''",
+  brand: "HARMONY",
+  locations: ["D1"],
+  thumbnail: ona01,
+},
+{
+  name: "BOW",
+  format: "6''X18''",
+  brand: "HARMONY",
+  locations: ["D2"],
+  thumbnail: bow01,
+},
+{
+  name: "INTERMATEX BIG MOSAICOS",
+  format: "",
+  brand: "INTERMATEX",
+  locations: ["D2"],
+  thumbnail: intermatexBig01,
+},
+{
+  name: "FOLD",
+  format: "6''X15''",
+  brand: "HARMONY",
+  locations: ["D4"],
+  thumbnail: fold01,
+},
+{
+  name: "ANTIC 5''X5''",
+  format: "5''x5''",
+  brand: "CEVICA",
+  locations: ["D5"],
+  thumbnail: antic5x501,
+},
+{
+  name: "LINS",
+  format: "8''x8''",
+  brand: "HARMONY",
+  locations: ["D5"],
+  thumbnail: lins01,
+},
+{
+  name: "MOOS",
+  format: "5''x5''",
+  brand: "CIFRE",
+  locations: ["D7"],
+  thumbnail: moos01,
+},
+{
+  name: "TIMELESS",
+  format: "3''X12''",
+  brand: "CIFRE",
+  locations: ["D8", "H3"],
+  thumbnail: timeless01,
+},
+{
+  name: "BALI CIFRE",
+  format: "6''x6''",
+  brand: "CIFRE",
+  locations: ["D9"],
+  thumbnail: baliCifre01,
+},
+{
+  name: "BEACH",
+  format: "6''X6''",
+  brand: "CIFRE",
+  locations: ["D9"],
+  thumbnail: beach01,
+},
+{
+  name: "KEYSTONE",
+  format: "6''X6''",
+  brand: "CIFRE",
+  locations: ["D9"],
+  thumbnail: keystone01,
+},
+{
+  name: "MY DESIGN",
+  format: "9''x9''",
+  brand: "CERLAT",
+  locations: ["D10"],
+  thumbnail: myDesign01,
+},
+{
+  name: "RIAD 3X8",
+  format: "3''X8''",
+  brand: "HARMONY",
+  locations: ["D3"],
+  thumbnail: riad3x801,
 },
 
 

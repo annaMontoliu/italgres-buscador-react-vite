@@ -232,6 +232,20 @@ import { OnaHidra } from "./colecciones/ona-hidra";
 import { PopHidra } from "./colecciones/pop-hidra";
 import { Prisma } from "./colecciones/prisma";
 import { Urban } from "./colecciones/urban";
+import { IntermatexSmallMosaicos } from "./colecciones/intermatex-small-mosaicos";
+import { Ona } from "./colecciones/ona";
+import { Bow } from "./colecciones/bow";
+import { IntermatexBigMosaicos } from "./colecciones/intermatex-big-mosaicos";
+import { Riad3x8 } from "./colecciones/riad-3x8";
+import { Fold } from "./colecciones/fold";
+import { Antic5x5 } from "./colecciones/antic-5x5";
+import { Lins } from "./colecciones/lins";
+import { Moos } from "./colecciones/moos";
+import { Timeless } from "./colecciones/timeless";
+import { BaliCifre } from "./colecciones/bali-cifre";
+import { Beach } from "./colecciones/beach";
+import { Keystone } from "./colecciones/keystone";
+import { MyDesign } from "./colecciones/my-design";
 
 
 
@@ -524,6 +538,20 @@ export function App() {
     if (name === "POP HIDRA") setPage("pop-hidra");
     if (name === "PRISMA") setPage("prisma");
     if (name === "URBAN") setPage("urban");
+    if (name === "INTERMATEX SMALL MOSAICOS") setPage("intermatex-small-mosaicos");
+    if (name === "ONA") setPage("ona");
+    if (name === "BOW") setPage("bow");
+    if (name === "INTERMATEX BIG MOSAICOS") setPage("intermatex-big-mosaicos");
+    if (name === "RIAD 3X8") setPage("riad-3x8");
+    if (name === "FOLD") setPage("fold");
+    if (name === "ANTIC 5''X5''") setPage("antic-5x5");
+    if (name === "LINS") setPage("lins");
+    if (name === "MOOS") setPage("moos");
+    if (name === "TIMELESS") setPage("timeless");
+    if (name === "BALI CIFRE") setPage("bali-cifre");
+    if (name === "BEACH") setPage("beach");
+    if (name === "KEYSTONE") setPage("keystone");
+    if (name === "MY DESIGN") setPage("my-design");
 
   }
 
@@ -767,6 +795,20 @@ export function App() {
   if (page === "pop-hidra") return <PopHidra />;
   if (page === "prisma") return <Prisma />;
   if (page === "urban") return <Urban />;
+  if (page === "intermatex-small-mosaicos") return <IntermatexSmallMosaicos />;
+  if (page === "ona") return <Ona />;
+  if (page === "bow") return <Bow />;
+  if (page === "intermatex-big-mosaicos") return <IntermatexBigMosaicos />;
+  if (page === "riad-3x8") return <Riad3x8 />;
+  if (page === "fold") return <Fold />;
+  if (page === "antic-5x5") return <Antic5x5 />;
+  if (page === "lins") return <Lins />;
+  if (page === "moos") return <Moos />;
+  if (page === "timeless") return <Timeless />;
+  if (page === "bali-cifre") return <BaliCifre />;
+  if (page === "beach") return <Beach />;
+  if (page === "keystone") return <Keystone />;
+  if (page === "my-design") return <MyDesign />;
 
   return null;
 }

@@ -1,15 +1,17 @@
+// src/colecciones/bali-cifre.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import tears1 from "../assets/imagenes/tears/tears-01.jpg";
-import tears2 from "../assets/imagenes/tears/tears-02.jpg";
-import tears3 from "../assets/imagenes/tears/tears-03.jpg";
+import img01 from "../assets/imagenes/bali-cifre/bali-cifre-01.jpg";
+import img02 from "../assets/imagenes/bali-cifre/bali-cifre-02.jpg";
+import img03 from "../assets/imagenes/bali-cifre/bali-cifre-03.jpg";
 
-const images = [tears1, tears2, tears3];
+const images = [img01, img02, img03];
 
-export function Tears() {
+export function BaliCifre() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,21 +40,15 @@ export function Tears() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetA() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
+  function goToCabinetD() {
+    sessionStorage.setItem("boutiqueCabinet", "D");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerA6() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
-    sessionStorage.setItem("boutiqueDrawer", "A6");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
-  function goToDrawerD6() {
+  function goToDrawerD9() {
     sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D6");
+    sessionStorage.setItem("boutiqueDrawer", "D9");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -62,32 +58,32 @@ export function Tears() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+          <button className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
-            A
+          <button className="breadcrumb-link" onClick={goToCabinetD}>
+            D
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawerA6}>
-            A6
+          <button className="breadcrumb-link" onClick={goToDrawerD9}>
+            D9
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">TEARS</span>
+          <span className="breadcrumb-current">BALI CIFRE</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">TEARS</h1>
+        <h1 className="titulo-coleccion boutique-title">BALI CIFRE</h1>
 
         <div className="boutique-info">
-          <p>5''X5'' · LIFE</p>
-          <p>A6 · D6</p>
+          <p>6''x6'' · CIFRE</p>
+          <p>D9</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/TEARS.pdf" />
+        <ColeccionLayout infoUrl="https://d7rh5s3nxmpy4.cloudfront.net/CMP8489/files/PDF_POOLS_15X15_WEB.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -97,7 +93,7 @@ export function Tears() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`TEARS ${index + 1}`}
+              alt={`BALI CIFRE ${index + 1}`}
             />
           ))}
         </section>

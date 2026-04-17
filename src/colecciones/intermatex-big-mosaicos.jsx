@@ -1,15 +1,31 @@
+// src/colecciones/intermatex-big-mosaicos.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import tears1 from "../assets/imagenes/tears/tears-01.jpg";
-import tears2 from "../assets/imagenes/tears/tears-02.jpg";
-import tears3 from "../assets/imagenes/tears/tears-03.jpg";
+import img01 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-01.jpg";
+import img02 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-02.jpg";
+import img03 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-03.jpg";
+import img04 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-04.jpg";
+import img05 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-05.jpg";
+import img06 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-06.jpg";
+import img07 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-07.jpg";
+import img08 from "../assets/imagenes/intermatex/intermatex-big-mosaicos/intermatex-big-mosaicos-08.jpg";
 
-const images = [tears1, tears2, tears3];
+const images = [
+  img01,
+  img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+  img08,
+];
 
-export function Tears() {
+export function IntermatexBigMosaicos() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,21 +54,15 @@ export function Tears() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetA() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
+  function goToCabinetD() {
+    sessionStorage.setItem("boutiqueCabinet", "D");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerA6() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
-    sessionStorage.setItem("boutiqueDrawer", "A6");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
-  function goToDrawerD6() {
+  function goToDrawerD2() {
     sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D6");
+    sessionStorage.setItem("boutiqueDrawer", "D2");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -62,32 +72,36 @@ export function Tears() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+          <button className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
-            A
+          <button className="breadcrumb-link" onClick={goToCabinetD}>
+            D
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawerA6}>
-            A6
+          <button className="breadcrumb-link" onClick={goToDrawerD2}>
+            D2
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">TEARS</span>
+          <span className="breadcrumb-current">
+            INTERMATEX BIG MOSAICOS
+          </span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">TEARS</h1>
+        <h1 className="titulo-coleccion boutique-title">
+          INTERMATEX BIG MOSAICOS
+        </h1>
 
         <div className="boutique-info">
-          <p>5''X5'' · LIFE</p>
-          <p>A6 · D6</p>
+          <p>INTERMATEX</p>
+          <p>D2</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/TEARS.pdf" />
+        <ColeccionLayout infoUrl="https://www.intermatex.com/en/decorative-mosaic/" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -97,7 +111,7 @@ export function Tears() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`TEARS ${index + 1}`}
+              alt={`INTERMATEX BIG MOSAICOS ${index + 1}`}
             />
           ))}
         </section>

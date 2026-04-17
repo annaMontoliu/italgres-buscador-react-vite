@@ -1,15 +1,29 @@
+// src/colecciones/fold.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import tears1 from "../assets/imagenes/tears/tears-01.jpg";
-import tears2 from "../assets/imagenes/tears/tears-02.jpg";
-import tears3 from "../assets/imagenes/tears/tears-03.jpg";
+import img01 from "../assets/imagenes/fold/fold-01.jpg";
+import img02 from "../assets/imagenes/fold/fold-02.jpg";
+import img03 from "../assets/imagenes/fold/fold-03.jpg";
+import img04 from "../assets/imagenes/fold/fold-04.jpg";
+import img05 from "../assets/imagenes/fold/fold-05.jpg";
+import img06 from "../assets/imagenes/fold/fold-06.jpg";
+import img07 from "../assets/imagenes/fold/fold-07.jpg";
 
-const images = [tears1, tears2, tears3];
+const images = [
+  img01,
+  img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+];
 
-export function Tears() {
+export function Fold() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,21 +52,15 @@ export function Tears() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetA() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
+  function goToCabinetD() {
+    sessionStorage.setItem("boutiqueCabinet", "D");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerA6() {
-    sessionStorage.setItem("boutiqueCabinet", "A");
-    sessionStorage.setItem("boutiqueDrawer", "A6");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
-  function goToDrawerD6() {
+  function goToDrawerD4() {
     sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D6");
+    sessionStorage.setItem("boutiqueDrawer", "D4");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -62,32 +70,32 @@ export function Tears() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+          <button className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
-            A
+          <button className="breadcrumb-link" onClick={goToCabinetD}>
+            D
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawerA6}>
-            A6
+          <button className="breadcrumb-link" onClick={goToDrawerD4}>
+            D4
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">TEARS</span>
+          <span className="breadcrumb-current">FOLD</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">TEARS</h1>
+        <h1 className="titulo-coleccion boutique-title">FOLD</h1>
 
         <div className="boutique-info">
-          <p>5''X5'' · LIFE</p>
-          <p>A6 · D6</p>
+          <p>6''X15'' · HARMONY</p>
+          <p>D4</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/TEARS.pdf" />
+        <ColeccionLayout infoUrl="/pdf/FOLD.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -97,7 +105,7 @@ export function Tears() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`TEARS ${index + 1}`}
+              alt={`FOLD ${index + 1}`}
             />
           ))}
         </section>
