@@ -1382,7 +1382,7 @@ const boutiqueCollections = [
   {
     name: "ZELIJ",
     format: '4"x4"',
-    brand: "HARMONY",
+    brand: "CEVICA",
     locations: ["A4"],
     thumbnail: zelij01,
   },
