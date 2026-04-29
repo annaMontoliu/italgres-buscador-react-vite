@@ -1,4 +1,4 @@
-// src/colecciones/ribera.jsx
+// src/colecciones/aeterna.jsx
 
 import { useState } from "react";
 
@@ -6,32 +6,27 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORT FOTOS
+// IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
 
-// WHITE (5)
-import riberaWhite1 from "../assets/imagenes/ribera/ribera-white/ribera-white-01.jpg";
-import riberaWhite2 from "../assets/imagenes/ribera/ribera-white/ribera-white-02.jpg";
-import riberaWhite3 from "../assets/imagenes/ribera/ribera-white/ribera-white-03.jpg";
-import riberaWhite4 from "../assets/imagenes/ribera/ribera-white/ribera-white-04.jpg";
-import riberaWhite5 from "../assets/imagenes/ribera/ribera-white/ribera-white-05.jpg";
+// AETERNA BIANCO (6 fotos)
+import aeternaBianco01 from "../assets/imagenes/aeterna/aeterna-bianco/aeterna-bianco-01.jpg";
+import aeternaBianco02 from "../assets/imagenes/aeterna/aeterna-bianco/aeterna-bianco-02.jpg";
+import aeternaBianco03 from "../assets/imagenes/aeterna/aeterna-bianco/aeterna-bianco-03.jpg";
+import aeternaBianco04 from "../assets/imagenes/aeterna/aeterna-bianco/aeterna-bianco-04.jpg";
+import aeternaBianco05 from "../assets/imagenes/aeterna/aeterna-bianco/aeterna-bianco-05.jpg";
+import aeternaBianco06 from "../assets/imagenes/aeterna/aeterna-bianco/aeterna-bianco-06.jpg";
 
-// MARFIL (2)
-import riberaMarfil1 from "../assets/imagenes/ribera/ribera-marfil/ribera-marfil-01.jpg";
-import riberaMarfil2 from "../assets/imagenes/ribera/ribera-marfil/ribera-marfil-02.jpg";
-
-// ORDEN EXACTO (WHITE primero, luego MARFIL)
+// ORDEN EXACTO
 const images = [
-  riberaWhite1,
-  riberaWhite2,
-  riberaWhite3,
-  riberaWhite4,
-  riberaWhite5,
-
-  riberaMarfil1,
-  riberaMarfil2,
+  aeternaBianco01,
+  aeternaBianco02,
+  aeternaBianco03,
+  aeternaBianco04,
+  aeternaBianco05,
+  aeternaBianco06,
 ];
 
-export function Ribera({ onGoHome }) {
+export function Aeterna({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -58,78 +53,73 @@ export function Ribera({ onGoHome }) {
 
   return (
     <>
+      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        <h1 className="titulo-coleccion">RIBERA</h1>
+        {/* Título */}
+        <h1 className="titulo-coleccion">AETERNA</h1>
 
-        <ColeccionLayout infoUrl="https://www.grespania.com/es/pdf-collection/433" />
+        {/* Bloque FINISHES & FORMATS */}
+        <ColeccionLayout infoUrl="/pdf/AETERNA.pdf" />
 
-        {/* Color WHITE */}
-        <h3 className="color-title">RIBERA WHITE</h3>
+        {/* ---- GALERÍA ---- */}
+
+        {/* Color BIANCO */}
+        <h3 className="color-title">AETERNA BIANCO</h3>
+
         <section className="gallery-grid">
           <img
-            src={riberaWhite1}
+            src={aeternaBianco01}
             className="gallery-img"
             onClick={() => openModal(0)}
             loading="lazy"
-            alt="RIBERA WHITE 1"
+            alt="AETERNA BIANCO 1"
           />
 
           <img
-            src={riberaWhite2}
+            src={aeternaBianco02}
             className="gallery-img"
             onClick={() => openModal(1)}
             loading="lazy"
-            alt="RIBERA WHITE 2"
+            alt="AETERNA BIANCO 2"
           />
 
           <img
-            src={riberaWhite3}
+            src={aeternaBianco03}
             className="gallery-img"
             onClick={() => openModal(2)}
             loading="lazy"
-            alt="RIBERA WHITE 3"
+            alt="AETERNA BIANCO 3"
           />
 
           <img
-            src={riberaWhite4}
+            src={aeternaBianco04}
             className="gallery-img"
             onClick={() => openModal(3)}
             loading="lazy"
-            alt="RIBERA WHITE 4"
+            alt="AETERNA BIANCO 4"
           />
 
           <img
-            src={riberaWhite5}
+            src={aeternaBianco05}
             className="gallery-img"
             onClick={() => openModal(4)}
             loading="lazy"
-            alt="RIBERA WHITE 5"
+            alt="AETERNA BIANCO 5"
           />
-        </section>
 
-        {/* Color MARFIL */}
-        <h3 className="color-title">RIBERA MARFIL</h3>
-        <section className="gallery-grid">
           <img
-            src={riberaMarfil1}
+            src={aeternaBianco06}
             className="gallery-img"
             onClick={() => openModal(5)}
             loading="lazy"
-            alt="RIBERA MARFIL 1"
-          />
-
-          <img
-            src={riberaMarfil2}
-            className="gallery-img"
-            onClick={() => openModal(6)}
-            loading="lazy"
-            alt="RIBERA MARFIL 2"
+            alt="AETERNA BIANCO 6"
           />
         </section>
       </main>
 
+      {/* ---- MODAL REUTILIZABLE ---- */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}

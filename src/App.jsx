@@ -247,6 +247,10 @@ import { Beach } from "./colecciones/beach";
 import { Keystone } from "./colecciones/keystone";
 import { MyDesign } from "./colecciones/my-design";
 import { Ka03 } from "./colecciones/ka-03";
+import { Aeterna } from "./colecciones/aeterna";
+import { Breccia } from "./colecciones/breccia";
+import { LumixNatural } from "./colecciones/lumix-natural";
+import { WhiteBalance } from "./colecciones/white-balance";
 
 
 
@@ -554,6 +558,10 @@ export function App() {
     if (name === "KEYSTONE") setPage("keystone");
     if (name === "MY DESIGN") setPage("my-design");
     if (name === "KA 03") setPage("ka-03");
+    if (name === "AETERNA") setPage("aeterna");
+    if (name === "BRECCIA") setPage("breccia");
+    if (name === "LUMIX NATURAL") setPage("lumix-natural");
+    if (name === "WHITE BALANCE") setPage("white-balance");
 
   }
 
@@ -812,6 +820,10 @@ export function App() {
   if (page === "keystone") return <Keystone />;
   if (page === "my-design") return <MyDesign />;
   if (page === "ka-03") return <Ka03 />;
+  if (page === "aeterna") return <Aeterna />;
+  if (page === "breccia") return <Breccia />;
+  if (page === "lumix-natural") return <LumixNatural />;
+  if (page === "white-balance") return <WhiteBalance />;
 
   return null;
 }

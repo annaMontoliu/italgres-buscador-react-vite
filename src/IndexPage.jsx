@@ -6,6 +6,7 @@ const COLLECTION_GROUPS = [
   {
     letter: "A",
     items: [
+      { name: "AETERNA" },
       { name: "ARENARIA" },
       { name: "ARTE" },
       { name: "ARTIC" },
@@ -25,6 +26,8 @@ const COLLECTION_GROUPS = [
       { name: "BLUE ROMA" },
       { name: "BOREALIS" },
       { name: "BORNEO" },
+      { name: "BRECCIA" },
+      
     ],
   },
   {
@@ -112,6 +115,7 @@ const COLLECTION_GROUPS = [
 },
   { letter: "L", items: [
     { name: "LUCENA" }, 
+    { name: "LUMIX NATURAL" },
     { name: "LUMINA STONE" }] 
   },
   {
@@ -193,12 +197,22 @@ const COLLECTION_GROUPS = [
       { name: "TWEED STONE" },
     ],
   },
-  { letter: "U", items: [{ name: "ULISSE" }, { name: "UNIQUE" }] },
+  { letter: "U", items: [
+    { name: "ULISSE" }, 
+    { name: "UNIQUE" }] },
   {
     letter: "V",
-    items: [{ name: "VERBIER" }, { name: "VINCI" }],
+    items: [
+      { name: "VERBIER" },
+      { name: "VINCI" }],
   },
-  { letter: "W", items: [{ name: "WOOD FOG" }] },
+  {
+  letter: "W",
+  items: [
+    { name: "WHITE BALANCE" },
+    { name: "WOOD FOG" },
+  ],
+},
 ];
 
 export function IndexPage({ onOpenCollection }) {
