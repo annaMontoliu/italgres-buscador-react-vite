@@ -85,7 +85,7 @@ export function Zelij4x4() {
         <h1 className="titulo-coleccion boutique-title">ZELIJ GLOSSY 4''X4''</h1>
 
         <div className="boutique-info">
-          <p>4''x4'' · HARMONY</p>
+          <p>4''x4'' · CEVICA</p>
           <p>A4</p>
         </div>
 
