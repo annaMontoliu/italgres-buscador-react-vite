@@ -1,4 +1,4 @@
-// src/colecciones/savoy.jsx
+// src/colecciones/ka-03.jsx
 
 import { useState } from "react";
 
@@ -7,20 +7,22 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
-import savoyMoon1 from "../assets/imagenes/savoy/savoy-moon/savoy-moon-01.jpg";
-import savoyMoon2 from "../assets/imagenes/savoy/savoy-moon/savoy-moon-02.jpg";
-import savoyMoon3 from "../assets/imagenes/savoy/savoy-moon/savoy-moon-03.jpg";
-import savoyMoon4 from "../assets/imagenes/savoy/savoy-moon/savoy-moon-04.jpg";
+import ka0301 from "../assets/imagenes/ka-03/ka-03-01.jpg";
+import ka0302 from "../assets/imagenes/ka-03/ka-03-02.jpg";
+import ka0303 from "../assets/imagenes/ka-03/ka-03-03.jpg";
+import ka0304 from "../assets/imagenes/ka-03/ka-03-04.jpg";
+import ka0305 from "../assets/imagenes/ka-03/ka-03-05.jpg";
 
-// ORDEN EXACTO (solo MOON)
+// ORDEN EXACTO
 const images = [
-  savoyMoon1,
-  savoyMoon2,
-  savoyMoon3,
-  savoyMoon4,
+  ka0301,
+  ka0302,
+  ka0303,
+  ka0304,
+  ka0305,
 ];
 
-export function Savoy({ onGoHome }) {
+export function Ka03({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -52,46 +54,49 @@ export function Savoy({ onGoHome }) {
 
       <main>
         {/* Título */}
-        <h1 className="titulo-coleccion">SAVOY</h1>
+        <h1 className="titulo-coleccion">KA 03</h1>
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="/pdf/SAVOY.pdf" />
+        <ColeccionLayout infoUrl="https://mirage-cdn.thron.com/static/DZ8UV0_Mirage_Catalogo_Kao_-_Giugno_2025_AD0T1V.pdf?xseo=&response-content-disposition=inline%3Bfilename%3D%22catalogue-kao-pdf.pdf%22" />
 
         {/* ---- GALERÍA ---- */}
 
-        {/* Color MOON */}
-        <h3 className="color-title">SAVOY MOON</h3>
+        <h3 className="color-title">KA 03</h3>
         <section className="gallery-grid">
           <img
-            src={savoyMoon1}
+            src={ka0301}
             className="gallery-img"
             onClick={() => openModal(0)}
             loading="lazy"
-            alt="SAVOY MOON 1"
+            alt="KA 03 1"
           />
-
           <img
-            src={savoyMoon2}
+            src={ka0302}
             className="gallery-img"
             onClick={() => openModal(1)}
             loading="lazy"
-            alt="SAVOY MOON 2"
+            alt="KA 03 2"
           />
-
           <img
-            src={savoyMoon3}
+            src={ka0303}
             className="gallery-img"
             onClick={() => openModal(2)}
             loading="lazy"
-            alt="SAVOY MOON 3"
+            alt="KA 03 3"
           />
-
           <img
-            src={savoyMoon4}
+            src={ka0304}
             className="gallery-img"
             onClick={() => openModal(3)}
             loading="lazy"
-            alt="SAVOY MOON 4"
+            alt="KA 03 4"
+          />
+          <img
+            src={ka0305}
+            className="gallery-img"
+            onClick={() => openModal(4)}
+            loading="lazy"
+            alt="KA 03 5"
           />
         </section>
       </main>

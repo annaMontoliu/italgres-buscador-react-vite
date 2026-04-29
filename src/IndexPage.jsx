@@ -102,8 +102,18 @@ const COLLECTION_GROUPS = [
     letter: "J",
     items: [{ name: "JATOBA" }, { name: "JEWELS" }, { name: "JURUPA" }],
   },
-  { letter: "K", items: [{ name: "KAIZEN" }, { name: "KORA" }] },
-  { letter: "L", items: [{ name: "LUCENA" }, { name: "LUMINA STONE" }] },
+ {
+  letter: "K",
+  items: [
+    { name: "KA 03" },
+    { name: "KAIZEN" },
+    { name: "KORA" }
+  ],
+},
+  { letter: "L", items: [
+    { name: "LUCENA" }, 
+    { name: "LUMINA STONE" }] 
+  },
   {
     letter: "M",
     items: [

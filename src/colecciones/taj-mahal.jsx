@@ -7,14 +7,16 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 // =====================
-// IMPORT IMÁGENES (exacto según captura)
+// IMPORT IMÁGENES
 // =====================
 
-// SAND (4)
+// SAND (6)
 import tajMahalSand01 from "../assets/imagenes/taj-mahal/taj-mahal-sand/taj-mahal-sand-01.jpg";
 import tajMahalSand02 from "../assets/imagenes/taj-mahal/taj-mahal-sand/taj-mahal-sand-02.jpg";
 import tajMahalSand03 from "../assets/imagenes/taj-mahal/taj-mahal-sand/taj-mahal-sand-03.jpg";
 import tajMahalSand04 from "../assets/imagenes/taj-mahal/taj-mahal-sand/taj-mahal-sand-04.jpg";
+import tajMahalSand05 from "../assets/imagenes/taj-mahal/taj-mahal-sand/taj-mahal-sand-05.jpg";
+import tajMahalSand06 from "../assets/imagenes/taj-mahal/taj-mahal-sand/taj-mahal-sand-06.jpg";
 
 // WHITE (1)
 import tajMahalWhite01 from "../assets/imagenes/taj-mahal/taj-mahal-white/taj-mahal-white-01.jpg";
@@ -29,6 +31,8 @@ const images = [
   tajMahalSand02,
   tajMahalSand03,
   tajMahalSand04,
+  tajMahalSand05,
+  tajMahalSand06,
 
   // WHITE
   tajMahalWhite01,
@@ -71,18 +75,23 @@ export function TajMahal({ onGoHome }) {
         {/* SAND */}
         <h3 className="color-title">TAJ MAHAL SAND</h3>
         <section className="gallery-grid">
-          {[tajMahalSand01, tajMahalSand02, tajMahalSand03, tajMahalSand04].map(
-            (img, i) => (
-              <img
-                key={i}
-                src={img}
-                className="gallery-img"
-                onClick={() => openModal(i)}
-                loading="lazy"
-                alt={`TAJ MAHAL SAND ${i + 1}`}
-              />
-            )
-          )}
+          {[
+            tajMahalSand01,
+            tajMahalSand02,
+            tajMahalSand03,
+            tajMahalSand04,
+            tajMahalSand05,
+            tajMahalSand06,
+          ].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(i)}
+              loading="lazy"
+              alt={`TAJ MAHAL SAND ${i + 1}`}
+            />
+          ))}
         </section>
 
         {/* WHITE */}
@@ -91,7 +100,7 @@ export function TajMahal({ onGoHome }) {
           <img
             src={tajMahalWhite01}
             className="gallery-img"
-            onClick={() => openModal(4)}
+            onClick={() => openModal(6)}
             loading="lazy"
             alt="TAJ MAHAL WHITE 01"
           />

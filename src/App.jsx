@@ -246,6 +246,7 @@ import { BaliCifre } from "./colecciones/bali-cifre";
 import { Beach } from "./colecciones/beach";
 import { Keystone } from "./colecciones/keystone";
 import { MyDesign } from "./colecciones/my-design";
+import { Ka03 } from "./colecciones/ka-03";
 
 
 
@@ -552,6 +553,7 @@ export function App() {
     if (name === "BEACH") setPage("beach");
     if (name === "KEYSTONE") setPage("keystone");
     if (name === "MY DESIGN") setPage("my-design");
+    if (name === "KA 03") setPage("ka-03");
 
   }
 
@@ -809,6 +811,7 @@ export function App() {
   if (page === "beach") return <Beach />;
   if (page === "keystone") return <Keystone />;
   if (page === "my-design") return <MyDesign />;
+  if (page === "ka-03") return <Ka03 />;
 
   return null;
 }

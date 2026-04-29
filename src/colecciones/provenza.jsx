@@ -8,6 +8,8 @@ import provenza02 from "../assets/imagenes/provenza/provenza-02.jpg";
 import provenza03 from "../assets/imagenes/provenza/provenza-03.jpg";
 import provenza04 from "../assets/imagenes/provenza/provenza-04.jpg";
 import provenza05 from "../assets/imagenes/provenza/provenza-05.jpg";
+import provenza06 from "../assets/imagenes/provenza/provenza-06.jpg";
+import provenza07 from "../assets/imagenes/provenza/provenza-07.jpg";
 
 const images = [
   provenza01,
@@ -15,6 +17,8 @@ const images = [
   provenza03,
   provenza04,
   provenza05,
+  provenza06,
+  provenza07,
 ];
 
 export function Provenza() {
@@ -64,17 +68,29 @@ export function Provenza() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetA}
+          >
             A
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawerA4}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerA4}
+          >
             A4
           </button>
           <span className="breadcrumb-separator">/</span>
@@ -89,7 +105,6 @@ export function Provenza() {
           <p>A4</p>
         </div>
 
-        {/* PDF externo */}
         <ColeccionLayout infoUrl="https://www.cevica.es/wp-content/uploads/Provenza.pdf" />
 
         <section className="gallery-grid">

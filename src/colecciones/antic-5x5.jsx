@@ -6,8 +6,16 @@ import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
 import antic5x501 from "../assets/imagenes/antic/antic/antic-5x5/antic-5x5-01.jpg";
+import antic5x502 from "../assets/imagenes/antic/antic/antic-5x5/antic-5x5-02.jpg";
+import antic5x503 from "../assets/imagenes/antic/antic/antic-5x5/antic-5x5-03.jpg";
+import antic5x504 from "../assets/imagenes/antic/antic/antic-5x5/antic-5x5-04.jpg";
 
-const images = [antic5x501];
+const images = [
+  antic5x501,
+  antic5x502,
+  antic5x503,
+  antic5x504,
+];
 
 export function Antic5x5() {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -9,8 +9,13 @@ import { ShowroomColors } from "../components/ShowroomColors";
 
 // IMPORTS DE LAS FOTOS DESDE src/assets/imagenes/...
 
-// SAND (1 foto)
+// SAND (6 fotos)
 import belaSand1 from "../assets/imagenes/bela/bela-sand/bela-sand-01.jpg";
+import belaSand2 from "../assets/imagenes/bela/bela-sand/bela-sand-02.jpg";
+import belaSand3 from "../assets/imagenes/bela/bela-sand/bela-sand-03.jpg";
+import belaSand4 from "../assets/imagenes/bela/bela-sand/bela-sand-04.jpg";
+import belaSand5 from "../assets/imagenes/bela/bela-sand/bela-sand-05.jpg";
+import belaSand6 from "../assets/imagenes/bela/bela-sand/bela-sand-06.jpg";
 
 // DESERT (2 fotos)
 import belaDesert1 from "../assets/imagenes/bela/bela-desert/bela-desert-01.jpg";
@@ -33,6 +38,11 @@ import tacoBelaBlack from "../assets/imagenes/bela/tacos-bela/taco-bela-black.jp
 const images = [
   // SAND
   belaSand1,
+  belaSand2,
+  belaSand3,
+  belaSand4,
+  belaSand5,
+  belaSand6,
 
   // DESERT
   belaDesert1,
@@ -106,6 +116,41 @@ export function Bela({ onGoHome }) {
             loading="lazy"
             alt="BELA SAND 1"
           />
+          <img
+            src={belaSand2}
+            className="gallery-img"
+            onClick={() => openModal(1)}
+            loading="lazy"
+            alt="BELA SAND 2"
+          />
+          <img
+            src={belaSand3}
+            className="gallery-img"
+            onClick={() => openModal(2)}
+            loading="lazy"
+            alt="BELA SAND 3"
+          />
+          <img
+            src={belaSand4}
+            className="gallery-img"
+            onClick={() => openModal(3)}
+            loading="lazy"
+            alt="BELA SAND 4"
+          />
+          <img
+            src={belaSand5}
+            className="gallery-img"
+            onClick={() => openModal(4)}
+            loading="lazy"
+            alt="BELA SAND 5"
+          />
+          <img
+            src={belaSand6}
+            className="gallery-img"
+            onClick={() => openModal(5)}
+            loading="lazy"
+            alt="BELA SAND 6"
+          />
         </section>
 
         {/* Color DESERT */}
@@ -114,14 +159,14 @@ export function Bela({ onGoHome }) {
           <img
             src={belaDesert1}
             className="gallery-img"
-            onClick={() => openModal(1)}
+            onClick={() => openModal(6)}
             loading="lazy"
             alt="BELA DESERT 1"
           />
           <img
             src={belaDesert2}
             className="gallery-img"
-            onClick={() => openModal(2)}
+            onClick={() => openModal(7)}
             loading="lazy"
             alt="BELA DESERT 2"
           />
@@ -133,14 +178,14 @@ export function Bela({ onGoHome }) {
           <img
             src={belaGrey1}
             className="gallery-img"
-            onClick={() => openModal(3)}
+            onClick={() => openModal(8)}
             loading="lazy"
             alt="BELA GREY 1"
           />
           <img
             src={belaGrey2}
             className="gallery-img"
-            onClick={() => openModal(4)}
+            onClick={() => openModal(9)}
             loading="lazy"
             alt="BELA GREY 2"
           />
@@ -152,7 +197,7 @@ export function Bela({ onGoHome }) {
           <img
             src={belaBlack1}
             className="gallery-img"
-            onClick={() => openModal(5)}
+            onClick={() => openModal(10)}
             loading="lazy"
             alt="BELA BLACK 1"
           />
