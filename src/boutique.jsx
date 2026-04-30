@@ -129,6 +129,17 @@ import baliCifre01 from "./assets/imagenes/bali-cifre/bali-cifre-01.jpg";
 import beach01 from "./assets/imagenes/beach/beach-01.jpg";
 import keystone01 from "./assets/imagenes/keystone/keystone-01.jpg";
 import myDesign01 from "./assets/imagenes/my-design/my-design-01.jpg";
+import domus01 from "./assets/imagenes/domus/domus-01.jpg";
+import glowElios01 from "./assets/imagenes/glow-elios/glow-elios-01.jpg";
+import levels01 from "./assets/imagenes/levels/levels-01.jpg";
+import moves01 from "./assets/imagenes/moves/moves-01.jpg";
+import glent01 from "./assets/imagenes/glent/glent-01.jpg";
+import harmony01 from "./assets/imagenes/harmony/harmony-01.jpg";
+import onixMosaics01 from "./assets/imagenes/onix-mosaics/onix-mosaics-01.jpg";
+import brooklyn01 from "./assets/imagenes/brooklyn/brooklyn-01.jpg";
+import brick01 from "./assets/imagenes/brick/brick-01.jpg";
+import papierBoutique01 from "./assets/imagenes/papier-mirage/papier-01.jpg";
+import pennyOnixMosaics01 from "./assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -679,7 +690,7 @@ B3: [
 
 B4: [
   {
-    name: "GLOW",
+    name: "GLOW LIFE",
     format: "2x20",
     brand: "LIFE CERAMICA",
     locations: ["B4"],
@@ -1231,7 +1242,119 @@ D10: [
     thumbnail: myDesign01,
   },
 ],
+E1: [
+  {
+    name: "DOMUS",
+    format: "2''X18''",
+    brand: "ELIOS",
+    locations: ["E1"],
+    thumbnail: domus01,
+  },
+  {
+    name: "GLOW ELIOS",
+    format: "2''X18''",
+    brand: "ELIOS",
+    locations: ["E1"],
+    thumbnail: glowElios01,
+  },
+],
 
+E2: [
+  {
+    name: "LEVELS",
+    format: "8''X16''",
+    brand: "HARMONY",
+    locations: ["E2"],
+    thumbnail: levels01,
+  },
+  {
+    name: "MOVES",
+    format: "8''X16''",
+    brand: "HARMONY",
+    locations: ["E2"],
+    thumbnail: moves01,
+  },
+],
+
+E3: [
+  {
+    name: "GLENT",
+    format: "3''X9''",
+    brand: "ESTUDIO CERAMICO",
+    locations: ["E3"],
+    thumbnail: glent01,
+  },
+],
+
+E4: [
+  {
+    name: "HARMONY",
+    format: "8''X8''",
+    brand: "CEVICA",
+    locations: ["E4"],
+    thumbnail: harmony01,
+  },
+],
+
+E5: [
+  {
+    name: "ONIX MOSAICS",
+    format: "1''X1'' & 2''X2''",
+    brand: "ONIX MOSAICS",
+    locations: ["E5", "E10"],
+    thumbnail: onixMosaics01,
+  },
+],
+
+E6: [
+  {
+    name: "BROOKLYN",
+    format: "2''X10''",
+    brand: "LIFE CERAMICA",
+    locations: ["E6"],
+    thumbnail: brooklyn01,
+  },
+],
+
+E7: [
+  {
+    name: "BRICK",
+    format: "1''X9''",
+    brand: "LIFE CERAMICA",
+    locations: ["E7"],
+    thumbnail: brick01,
+  },
+],
+
+E8: [
+  {
+    name: "PAPIER",
+    format: "24''X48''",
+    brand: "MIRAGE",
+    locations: ["E8"],
+    thumbnail: papierBoutique01,
+  },
+],
+
+E9: [
+  {
+    name: "PENNY ONIX MOSAICS",
+    format: "1''X1'' & 2''X2''",
+    brand: "ONIX MOSAICS",
+    locations: ["E9", "F10"],
+    thumbnail: pennyOnixMosaics01,
+  },
+],
+
+E10: [
+  {
+    name: "ONIX MOSAICS",
+    format: "1''X1'' & 2''X2''",
+    brand: "ONIX MOSAICS",
+    locations: ["E5", "E10"],
+    thumbnail: onixMosaics01,
+  },
+],
   F5: [
     {
       name: "COMILLAS",
@@ -1290,6 +1413,15 @@ D10: [
       thumbnail: valvanera01,
     },
   ],
+  F10: [
+  {
+    name: "PENNY ONIX MOSAICS",
+    format: "1''X1'' & 2''X2''",
+    brand: "ONIX MOSAICS",
+    locations: ["E9", "F10"],
+    thumbnail: pennyOnixMosaics01,
+  },
+],
   G5: [
   {
     name: "BALI CERLAT",
@@ -1807,7 +1939,7 @@ const boutiqueCollections = [
   thumbnail: jazba01,
 },
 {
-  name: "GLOW",
+  name: "GLOW LIFE",
   format: "2x20",
   brand: "LIFE CERAMICA",
   locations: ["B4"],
@@ -2219,6 +2351,83 @@ const boutiqueCollections = [
   brand: "HARMONY",
   locations: ["D3"],
   thumbnail: riad3x801,
+},
+{
+  name: "DOMUS",
+  format: "2''X18''",
+  brand: "ELIOS",
+  locations: ["E1"],
+  thumbnail: domus01,
+},
+{
+  name: "GLOW ELIOS",
+  format: "2''X18''",
+  brand: "ELIOS",
+  locations: ["E1"],
+  thumbnail: glowElios01,
+},
+{
+  name: "LEVELS",
+  format: "8''X16''",
+  brand: "HARMONY",
+  locations: ["E2"],
+  thumbnail: levels01,
+},
+{
+  name: "MOVES",
+  format: "8''X16''",
+  brand: "HARMONY",
+  locations: ["E2"],
+  thumbnail: moves01,
+},
+{
+  name: "GLENT",
+  format: "3''X9''",
+  brand: "ESTUDIO CERAMICO",
+  locations: ["E3"],
+  thumbnail: glent01,
+},
+{
+  name: "HARMONY",
+  format: "8''X8''",
+  brand: "CEVICA",
+  locations: ["E4"],
+  thumbnail: harmony01,
+},
+{
+  name: "ONIX MOSAICS",
+  format: "1''X1'' & 2''X2''",
+  brand: "ONIX MOSAICS",
+  locations: ["E5", "E10"],
+  thumbnail: onixMosaics01,
+},
+{
+  name: "BROOKLYN",
+  format: "2''X10''",
+  brand: "LIFE CERAMICA",
+  locations: ["E6"],
+  thumbnail: brooklyn01,
+},
+{
+  name: "BRICK",
+  format: "1''X9''",
+  brand: "LIFE CERAMICA",
+  locations: ["E7"],
+  thumbnail: brick01,
+},
+{
+  name: "PAPIER",
+  format: "24''X48''",
+  brand: "MIRAGE",
+  locations: ["E8"],
+  thumbnail: papierBoutique01,
+},
+{
+  name: "PENNY ONIX MOSAICS",
+  format: "1''X1'' & 2''X2''",
+  brand: "ONIX MOSAICS",
+  locations: ["E9", "F10"],
+  thumbnail: pennyOnixMosaics01,
 },
 
 

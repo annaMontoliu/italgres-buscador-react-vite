@@ -1,14 +1,23 @@
+// src/colecciones/penny-onix-mosaics.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import glow01 from "../assets/imagenes/glow/glow-01.jpg";
-import glow02 from "../assets/imagenes/glow/glow-02.jpg";
+import pennyOnixMosaics01 from "../assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-01.jpg";
+import pennyOnixMosaics02 from "../assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-02.jpg";
+import pennyOnixMosaics03 from "../assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-03.jpg";
+import pennyOnixMosaics04 from "../assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-04.jpg";
 
-const images = [glow01, glow02];
+const images = [
+  pennyOnixMosaics01,
+  pennyOnixMosaics02,
+  pennyOnixMosaics03,
+  pennyOnixMosaics04,
+];
 
-export function Glow({ onGoHome }) {
+export function PennyOnixMosaics() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,50 +46,64 @@ export function Glow({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetB() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerB4() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
-    sessionStorage.setItem("boutiqueDrawer", "B4");
+  function goToDrawerE9() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E9");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetB}>
-            B
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetE}
+          >
+            E
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerB4}>
-            B4
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerE9}
+          >
+            E9
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">GLOW </span>
+          <span className="breadcrumb-current">PENNY ONIX MOSAICS</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">GLOW LIFE</h1>
+        <h1 className="titulo-coleccion boutique-title">
+          PENNY ONIX MOSAICS
+        </h1>
 
         <div className="boutique-info">
-          <p>2x20 · LIFE CERAMICA</p>
-          <p>B4</p>
+          <p>1''X1'' & 2''X2'' · ONIX MOSAICS</p>
+          <p>E9</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/GLOW.PDF" />
+        <ColeccionLayout infoUrl="https://www.onixmosaico.com/en/glass-mosaic-styles/penny-en/" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -90,7 +113,7 @@ export function Glow({ onGoHome }) {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`GLOW ${index + 1}`}
+              alt={`PENNY ONIX MOSAICS ${index + 1}`}
             />
           ))}
         </section>

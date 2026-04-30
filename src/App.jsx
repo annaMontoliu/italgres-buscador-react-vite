@@ -251,6 +251,17 @@ import { Aeterna } from "./colecciones/aeterna";
 import { Breccia } from "./colecciones/breccia";
 import { LumixNatural } from "./colecciones/lumix-natural";
 import { WhiteBalance } from "./colecciones/white-balance";
+import { Domus } from "./colecciones/domus";
+import { GlowElios } from "./colecciones/glow-elios";
+import { Levels } from "./colecciones/levels";
+import { Moves } from "./colecciones/moves";
+import { Glent } from "./colecciones/glent";
+import { Harmony } from "./colecciones/harmony";
+import { OnixMosaics } from "./colecciones/onix-mosaics";
+import { Brooklyn } from "./colecciones/brooklyn";
+import { Brick } from "./colecciones/brick";
+import { PapierBoutique } from "./colecciones/papier-boutique";
+import { PennyOnixMosaics } from "./colecciones/penny-onix-mosaics";
 
 
 
@@ -562,6 +573,17 @@ export function App() {
     if (name === "BRECCIA") setPage("breccia");
     if (name === "LUMIX NATURAL") setPage("lumix-natural");
     if (name === "WHITE BALANCE") setPage("white-balance");
+    if (name === "DOMUS") setPage("domus");
+    if (name === "GLOW ELIOS") setPage("glow-elios");
+    if (name === "LEVELS") setPage("levels");
+    if (name === "MOVES") setPage("moves");
+    if (name === "GLENT") setPage("glent");
+    if (name === "HARMONY") setPage("harmony");
+    if (name === "ONIX MOSAICS") setPage("onix-mosaics");
+    if (name === "BROOKLYN") setPage("brooklyn");
+    if (name === "BRICK") setPage("brick");
+    if (name === "PAPIER") setPage("papier-boutique");
+    if (name === "PENNY ONIX MOSAICS") setPage("penny-onix-mosaics");
 
   }
 
@@ -824,6 +846,17 @@ export function App() {
   if (page === "breccia") return <Breccia />;
   if (page === "lumix-natural") return <LumixNatural />;
   if (page === "white-balance") return <WhiteBalance />;
+  if (page === "domus") return <Domus />;
+  if (page === "glow-elios") return <GlowElios />;
+  if (page === "levels") return <Levels />;
+  if (page === "moves") return <Moves />;
+  if (page === "glent") return <Glent />;
+  if (page === "harmony") return <Harmony />;
+  if (page === "onix-mosaics") return <OnixMosaics />;
+  if (page === "brooklyn") return <Brooklyn />;
+  if (page === "brick") return <Brick />;
+  if (page === "papier-boutique") return <PapierBoutique />;
+  if (page === "penny-onix-mosaics") return <PennyOnixMosaics />;
 
   return null;
 }

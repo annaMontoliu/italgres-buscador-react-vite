@@ -1,14 +1,25 @@
+// src/colecciones/glent.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import glow01 from "../assets/imagenes/glow/glow-01.jpg";
-import glow02 from "../assets/imagenes/glow/glow-02.jpg";
+import glent01 from "../assets/imagenes/glent/glent-01.jpg";
+import glent02 from "../assets/imagenes/glent/glent-02.jpg";
+import glent03 from "../assets/imagenes/glent/glent-03.jpg";
+import glent04 from "../assets/imagenes/glent/glent-04.jpg";
+import glent05 from "../assets/imagenes/glent/glent-05.jpg";
 
-const images = [glow01, glow02];
+const images = [
+  glent01,
+  glent02,
+  glent03,
+  glent04,
+  glent05,
+];
 
-export function Glow({ onGoHome }) {
+export function Glent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,50 +48,62 @@ export function Glow({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetB() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerB4() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
-    sessionStorage.setItem("boutiqueDrawer", "B4");
+  function goToDrawerE3() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E3");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetB}>
-            B
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetE}
+          >
+            E
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerB4}>
-            B4
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerE3}
+          >
+            E3
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">GLOW </span>
+          <span className="breadcrumb-current">GLENT</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">GLOW LIFE</h1>
+        <h1 className="titulo-coleccion boutique-title">GLENT</h1>
 
         <div className="boutique-info">
-          <p>2x20 · LIFE CERAMICA</p>
-          <p>B4</p>
+          <p>3''X9'' · ESTUDIO CERAMICO</p>
+          <p>E3</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/GLOW.PDF" />
+        <ColeccionLayout infoUrl="https://eceramico.com/wp-content/uploads/2025/06/catalogo-azulejos-serie-ghent.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -90,7 +113,7 @@ export function Glow({ onGoHome }) {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`GLOW ${index + 1}`}
+              alt={`GLENT ${index + 1}`}
             />
           ))}
         </section>

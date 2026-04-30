@@ -1,14 +1,25 @@
+// src/colecciones/domus.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import glow01 from "../assets/imagenes/glow/glow-01.jpg";
-import glow02 from "../assets/imagenes/glow/glow-02.jpg";
+import domus01 from "../assets/imagenes/domus/domus-01.jpg";
+import domus02 from "../assets/imagenes/domus/domus-02.jpg";
+import domus03 from "../assets/imagenes/domus/domus-03.jpg";
+import domus04 from "../assets/imagenes/domus/domus-04.jpg";
+import domus05 from "../assets/imagenes/domus/domus-05.jpg";
 
-const images = [glow01, glow02];
+const images = [
+  domus01,
+  domus02,
+  domus03,
+  domus04,
+  domus05,
+];
 
-export function Glow({ onGoHome }) {
+export function Domus() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,50 +48,62 @@ export function Glow({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetB() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerB4() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
-    sessionStorage.setItem("boutiqueDrawer", "B4");
+  function goToDrawerE1() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E1");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetB}>
-            B
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetE}
+          >
+            E
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerB4}>
-            B4
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerE1}
+          >
+            E1
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">GLOW </span>
+          <span className="breadcrumb-current">DOMUS</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">GLOW LIFE</h1>
+        <h1 className="titulo-coleccion boutique-title">DOMUS</h1>
 
         <div className="boutique-info">
-          <p>2x20 · LIFE CERAMICA</p>
-          <p>B4</p>
+          <p>2''X18'' · ELIOS</p>
+          <p>E1</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/GLOW.PDF" />
+        <ColeccionLayout infoUrl="https://eliosceramica.com/wp-content/uploads/2024/10/Elios_catalogo_DOMUS-1.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -90,7 +113,7 @@ export function Glow({ onGoHome }) {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`GLOW ${index + 1}`}
+              alt={`DOMUS ${index + 1}`}
             />
           ))}
         </section>

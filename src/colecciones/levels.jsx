@@ -1,14 +1,33 @@
+// src/colecciones/levels.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import glow01 from "../assets/imagenes/glow/glow-01.jpg";
-import glow02 from "../assets/imagenes/glow/glow-02.jpg";
+import levels01 from "../assets/imagenes/levels/levels-01.jpg";
+import levels02 from "../assets/imagenes/levels/levels-02.jpg";
+import levels03 from "../assets/imagenes/levels/levels-03.jpg";
+import levels04 from "../assets/imagenes/levels/levels-04.jpg";
+import levels05 from "../assets/imagenes/levels/levels-05.jpg";
+import levels06 from "../assets/imagenes/levels/levels-06.jpg";
+import levels07 from "../assets/imagenes/levels/levels-07.jpg";
+import levels08 from "../assets/imagenes/levels/levels-08.jpg";
+import levels09 from "../assets/imagenes/levels/levels-09.jpg";
 
-const images = [glow01, glow02];
+const images = [
+  levels01,
+  levels02,
+  levels03,
+  levels04,
+  levels05,
+  levels06,
+  levels07,
+  levels08,
+  levels09,
+];
 
-export function Glow({ onGoHome }) {
+export function Levels() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,50 +56,62 @@ export function Glow({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetB() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerB4() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
-    sessionStorage.setItem("boutiqueDrawer", "B4");
+  function goToDrawerE2() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E2");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetB}>
-            B
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetE}
+          >
+            E
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerB4}>
-            B4
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerE2}
+          >
+            E2
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">GLOW </span>
+          <span className="breadcrumb-current">LEVELS</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">GLOW LIFE</h1>
+        <h1 className="titulo-coleccion boutique-title">LEVELS</h1>
 
         <div className="boutique-info">
-          <p>2x20 · LIFE CERAMICA</p>
-          <p>B4</p>
+          <p>8'' X16'' · HARMONY</p>
+          <p>E2</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/GLOW.PDF" />
+        <ColeccionLayout infoUrl="/pdf/LEVELS.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -90,7 +121,7 @@ export function Glow({ onGoHome }) {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`GLOW ${index + 1}`}
+              alt={`LEVELS ${index + 1}`}
             />
           ))}
         </section>

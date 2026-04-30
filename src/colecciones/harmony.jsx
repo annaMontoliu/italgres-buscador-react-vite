@@ -1,14 +1,27 @@
+// src/colecciones/harmony.jsx
+
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import glow01 from "../assets/imagenes/glow/glow-01.jpg";
-import glow02 from "../assets/imagenes/glow/glow-02.jpg";
+import harmony01 from "../assets/imagenes/harmony/harmony-01.jpg";
+import harmony02 from "../assets/imagenes/harmony/harmony-02.jpg";
+import harmony03 from "../assets/imagenes/harmony/harmony-03.jpg";
+import harmony04 from "../assets/imagenes/harmony/harmony-04.jpg";
+import harmony05 from "../assets/imagenes/harmony/harmony-05.jpg";
+import harmony06 from "../assets/imagenes/harmony/harmony-06.jpg";
 
-const images = [glow01, glow02];
+const images = [
+  harmony01,
+  harmony02,
+  harmony03,
+  harmony04,
+  harmony05,
+  harmony06,
+];
 
-export function Glow({ onGoHome }) {
+export function Harmony() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,50 +50,62 @@ export function Glow({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetB() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerB4() {
-    sessionStorage.setItem("boutiqueCabinet", "B");
-    sessionStorage.setItem("boutiqueDrawer", "B4");
+  function goToDrawerE4() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E4");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetB}>
-            B
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetE}
+          >
+            E
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerB4}>
-            B4
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerE4}
+          >
+            E4
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">GLOW </span>
+          <span className="breadcrumb-current">HARMONY</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">GLOW LIFE</h1>
+        <h1 className="titulo-coleccion boutique-title">HARMONY</h1>
 
         <div className="boutique-info">
-          <p>2x20 · LIFE CERAMICA</p>
-          <p>B4</p>
+          <p>8''X8'' · CEVICA</p>
+          <p>E4</p>
         </div>
 
-        <ColeccionLayout infoUrl="/pdf/GLOW.PDF" />
+        <ColeccionLayout infoUrl="https://www.cevica.es/wp-content/uploads/Harmony-Collection-H.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -90,7 +115,7 @@ export function Glow({ onGoHome }) {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`GLOW ${index + 1}`}
+              alt={`HARMONY ${index + 1}`}
             />
           ))}
         </section>
