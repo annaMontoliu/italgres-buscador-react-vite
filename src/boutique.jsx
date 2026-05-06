@@ -140,6 +140,15 @@ import brooklyn01 from "./assets/imagenes/brooklyn/brooklyn-01.jpg";
 import brick01 from "./assets/imagenes/brick/brick-01.jpg";
 import papierBoutique01 from "./assets/imagenes/papier-mirage/papier-01.jpg";
 import pennyOnixMosaics01 from "./assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-01.jpg";
+import abacus01 from "./assets/imagenes/abacus/abacus-01.jpg";
+import sixtyMinibrick01 from "./assets/imagenes/sixty-minibrick/sixty-minibrick-01.jpg";
+import circle01 from "./assets/imagenes/circle/circle-01.jpg";
+import chintz01 from "./assets/imagenes/chintz/chintz-01.jpg";
+import becolors01 from "./assets/imagenes/becolors/becolors-01.jpg";
+import newYork01 from "./assets/imagenes/new-york/new-york-01.jpg";
+import calvet01 from "./assets/imagenes/calvet/calvet-01.jpg";
+import playwood01 from "./assets/imagenes/playwood/playwood-01.jpg";
+import alaskaLife01 from "./assets/imagenes/alaska-life/alaska-life-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -1354,6 +1363,60 @@ E10: [
     locations: ["E5", "E10"],
     thumbnail: onixMosaics01,
   },
+
+],
+F1: [
+  {
+    name: "ABACUS",
+    format: "3''X8''",
+    brand: "ERGON",
+    locations: ["F1"],
+    thumbnail: abacus01,
+  },
+  {
+    name: "SIXTY MINIBRICK",
+    format: "2''x6''",
+    brand: "EMIL",
+    locations: ["F1"],
+    thumbnail: sixtyMinibrick01,
+  },
+],
+
+F2: [
+  {
+    name: "CIRCLE",
+    format: "12''X12''",
+    brand: "REALONDA",
+    locations: ["F2"],
+    thumbnail: circle01,
+  },
+],
+
+F3: [
+  {
+    name: "CHINTZ",
+    format: "7''X8''",
+    brand: "CEVICA",
+    locations: ["F3"],
+    thumbnail: chintz01,
+  },
+],
+
+F4: [
+  {
+    name: "BECOLORS",
+    format: "6''X6''",
+    brand: "CEVICA",
+    locations: ["F4", "F8", "F9"],
+    thumbnail: becolors01,
+  },
+  {
+    name: "NEW YORK",
+    format: "6''x6''",
+    brand: "CEVICA",
+    locations: ["F4", "F8", "F9"],
+    thumbnail: newYork01,
+  },
 ],
   F5: [
     {
@@ -1412,7 +1475,67 @@ E10: [
       locations: ["A5", "F5"],
       thumbnail: valvanera01,
     },
+    {
+      name: "CALVET",
+      format: "8''X8''",
+      brand: "VIVES",
+      locations: ["F5"],
+      thumbnail: calvet01,
+    },
   ],
+  F6: [
+  {
+    name: "PLAYWOOD",
+    format: "2''X12''",
+    brand: "EMIL",
+    locations: ["F6"],
+    thumbnail: playwood01,
+  },
+],
+
+F7: [
+  {
+    name: "ALASKA LIFE",
+    format: "2''X10''",
+    brand: "LIFE CERAMICA",
+    locations: ["F7"],
+    thumbnail: alaskaLife01,
+  },
+],
+
+F8: [
+  {
+    name: "BECOLORS",
+    format: "6''X6''",
+    brand: "CEVICA",
+    locations: ["F4", "F8", "F9"],
+    thumbnail: becolors01,
+  },
+  {
+    name: "NEW YORK",
+    format: "6''x6''",
+    brand: "CEVICA",
+    locations: ["F4", "F8", "F9"],
+    thumbnail: newYork01,
+  },
+],
+
+F9: [
+  {
+    name: "BECOLORS",
+    format: "6''X6''",
+    brand: "CEVICA",
+    locations: ["F4", "F8", "F9"],
+    thumbnail: becolors01,
+  },
+  {
+    name: "NEW YORK",
+    format: "6''x6''",
+    brand: "CEVICA",
+    locations: ["F4", "F8", "F9"],
+    thumbnail: newYork01,
+  },
+],
   F10: [
   {
     name: "PENNY ONIX MOSAICS",
@@ -2429,6 +2552,69 @@ const boutiqueCollections = [
   locations: ["E9", "F10"],
   thumbnail: pennyOnixMosaics01,
 },
+{
+  name: "ABACUS",
+  format: "3''X8''",
+  brand: "ERGON",
+  locations: ["F1"],
+  thumbnail: abacus01,
+},
+{
+  name: "SIXTY MINIBRICK",
+  format: "2''x6''",
+  brand: "EMIL",
+  locations: ["F1"],
+  thumbnail: sixtyMinibrick01,
+},
+{
+  name: "CIRCLE",
+  format: "12''X12''",
+  brand: "REALONDA",
+  locations: ["F2"],
+  thumbnail: circle01,
+},
+{
+  name: "CHINTZ",
+  format: "7''X8''",
+  brand: "CEVICA",
+  locations: ["F3"],
+  thumbnail: chintz01,
+},
+{
+  name: "BECOLORS",
+  format: "6''X6''",
+  brand: "CEVICA",
+  locations: ["F4", "F8", "F9"],
+  thumbnail: becolors01,
+},
+{
+  name: "NEW YORK",
+  format: "6''x6''",
+  brand: "CEVICA",
+  locations: ["F4", "F8", "F9"],
+  thumbnail: newYork01,
+},
+{
+  name: "CALVET",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["F5"],
+  thumbnail: calvet01,
+},
+{
+  name: "PLAYWOOD",
+  format: "2''X12''",
+  brand: "EMIL",
+  locations: ["F6"],
+  thumbnail: playwood01,
+},
+{
+  name: "ALASKA LIFE",
+  format: "2''X10''",
+  brand: "LIFE CERAMICA",
+  locations: ["F7"],
+  thumbnail: alaskaLife01,
+},
 
 
 ];
@@ -2483,7 +2669,7 @@ export function Boutique({ onOpenCollection }) {
     if (!term) return [];
 
     return boutiqueCollections.filter((collection) =>
-      collection.name.includes(term)
+         collection.name.includes(term)
     );
   }, [searchTerm]);
 

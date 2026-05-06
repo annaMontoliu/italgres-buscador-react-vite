@@ -262,6 +262,15 @@ import { Brooklyn } from "./colecciones/brooklyn";
 import { Brick } from "./colecciones/brick";
 import { PapierBoutique } from "./colecciones/papier-boutique";
 import { PennyOnixMosaics } from "./colecciones/penny-onix-mosaics";
+import { Abacus } from "./colecciones/abacus";
+import { SixtyMinibrick } from "./colecciones/sixty-minibrick";
+import { Circle } from "./colecciones/circle";
+import { Chintz } from "./colecciones/chintz";
+import { Becolors } from "./colecciones/becolors";
+import { NewYork } from "./colecciones/new-york";
+import { Calvet } from "./colecciones/calvet";
+import { Playwood } from "./colecciones/playwood";
+import { AlaskaLife } from "./colecciones/alaska-life";
 
 
 
@@ -584,6 +593,15 @@ export function App() {
     if (name === "BRICK") setPage("brick");
     if (name === "PAPIER") setPage("papier-boutique");
     if (name === "PENNY ONIX MOSAICS") setPage("penny-onix-mosaics");
+    if (name === "ABACUS") setPage("abacus");
+    if (name === "SIXTY MINIBRICK") setPage("sixty-minibrick");
+    if (name === "CIRCLE") setPage("circle");
+    if (name === "CHINTZ") setPage("chintz");
+    if (name === "BECOLORS") setPage("becolors");
+    if (name === "NEW YORK") setPage("new-york");
+    if (name === "CALVET") setPage("calvet");
+    if (name === "PLAYWOOD") setPage("playwood");
+    if (name === "ALASKA") setPage("alaska-life");
 
   }
 
@@ -857,6 +875,15 @@ export function App() {
   if (page === "brick") return <Brick />;
   if (page === "papier-boutique") return <PapierBoutique />;
   if (page === "penny-onix-mosaics") return <PennyOnixMosaics />;
+  if (page === "abacus") return <Abacus />;
+  if (page === "sixty-minibrick") return <SixtyMinibrick />;
+  if (page === "circle") return <Circle />;
+  if (page === "chintz") return <Chintz />;
+  if (page === "becolors") return <Becolors />;
+  if (page === "new-york") return <NewYork />;
+  if (page === "calvet") return <Calvet />;
+  if (page === "playwood") return <Playwood />;
+  if (page === "alaska-life") return <AlaskaLife />;
 
   return null;
 }
