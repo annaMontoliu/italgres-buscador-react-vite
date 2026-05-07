@@ -149,6 +149,25 @@ import newYork01 from "./assets/imagenes/new-york/new-york-01.jpg";
 import calvet01 from "./assets/imagenes/calvet/calvet-01.jpg";
 import playwood01 from "./assets/imagenes/playwood/playwood-01.jpg";
 import alaskaLife01 from "./assets/imagenes/alaska-life/alaska-life-01.jpg";
+import waves01 from "./assets/imagenes/waves/waves-01.jpg";
+import complementtoBrilloLiso01 from "./assets/imagenes/complementto/complementto-brillo-liso/complementto-brillo-liso-01.jpg";
+import complementtoMatteLiso01 from "./assets/imagenes/complementto/complementto-matte-liso/complementto-matte-liso-01.jpg";
+import complementtoThroughbody01 from "./assets/imagenes/complementto/complementto-throughbody/complementto-throughbody-01.jpg";import boqueria01 from "./assets/imagenes/boqueria/boqueria-01.jpg";
+import pedralbes01 from "./assets/imagenes/pedralbes/pedralbes-01.jpg";
+import pigmento01 from "./assets/imagenes/pigmento/pigmento-01.jpg";
+import afra01 from "./assets/imagenes/afra/afra-01.jpg";
+import baliHexCerlat01 from "./assets/imagenes/bali-cerlat/bali-hex-cerlat/bali-hex-cerlat-01.jpg";
+import baliVives01 from "./assets/imagenes/bali-vives/bali-vives-01.jpg";
+import samira01 from "./assets/imagenes/samira/samira-01.jpg";
+import samoa01 from "./assets/imagenes/samoa/samoa-01.jpg";
+import retinaBoutique01 from "./assets/imagenes/retina/retina-boutique/retina-boutique-01.jpg";
+import gracia01 from "./assets/imagenes/gracia/gracia-01.jpg";
+import merce01 from "./assets/imagenes/merce/merce-01.jpg";
+import hydraulicPatchwork01 from "./assets/imagenes/hydraulic-patchwork/hydraulic-patchwork-01.jpg";
+import mentonBlue01 from "./assets/imagenes/menton-blue/menton-blue-01.jpg";
+import moving01 from "./assets/imagenes/moving/moving-01.jpg";
+import vanguard01 from "./assets/imagenes/vanguard/vanguard-01.jpg";
+import venezia01 from "./assets/imagenes/venezia/venezia-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -1545,13 +1564,189 @@ F9: [
     thumbnail: pennyOnixMosaics01,
   },
 ],
-  G5: [
+ G1: [
+  {
+    name: "WAVES",
+    format: "5’’X18’’",
+    brand: "CEVICA",
+    locations: ["G1"],
+    thumbnail: waves01,
+  },
+],
+
+G2: [
+  {
+    name: "COMPLEMENTTO BRILLO LISO",
+    format: "2''x6''",
+    brand: "COMPLEMENTTO",
+    locations: ["G2"],
+    thumbnail: complementtoBrilloLiso01,
+  },
+],
+
+G3: [
+  {
+    name: "COMPLEMENTTO MATTE LISO",
+    format: "2''x6''",
+    brand: "COMPLEMENTTO",
+    locations: ["G3"],
+    thumbnail: complementtoMatteLiso01,
+  },
+ {
+  name: "COMPLEMENTTO THROUGHBODY",
+  format: "4''x4''",
+  brand: "COMPLEMENTTO",
+  locations: ["G3"],
+  thumbnail: complementtoThroughbody01,
+},
+],
+
+G4: [
+  {
+    name: "BOQUERIA",
+    format: "3''X12''",
+    brand: "GRESPANIA",
+    locations: ["G4"],
+    thumbnail: boqueria01,
+  },
+  {
+    name: "PEDRALBES",
+    format: "3''X12''",
+    brand: "GRESPANIA",
+    locations: ["G4"],
+    thumbnail: pedralbes01,
+  },
+  {
+    name: "PIGMENTO",
+    format: "3''X12''",
+    brand: "GRESPANIA",
+    locations: ["G4"],
+    thumbnail: pigmento01,
+  },
+],
+
+G5: [
+
+   {
+    name: "AFRA",
+    format: "4''X4''",
+    brand: "HARMONY",
+    locations: ["G5"],
+    thumbnail: afra01,
+  },
   {
     name: "BALI CERLAT",
     format: "6x6",
     brand: "CERLAT",
     locations: ["B5", "G5"],
     thumbnail: bali01,
+  },
+ 
+  {
+    name: "BALI HEX",
+    format: "9''X9''",
+    brand: "CERLAT",
+    locations: ["G5"],
+    thumbnail: baliHexCerlat01,
+  },
+  {
+    name: "BALI VIVES",
+    format: "6''x6''",
+    brand: "CERLAT",
+    locations: ["G5"],
+    thumbnail: baliVives01,
+  },
+  {
+    name: "SAMIRA",
+    format: "4''X4''",
+    brand: "HARMONY",
+    locations: ["G5"],
+    thumbnail: samira01,
+  },
+  {
+    name: "SAMOA",
+    format: "6''X6'' & 9''x9''",
+    brand: "CERLAT",
+    locations: ["G5"],
+    thumbnail: samoa01,
+  },
+],
+
+G6: [
+  {
+    name: "RETINA",
+    format: "24''X24'', 24''X48'', 48''X48''...",
+    brand: "IMOLA",
+    locations: ["G6", "G7"],
+    thumbnail: retinaBoutique01,
+  },
+],
+
+G7: [
+  {
+    name: "RETINA",
+    format: "24''X24'', 24''X48'', 48''X48''...",
+    brand: "IMOLA",
+    locations: ["G6", "G7"],
+    thumbnail: retinaBoutique01,
+  },
+],
+
+G8: [
+  {
+    name: "GRACIA",
+    format: "3''x12''",
+    brand: "GRESPANIA",
+    locations: ["G8"],
+    thumbnail: gracia01,
+  },
+],
+
+G9: [
+  {
+    name: "MERCE",
+    format: "3''X12''",
+    brand: "GRESPANIA",
+    locations: ["G9"],
+    thumbnail: merce01,
+  },
+],
+
+G10: [
+  {
+    name: "HYDRAULIC PATCHWORK",
+    format: "12''x12''",
+    brand: "APAVISA",
+    locations: ["G10"],
+    thumbnail: hydraulicPatchwork01,
+  },
+  {
+    name: "MENTON BLUE",
+    format: "10''x10''",
+    brand: "CODICER",
+    locations: ["G10"],
+    thumbnail: mentonBlue01,
+  },
+  {
+    name: "MOVING",
+    format: "12''X12''",
+    brand: "APARICI",
+    locations: ["G10"],
+    thumbnail: moving01,
+  },
+  {
+    name: "VANGUARD",
+    format: "12''X12''",
+    brand: "APARICI",
+    locations: ["G10"],
+    thumbnail: vanguard01,
+  },
+  {
+    name: "VENEZIA",
+    format: "12''X12''",
+    brand: "APARICI",
+    locations: ["G10"],
+    thumbnail: venezia01,
   },
 ],
 };
@@ -2614,6 +2809,146 @@ const boutiqueCollections = [
   brand: "LIFE CERAMICA",
   locations: ["F7"],
   thumbnail: alaskaLife01,
+},
+{
+  name: "WAVES",
+  format: "5’’X18’’",
+  brand: "CEVICA",
+  locations: ["G1"],
+  thumbnail: waves01,
+},
+{
+  name: "COMPLEMENTTO BRILLO LISO",
+  format: "2''x6''",
+  brand: "COMPLEMENTTO",
+  locations: ["G2"],
+  thumbnail: complementtoBrilloLiso01,
+},
+{
+  name: "COMPLEMENTTO MATTE LISO",
+  format: "2''x6''",
+  brand: "COMPLEMENTTO",
+  locations: ["G3"],
+  thumbnail: complementtoMatteLiso01,
+},
+{
+  name: "COMPLEMENTTO THROUGHBODY",
+  format: "4''x4''",
+  brand: "COMPLEMENTTO",
+  locations: ["G3"],
+  thumbnail: complementtoThroughbody01,
+},
+{
+  name: "BOQUERIA",
+  format: "3''X12''",
+  brand: "GRESPANIA",
+  locations: ["G4"],
+  thumbnail: boqueria01,
+},
+{
+  name: "PEDRALBES",
+  format: "3''X12''",
+  brand: "GRESPANIA",
+  locations: ["G4"],
+  thumbnail: pedralbes01,
+},
+{
+  name: "PIGMENTO",
+  format: "3''X12''",
+  brand: "GRESPANIA",
+  locations: ["G4"],
+  thumbnail: pigmento01,
+},
+{
+  name: "AFRA",
+  format: "4''X4''",
+  brand: "HARMONY",
+  locations: ["G5"],
+  thumbnail: afra01,
+},
+{
+  name: "BALI HEX",
+  format: "9''X9''",
+  brand: "CERLAT",
+  locations: ["G5"],
+  thumbnail: baliHexCerlat01,
+},
+{
+  name: "BALI VIVES",
+  format: "6''x6''",
+  brand: "CERLAT",
+  locations: ["G5"],
+  thumbnail: baliVives01,
+},
+{
+  name: "SAMIRA",
+  format: "4''X4''",
+  brand: "HARMONY",
+  locations: ["G5"],
+  thumbnail: samira01,
+},
+{
+  name: "SAMOA",
+  format: "6''X6'' & 9''x9''",
+  brand: "CERLAT",
+  locations: ["G5"],
+  thumbnail: samoa01,
+},
+{
+  name: "RETINA",
+  format: "24''X24'', 24''X48'', 48''X48''...",
+  brand: "IMOLA",
+  locations: ["G6", "G7"],
+  thumbnail: retinaBoutique01,
+},
+{
+  name: "GRACIA",
+  format: "3''x12''",
+  brand: "GRESPANIA",
+  locations: ["G8"],
+  thumbnail: gracia01,
+},
+{
+  name: "MERCE",
+  format: "3''X12''",
+  brand: "GRESPANIA",
+  locations: ["G9"],
+  thumbnail: merce01,
+},
+{
+  name: "HYDRAULIC PATCHWORK",
+  format: "12''x12''",
+  brand: "APAVISA",
+  locations: ["G10"],
+  thumbnail: hydraulicPatchwork01,
+},
+{
+  name: "MENTON BLUE",
+  format: "10''x10''",
+  brand: "CODICER",
+  locations: ["G10"],
+  thumbnail: mentonBlue01,
+},
+{
+  name: "MOVING",
+  format: "12''X12''",
+  brand: "APARICI",
+  locations: ["G10"],
+  thumbnail: moving01,
+},
+{
+  name: "VANGUARD",
+  format: "12''X12''",
+  brand: "APARICI",
+  locations: ["G10"],
+  thumbnail: vanguard01,
+},
+{
+  name: "VENEZIA",
+  format: "12''X12''",
+  brand: "APARICI",
+  locations: ["G10"],
+  thumbnail: venezia01,
 },
 
 

@@ -271,6 +271,26 @@ import { NewYork } from "./colecciones/new-york";
 import { Calvet } from "./colecciones/calvet";
 import { Playwood } from "./colecciones/playwood";
 import { AlaskaLife } from "./colecciones/alaska-life";
+import { Waves } from "./colecciones/waves";
+import { ComplementtoBrilloLiso } from "./colecciones/complementto-brillo-liso";
+import { ComplementtoMatteLiso } from "./colecciones/complementto-matte-liso";
+import { ComplementtoThoughbody } from "./colecciones/complementto-throughbody";
+import { Boqueria } from "./colecciones/boqueria";
+import { Pedralbes } from "./colecciones/pedralbes";
+import { Pigmento } from "./colecciones/pigmento";
+import { Afra } from "./colecciones/afra";
+import { BaliHexCerlat } from "./colecciones/bali-hex-cerlat";
+import { BaliVives } from "./colecciones/bali-vives";
+import { Samira } from "./colecciones/samira";
+import { Samoa } from "./colecciones/samoa";
+import { RetinaBoutique } from "./colecciones/retina-boutique";
+import { Gracia } from "./colecciones/gracia";
+import { Merce } from "./colecciones/merce";
+import { HydraulicPatchwork } from "./colecciones/hydraulic-patchwork";
+import { MentonBlue } from "./colecciones/menton-blue";
+import { Moving } from "./colecciones/moving";
+import { Vanguard } from "./colecciones/vanguard";
+import { Venezia } from "./colecciones/venezia";
 
 
 
@@ -602,6 +622,26 @@ export function App() {
     if (name === "CALVET") setPage("calvet");
     if (name === "PLAYWOOD") setPage("playwood");
     if (name === "ALASKA") setPage("alaska-life");
+    if (name === "WAVES") setPage("waves");
+    if (name === "COMPLEMENTTO BRILLO LISO") setPage("complementto-brillo-liso");
+    if (name === "COMPLEMENTTO MATTE LISO") setPage("complementto-matte-liso");
+    if (name === "COMPLEMENTTO THROUGHBODY") setPage("complementto-throughbody");
+    if (name === "BOQUERIA") setPage("boqueria");
+    if (name === "PEDRALBES") setPage("pedralbes");
+    if (name === "PIGMENTO") setPage("pigmento");
+    if (name === "AFRA") setPage("afra");
+    if (name === "BALI HEX") setPage("bali-hex-cerlat");
+    if (name === "BALI VIVES") setPage("bali-vives");
+    if (name === "SAMIRA") setPage("samira");
+    if (name === "SAMOA") setPage("samoa");
+    if (name === "RETINA") setPage("retina-boutique");
+    if (name === "GRACIA") setPage("gracia");
+    if (name === "MERCE") setPage("merce");
+    if (name === "HYDRAULIC PATCHWORK") setPage("hydraulic-patchwork");
+    if (name === "MENTON BLUE") setPage("menton-blue");
+    if (name === "MOVING") setPage("moving");
+    if (name === "VANGUARD") setPage("vanguard");
+    if (name === "VENEZIA") setPage("venezia");
 
   }
 
@@ -884,6 +924,26 @@ export function App() {
   if (page === "calvet") return <Calvet />;
   if (page === "playwood") return <Playwood />;
   if (page === "alaska-life") return <AlaskaLife />;
+  if (page === "waves") return <Waves />;
+  if (page === "complementto-brillo-liso") return <ComplementtoBrilloLiso />;
+  if (page === "complementto-matte-liso") return <ComplementtoMatteLiso />;
+  if (page === "complementto-throughbody") return <ComplementtoThoughbody />;
+  if (page === "boqueria") return <Boqueria />;
+  if (page === "pedralbes") return <Pedralbes />;
+  if (page === "pigmento") return <Pigmento />;
+  if (page === "afra") return <Afra />;
+  if (page === "bali-hex-cerlat") return <BaliHexCerlat />;
+  if (page === "bali-vives") return <BaliVives />;
+  if (page === "samira") return <Samira />;
+  if (page === "samoa") return <Samoa />;
+  if (page === "retina-boutique") return <RetinaBoutique />;
+  if (page === "gracia") return <Gracia />;
+  if (page === "merce") return <Merce />;
+  if (page === "hydraulic-patchwork") return <HydraulicPatchwork />;
+  if (page === "menton-blue") return <MentonBlue />;
+  if (page === "moving") return <Moving />;
+  if (page === "vanguard") return <Vanguard />;
+  if (page === "venezia") return <Venezia />;
 
   return null;
 }
