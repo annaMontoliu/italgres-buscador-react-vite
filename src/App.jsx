@@ -291,6 +291,9 @@ import { MentonBlue } from "./colecciones/menton-blue";
 import { Moving } from "./colecciones/moving";
 import { Vanguard } from "./colecciones/vanguard";
 import { Venezia } from "./colecciones/venezia";
+import { BrecciaMandorla } from "./colecciones/breccia-mandorla";
+import { TerraCrea } from "./colecciones/terra-crea";
+import { Formentor } from "./colecciones/formentor";
 
 
 
@@ -642,6 +645,9 @@ export function App() {
     if (name === "MOVING") setPage("moving");
     if (name === "VANGUARD") setPage("vanguard");
     if (name === "VENEZIA") setPage("venezia");
+    if (name === "BRECCIA MANDORLA") setPage("breccia-mandorla");
+    if (name === "TERRA CREA") setPage("terra-crea");
+    if (name === "FORMENTOR") setPage("formentor");
 
   }
 
@@ -944,6 +950,9 @@ export function App() {
   if (page === "moving") return <Moving />;
   if (page === "vanguard") return <Vanguard />;
   if (page === "venezia") return <Venezia />;
+  if (page === "breccia-mandorla") return <BrecciaMandorla />;
+  if (page === "terra-crea") return <TerraCrea />;
+  if (page === "formentor") return <Formentor />;
 
   return null;
 }

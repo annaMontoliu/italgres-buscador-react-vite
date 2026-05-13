@@ -14,22 +14,22 @@ const COLLECTION_GROUPS = [
       { name: "AVALLON" },
     ],
   },
-  {
-    letter: "B",
-    items: [
-      { name: "BARCELONA" },
-      { name: "BAIKAL" },
-      { name: "BELA" },
-      { name: "BELLEVUE" },
-      { name: "BLANCO" },
-      { name: "BLOOM" },
-      { name: "BLUE ROMA" },
-      { name: "BOREALIS" },
-      { name: "BORNEO" },
-      { name: "BRECCIA" },
-      
-    ],
-  },
+{
+  letter: "B",
+  items: [
+    { name: "BARCELONA" },
+    { name: "BAIKAL" },
+    { name: "BELA" },
+    { name: "BELLEVUE" },
+    { name: "BLANCO" },
+    { name: "BLOOM" },
+    { name: "BLUE ROMA" },
+    { name: "BOREALIS" },
+    { name: "BORNEO" },
+    { name: "BRECCIA" },
+    { name: "BRECCIA MANDORLA" },
+  ],
+},
   {
     letter: "C",
     items: [
@@ -73,13 +73,14 @@ const COLLECTION_GROUPS = [
     ],
   },
   {
-    letter: "F",
-    items: [
-      { name: "FLAX" },
-      { name: "FLUID MULTICOLOR" }, 
-      { name: "FORM CEMENT" }
-    ],
-  },
+  letter: "F",
+  items: [
+    { name: "FLAX" },
+    { name: "FLUID MULTICOLOR" }, 
+    { name: "FORM CEMENT" },
+    { name: "FORMENTOR" }
+  ],
+},
   {
     letter: "G",
     items: [
@@ -186,17 +187,18 @@ const COLLECTION_GROUPS = [
       { name: "SYBIL" },
     ],
   },
-  {
-    letter: "T",
-    items: [
-      { name: "TAJ MAHAL" },
-      { name: "TATTOO" },
-      { name: "THE ROOM" },
-      { name: "TIVOLI" },
-      { name: "TROPICAL BLUE" },
-      { name: "TWEED STONE" },
-    ],
-  },
+{
+  letter: "T",
+  items: [
+    { name: "TAJ MAHAL" },
+    { name: "TATTOO" },
+    { name: "TERRA CREA" },
+    { name: "THE ROOM" },
+    { name: "TIVOLI" },
+    { name: "TROPICAL BLUE" },
+    { name: "TWEED STONE" },
+  ],
+},
   { letter: "U", items: [
     { name: "ULISSE" }, 
     { name: "UNIQUE" }] },
