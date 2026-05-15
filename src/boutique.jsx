@@ -2899,13 +2899,6 @@ const boutiqueCollections = [
   thumbnail: moves01,
 },
 {
-  name: "GLENT",
-  format: "3''X9''",
-  brand: "ESTUDIO CERAMICO",
-  locations: ["E3"],
-  thumbnail: glent01,
-},
-{
   name: "HARMONY",
   format: "8''X8''",
   brand: "CEVICA",
