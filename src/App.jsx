@@ -255,7 +255,6 @@ import { Domus } from "./colecciones/domus";
 import { GlowElios } from "./colecciones/glow-elios";
 import { Levels } from "./colecciones/levels";
 import { Moves } from "./colecciones/moves";
-import { Glent } from "./colecciones/glent";
 import { Harmony } from "./colecciones/harmony";
 import { OnixMosaics } from "./colecciones/onix-mosaics";
 import { Brooklyn } from "./colecciones/brooklyn";
@@ -303,6 +302,16 @@ import { ArabesqueHandmade } from "./colecciones/arabesque-handmade";
 import { BaseHandmade } from "./colecciones/base-handmade";
 import { EssenzaHandmade } from "./colecciones/essenza-handmade";
 import { EtnaHexagonal } from "./colecciones/etna-hexagonal";
+import { Maui } from "./colecciones/maui";
+import { Tempo } from "./colecciones/tempo";
+import { SixtyHexagonal } from "./colecciones/sixty-hexagonal";
+import { DiamondHandmade } from "./colecciones/diamond-handmade";
+import { KiteHandmade } from "./colecciones/kite-handmade";
+import { Plage } from "./colecciones/plage";
+import { Glenbrook } from "./colecciones/glenbrook";
+import { Santelmo } from "./colecciones/santelmo";
+import { Antique } from "./colecciones/antique";
+import { BarcelonaBoutique } from "./colecciones/barcelona-boutique";
 
 
 
@@ -618,7 +627,6 @@ export function App() {
     if (name === "GLOW ELIOS") setPage("glow-elios");
     if (name === "LEVELS") setPage("levels");
     if (name === "MOVES") setPage("moves");
-    if (name === "GLENT") setPage("glent");
     if (name === "HARMONY") setPage("harmony");
     if (name === "ONIX MOSAICS") setPage("onix-mosaics");
     if (name === "BROOKLYN") setPage("brooklyn");
@@ -666,6 +674,16 @@ export function App() {
     if (name === "BASE HANDMADE") setPage("base-handmade");
     if (name === "ESSENZA HANDMADE") setPage("essenza-handmade");
     if (name === "ETNA HEXAGONAL") setPage("etna-hexagonal");
+    if (name === "MAUI") setPage("maui");
+    if (name === "TEMPO") setPage("tempo");
+    if (name === "SIXTY HEXAGONAL") setPage("sixty-hexagonal");
+    if (name === "DIAMOND HANDMADE") setPage("diamond-handmade");
+    if (name === "KITE HANDMADE") setPage("kite-handmade");
+    if (name === "PLAGE HANDMADE") setPage("plage");
+    if (name === "GLENBROOK") setPage("glenbrook");
+    if (name === "SANTELMO") setPage("santelmo");
+    if (name === "ANTIQUE") setPage("antique");
+    if (name === "BARCELONA BOUTIQUE") setPage("barcelona-boutique");
 
   }
 
@@ -932,7 +950,6 @@ export function App() {
   if (page === "glow-elios") return <GlowElios />;
   if (page === "levels") return <Levels />;
   if (page === "moves") return <Moves />;
-  if (page === "glent") return <Glent />;
   if (page === "harmony") return <Harmony />;
   if (page === "onix-mosaics") return <OnixMosaics />;
   if (page === "brooklyn") return <Brooklyn />;
@@ -980,6 +997,16 @@ export function App() {
   if (page === "base-handmade") return <BaseHandmade />;
   if (page === "essenza-handmade") return <EssenzaHandmade />;
   if (page === "etna-hexagonal") return <EtnaHexagonal />;
+  if (page === "maui") return <Maui />;
+  if (page === "tempo") return <Tempo />;
+  if (page === "sixty-hexagonal") return <SixtyHexagonal />;
+  if (page === "diamond-handmade") return <DiamondHandmade />;
+  if (page === "kite-handmade") return <KiteHandmade />;
+  if (page === "plage") return <Plage />;
+  if (page === "glenbrook") return <Glenbrook />;
+  if (page === "santelmo") return <Santelmo />;
+  if (page === "antique") return <Antique />;
+  if (page === "barcelona-boutique") return <BarcelonaBoutique />;
 
   return null;
 }

@@ -68,6 +68,18 @@ export function Brunei() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
+  function goToCabinetH() {
+    sessionStorage.setItem("boutiqueCabinet", "H");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
+  function goToDrawerH4() {
+    sessionStorage.setItem("boutiqueCabinet", "H");
+    sessionStorage.setItem("boutiqueDrawer", "H4");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  }
+
   return (
     <>
       <Header />
@@ -96,7 +108,7 @@ export function Brunei() {
 
         <div className="boutique-info">
           <p>2''X10'' · CERLAT</p>
-          <p>C7</p>
+          <p>C7 & H4</p>
         </div>
 
         <ColeccionLayout infoUrl="https://www.azulejosmijares.com/wp-content/uploads/BRUNEI-2.pdf" />

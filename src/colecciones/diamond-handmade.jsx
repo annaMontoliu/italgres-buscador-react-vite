@@ -1,25 +1,33 @@
-// src/colecciones/glent.jsx
-
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import glent01 from "../assets/imagenes/glent/glent-01.jpg";
-import glent02 from "../assets/imagenes/glent/glent-02.jpg";
-import glent03 from "../assets/imagenes/glent/glent-03.jpg";
-import glent04 from "../assets/imagenes/glent/glent-04.jpg";
-import glent05 from "../assets/imagenes/glent/glent-05.jpg";
+import diamondHandmade01 from "../assets/imagenes/diamond-handmade/diamond-handmade-01.jpg";
+import diamondHandmade02 from "../assets/imagenes/diamond-handmade/diamond-handmade-02.jpg";
+import diamondHandmade03 from "../assets/imagenes/diamond-handmade/diamond-handmade-03.jpg";
+import diamondHandmade04 from "../assets/imagenes/diamond-handmade/diamond-handmade-04.jpg";
+import diamondHandmade05 from "../assets/imagenes/diamond-handmade/diamond-handmade-05.jpg";
+import diamondHandmade06 from "../assets/imagenes/diamond-handmade/diamond-handmade-06.jpg";
+import diamondHandmade07 from "../assets/imagenes/diamond-handmade/diamond-handmade-07.jpg";
+import diamondHandmade08 from "../assets/imagenes/diamond-handmade/diamond-handmade-08.jpg";
+import diamondHandmade09 from "../assets/imagenes/diamond-handmade/diamond-handmade-09.jpg";
+import diamondHandmade10 from "../assets/imagenes/diamond-handmade/diamond-handmade-10.jpg";
 
 const images = [
-  glent01,
-  glent02,
-  glent03,
-  glent04,
-  glent05,
+  diamondHandmade01,
+  diamondHandmade02,
+  diamondHandmade03,
+  diamondHandmade04,
+  diamondHandmade05,
+  diamondHandmade06,
+  diamondHandmade07,
+  diamondHandmade08,
+  diamondHandmade09,
+  diamondHandmade10,
 ];
 
-export function Glent() {
+export function DiamondHandmade() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -48,15 +56,15 @@ export function Glent() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetE() {
-    sessionStorage.setItem("boutiqueCabinet", "E");
+  function goToCabinetH() {
+    sessionStorage.setItem("boutiqueCabinet", "H");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerE3() {
-    sessionStorage.setItem("boutiqueCabinet", "E");
-    sessionStorage.setItem("boutiqueDrawer", "E3");
+  function goToDrawerH7() {
+    sessionStorage.setItem("boutiqueCabinet", "H");
+    sessionStorage.setItem("boutiqueDrawer", "H7");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -78,32 +86,34 @@ export function Glent() {
           <button
             type="button"
             className="breadcrumb-link"
-            onClick={goToCabinetE}
+            onClick={goToCabinetH}
           >
-            E
+            H
           </button>
           <span className="breadcrumb-separator">/</span>
 
           <button
             type="button"
             className="breadcrumb-link"
-            onClick={goToDrawerE3}
+            onClick={goToDrawerH7}
           >
-            E3
+            H7
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">GLENT</span>
+          <span className="breadcrumb-current">DIAMOND HANDMADE</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">GLENT</h1>
+        <h1 className="titulo-coleccion boutique-title">
+          DIAMOND HANDMADE
+        </h1>
 
         <div className="boutique-info">
-          <p>3''X9'' · ESTUDIO CERAMICO</p>
-          <p>E3</p>
+          <p>3''X5'' · ALTERET</p>
+          <p>H7</p>
         </div>
 
-        <ColeccionLayout infoUrl="https://eceramico.com/wp-content/uploads/2025/06/catalogo-azulejos-serie-ghent.pdf" />
+        <ColeccionLayout infoUrl="https://www.alteret.com/en/products/7262-handmade-wall-tiles/7266-collections/p-82484-diamond-s" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -113,7 +123,7 @@ export function Glent() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`GLENT ${index + 1}`}
+              alt={`DIAMOND HANDMADE ${index + 1}`}
             />
           ))}
         </section>

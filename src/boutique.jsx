@@ -133,7 +133,6 @@ import domus01 from "./assets/imagenes/domus/domus-01.jpg";
 import glowElios01 from "./assets/imagenes/glow-elios/glow-elios-01.jpg";
 import levels01 from "./assets/imagenes/levels/levels-01.jpg";
 import moves01 from "./assets/imagenes/moves/moves-01.jpg";
-import glent01 from "./assets/imagenes/glent/glent-01.jpg";
 import harmony01 from "./assets/imagenes/harmony/harmony-01.jpg";
 import onixMosaics01 from "./assets/imagenes/onix-mosaics/onix-mosaics-01.jpg";
 import brooklyn01 from "./assets/imagenes/brooklyn/brooklyn-01.jpg";
@@ -177,6 +176,16 @@ import arabesqueHandmade01 from "./assets/imagenes/arabesque-handmade/arabesque-
 import baseHandmade01 from "./assets/imagenes/base-handmade/base-handmade-01.jpg";
 import essenzaHandmade01 from "./assets/imagenes/essenza-handmade/essenza-handmade-01.jpg";
 import etnaHexagonal01 from "./assets/imagenes/etna-hexagonal/etna-hexagonal-01.jpg";
+import maui01 from "./assets/imagenes/maui/maui-01.jpg";
+import tempo01 from "./assets/imagenes/tempo/tempo-01.jpg";
+import sixtyHexagonal01 from "./assets/imagenes/sixty-hexagonal/sixty-hexagonal-01.jpg";
+import diamondHandmade01 from "./assets/imagenes/diamond-handmade/diamond-handmade-01.jpg";
+import kiteHandmade01 from "./assets/imagenes/kite-handmade/kite-handmade-01.jpg";
+import plage01 from "./assets/imagenes/plage/plage-01.jpg";
+import glenbrook01 from "./assets/imagenes/glenbrook/glenbrook-01.jpg";
+import santelmo01 from "./assets/imagenes/santelmo/santelmo-01.jpg";
+import antique01 from "./assets/imagenes/antique/antique-01.jpg";
+import barcelonaBoutique01 from "./assets/imagenes/barcelona-boutique/barcelona-boutique-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -1070,7 +1079,7 @@ C7: [
     name: "BRUNEI",
     format: "2''X10''",
     brand: "CERLAT",
-    locations: ["C7"],
+    locations: ["C7", H4],
     thumbnail: brunei01,
   },
 ],
@@ -1231,7 +1240,7 @@ D7: [
     name: "MOOS",
     format: "5''x5''",
     brand: "CIFRE",
-    locations: ["D7"],
+    locations: ["D7","H4"],
     thumbnail: moos01,
   },
 ],
@@ -1315,11 +1324,11 @@ E2: [
 
 E3: [
   {
-    name: "GLENT",
-    format: "3''X9''",
+    name: "GLENBROOK",
+    format: "2''X8''",
     brand: "ESTUDIO CERAMICO",
     locations: ["E3"],
-    thumbnail: glent01,
+    thumbnail: glenbrook01,
   },
 ],
 
@@ -1834,6 +1843,53 @@ H3: [
     thumbnail: timeless01,
   },
 ],
+H4: [
+  {
+    name: "BRUNEI",
+    format: "2''X10''",
+    brand: "CERLAT",
+    locations: ["C7", "H4"],
+    thumbnail: brunei01,
+  },
+  {
+    name: "MAUI",
+    format: "3''X10''",
+    brand: "CERLAT",
+    locations: ["H4", "H5"],
+    thumbnail: maui01,
+  },
+  {
+    name: "TEMPO",
+    format: "3''X10''",
+    brand: "CERLAT",
+    locations: ["H4"],
+    thumbnail: tempo01,
+  },
+  {
+    name: "MOOS",
+    format: "5''x5''",
+    brand: "CIFRE",
+    locations: ["D7", "H4"],
+    thumbnail: moos01,
+  },
+],
+
+H5: [
+  {
+    name: "MAUI",
+    format: "3''X10''",
+    brand: "CERLAT",
+    locations: ["H4", "H5"],
+    thumbnail: maui01,
+  },
+  {
+    name: "SIXTY HEXAGONAL",
+    format: "6''X7''",
+    brand: "EMIL",
+    locations: ["H5"],
+    thumbnail: sixtyHexagonal01,
+  },
+],
 H6: [
   {
     name: "SUBWAY HANDMADE",
@@ -1841,6 +1897,56 @@ H6: [
     brand: "ALTERET",
     locations: ["H1", "H6"],
     thumbnail: subwayHandmade01,
+  },
+],
+H7: [
+  {
+    name: "DIAMOND HANDMADE",
+    format: "3''X5''",
+    brand: "ALTERET",
+    locations: ["H7"],
+    thumbnail: diamondHandmade01,
+  },
+  {
+    name: "KITE HANDMADE",
+    format: "5''X9''",
+    brand: "ALTERET",
+    locations: ["H7"],
+    thumbnail: kiteHandmade01,
+  },
+  {
+    name: "PLAGE HANDMADE",
+    format: "2''X8''",
+    brand: "ALTERET",
+    locations: ["H7"],
+    thumbnail: plage01,
+  },
+],
+
+H9: [
+  {
+    name: "SANTELMO",
+    format: "3''X8''",
+    brand: "GRESPANIA",
+    locations: ["H9"],
+    thumbnail: santelmo01,
+  },
+],
+
+H10: [
+  {
+    name: "ANTIQUE",
+    format: "6''X6''",
+    brand: "ESTUDIO CERAMICO",
+    locations: ["H10"],
+    thumbnail: antique01,
+  },
+  {
+    name: "BARCELONA BOUTIQUE",
+    format: "6''X6''",
+    brand: "ESTUDIO CERAMICO",
+    locations: ["H10"],
+    thumbnail: barcelonaBoutique01,
   },
 ],
 };
@@ -2607,7 +2713,7 @@ const boutiqueCollections = [
   name: "BRUNEI",
   format: "2''X10''",
   brand: "CERLAT",
-  locations: ["C7"],
+  locations: ["C7", "H4"],
   thumbnail: brunei01,
 },
 {
@@ -2719,7 +2825,7 @@ const boutiqueCollections = [
   name: "MOOS",
   format: "5''x5''",
   brand: "CIFRE",
-  locations: ["D7"],
+  locations: ["D7", "H4"],
   thumbnail: moos01,
 },
 {
@@ -3114,6 +3220,76 @@ const boutiqueCollections = [
   brand: "ALTERET",
   locations: ["H2"],
   thumbnail: etnaHexagonal01,
+},
+{
+  name: "MAUI",
+  format: "3''X10''",
+  brand: "CERLAT",
+  locations: ["H4", "H5"],
+  thumbnail: maui01,
+},
+{
+  name: "TEMPO",
+  format: "3''X10''",
+  brand: "CERLAT",
+  locations: ["H4"],
+  thumbnail: tempo01,
+},
+{
+  name: "SIXTY HEXAGONAL",
+  format: "6''X7''",
+  brand: "EMIL",
+  locations: ["H5"],
+  thumbnail: sixtyHexagonal01,
+},
+{
+  name: "DIAMOND HANDMADE",
+  format: "3''X5''",
+  brand: "ALTERET",
+  locations: ["H7"],
+  thumbnail: diamondHandmade01,
+},
+{
+  name: "KITE HANDMADE",
+  format: "5''X9''",
+  brand: "ALTERET",
+  locations: ["H7"],
+  thumbnail: kiteHandmade01,
+},
+{
+  name: "PLAGE HANDMADE",
+  format: "2''X8''",
+  brand: "ALTERET",
+  locations: ["H7"],
+  thumbnail: plage01,
+},
+{
+  name: "GLENBROOK",
+  format: "2''X8''",
+  brand: "ESTUDIO CERAMICO",
+  locations: ["E3"],
+  thumbnail: glenbrook01,
+},
+{
+  name: "SANTELMO",
+  format: "3''X8''",
+  brand: "GRESPANIA",
+  locations: ["H9"],
+  thumbnail: santelmo01,
+},
+{
+  name: "ANTIQUE",
+  format: "6''X6''",
+  brand: "ESTUDIO CERAMICO",
+  locations: ["H10"],
+  thumbnail: antique01,
+},
+{
+  name: "BARCELONA BOUTIQUE",
+  format: "6''X6''",
+  brand: "ESTUDIO CERAMICO",
+  locations: ["H10"],
+  thumbnail: barcelonaBoutique01,
 },
 
 ];

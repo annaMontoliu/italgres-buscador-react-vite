@@ -1,20 +1,25 @@
-// src/colecciones/moos.jsx
-
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import img01 from "../assets/imagenes/moos/moos-01.jpg";
-import img02 from "../assets/imagenes/moos/moos-02.jpg";
-import img03 from "../assets/imagenes/moos/moos-03.jpg";
-import img04 from "../assets/imagenes/moos/moos-04.jpg";
-import img05 from "../assets/imagenes/moos/moos-05.jpg";
-import img06 from "../assets/imagenes/moos/moos-06.jpg";
+import glenbrook01 from "../assets/imagenes/glenbrook/glenbrook-01.jpg";
+import glenbrook02 from "../assets/imagenes/glenbrook/glenbrook-02.jpg";
+import glenbrook03 from "../assets/imagenes/glenbrook/glenbrook-03.jpg";
+import glenbrook04 from "../assets/imagenes/glenbrook/glenbrook-04.jpg";
+import glenbrook05 from "../assets/imagenes/glenbrook/glenbrook-05.jpg";
+import glenbrook06 from "../assets/imagenes/glenbrook/glenbrook-06.jpg";
 
-const images = [img01, img02, img03, img04, img05, img06];
+const images = [
+  glenbrook01,
+  glenbrook02,
+  glenbrook03,
+  glenbrook04,
+  glenbrook05,
+  glenbrook06,
+];
 
-export function Moos() {
+export function Glenbrook() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -43,27 +48,15 @@ export function Moos() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetD() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerD7() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D7");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
-  function goToCabinetH() {
-    sessionStorage.setItem("boutiqueCabinet", "H");
-    sessionStorage.removeItem("boutiqueDrawer");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
-  function goToDrawerH4() {
-    sessionStorage.setItem("boutiqueCabinet", "H");
-    sessionStorage.setItem("boutiqueDrawer", "H4");
+  function goToDrawerE3() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E3");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -73,32 +66,44 @@ export function Moos() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetD}>
-            D
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetE}
+          >
+            E
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerD7}>
-            D7
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerE3}
+          >
+            E3
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">MOOS</span>
+          <span className="breadcrumb-current">GLENBROOK</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">MOOS</h1>
+        <h1 className="titulo-coleccion boutique-title">GLENBROOK</h1>
 
         <div className="boutique-info">
-          <p>5''x5'' · CIFRE</p>
-          <p>D7 · H4</p>
+          <p>2''X8'' · ESTUDIO CERAMICO</p>
+          <p>E3</p>
         </div>
 
-        <ColeccionLayout infoUrl="https://cifreceramica.com/en/pdf-coleccion/Moos/" />
+        <ColeccionLayout infoUrl="https://eceramico.com/wp-content/uploads/2024/01/catalogo-coleccion-glenbrook.pdf" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -108,7 +113,7 @@ export function Moos() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`MOOS ${index + 1}`}
+              alt={`GLENBROOL ${index + 1}`}
             />
           ))}
         </section>

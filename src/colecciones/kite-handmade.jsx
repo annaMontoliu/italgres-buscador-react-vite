@@ -1,20 +1,19 @@
-// src/colecciones/moos.jsx
-
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-import img01 from "../assets/imagenes/moos/moos-01.jpg";
-import img02 from "../assets/imagenes/moos/moos-02.jpg";
-import img03 from "../assets/imagenes/moos/moos-03.jpg";
-import img04 from "../assets/imagenes/moos/moos-04.jpg";
-import img05 from "../assets/imagenes/moos/moos-05.jpg";
-import img06 from "../assets/imagenes/moos/moos-06.jpg";
+import kiteHandmade01 from "../assets/imagenes/kite-handmade/kite-handmade-01.jpg";
+import kiteHandmade02 from "../assets/imagenes/kite-handmade/kite-handmade-02.jpg";
+import kiteHandmade03 from "../assets/imagenes/kite-handmade/kite-handmade-03.jpg";
 
-const images = [img01, img02, img03, img04, img05, img06];
+const images = [
+  kiteHandmade01,
+  kiteHandmade02,
+  kiteHandmade03,
+];
 
-export function Moos() {
+export function KiteHandmade() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -43,27 +42,15 @@ export function Moos() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetD() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.removeItem("boutiqueDrawer");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
-  function goToDrawerD7() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D7");
-    window.dispatchEvent(new CustomEvent("go-boutique"));
-  }
-
   function goToCabinetH() {
     sessionStorage.setItem("boutiqueCabinet", "H");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerH4() {
+  function goToDrawerH7() {
     sessionStorage.setItem("boutiqueCabinet", "H");
-    sessionStorage.setItem("boutiqueDrawer", "H4");
+    sessionStorage.setItem("boutiqueDrawer", "H7");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -73,32 +60,44 @@ export function Moos() {
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetD}>
-            D
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetH}
+          >
+            H
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerD7}>
-            D7
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerH7}
+          >
+            H7
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">MOOS</span>
+          <span className="breadcrumb-current">KITE HANDMADE</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">MOOS</h1>
+        <h1 className="titulo-coleccion boutique-title">KITE HANDMADE</h1>
 
         <div className="boutique-info">
-          <p>5''x5'' · CIFRE</p>
-          <p>D7 · H4</p>
+          <p>5''X9'' · ALTERET</p>
+          <p>H7</p>
         </div>
 
-        <ColeccionLayout infoUrl="https://cifreceramica.com/en/pdf-coleccion/Moos/" />
+        <ColeccionLayout infoUrl="https://www.alteret.com/en/products/7262-handmade-wall-tiles/7266-collections/p-135130-kite" />
 
         <section className="gallery-grid">
           {images.map((img, index) => (
@@ -108,7 +107,7 @@ export function Moos() {
               className="gallery-img"
               onClick={() => openModal(index)}
               loading="lazy"
-              alt={`MOOS ${index + 1}`}
+              alt={`KITE HANDMADE ${index + 1}`}
             />
           ))}
         </section>
