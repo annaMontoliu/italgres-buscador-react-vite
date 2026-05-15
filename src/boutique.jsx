@@ -168,6 +168,15 @@ import mentonBlue01 from "./assets/imagenes/menton-blue/menton-blue-01.jpg";
 import moving01 from "./assets/imagenes/moving/moving-01.jpg";
 import vanguard01 from "./assets/imagenes/vanguard/vanguard-01.jpg";
 import venezia01 from "./assets/imagenes/venezia/venezia-01.jpg";
+import brickedHandmade01 from "./assets/imagenes/bricked-handmade/bricked-handmade-01.jpg";
+import chevronHandmade01 from "./assets/imagenes/chevron-handmade/chevron-handmade-01.jpg";
+import cisele01 from "./assets/imagenes/cisele/cisele-01.jpg";
+import subwayHandmade01 from "./assets/imagenes/subway-handmade/subway-handmade-01.jpg";
+import zelligeHandmade01 from "./assets/imagenes/zellige-handmade/zellige-handmade-01.jpg";
+import arabesqueHandmade01 from "./assets/imagenes/arabesque-handmade/arabesque-handmade-01.jpg";
+import baseHandmade01 from "./assets/imagenes/base-handmade/base-handmade-01.jpg";
+import essenzaHandmade01 from "./assets/imagenes/essenza-handmade/essenza-handmade-01.jpg";
+import etnaHexagonal01 from "./assets/imagenes/etna-hexagonal/etna-hexagonal-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -1749,6 +1758,91 @@ G10: [
     thumbnail: venezia01,
   },
 ],
+H1: [
+  {
+    name: "BRICKED HANDMADE",
+    format: "2''x11''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: brickedHandmade01,
+  },
+  {
+    name: "CHEVRON HANDMADE",
+    format: "2''X11''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: chevronHandmade01,
+  },
+  {
+    name: "CISELÉ",
+    format: "2''X6''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: cisele01,
+  },
+  {
+    name: "SUBWAY HANDMADE",
+    format: "3''X8''",
+    brand: "ALTERET",
+    locations: ["H1", "H6"],
+    thumbnail: subwayHandmade01,
+  },
+  {
+    name: "ZELLIGE HANDMADE",
+    format: "4''X4''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: zelligeHandmade01,
+  },
+],
+H2: [
+  {
+    name: "ARABESQUE HANDAMDE",
+    format: "5''X6''",
+    brand: "ALTERET",
+    locations: ["H2"],
+    thumbnail: arabesqueHandmade01,
+  },
+  {
+    name: "BASE HANDMADE",
+    format: "5''x5'' & 4''x8''",
+    brand: "ALTERET",
+    locations: ["H2"],
+    thumbnail: baseHandmade01,
+  },
+  {
+    name: "ESSENZA HANDMADE",
+    format: "4''x9''",
+    brand: "ALTERET",
+    locations: ["H2"],
+    thumbnail: essenzaHandmade01,
+  },
+  {
+    name: "ETNA HEXAGONAL",
+    format: "4''X5''",
+    brand: "ALTERET",
+    locations: ["H2"],
+    thumbnail: etnaHexagonal01,
+  },
+],
+H3: [
+  {
+    name: "TIMELESS",
+    format: "3''X12''",
+    brand: "CIFRE",
+    locations: ["D8", "H3"],
+    thumbnail: timeless01,
+  },
+],
+H6: [
+  {
+    name: "SUBWAY HANDMADE",
+    format: "3''X8''",
+    brand: "ALTERET",
+    locations: ["H1", "H6"],
+    thumbnail: subwayHandmade01,
+  },
+],
 };
 
 const boutiqueCollections = [
@@ -2950,7 +3044,77 @@ const boutiqueCollections = [
   locations: ["G10"],
   thumbnail: venezia01,
 },
+{
+  name: "BRICKED HANDMADE",
+  format: "2''x11''",
+  brand: "ALTERET",
+  locations: ["H1"],
+  thumbnail: brickedHandmade01,
+},
 
+{
+  name: "CHEVRON HANDMADE",
+  format: "2''X11''",
+  brand: "ALTERET",
+  locations: ["H1"],
+  thumbnail: chevronHandmade01,
+},
+
+{
+  name: "CISELÉ",
+  format: "2''X6''",
+  brand: "ALTERET",
+  locations: ["H1"],
+  thumbnail: cisele01,
+},
+
+{
+  name: "SUBWAY HANDMADE",
+  format: "3''X8''",
+  brand: "ALTERET",
+  locations: ["H1", "H6"],
+  thumbnail: subwayHandmade01,
+},
+
+{
+  name: "ZELLIGE HANDMADE",
+  format: "4''X4''",
+  brand: "ALTERET",
+  locations: ["H1"],
+  thumbnail: zelligeHandmade01,
+},
+
+{
+  name: "ARABESQUE HANDAMDE",
+  format: "5''X6''",
+  brand: "ALTERET",
+  locations: ["H2"],
+  thumbnail: arabesqueHandmade01,
+},
+
+{
+  name: "BASE HANDMADE",
+  format: "5''x5'' & 4''x8''",
+  brand: "ALTERET",
+  locations: ["H2"],
+  thumbnail: baseHandmade01,
+},
+
+{
+  name: "ESSENZA HANDMADE",
+  format: "4''x9''",
+  brand: "ALTERET",
+  locations: ["H2"],
+  thumbnail: essenzaHandmade01,
+},
+
+{
+  name: "ETNA HEXAGONAL",
+  format: "4''X5''",
+  brand: "ALTERET",
+  locations: ["H2"],
+  thumbnail: etnaHexagonal01,
+},
 
 ];
 

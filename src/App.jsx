@@ -294,6 +294,15 @@ import { Venezia } from "./colecciones/venezia";
 import { BrecciaMandorla } from "./colecciones/breccia-mandorla";
 import { TerraCrea } from "./colecciones/terra-crea";
 import { Formentor } from "./colecciones/formentor";
+import { BrickedHandmade } from "./colecciones/bricked-handmade";
+import { ChevronHandmade } from "./colecciones/chevron-handmade";
+import { Cisele } from "./colecciones/cisele";
+import { SubwayHandmade } from "./colecciones/subway-handmade";
+import { ZelligeHandmade } from "./colecciones/zellige-handmade";
+import { ArabesqueHandmade } from "./colecciones/arabesque-handmade";
+import { BaseHandmade } from "./colecciones/base-handmade";
+import { EssenzaHandmade } from "./colecciones/essenza-handmade";
+import { EtnaHexagonal } from "./colecciones/etna-hexagonal";
 
 
 
@@ -648,6 +657,15 @@ export function App() {
     if (name === "BRECCIA MANDORLA") setPage("breccia-mandorla");
     if (name === "TERRA CREA") setPage("terra-crea");
     if (name === "FORMENTOR") setPage("formentor");
+    if (name === "BRICKED HANDMADE") setPage("bricked-handmade");
+    if (name === "CHEVRON HANDMADE") setPage("chevron-handmade");
+    if (name === "CISELÉ") setPage("cisele");
+    if (name === "SUBWAY HANDMADE") setPage("subway-handmade");
+    if (name === "ZELLIGE HANDMADE") setPage("zellige-handmade");
+    if (name === "ARASQUE HANDAMDE") setPage("arabesque-handmade");
+    if (name === "BASE HANDMADE") setPage("base-handmade");
+    if (name === "ESSENZA HANDMADE") setPage("essenza-handmade");
+    if (name === "ETNA HEXAGONAL") setPage("etna-hexagonal");
 
   }
 
@@ -953,6 +971,15 @@ export function App() {
   if (page === "breccia-mandorla") return <BrecciaMandorla />;
   if (page === "terra-crea") return <TerraCrea />;
   if (page === "formentor") return <Formentor />;
+  if (page === "bricked-handmade") return <BrickedHandmade />;
+  if (page === "chevron-handmade") return <ChevronHandmade />;
+  if (page === "cisele") return <Cisele />;
+  if (page === "subway-handmade") return <SubwayHandmade />;
+  if (page === "zellige-handmade") return <ZelligeHandmade />;
+  if (page === "arabesque-handmade") return <ArabesqueHandmade />;
+  if (page === "base-handmade") return <BaseHandmade />;
+  if (page === "essenza-handmade") return <EssenzaHandmade />;
+  if (page === "etna-hexagonal") return <EtnaHexagonal />;
 
   return null;
 }
