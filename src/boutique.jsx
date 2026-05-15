@@ -1079,7 +1079,7 @@ C7: [
     name: "BRUNEI",
     format: "2''X10''",
     brand: "CERLAT",
-    locations: ["C7", H4],
+    locations: ["C7", "H4"],
     thumbnail: brunei01,
   },
 ],
@@ -1843,6 +1843,7 @@ H3: [
     thumbnail: timeless01,
   },
 ],
+
 H4: [
   {
     name: "BRUNEI",
@@ -1890,6 +1891,7 @@ H5: [
     thumbnail: sixtyHexagonal01,
   },
 ],
+
 H6: [
   {
     name: "SUBWAY HANDMADE",
@@ -1899,6 +1901,7 @@ H6: [
     thumbnail: subwayHandmade01,
   },
 ],
+
 H7: [
   {
     name: "DIAMOND HANDMADE",
