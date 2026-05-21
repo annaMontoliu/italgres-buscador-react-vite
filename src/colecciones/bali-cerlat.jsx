@@ -10,6 +10,8 @@ import bali04 from "../assets/imagenes/bali-cerlat/bali-cerlat-04.jpg";
 import bali05 from "../assets/imagenes/bali-cerlat/bali-cerlat-05.jpg";
 import bali06 from "../assets/imagenes/bali-cerlat/bali-cerlat-06.jpg";
 import bali07 from "../assets/imagenes/bali-cerlat/bali-cerlat-07.jpg";
+import bali08 from "../assets/imagenes/bali-cerlat/bali-cerlat-08.jpg";
+import bali09 from "../assets/imagenes/bali-cerlat/bali-cerlat-09.jpg";
 
 const images = [
   bali01,
@@ -19,6 +21,8 @@ const images = [
   bali05,
   bali06,
   bali07,
+  bali08,
+  bali09,
 ];
 
 export function BaliCerlat({ onGoHome }) {
