@@ -5,31 +5,36 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// =====================
-// IMPORT IMÁGENES
-// =====================
-
-// NORDIC WHITE (1)
+// NORDIC WHITE
 import nordicWhite01 from "../assets/imagenes/nordic/nordic-white/nordic-white-01.jpg";
 
-// NORDIC SILVER (4)
+// NORDIC SILVER
 import nordicSilver01 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-01.jpg";
 import nordicSilver02 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-02.jpg";
 import nordicSilver03 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-03.jpg";
 import nordicSilver04 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-04.jpg";
+import nordicSilver05 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-05.jpg";
+import nordicSilver06 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-06.jpg";
+import nordicSilver07 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-07.jpg";
+import nordicSilver08 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-08.jpg";
+import nordicSilver09 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-09.jpg";
+import nordicSilver10 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-10.jpg";
+import nordicSilver11 from "../assets/imagenes/nordic/nordic-silver/nordic-silver-11.jpg";
 
-// =====================
-// ARRAY GLOBAL MODAL
-// =====================
 const images = [
-  // WHITE
   nordicWhite01,
 
-  // SILVER
   nordicSilver01,
   nordicSilver02,
   nordicSilver03,
   nordicSilver04,
+  nordicSilver05,
+  nordicSilver06,
+  nordicSilver07,
+  nordicSilver08,
+  nordicSilver09,
+  nordicSilver10,
+  nordicSilver11,
 ];
 
 export function Nordic({ onGoHome }) {
@@ -66,7 +71,6 @@ export function Nordic({ onGoHome }) {
 
         <ColeccionLayout infoUrl="https://saxolia.it/Nordic-catalogue.pdf" />
 
-        {/* NORDIC WHITE */}
         <h3 className="color-title">NORDIC WHITE</h3>
         <section className="gallery-grid">
           <img
@@ -78,37 +82,30 @@ export function Nordic({ onGoHome }) {
           />
         </section>
 
-        {/* NORDIC SILVER */}
         <h3 className="color-title">NORDIC SILVER</h3>
         <section className="gallery-grid">
-          <img
-            src={nordicSilver01}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="NORDIC SILVER 01"
-          />
-          <img
-            src={nordicSilver02}
-            className="gallery-img"
-            onClick={() => openModal(2)}
-            loading="lazy"
-            alt="NORDIC SILVER 02"
-          />
-          <img
-            src={nordicSilver03}
-            className="gallery-img"
-            onClick={() => openModal(3)}
-            loading="lazy"
-            alt="NORDIC SILVER 03"
-          />
-          <img
-            src={nordicSilver04}
-            className="gallery-img"
-            onClick={() => openModal(4)}
-            loading="lazy"
-            alt="NORDIC SILVER 04"
-          />
+          {[
+            nordicSilver01,
+            nordicSilver02,
+            nordicSilver03,
+            nordicSilver04,
+            nordicSilver05,
+            nordicSilver06,
+            nordicSilver07,
+            nordicSilver08,
+            nordicSilver09,
+            nordicSilver10,
+            nordicSilver11,
+          ].map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(index + 1)}
+              loading="lazy"
+              alt={`NORDIC SILVER ${String(index + 1).padStart(2, "0")}`}
+            />
+          ))}
         </section>
       </main>
 
