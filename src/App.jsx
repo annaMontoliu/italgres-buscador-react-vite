@@ -312,6 +312,18 @@ import { Glenbrook } from "./colecciones/glenbrook";
 import { Santelmo } from "./colecciones/santelmo";
 import { Antique } from "./colecciones/antique";
 import { BarcelonaBoutique } from "./colecciones/barcelona-boutique";
+import { Jaipur } from "./colecciones/jaipur";
+import { Kanji } from "./colecciones/kanji";
+import { Roku } from "./colecciones/roku";
+import { Sunrise } from "./colecciones/sunrise";
+import { DAutoreEnzo } from "./colecciones/d_autore-enzo";
+import { Salsa } from "./colecciones/salsa";
+import { Groovy } from "./colecciones/groovy";
+import { Angle } from "./colecciones/angle";
+import { Arch } from "./colecciones/arch";
+import { ShallowRectan } from "./colecciones/shallow-rectan";
+import { ShallowCuadrado } from "./colecciones/shallow-cuadrado";
+import { Highbury } from "./colecciones/highbury";
 
 
 
@@ -684,6 +696,18 @@ export function App() {
     if (name === "SANTELMO") setPage("santelmo");
     if (name === "ANTIQUE") setPage("antique");
     if (name === "BARCELONA BOUTIQUE") setPage("barcelona-boutique");
+    if (name === "JAIPUR") setPage("jaipur");
+    if (name === "KANJI") setPage("kanji");
+    if (name === "ROKU") setPage("roku");
+    if (name === "SUNRISE") setPage("sunrise");
+    if (name === "D'AUTORE ENZO") setPage("d_autore-enzo");
+    if (name === "SALSA") setPage("salsa");
+    if (name === "GROOVY") setPage("groovy");
+    if (name === "ANGLE") setPage("angle");
+    if (name === "ARCH") setPage("arch");
+    if (name === "SHALLOW RECTAN") setPage("shallow-rectan");
+    if (name === "SHALLOW CUADRADO") setPage("shallow-cuadrado");
+    if (name === "HIGHBURY") setPage("highbury");
 
   }
 
@@ -1007,6 +1031,18 @@ export function App() {
   if (page === "santelmo") return <Santelmo />;
   if (page === "antique") return <Antique />;
   if (page === "barcelona-boutique") return <BarcelonaBoutique />;
+  if (page === "jaipur") return <Jaipur />;
+  if (page === "kanji") return <Kanji />;
+  if (page === "roku") return <Roku />;
+  if (page === "sunrise") return <Sunrise />;
+  if (page === "d_autore-enzo") return <DAutoreEnzo />;
+  if (page === "salsa") return <Salsa />;
+  if (page === "groovy") return <Groovy />;
+  if (page === "angle") return <Angle />;
+  if (page === "arch") return <Arch />;
+  if (page === "shallow-rectan") return <ShallowRectan />;
+  if (page === "shallow-cuadrado") return <ShallowCuadrado />;
+  if (page === "highbury") return <Highbury />;
 
   return null;
 }

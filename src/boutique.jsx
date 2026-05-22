@@ -186,6 +186,18 @@ import glenbrook01 from "./assets/imagenes/glenbrook/glenbrook-01.jpg";
 import santelmo01 from "./assets/imagenes/santelmo/santelmo-01.jpg";
 import antique01 from "./assets/imagenes/antique/antique-01.jpg";
 import barcelonaBoutique01 from "./assets/imagenes/barcelona-boutique/barcelona-boutique-01.jpg";
+import jaipur01 from "./assets/imagenes/jaipur/jaipur-01.jpg";
+import kanji01 from "./assets/imagenes/kanji/kanji-01.jpg";
+import roku01 from "./assets/imagenes/roku/roku-01.jpg";
+import sunrise01 from "./assets/imagenes/sunrise/sunrise-01.jpg";
+import dAutoreEnzo01 from "./assets/imagenes/d_autore-enzo/d_autore-enzo-01.jpg";
+import salsa01 from "./assets/imagenes/salsa/salsa-01.jpg";
+import groovy01 from "./assets/imagenes/groovy/groovy-01.jpg";
+import angle01 from "./assets/imagenes/angle/angle-01.jpg";
+import arch01 from "./assets/imagenes/arch/arch-01.jpg";
+import shallowRectan01 from "./assets/imagenes/shallow-rectan/shallow-rectan-01.jpg";
+import shallowCuadrado01 from "./assets/imagenes/shallow-cuadrado/shallow-cuadrado-01.jpg";
+import highbury01 from "./assets/imagenes/highbury/highbury-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -1952,6 +1964,120 @@ H10: [
     thumbnail: barcelonaBoutique01,
   },
 ],
+
+I1: [
+  {
+    name: "JAIPUR",
+    format: `5''X9''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["I1"],
+    thumbnail: jaipur01,
+  },
+  {
+    name: "KANJI",
+    format: `5''X8''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["I1"],
+    thumbnail: kanji01,
+  },
+  {
+    name: "ROKU",
+    format: `5''X9''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["I1"],
+    thumbnail: roku01,
+  },
+],
+
+I2: [
+  {
+    name: "SUNRISE",
+    format: `3''X10''`,
+    brand: "NATUCER",
+    locations: ["I2"],
+    thumbnail: sunrise01,
+  },
+],
+
+I3: [
+  {
+    name: "D'AUTORE ENZO",
+    format: `5''X5''`,
+    brand: "NATUCER",
+    locations: ["I3"],
+    thumbnail: dAutoreEnzo01,
+  },
+],
+
+I4: [
+  {
+    name: "SALSA",
+    format: `4''X18''`,
+    brand: "NATUCER",
+    locations: ["I4"],
+    thumbnail: salsa01,
+  },
+],
+
+I5: [
+  {
+    name: "GROOVY",
+    format: `8''X8''`,
+    brand: "CEVICA",
+    locations: ["I5"],
+    thumbnail: groovy01,
+  },
+],
+
+I6: [
+  {
+    name: "ANGLE",
+    format: `5''X12''`,
+    brand: "NATUCER",
+    locations: ["I6"],
+    thumbnail: angle01,
+  },
+],
+
+I7: [
+  {
+    name: "ARCH",
+    format: `5''X12''`,
+    brand: "NATUCER",
+    locations: ["I7"],
+    thumbnail: arch01,
+  },
+],
+
+I8: [
+  {
+    name: "SHALLOW RECTAN",
+    format: `2''X9''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["I8"],
+    thumbnail: shallowRectan01,
+  },
+],
+
+I9: [
+  {
+    name: "SHALLOW CUADRADO",
+    format: `6''X6''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["I9"],
+    thumbnail: shallowCuadrado01,
+  },
+],
+
+I10: [
+  {
+    name: "HIGHBURY",
+    format: `6''X6''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["I10"],
+    thumbnail: highbury01,
+  },
+],
 };
 
 const boutiqueCollections = [
@@ -3286,6 +3412,91 @@ const boutiqueCollections = [
   brand: "ESTUDIO CERAMICO",
   locations: ["H10"],
   thumbnail: barcelonaBoutique01,
+},
+
+{
+  name: "JAIPUR",
+  format: `5''X9''`,
+  brand: "ESTUDIO CERAMICO",
+  locations: ["I1"],
+  thumbnail: jaipur01,
+},
+{
+  name: "KANJI",
+  format: `5''X8''`,
+  brand: "ESTUDIO CERAMICO",
+  locations: ["I1"],
+  thumbnail: kanji01,
+},
+{
+  name: "ROKU",
+  format: `5''X9''`,
+  brand: "ESTUDIO CERAMICO",
+  locations: ["I1"],
+  thumbnail: roku01,
+},
+{
+  name: "SUNRISE",
+  format: `3''X10''`,
+  brand: "NATUCER",
+  locations: ["I2"],
+  thumbnail: sunrise01,
+},
+{
+  name: "D'AUTORE ENZO",
+  format: `5''X5''`,
+  brand: "NATUCER",
+  locations: ["I3"],
+  thumbnail: dAutoreEnzo01,
+},
+{
+  name: "SALSA",
+  format: `4''X18''`,
+  brand: "NATUCER",
+  locations: ["I4"],
+  thumbnail: salsa01,
+},
+{
+  name: "GROOVY",
+  format: `8''X8''`,
+  brand: "CEVICA",
+  locations: ["I5"],
+  thumbnail: groovy01,
+},
+{
+  name: "ANGLE",
+  format: `5''X12''`,
+  brand: "NATUCER",
+  locations: ["I6"],
+  thumbnail: angle01,
+},
+{
+  name: "ARCH",
+  format: `5''X12''`,
+  brand: "NATUCER",
+  locations: ["I7"],
+  thumbnail: arch01,
+},
+{
+  name: "SHALLOW RECTAN",
+  format: `2''X9''`,
+  brand: "ESTUDIO CERAMICO",
+  locations: ["I8"],
+  thumbnail: shallowRectan01,
+},
+{
+  name: "SHALLOW CUADRADO",
+  format: `6''X6''`,
+  brand: "ESTUDIO CERAMICO",
+  locations: ["I9"],
+  thumbnail: shallowCuadrado01,
+},
+{
+  name: "HIGHBURY",
+  format: `6''X6''`,
+  brand: "ESTUDIO CERAMICO",
+  locations: ["I10"],
+  thumbnail: highbury01,
 },
 
 ];
