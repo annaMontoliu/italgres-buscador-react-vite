@@ -198,6 +198,14 @@ import arch01 from "./assets/imagenes/arch/arch-01.jpg";
 import shallowRectan01 from "./assets/imagenes/shallow-rectan/shallow-rectan-01.jpg";
 import shallowCuadrado01 from "./assets/imagenes/shallow-cuadrado/shallow-cuadrado-01.jpg";
 import highbury01 from "./assets/imagenes/highbury/highbury-01.jpg";
+import crayonFino01 from "./assets/imagenes/crayon-fino/crayon-fino-01.jpg";
+import renaissanceFinoPino01 from "./assets/imagenes/renaissance-fino-pino/renaissance-fino-pino-01.jpg";
+import tiraMattone01 from "./assets/imagenes/tira-mattone/tira-mattone-01.jpg";
+import renaissanceFino01 from "./assets/imagenes/renaissance-fino/renaissance-fino-01.jpg";
+import crispBoutique01 from "./assets/imagenes/crisp-boutique/crisp-boutique-01.jpg";
+import osaka01 from "./assets/imagenes/osaka/osaka-01.jpg";
+import kyoto01 from "./assets/imagenes/kyoto/kyoto-01.jpg";
+import picos01 from "./assets/imagenes/picos/picos-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -2078,6 +2086,124 @@ I10: [
     thumbnail: highbury01,
   },
 ],
+J1: [
+  {
+    name: "CRAYON FINO",
+    format: "2''X20''",
+    brand: "NATUCER",
+    locations: ["J1"],
+    thumbnail: crayonFino01,
+  },
+],
+
+J2: [
+  {
+    name: "RENAISSANCE PILLOW FINO",
+    format: "2''X10''",
+    brand: "NATUCER",
+    locations: ["J2"],
+    thumbnail: renaissanceFinoPino01,
+  },
+  {
+    name: "TIRA MATTONE",
+    format: "2''X10''",
+    brand: "NATUCER",
+    locations: ["J2", "J6"],
+    thumbnail: tiraMattone01,
+  },
+],
+
+J3: [
+  {
+    name: "RENAISSANCE FINO",
+    format: "2''X20''",
+    brand: "NATUCER",
+    locations: ["J3"],
+    thumbnail: renaissanceFino01,
+  },
+  {
+    name: "CRISP BOUTIQUE",
+    format: "8''X8''",
+    brand: "HARMONY",
+    locations: ["J3"],
+    thumbnail: crispBoutique01,
+  },
+],
+
+J4: [
+  {
+    name: "OSAKA",
+    format: "5''X5''",
+    brand: "NATUCER",
+    locations: ["J4"],
+    thumbnail: osaka01,
+  },
+],
+
+J6: [
+  {
+    name: "TIRA MATTONE",
+    format: "2''X10''",
+    brand: "NATUCER",
+    locations: ["J2", "J6"],
+    thumbnail: tiraMattone01,
+  },
+],
+J5: [
+  {
+    name: "KYOTO",
+    format: "5''X5''",
+    brand: "NATUCER",
+    locations: ["J5"],
+    thumbnail: kyoto01,
+  },
+],
+
+J7: [
+  {
+    name: "ARCH",
+    format: "5''X12''",
+    brand: "NATUCER",
+    locations: ["I7", "J7"],
+    thumbnail: arch01,
+  },
+],
+
+J8: [
+  {
+    name: "CASABLANCA",
+    format: "2''X6''",
+    brand: "LUNGARNO CERAMICS",
+    locations: ["J8"],
+    thumbnail: null,
+  },
+  {
+    name: "MIDMOD MOSAICS",
+    format: "1''X1''",
+    brand: "LUNGARNO CERAMICS",
+    locations: ["J8"],
+    thumbnail: null,
+  },
+],
+J9: [
+  {
+    name: "ZELLIGE-LUNGARNO",
+    format: "",
+    brand: "LUNGARNO CERAMICS",
+    locations: ["J9"],
+    thumbnail: null,
+  },
+],
+
+J10: [
+  {
+    name: "PICOS",
+    format: "8''X8''",
+    brand: "VIVES",
+    locations: ["J10"],
+    thumbnail: picos01,
+  },
+],
 };
 
 const boutiqueCollections = [
@@ -3497,6 +3623,83 @@ const boutiqueCollections = [
   brand: "ESTUDIO CERAMICO",
   locations: ["I10"],
   thumbnail: highbury01,
+},
+{
+  name: "CRAYON FINO",
+  format: "2''X20''",
+  brand: "NATUCER",
+  locations: ["J1"],
+  thumbnail: crayonFino01,
+},
+{
+  name: "RENAISSANCE PILLOW FINO",
+  format: "2''X10''",
+  brand: "NATUCER",
+  locations: ["J2"],
+  thumbnail: renaissanceFinoPino01,
+},
+{
+  name: "TIRA MATTONE",
+  format: "2''X10''",
+  brand: "NATUCER",
+  locations: ["J2", "J6"],
+  thumbnail: tiraMattone01,
+},
+{
+  name: "RENAISSANCE FINO",
+  format: "2''X20''",
+  brand: "NATUCER",
+  locations: ["J3"],
+  thumbnail: renaissanceFino01,
+},
+{
+  name: "CRISP BOUTIQUE",
+  format: "8''X8''",
+  brand: "HARMONY",
+  locations: ["J3"],
+  thumbnail: crispBoutique01,
+},
+{
+  name: "OSAKA",
+  format: "5''X5''",
+  brand: "NATUCER",
+  locations: ["J4"],
+  thumbnail: osaka01,
+},
+{
+  name: "KYOTO",
+  format: "5''X5''",
+  brand: "NATUCER",
+  locations: ["J5"],
+  thumbnail: kyoto01,
+},
+{
+  name: "CASABLANCA",
+  format: "2''X6''",
+  brand: "LUNGARNO CERAMICS",
+  locations: ["J8"],
+  thumbnail: null,
+},
+{
+  name: "MIDMOD MOSAICS",
+  format: "1''X1''",
+  brand: "LUNGARNO CERAMICS",
+  locations: ["J8"],
+  thumbnail: null,
+},
+{
+  name: "ZELLIGE-LUNGARNO",
+  format: "",
+  brand: "LUNGARNO CERAMICS",
+  locations: ["J9"],
+  thumbnail: null,
+},
+{
+  name: "PICOS",
+  format: "8''X8''",
+  brand: "VIVES",
+  locations: ["J10"],
+  thumbnail: picos01,
 },
 
 ];

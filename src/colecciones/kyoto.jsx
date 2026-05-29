@@ -3,21 +3,21 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// =====================
-// IMPORT IMÁGENES
-// =====================
-
-import arch1 from "../assets/imagenes/arch/arch-01.jpg";
-
-// =====================
-// ARRAY GLOBAL MODAL
-// =====================
+import kyoto01 from "../assets/imagenes/kyoto/kyoto-01.jpg";
+import kyoto02 from "../assets/imagenes/kyoto/kyoto-02.jpg";
+import kyoto03 from "../assets/imagenes/kyoto/kyoto-03.jpg";
+import kyoto04 from "../assets/imagenes/kyoto/kyoto-04.jpg";
+import kyoto05 from "../assets/imagenes/kyoto/kyoto-05.jpg";
 
 const images = [
-  arch1, // 0
+  kyoto01,
+  kyoto02,
+  kyoto03,
+  kyoto04,
+  kyoto05,
 ];
 
-export function Arch({ onGoHome }) {
+export function Kyoto() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,20 +33,12 @@ export function Arch({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
-
-  const cabinet = "I";
-  const drawer = "I7 & J7";
-  const title = "ARCH";
-  const format = "5''X12''";
-  const brand = "NATUCER";
 
   function goToBoutique() {
     sessionStorage.removeItem("boutiqueCabinet");
@@ -54,21 +46,21 @@ export function Arch({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinet() {
-    sessionStorage.setItem("boutiqueCabinet", cabinet);
+  function goToCabinetJ() {
+    sessionStorage.setItem("boutiqueCabinet", "J");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawer() {
-    sessionStorage.setItem("boutiqueCabinet", cabinet);
-    sessionStorage.setItem("boutiqueDrawer", drawer);
+  function goToDrawerJ5() {
+    sessionStorage.setItem("boutiqueCabinet", "J");
+    sessionStorage.setItem("boutiqueDrawer", "J5");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
@@ -78,39 +70,43 @@ export function Arch({ onGoHome }) {
 
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinet}>
-            {cabinet}
+          <button type="button" className="breadcrumb-link" onClick={goToCabinetJ}>
+            J
           </button>
 
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawer}>
-            {drawer}
+          <button type="button" className="breadcrumb-link" onClick={goToDrawerJ5}>
+            J5
           </button>
 
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">{title}</span>
+          <span className="breadcrumb-current">KYOTO</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">{title}</h1>
+        <h1 className="titulo-coleccion boutique-title">
+          KYOTO
+        </h1>
 
         <div className="boutique-info">
-          <p>{format} · {brand}</p>
-          <p>{drawer}</p>
+          <p>5''X5'' · NATUCER</p>
+          <p>J5</p>
         </div>
 
-        <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/DynamicAngleLuxTwo-2026-Natucer.pdf" />
+        <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/Kyoto-2026-Natucer.pdf" />
 
-        {/* ARCH */}
         <section className="gallery-grid">
-          <img
-            src={arch1}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="ARCH 01"
-          />
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(index)}
+              loading="lazy"
+              alt={`KYOTO ${index + 1}`}
+            />
+          ))}
         </section>
       </main>
 

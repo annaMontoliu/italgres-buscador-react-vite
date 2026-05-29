@@ -1,6 +1,5 @@
 // src/App.jsx
 import { useEffect, useState, useRef } from "react";
-
 import { IndexPage } from "./IndexPage";
 import { Boutique } from "./boutique";
 import { Lucena } from "./colecciones/lucena";
@@ -324,7 +323,17 @@ import { Arch } from "./colecciones/arch";
 import { ShallowRectan } from "./colecciones/shallow-rectan";
 import { ShallowCuadrado } from "./colecciones/shallow-cuadrado";
 import { Highbury } from "./colecciones/highbury";
-
+import { CrayonFino } from "./colecciones/crayon-fino";
+import { RenaissancePillowFino } from "./colecciones/renaissance-pillow-fino";
+import { TiraMattone } from "./colecciones/tira-mattone";
+import { RenaissanceFino } from "./colecciones/renaissance-fino";
+import { Osaka } from "./colecciones/osaka";
+import { CrispBoutique } from "./colecciones/crisp-boutique";
+import { Kyoto } from "./colecciones/kyoto";
+import { Casablanca } from "./colecciones/casablanca";
+import { MidmodMosaics } from "./colecciones/midmod-mosaics";
+import { ZelligeLungarno } from "./colecciones/zellige-lungarno";
+import { Picos } from "./colecciones/picos";
 
 
 export function App() {
@@ -708,6 +717,17 @@ export function App() {
     if (name === "SHALLOW RECTAN") setPage("shallow-rectan");
     if (name === "SHALLOW CUADRADO") setPage("shallow-cuadrado");
     if (name === "HIGHBURY") setPage("highbury");
+    if (name === "CRAYON FINO") setPage("crayon-fino");
+    if (name === "RENAISSANCE PILLOW FINO") setPage("renaissance-pillow-fino");
+    if (name === "TIRA MATTONE") setPage("tira-mattone");
+    if (name === "RENAISSANCE FINO") setPage("renaissance-fino");
+    if (name === "OSAKA") setPage("osaka");
+    if (name === "CRISP BOUTIQUE") setPage("crisp-boutique");   
+    if (name === "KYOTO") setPage("kyoto");
+    if (name === "CASABLANCA") setPage("casablanca");
+    if (name === "MIDMOD MOSAICS") setPage("midmod-mosaics");
+    if (name === "ZELLIGE-LUNGARNO") setPage("zellige-lungarno");
+    if (name === "PICOS") setPage("picos");
 
   }
 
@@ -1043,7 +1063,17 @@ export function App() {
   if (page === "shallow-rectan") return <ShallowRectan />;
   if (page === "shallow-cuadrado") return <ShallowCuadrado />;
   if (page === "highbury") return <Highbury />;
-
+  if (page === "crayon-fino") return <CrayonFino />;
+  if (page === "renaissance-pillow-fino") return <RenaissancePillowFino />;
+  if (page === "tira-mattone") return <TiraMattone />;
+  if (page === "renaissance-fino") return <RenaissanceFino />;
+  if (page === "osaka") return <Osaka />;
+  if (page === "crisp-boutique") return <CrispBoutique />;
+  if (page === "kyoto") return <Kyoto />;
+  if (page === "casablanca") return <Casablanca />;
+  if (page === "midmod-mosaics") return <MidmodMosaics />;
+  if (page === "zellige-lungarno") return <ZelligeLungarno />;
+  if (page === "picos") return <Picos />;
   return null;
 }
 

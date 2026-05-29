@@ -3,21 +3,17 @@ import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// =====================
-// IMPORT IMÁGENES
-// =====================
-
-import arch1 from "../assets/imagenes/arch/arch-01.jpg";
-
-// =====================
-// ARRAY GLOBAL MODAL
-// =====================
+import renaissanceFinoPino01 from "../assets/imagenes/renaissance-fino-pino/renaissance-fino-pino-01.jpg";
+import renaissanceFinoPino02 from "../assets/imagenes/renaissance-fino-pino/renaissance-fino-pino-02.jpg";
+import renaissanceFinoPino03 from "../assets/imagenes/renaissance-fino-pino/renaissance-fino-pino-03.jpg";
 
 const images = [
-  arch1, // 0
+  renaissanceFinoPino01,
+  renaissanceFinoPino02,
+  renaissanceFinoPino03,
 ];
 
-export function Arch({ onGoHome }) {
+export function RenaissancePillowFino() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,20 +29,12 @@ export function Arch({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
-
-  const cabinet = "I";
-  const drawer = "I7 & J7";
-  const title = "ARCH";
-  const format = "5''X12''";
-  const brand = "NATUCER";
 
   function goToBoutique() {
     sessionStorage.removeItem("boutiqueCabinet");
@@ -54,63 +42,62 @@ export function Arch({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinet() {
-    sessionStorage.setItem("boutiqueCabinet", cabinet);
+  function goToCabinetJ() {
+    sessionStorage.setItem("boutiqueCabinet", "J");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawer() {
-    sessionStorage.setItem("boutiqueCabinet", cabinet);
-    sessionStorage.setItem("boutiqueDrawer", drawer);
+  function goToDrawerJ2() {
+    sessionStorage.setItem("boutiqueCabinet", "J");
+    sessionStorage.setItem("boutiqueDrawer", "J2");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
           <button type="button" className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
-
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToCabinet}>
-            {cabinet}
+          <button type="button" className="breadcrumb-link" onClick={goToCabinetJ}>
+            J
           </button>
-
           <span className="breadcrumb-separator">/</span>
 
-          <button type="button" className="breadcrumb-link" onClick={goToDrawer}>
-            {drawer}
+          <button type="button" className="breadcrumb-link" onClick={goToDrawerJ2}>
+            J2
           </button>
-
           <span className="breadcrumb-separator">/</span>
 
-          <span className="breadcrumb-current">{title}</span>
+          <span className="breadcrumb-current">RENAISSANCE PILLOW FINO</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">{title}</h1>
+        <h1 className="titulo-coleccion boutique-title">RENAISSANCE PILLOW FINO</h1>
 
         <div className="boutique-info">
-          <p>{format} · {brand}</p>
-          <p>{drawer}</p>
+          <p>2''X10'' · NATUCER</p>
+          <p>J2</p>
         </div>
 
-        <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/DynamicAngleLuxTwo-2026-Natucer.pdf" />
+        <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/Renaissance-2026-Natucer.pdf" />
 
-        {/* ARCH */}
         <section className="gallery-grid">
-          <img
-            src={arch1}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="ARCH 01"
-          />
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(index)}
+              loading="lazy"
+              alt={`RENAISSANCE PILLOW FINO ${index + 1}`}
+            />
+          ))}
         </section>
       </main>
 
