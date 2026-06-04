@@ -48,26 +48,9 @@ export function Header() {
       return;
     }
 
-    const baseUrl = window.location.origin;
-    const filePath = "/docs/tarifa-italgres.xlsx";
-    const fileUrl = `${baseUrl}${filePath}`;
-
-    if (baseUrl.includes("localhost") || baseUrl.includes("127.0.0.1")) {
-      window.open(
-        fileUrl,
-        "tarifaItalgres",
-        "width=900,height=600,resizable=yes,scrollbars=yes"
-      );
-      return;
-    }
-
-    const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(
-      fileUrl
-    )}`;
-
     window.open(
-      viewerUrl,
-      "tarifaItalgres",
+      "/docs/tarifa-italgres.xlsx",
+      "_blank",
       "width=900,height=600,resizable=yes,scrollbars=yes"
     );
   }
