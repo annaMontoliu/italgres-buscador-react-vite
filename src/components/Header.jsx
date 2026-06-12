@@ -48,16 +48,10 @@ export function Header() {
       return;
     }
 
-    const fileUrl = `${window.location.origin}/docs/tarifa-italgres.xlsx`;
-
-    const viewerUrl = `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(
-      fileUrl
-    )}`;
-
     window.open(
-      viewerUrl,
+      "/docs/tarifa-italgres.xlsx",
       "_blank",
-      "width=1200,height=800,resizable=yes,scrollbars=yes"
+      "noopener,noreferrer"
     );
   }
 
