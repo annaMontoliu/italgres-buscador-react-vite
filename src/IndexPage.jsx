@@ -159,6 +159,7 @@ const COLLECTION_GROUPS = [
     letter: "P",
     items: [
       { name: "PALERMO" },
+      { name: "PALATINA" },
       { name: "PAPIER" },
       { name: "PIERRE VIVE" },
       { name: "PIETRA ESSENZA" },

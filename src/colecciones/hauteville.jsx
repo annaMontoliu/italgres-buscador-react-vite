@@ -57,7 +57,7 @@ export function Hauteville({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">HAUTEVILLE</h1>
 
-        <ColeccionLayout infoUrl="https://www.azuvi.com/wp-content/uploads/catalogos/azuvi/CAT%20HAUTEVILLE%202024_AZUVI.pdf?v2" />
+        <ColeccionLayout infoUrl="https://d7rh5s3nxmpy4.cloudfront.net/CMP7091/files/2/HAUTEVILLE.pdf" />
 
         {/* HAUTEVILLE CREAM */}
         <h3 className="color-title">HAUTEVILLE CREAM</h3>

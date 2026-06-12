@@ -334,6 +334,8 @@ import { Casablanca } from "./colecciones/casablanca";
 import { MidmodMosaics } from "./colecciones/midmod-mosaics";
 import { ZelligeLungarno } from "./colecciones/zellige-lungarno";
 import { Picos } from "./colecciones/picos";
+import { Palatina } from "./colecciones/palatina";
+
 
 
 export function App() {
@@ -728,6 +730,7 @@ export function App() {
     if (name === "MIDMOD MOSAICS") setPage("midmod-mosaics");
     if (name === "ZELLIGE-LUNGARNO") setPage("zellige-lungarno");
     if (name === "PICOS") setPage("picos");
+    if (name === "PALATINA") setPage("palatina");
 
   }
 
@@ -1074,6 +1077,7 @@ export function App() {
   if (page === "midmod-mosaics") return <MidmodMosaics />;
   if (page === "zellige-lungarno") return <ZelligeLungarno />;
   if (page === "picos") return <Picos />;
+  if (page === "palatina") return <Palatina />;
   return null;
 }
 

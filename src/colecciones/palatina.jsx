@@ -1,25 +1,26 @@
-// src/colecciones/imperial-stone.jsx
+// src/colecciones/palatina.jsx
+
 import { useState } from "react";
 
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
 import { ImageModal } from "../components/ImageModal";
 
-// IMPORTS DE LAS FOTOS
-import imperialStoneWhite01 from "../assets/imagenes/imperial-stone/imperial-stone-white/imperial-stone-white-01.jpg";
-import imperialStoneWhite02 from "../assets/imagenes/imperial-stone/imperial-stone-white/imperial-stone-white-02.jpg";
-import imperialStoneWhite03 from "../assets/imagenes/imperial-stone/imperial-stone-white/imperial-stone-white-03.jpg";
-import imperialStoneWhite04 from "../assets/imagenes/imperial-stone/imperial-stone-white/imperial-stone-white-04.jpg";
+// PALATINA BLANCO
+import palatinaBlanco01 from "../assets/imagenes/palatina/palatina-blanco/palatina-blanco-01.jpg";
+import palatinaBlanco02 from "../assets/imagenes/palatina/palatina-blanco/palatina-blanco-02.jpg";
+import palatinaBlanco03 from "../assets/imagenes/palatina/palatina-blanco/palatina-blanco-03.jpg";
+import palatinaBlanco04 from "../assets/imagenes/palatina/palatina-blanco/palatina-blanco-04.jpg";
 
 // ORDEN EXACTO
 const images = [
-  imperialStoneWhite01,
-  imperialStoneWhite02,
-  imperialStoneWhite03,
-  imperialStoneWhite04,
+  palatinaBlanco01,
+  palatinaBlanco02,
+  palatinaBlanco03,
+  palatinaBlanco04,
 ];
 
-export function ImperialStone({ onGoHome }) {
+export function Palatina({ onGoHome }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -46,51 +47,50 @@ export function ImperialStone({ onGoHome }) {
 
   return (
     <>
-      {/* HEADER GLOBAL */}
       <Header onGoHome={onGoHome} />
 
       <main>
-        {/* TÍTULO */}
-        <h1 className="titulo-coleccion">IMPERIAL STONE</h1>
+        <h1 className="titulo-coleccion">PALATINA</h1>
 
-        {/* FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="https://www.cerdomus.com/flex/FixedPages/Common/serveAllegato.php/L/EN/id/1162" />
+        <ColeccionLayout infoUrl="https://www.halconceramicas.com/pdf_collections/28" />
 
-        {/* GALERÍA */}
-        <h3 className="color-title">IMPERIAL STONE WHITE</h3>
+        <h3 className="color-title">PALATINA BLANCO</h3>
+
         <section className="gallery-grid">
           <img
-            src={imperialStoneWhite01}
+            src={palatinaBlanco01}
             className="gallery-img"
             onClick={() => openModal(0)}
             loading="lazy"
-            alt="IMPERIAL STONE WHITE 01"
+            alt="PALATINA BLANCO 1"
           />
+
           <img
-            src={imperialStoneWhite02}
+            src={palatinaBlanco02}
             className="gallery-img"
             onClick={() => openModal(1)}
             loading="lazy"
-            alt="IMPERIAL STONE WHITE 02"
+            alt="PALATINA BLANCO 2"
           />
+
           <img
-            src={imperialStoneWhite03}
+            src={palatinaBlanco03}
             className="gallery-img"
             onClick={() => openModal(2)}
             loading="lazy"
-            alt="IMPERIAL STONE WHITE 03"
+            alt="PALATINA BLANCO 3"
           />
+
           <img
-            src={imperialStoneWhite04}
+            src={palatinaBlanco04}
             className="gallery-img"
             onClick={() => openModal(3)}
             loading="lazy"
-            alt="IMPERIAL STONE WHITE 04"
+            alt="PALATINA BLANCO 4"
           />
         </section>
       </main>
 
-      {/* MODAL */}
       <ImageModal
         images={images}
         isOpen={isModalOpen}
