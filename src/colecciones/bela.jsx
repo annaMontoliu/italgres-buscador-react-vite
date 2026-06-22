@@ -102,7 +102,7 @@ export function Bela({ onGoHome }) {
         />
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="https://www.azuvi.com/wp-content/uploads/catalogos/azuvi/CAT%20BELA%202024_AZUVI.pdf" />
+        <ColeccionLayout infoUrl="https://d7rh5s3nxmpy4.cloudfront.net/CMP7091/files/2/BELA.pdf" />
 
         {/* ---- GALERÍA ---- */}
 

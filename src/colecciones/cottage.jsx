@@ -41,7 +41,7 @@ export function Cottage({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">COTTAGE</h1>
 
-        <ColeccionLayout infoUrl="https://www.azuvi.com/wp-content/uploads/catalogos/azuvi/CAT%20COTTAGE%202024_AZUVI.pdf" />
+        <ColeccionLayout infoUrl="https://d7rh5s3nxmpy4.cloudfront.net/CMP7091/files/1/COTTAGE.pdf"/>
 
         {/* Color COTTAGE DARK */}
         <h3 className="color-title">COTTAGE DARK</h3>

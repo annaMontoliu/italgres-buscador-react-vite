@@ -55,7 +55,7 @@ export function Calizia({ onGoHome }) {
       <main>
         <h1 className="titulo-coleccion">CALIZIA</h1>
 
-        <ColeccionLayout infoUrl="https://www.azuvi.com/wp-content/uploads/catalogos/azuvi/CAT%20CALIZIA%202023_AZUVI.pdf" />
+        <ColeccionLayout infoUrl="https://d7rh5s3nxmpy4.cloudfront.net/CMP7091/files/2/CALIZIA.pdf" />
 
         {/* CALIZIA GREY */}
         <h3 className="color-title">CALIZIA GREY</h3>
