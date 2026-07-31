@@ -1,5 +1,3 @@
-// src/colecciones/intermatex-small-mosaicos.jsx
-
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { ColeccionLayout } from "../components/ColeccionLayout";
@@ -54,15 +52,15 @@ export function IntermatexSmallMosaicos() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetD() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerD1() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D1");
+  function goToDrawerE9() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E9");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -75,16 +73,19 @@ export function IntermatexSmallMosaicos() {
           <button className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
+
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetD}>
-            D
+          <button className="breadcrumb-link" onClick={goToCabinetE}>
+            E
           </button>
+
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerD1}>
-            D1
+          <button className="breadcrumb-link" onClick={goToDrawerE9}>
+            E9
           </button>
+
           <span className="breadcrumb-separator">/</span>
 
           <span className="breadcrumb-current">
@@ -98,7 +99,7 @@ export function IntermatexSmallMosaicos() {
 
         <div className="boutique-info">
           <p>INTERMATEX</p>
-          <p>D1</p>
+          <p>E9</p>
         </div>
 
         <ColeccionLayout infoUrl="https://www.intermatex.com/en/decorative-mosaic/" />

@@ -44,15 +44,15 @@ export function CrayonFino() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetJ() {
-    sessionStorage.setItem("boutiqueCabinet", "J");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerJ1() {
-    sessionStorage.setItem("boutiqueCabinet", "J");
-    sessionStorage.setItem("boutiqueDrawer", "J1");
+  function goToDrawerE1() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E1");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -75,9 +75,9 @@ export function CrayonFino() {
           <button
             type="button"
             className="breadcrumb-link"
-            onClick={goToCabinetJ}
+            onClick={goToCabinetE}
           >
-            J
+            E
           </button>
 
           <span className="breadcrumb-separator">/</span>
@@ -85,9 +85,9 @@ export function CrayonFino() {
           <button
             type="button"
             className="breadcrumb-link"
-            onClick={goToDrawerJ1}
+            onClick={goToDrawerE1}
           >
-            J1
+            E1
           </button>
 
           <span className="breadcrumb-separator">/</span>
@@ -103,7 +103,7 @@ export function CrayonFino() {
 
         <div className="boutique-info">
           <p>2''X20'' · NATUCER</p>
-          <p>J1</p>
+          <p>E1</p>
         </div>
 
         <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/Crayon-2026-Natucer.pdf" />

@@ -39,15 +39,15 @@ export function Ona() {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinetD() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
+  function goToCabinetE() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawerD1() {
-    sessionStorage.setItem("boutiqueCabinet", "D");
-    sessionStorage.setItem("boutiqueDrawer", "D1");
+  function goToDrawerE9() {
+    sessionStorage.setItem("boutiqueCabinet", "E");
+    sessionStorage.setItem("boutiqueDrawer", "E9");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
@@ -60,16 +60,19 @@ export function Ona() {
           <button className="breadcrumb-link" onClick={goToBoutique}>
             BOUTIQUE
           </button>
+
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetD}>
-            D
+          <button className="breadcrumb-link" onClick={goToCabinetE}>
+            E
           </button>
+
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerD1}>
-            D1
+          <button className="breadcrumb-link" onClick={goToDrawerE9}>
+            E9
           </button>
+
           <span className="breadcrumb-separator">/</span>
 
           <span className="breadcrumb-current">ONA</span>
@@ -79,7 +82,7 @@ export function Ona() {
 
         <div className="boutique-info">
           <p>5''X18'' · HARMONY</p>
-          <p>D1</p>
+          <p>E9</p>
         </div>
 
         <ColeccionLayout infoUrl="/pdf/ONA.pdf" />

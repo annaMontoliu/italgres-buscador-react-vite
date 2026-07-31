@@ -1168,20 +1168,7 @@ C10: [
 ],
 
 D1: [
-  {
-    name: "INTERMATEX SMALL MOSAICOS",
-    format: "",
-    brand: "INTERMATEX",
-    locations: ["D1"],
-    thumbnail: intermatexSmall01,
-  },
-  {
-    name: "ONA",
-    format: "5''X18''",
-    brand: "HARMONY",
-    locations: ["D1"],
-    thumbnail: ona01,
-  },
+
 ],
 
 D2: [
@@ -1323,6 +1310,13 @@ E1: [
     locations: ["E1"],
     thumbnail: glowElios01,
   },
+    {
+    name: "CRAYON FINO",
+    format: "2''X20''",
+    brand: "NATUCER",
+    locations: ["E1"],
+    thumbnail: crayonFino01,
+  },
 ],
 
 E2: [
@@ -1409,6 +1403,20 @@ E9: [
     brand: "ONIX MOSAICS",
     locations: ["E9", "F10"],
     thumbnail: pennyOnixMosaics01,
+  },
+   {
+    name: "INTERMATEX SMALL MOSAICOS",
+    format: "",
+    brand: "INTERMATEX",
+    locations: ["E9"],
+    thumbnail: intermatexSmall01,
+  },
+  {
+    name: "ONA",
+    format: "5''X18''",
+    brand: "HARMONY",
+    locations: ["E9"],
+    thumbnail: ona01,
   },
 ],
 
@@ -2087,13 +2095,7 @@ I10: [
   },
 ],
 J1: [
-  {
-    name: "CRAYON FINO",
-    format: "2''X20''",
-    brand: "NATUCER",
-    locations: ["J1"],
-    thumbnail: crayonFino01,
-  },
+  
 ],
 
 J2: [
@@ -3031,14 +3033,14 @@ const boutiqueCollections = [
   name: "INTERMATEX SMALL MOSAICOS",
   format: "",
   brand: "INTERMATEX",
-  locations: ["D1"],
+  locations: ["E9"],
   thumbnail: intermatexSmall01,
 },
 {
   name: "ONA",
   format: "5''X18''",
   brand: "HARMONY",
-  locations: ["D1"],
+  locations: ["E9"],
   thumbnail: ona01,
 },
 {
@@ -3628,7 +3630,7 @@ const boutiqueCollections = [
   name: "CRAYON FINO",
   format: "2''X20''",
   brand: "NATUCER",
-  locations: ["J1"],
+  locations: ["E1"],
   thumbnail: crayonFino01,
 },
 {
