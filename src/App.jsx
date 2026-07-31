@@ -335,6 +335,8 @@ import { MidmodMosaics } from "./colecciones/midmod-mosaics";
 import { ZelligeLungarno } from "./colecciones/zellige-lungarno";
 import { Picos } from "./colecciones/picos";
 import { Palatina } from "./colecciones/palatina";
+import { SurfGlossy } from "./colecciones/surf-boutique-glossy";
+import { SurfMatt } from "./colecciones/surf-boutique-matt";
 
 
 
@@ -731,6 +733,8 @@ export function App() {
     if (name === "ZELLIGE-LUNGARNO") setPage("zellige-lungarno");
     if (name === "PICOS") setPage("picos");
     if (name === "PALATINA") setPage("palatina");
+    if (name === "SURF GLOSSY") setPage("surf-boutique-glossy");
+    if (name === "SURF MATT") setPage("surf-boutique-matt");
 
   }
 
@@ -1078,6 +1082,8 @@ export function App() {
   if (page === "zellige-lungarno") return <ZelligeLungarno />;
   if (page === "picos") return <Picos />;
   if (page === "palatina") return <Palatina />;
+  if (page === "surf-boutique-glossy") return <SurfGlossy />;
+  if (page === "surf-boutique-matt") return <SurfMatt />;
   return null;
 }
 

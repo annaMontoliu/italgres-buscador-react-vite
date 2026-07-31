@@ -206,6 +206,7 @@ import crispBoutique01 from "./assets/imagenes/crisp-boutique/crisp-boutique-01.
 import osaka01 from "./assets/imagenes/osaka/osaka-01.jpg";
 import kyoto01 from "./assets/imagenes/kyoto/kyoto-01.jpg";
 import picos01 from "./assets/imagenes/picos/picos-01.jpg";
+import surfBoutique01 from "./assets/imagenes/surf-boutique/surf-boutique-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -1168,6 +1169,13 @@ C10: [
 ],
 
 D1: [
+   {
+    name: "SURF MATT",
+    format: "10''X14''",
+    brand: "VIVES",
+    locations: ["D1"],
+    thumbnail: surfBoutique01,
+  },
 
 ],
 
@@ -2095,6 +2103,13 @@ I10: [
   },
 ],
 J1: [
+    {
+    name: "SURF GLOSSY",
+    format: "10''X14''",
+    brand: "VIVES",
+    locations: ["J1"],
+    thumbnail: surfBoutique01,
+  },
   
 ],
 
@@ -3702,6 +3717,20 @@ const boutiqueCollections = [
   brand: "VIVES",
   locations: ["J10"],
   thumbnail: picos01,
+},
+{
+  name: "SURF GLOSSY",
+  format: "10''X14''",
+  brand: "VIVES",
+  locations: ["J1"],
+  thumbnail: surfBoutique01,
+},
+{
+  name: "SURF MATT",
+  format: "10''X14''",
+  brand: "VIVES",
+  locations: ["D1"],
+  thumbnail: surfBoutique01,
 },
 
 ];
