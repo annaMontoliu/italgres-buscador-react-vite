@@ -140,7 +140,6 @@ import brick01 from "./assets/imagenes/brick/brick-01.jpg";
 import papierBoutique01 from "./assets/imagenes/papier-mirage/papier-01.jpg";
 import pennyOnixMosaics01 from "./assets/imagenes/penny-onix-mosaics/penny-onix-mosaics-01.jpg";
 import abacus01 from "./assets/imagenes/abacus/abacus-01.jpg";
-import sixtyMinibrick01 from "./assets/imagenes/sixty-minibrick/sixty-minibrick-01.jpg";
 import circle01 from "./assets/imagenes/circle/circle-01.jpg";
 import chintz01 from "./assets/imagenes/chintz/chintz-01.jpg";
 import becolors01 from "./assets/imagenes/becolors/becolors-01.jpg";
@@ -178,7 +177,6 @@ import essenzaHandmade01 from "./assets/imagenes/essenza-handmade/essenza-handma
 import etnaHexagonal01 from "./assets/imagenes/etna-hexagonal/etna-hexagonal-01.jpg";
 import maui01 from "./assets/imagenes/maui/maui-01.jpg";
 import tempo01 from "./assets/imagenes/tempo/tempo-01.jpg";
-import sixtyHexagonal01 from "./assets/imagenes/sixty-hexagonal/sixty-hexagonal-01.jpg";
 import diamondHandmade01 from "./assets/imagenes/diamond-handmade/diamond-handmade-01.jpg";
 import kiteHandmade01 from "./assets/imagenes/kite-handmade/kite-handmade-01.jpg";
 import plage01 from "./assets/imagenes/plage/plage-01.jpg";
@@ -1446,13 +1444,7 @@ F1: [
     locations: ["F1"],
     thumbnail: abacus01,
   },
-  {
-    name: "SIXTY MINIBRICK",
-    format: "2''x6''",
-    brand: "EMIL",
-    locations: ["F1"],
-    thumbnail: sixtyMinibrick01,
-  },
+ 
 ],
 
 F2: [
@@ -1919,13 +1911,7 @@ H5: [
     locations: ["H4", "H5"],
     thumbnail: maui01,
   },
-  {
-    name: "SIXTY HEXAGONAL",
-    format: "6''X7''",
-    brand: "EMIL",
-    locations: ["H5"],
-    thumbnail: sixtyHexagonal01,
-  },
+
 ],
 
 H6: [
@@ -3219,13 +3205,7 @@ const boutiqueCollections = [
   locations: ["F1"],
   thumbnail: abacus01,
 },
-{
-  name: "SIXTY MINIBRICK",
-  format: "2''x6''",
-  brand: "EMIL",
-  locations: ["F1"],
-  thumbnail: sixtyMinibrick01,
-},
+
 {
   name: "CIRCLE",
   format: "12''X12''",
@@ -3500,13 +3480,7 @@ const boutiqueCollections = [
   locations: ["H4"],
   thumbnail: tempo01,
 },
-{
-  name: "SIXTY HEXAGONAL",
-  format: "6''X7''",
-  brand: "EMIL",
-  locations: ["H5"],
-  thumbnail: sixtyHexagonal01,
-},
+
 {
   name: "DIAMOND HANDMADE",
   format: "3''X5''",

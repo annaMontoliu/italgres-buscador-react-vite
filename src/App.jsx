@@ -261,7 +261,6 @@ import { Brick } from "./colecciones/brick";
 import { PapierBoutique } from "./colecciones/papier-boutique";
 import { PennyOnixMosaics } from "./colecciones/penny-onix-mosaics";
 import { Abacus } from "./colecciones/abacus";
-import { SixtyMinibrick } from "./colecciones/sixty-minibrick";
 import { Circle } from "./colecciones/circle";
 import { Chintz } from "./colecciones/chintz";
 import { Becolors } from "./colecciones/becolors";
@@ -303,7 +302,6 @@ import { EssenzaHandmade } from "./colecciones/essenza-handmade";
 import { EtnaHexagonal } from "./colecciones/etna-hexagonal";
 import { Maui } from "./colecciones/maui";
 import { Tempo } from "./colecciones/tempo";
-import { SixtyHexagonal } from "./colecciones/sixty-hexagonal";
 import { DiamondHandmade } from "./colecciones/diamond-handmade";
 import { KiteHandmade } from "./colecciones/kite-handmade";
 import { Plage } from "./colecciones/plage";
@@ -659,7 +657,6 @@ export function App() {
     if (name === "PAPIER") setPage("papier-boutique");
     if (name === "PENNY ONIX MOSAICS") setPage("penny-onix-mosaics");
     if (name === "ABACUS") setPage("abacus");
-    if (name === "SIXTY MINIBRICK") setPage("sixty-minibrick");
     if (name === "CIRCLE") setPage("circle");
     if (name === "CHINTZ") setPage("chintz");
     if (name === "BECOLORS") setPage("becolors");
@@ -701,7 +698,6 @@ export function App() {
     if (name === "ETNA HEXAGONAL") setPage("etna-hexagonal");
     if (name === "MAUI") setPage("maui");
     if (name === "TEMPO") setPage("tempo");
-    if (name === "SIXTY HEXAGONAL") setPage("sixty-hexagonal");
     if (name === "DIAMOND HANDMADE") setPage("diamond-handmade");
     if (name === "KITE HANDMADE") setPage("kite-handmade");
     if (name === "PLAGE HANDMADE") setPage("plage");
@@ -1008,7 +1004,6 @@ export function App() {
   if (page === "papier-boutique") return <PapierBoutique />;
   if (page === "penny-onix-mosaics") return <PennyOnixMosaics />;
   if (page === "abacus") return <Abacus />;
-  if (page === "sixty-minibrick") return <SixtyMinibrick />;
   if (page === "circle") return <Circle />;
   if (page === "chintz") return <Chintz />;
   if (page === "becolors") return <Becolors />;
@@ -1050,7 +1045,6 @@ export function App() {
   if (page === "etna-hexagonal") return <EtnaHexagonal />;
   if (page === "maui") return <Maui />;
   if (page === "tempo") return <Tempo />;
-  if (page === "sixty-hexagonal") return <SixtyHexagonal />;
   if (page === "diamond-handmade") return <DiamondHandmade />;
   if (page === "kite-handmade") return <KiteHandmade />;
   if (page === "plage") return <Plage />;
