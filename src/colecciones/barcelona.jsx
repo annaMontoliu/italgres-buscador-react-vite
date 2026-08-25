@@ -45,7 +45,7 @@ export function Barcelona({ onGoHome }) {
         <h1 className="titulo-coleccion">BARCELONA</h1>
 
         {/* Bloque FINISHES & FORMATS */}
-        <ColeccionLayout infoUrl="https://www.portobello.com.br/es/productos/ms-barcelona/field-tile/ms-barcelona-cristal/60x60-natural/28752E?channel=exportacao" />
+        <ColeccionLayout infoUrl="https://www.portobello.com.br/es/productos/ms-barcelona/field-tile/ms-barcelona-cristal/60x120-natural/26781E/revestimientos?channel=exportacaoo" />
 
         {/* ---- GALERÍA ---- */}
 
