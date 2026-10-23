@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import logo from "../assets/imagenes/logo/logo-blanco-italgres.png";
 
@@ -39,7 +40,9 @@ export function Header() {
   function handleTarifaClick(event) {
     event.preventDefault();
 
-    const input = window.prompt("Introduce la contraseña de comerciales:");
+    const input = window.prompt(
+      "Introduce la contraseña de comerciales:"
+    );
 
     if (input === null) return;
 
@@ -48,11 +51,14 @@ export function Header() {
       return;
     }
 
-    const fileUrl = `${window.location.origin}/docs/tarifa-italgres.xlsx`;
+    // Evita reutilizar una URL antigua en caché
+    const version = Date.now();
 
-    const viewerUrl = `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(
-      fileUrl
-    )}`;
+    const fileUrl =
+      `${window.location.origin}/docs/tarifa-italgres.xlsx?v=${version}`;
+
+    const viewerUrl =
+      `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(fileUrl)}`;
 
     window.open(
       viewerUrl,
@@ -63,7 +69,11 @@ export function Header() {
 
   return (
     <header>
-      <a href="https://italgres.com/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://italgres.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={logo} alt="Italgres Logo" />
       </a>
 
