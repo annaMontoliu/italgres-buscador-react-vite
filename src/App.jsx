@@ -335,6 +335,13 @@ import { Picos } from "./colecciones/picos";
 import { Palatina } from "./colecciones/palatina";
 import { SurfGlossy } from "./colecciones/surf-boutique-glossy";
 import { SurfMatt } from "./colecciones/surf-boutique-matt";
+import { Odyssey } from "./colecciones/odyssey";
+import { AnticVelhira } from "./colecciones/antic-velhira";
+import { Vitruvius } from "./colecciones/vitruvius";
+import { Ibla } from "./colecciones/ibla";
+import { GrandiosaCrist } from "./colecciones/grandiosa-crist";
+import { Canby } from "./colecciones/canby";
+
 
 
 
@@ -731,6 +738,14 @@ export function App() {
     if (name === "PALATINA") setPage("palatina");
     if (name === "SURF GLOSSY") setPage("surf-boutique-glossy");
     if (name === "SURF MATT") setPage("surf-boutique-matt");
+    if (name === "ODYSSEY") setPage("odyssey");  
+    if (name === "ANTIC VELHIRA") setPage("antic-velhira");
+    if (name === "VITRUVIUS") setPage("vitruvius");
+    if (name === "IBLA") setPage("ibla");
+    if (name === "GRANDIOSA CRIST") setPage("grandiosa-crist");
+    if (name === "CANBY") setPage("canby");
+
+    
 
   }
 
@@ -1078,6 +1093,13 @@ export function App() {
   if (page === "palatina") return <Palatina />;
   if (page === "surf-boutique-glossy") return <SurfGlossy />;
   if (page === "surf-boutique-matt") return <SurfMatt />;
+  if (page === "odyssey") return <Odyssey />; 
+  if (page === "antic-velhira") return <AnticVelhira />;
+  if (page === "vitruvius") return <Vitruvius />;
+  if (page === "ibla") return <Ibla />;
+  if (page === "grandiosa-crist") return <GrandiosaCrist />;
+  if (page === "canby") return <Canby />;
+
   return null;
 }
 

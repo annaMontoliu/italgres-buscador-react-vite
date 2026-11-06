@@ -7,6 +7,7 @@ const COLLECTION_GROUPS = [
     letter: "A",
     items: [
       { name: "AETERNA" },
+      { name: "ANTIC VELHIRA" },
       { name: "ARENARIA" },
       { name: "ARTE" },
       { name: "ARTIC" },
@@ -35,6 +36,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "CAEMENTUM" },
       { name: "CALIZIA" },
+      { name: "CANBY" },
       { name: "CANELA ROMA" },
       { name: "CASSERO" },
       { name: "CEMENT" },
@@ -86,6 +88,7 @@ const COLLECTION_GROUPS = [
     items: [
       { name: "GLIM GEMME" },
       { name: "GLOCAL" },
+      { name: "GRANDIOSA CRIST" },
       { name: "GREEN TREES" },
       { name: "GULHI" },
     ],
@@ -98,6 +101,7 @@ const COLLECTION_GROUPS = [
     letter: "I",
     items: [
       { name: "ICON" },
+      { name: "IBLA" },
       { name: "IMPERIAL STONE" },
       { name: "INCISA" },
     ],
@@ -147,6 +151,7 @@ const COLLECTION_GROUPS = [
   {
     letter: "O",
     items: [
+      { name: "ODYSSEY" },
       { name: "OH TAKE MOUNTAIN" },
       { name: "ONIX" },
       { name: "OREGON" },
@@ -203,12 +208,16 @@ const COLLECTION_GROUPS = [
   { letter: "U", items: [
     { name: "ULISSE" }, 
     { name: "UNIQUE" }] },
-  {
-    letter: "V",
-    items: [
-      { name: "VERBIER" },
-      { name: "VINCI" }],
-  },
+ 
+{
+  letter: "V",
+  items: [
+    { name: "VERBIER" },
+    { name: "VINCI" },
+    { name: "VITRUVIUS" },
+  ],
+},
+
   {
   letter: "W",
   items: [
