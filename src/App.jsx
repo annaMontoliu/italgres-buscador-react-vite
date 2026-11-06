@@ -341,6 +341,10 @@ import { Vitruvius } from "./colecciones/vitruvius";
 import { Ibla } from "./colecciones/ibla";
 import { GrandiosaCrist } from "./colecciones/grandiosa-crist";
 import { Canby } from "./colecciones/canby";
+import { Kilian } from "./colecciones/kilian";
+import { Marsella } from "./colecciones/marsella";
+import { Madox } from "./colecciones/madox";
+import { Miralith } from "./colecciones/miralith";
 
 
 
@@ -744,6 +748,10 @@ export function App() {
     if (name === "IBLA") setPage("ibla");
     if (name === "GRANDIOSA CRIST") setPage("grandiosa-crist");
     if (name === "CANBY") setPage("canby");
+    if (name === "KILIAN") setPage("kilian");
+    if (name === "MARSELLA") setPage("marsella");
+    if (name === "MADOX") setPage("madox");
+    if (name === "MIRALITH") setPage("miralith");
 
     
 
@@ -1099,6 +1107,10 @@ export function App() {
   if (page === "ibla") return <Ibla />;
   if (page === "grandiosa-crist") return <GrandiosaCrist />;
   if (page === "canby") return <Canby />;
+  if (page === "kilian") return <Kilian />;
+  if (page === "marsella") return <Marsella />;
+  if (page === "madox") return <Madox />;
+  if (page === "miralith") return <Miralith />;
 
   return null;
 }

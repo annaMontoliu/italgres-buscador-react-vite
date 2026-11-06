@@ -115,6 +115,7 @@ const COLLECTION_GROUPS = [
   items: [
     { name: "KA 03" },
     { name: "KAIZEN" },
+    { name: "KILIAN" },
     { name: "KORA" }
   ],
 },
@@ -123,23 +124,28 @@ const COLLECTION_GROUPS = [
     { name: "LUMIX NATURAL" },
     { name: "LUMINA STONE" }] 
   },
-  {
-    letter: "M",
-    items: [
-      { name: "MAJESTIC" },
-      { name: "MAINSTONE" },
-      { name: "MAPIERRE" },
-      { name: "MATERA STONE" },
-      { name: "MATERIA" },
-      { name: "MATERIA CLASSICA" },
-      { name: "MEMORY" },
-      { name: "MICRA" },
-      { name: "MITICA" },
-      { name: "MOON CREAM" },
-      { name: "MOTLEY" },
-      { name: "MYCRO" },
-    ],
-  },
+   
+{
+  letter: "M",
+  items: [
+    { name: "MADOX" },
+    { name: "MAINSTONE" },
+    { name: "MAJESTIC" },
+    { name: "MAPIERRE" },
+    { name: "MARSELLA" },
+    { name: "MATERA STONE" },
+    { name: "MATERIA" },
+    { name: "MATERIA CLASSICA" },
+    { name: "MEMORY" },
+    { name: "MICRA" },
+    { name: "MIRALITH" },
+    { name: "MITICA" },
+    { name: "MOON CREAM" },
+    { name: "MOTLEY" },
+    { name: "MYCRO" },
+  ],
+},
+
   {
     letter: "N",
     items: [
