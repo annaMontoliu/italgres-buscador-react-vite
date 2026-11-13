@@ -271,7 +271,7 @@ const boutiqueDrawers = {
       thumbnail: glint01,
     },
     {
-       ame: "WABISABI",
+       name: "WABISABI",
       format: '2"x6"',
       brand: "TONALITE",
       locations: ["A3"],
@@ -3745,6 +3745,50 @@ const boutiqueCollections = [
   locations: ["D1"],
   thumbnail: surfBoutique01,
 },
+
+{
+  name: "DELUXE",
+  format: '4"x15"',
+  brand: "NATUCER",
+  locations: ["J4"],
+  thumbnail: deluxe01,
+},
+{
+  name: "MEDITERRANEA",
+  format: '7"x2"',
+  brand: "NATUCER",
+  locations: ["J4"],
+  thumbnail: mediterranea01,
+},
+{
+  name: "BISCUIT",
+  format: '4"x8"',
+  brand: "NATUCER",
+  locations: ["J4", "G6"],
+  thumbnail: biscuit01,
+},
+{
+  name: "IN & OUT",
+  format: '9"x9"',
+  brand: "HARMONY",
+  locations: ["J5"],
+  thumbnail: inAndOut01,
+},
+{
+  name: "BUIT",
+  format: '7"x7"',
+  brand: "BUIT",
+  locations: ["J5"],
+  thumbnail: buit01,
+},
+{
+  name: "WABISABI",
+  format: '2"x6"',
+  brand: "TONALITE",
+  locations: ["A3"],
+  thumbnail: wabisabi01,
+},
+
 
 ];
 

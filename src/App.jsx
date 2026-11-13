@@ -344,13 +344,12 @@ import { Kilian } from "./colecciones/kilian";
 import { Marsella } from "./colecciones/marsella";
 import { Madox } from "./colecciones/madox";
 import { Miralith } from "./colecciones/miralith";
-import Deluxe from "./colecciones/deluxe";
-import Mediterranea from "./colecciones/mediterranea";
-import Biscuit from "./colecciones/biscuit";
-import InAndOut from "./colecciones/in-and-out";
-import Buit from "./colecciones/buit";
-import Wabisabi from "./colecciones/wabisabi";
-
+import { Deluxe } from "./colecciones/deluxe";
+import { Mediterranea } from "./colecciones/mediterranea";
+import { Biscuit } from "./colecciones/biscuit";
+import { InAndOut } from "./colecciones/in-and-out";
+import { Buit } from "./colecciones/buit";
+import { Wabisabi } from "./colecciones/wabisabi";
 
 
 

@@ -1,126 +1,135 @@
 
-import { useState, useEffect } from "react";
-import Header from "../components/Header";
-import ColeccionLayout from "../components/ColeccionLayout";
-import ImageModal from "../components/ImageModal";
+import { useState } from "react";
+import { Header } from "../components/Header";
+import { ColeccionLayout } from "../components/ColeccionLayout";
+import { ImageModal } from "../components/ImageModal";
 
-const images = Object.values(
-  import.meta.glob("../assets/imagenes/wabisabi/*.jpg", {
-    eager: true,
-    query: "?url",
-    import: "default",
-  })
-).sort((a, b) => {
-  const getNumber = (path) =>
-    Number(path.match(/wabisabi-(\d+)\.jpg/)?.[1] || 0);
+import wabisabi01 from "../assets/imagenes/wabisabi/wabisabi-01.jpg";
+import wabisabi02 from "../assets/imagenes/wabisabi/wabisabi-02.jpg";
+import wabisabi03 from "../assets/imagenes/wabisabi/wabisabi-03.jpg";
+import wabisabi04 from "../assets/imagenes/wabisabi/wabisabi-04.jpg";
+import wabisabi05 from "../assets/imagenes/wabisabi/wabisabi-05.jpg";
+import wabisabi06 from "../assets/imagenes/wabisabi/wabisabi-06.jpg";
+import wabisabi07 from "../assets/imagenes/wabisabi/wabisabi-07.jpg";
 
-  return getNumber(a) - getNumber(b);
-});
+const images = [
+  wabisabi01,
+  wabisabi02,
+  wabisabi03,
+  wabisabi04,
+  wabisabi05,
+  wabisabi06,
+  wabisabi07,
+];
 
-export default function Wabisabi({ onGoHome }) {
+export function Wabisabi() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    document.body.style.overflow = isModalOpen ? "hidden" : "";
-
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isModalOpen]);
-
-  const openModal = (index) => {
+  function openModal(index) {
     setCurrentIndex(index);
     setIsModalOpen(true);
-  };
+    document.body.style.overflow = "hidden";
+  }
 
-  const closeModal = () => setIsModalOpen(false);
+  function closeModal() {
+    setIsModalOpen(false);
+    document.body.style.overflow = "";
+  }
 
-  const nextImage = () => {
+  function nextImage() {
     setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
+  }
 
-  const prevImage = () => {
-    setCurrentIndex(
-      (prev) => (prev - 1 + images.length) % images.length
-    );
-  };
+  function prevImage() {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  }
 
-  const goToBoutique = () => {
+  function goToBoutique() {
     sessionStorage.removeItem("boutiqueCabinet");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
-  };
+  }
 
-  const goToCabinetA = () => {
+  function goToCabinetA() {
     sessionStorage.setItem("boutiqueCabinet", "A");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
-  };
+  }
 
-  const goToDrawerA3 = () => {
+  function goToDrawerA3() {
     sessionStorage.setItem("boutiqueCabinet", "A");
     sessionStorage.setItem("boutiqueDrawer", "A3");
     window.dispatchEvent(new CustomEvent("go-boutique"));
-  };
+  }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
-        <div className="breadcrumb">
-          <button onClick={goToBoutique}>BOUTIQUE</button>
-          <span>/</span>
-          <button onClick={goToCabinetA}>A</button>
-          <span>/</span>
-          <button onClick={goToDrawerA3}>A3</button>
-          <span>/</span>
-          <span>WABISABI</span>
+        <div className="breadcrumb-boutique">
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
+            BOUTIQUE
+          </button>
+          <span className="breadcrumb-separator">/</span>
+
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetA}
+          >
+            A
+          </button>
+          <span className="breadcrumb-separator">/</span>
+
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerA3}
+          >
+            A3
+          </button>
+          <span className="breadcrumb-separator">/</span>
+
+          <span className="breadcrumb-current">WABISABI</span>
         </div>
 
-        <h1 className="titulo-coleccion boutique-title">
-          WABISABI
-        </h1>
+        <h1 className="titulo-coleccion boutique-title">WABISABI</h1>
 
         <div className="boutique-info">
-          <p>
-            <strong>FORMAT:</strong> 2" x 6"
-          </p>
-          <p>
-            <strong>MANUFACTURER:</strong> TONALITE
-          </p>
-          <p>
-            <strong>LOCATION:</strong> A3
-          </p>
+          <p>2"x6" · TONALITE</p>
+          <p>A3</p>
         </div>
 
-        <ColeccionLayout
-          infoUrl="https://www.tonalite.it/media/wabisabi_tonalite.pdf"
-        />
+        <ColeccionLayout infoUrl="https://www.tonalite.it/media/wabisabi_tonalite.pdf" />
 
         <section className="gallery-grid">
-          {images.map((image, index) => (
+          {images.map((img, index) => (
             <img
               key={index}
-              src={image}
-              alt={`WABISABI ${index + 1}`}
-              loading="lazy"
+              src={img}
+              className="gallery-img"
               onClick={() => openModal(index)}
+              loading="lazy"
+              alt={`WABISABI ${index + 1}`}
             />
           ))}
         </section>
       </main>
 
-      {isModalOpen && (
-        <ImageModal
-          images={images}
-          currentIndex={currentIndex}
-          onClose={closeModal}
-          onNext={nextImage}
-          onPrev={prevImage}
-        />
-      )}
+      <ImageModal
+        images={images}
+        isOpen={isModalOpen}
+        currentIndex={currentIndex}
+        onClose={closeModal}
+        onPrev={prevImage}
+        onNext={nextImage}
+      />
     </>
   );
 }

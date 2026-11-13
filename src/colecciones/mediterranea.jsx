@@ -7,9 +7,12 @@ import { ImageModal } from "../components/ImageModal";
 import mediterranea01 from "../assets/imagenes/mediterranea/mediterranea-01.jpg";
 import mediterranea02 from "../assets/imagenes/mediterranea/mediterranea-02.jpg";
 
-const images = [mediterranea01, mediterranea02];
+const images = [
+  mediterranea01,
+  mediterranea02,
+];
 
-export function Mediterranea({ onGoHome }) {
+export function Mediterranea() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -25,13 +28,11 @@ export function Mediterranea({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
 
   function goToBoutique() {
@@ -54,21 +55,33 @@ export function Mediterranea({ onGoHome }) {
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetJ}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetJ}
+          >
             J
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerJ4}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerJ4}
+          >
             J4
           </button>
           <span className="breadcrumb-separator">/</span>
@@ -86,20 +99,16 @@ export function Mediterranea({ onGoHome }) {
         <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/Mediterranea-2026-Natucer.pdf" />
 
         <section className="gallery-grid">
-          <img
-            src={mediterranea01}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="MEDITERRANEA 1"
-          />
-          <img
-            src={mediterranea02}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="MEDITERRANEA 2"
-          />
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(index)}
+              loading="lazy"
+              alt={`MEDITERRANEA ${index + 1}`}
+            />
+          ))}
         </section>
       </main>
 

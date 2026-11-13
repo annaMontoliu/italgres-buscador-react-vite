@@ -7,9 +7,12 @@ import { ImageModal } from "../components/ImageModal";
 import biscuit01 from "../assets/imagenes/biscuit/biscuit-01.jpg";
 import biscuit02 from "../assets/imagenes/biscuit/biscuit-02.jpg";
 
-const images = [biscuit01, biscuit02];
+const images = [
+  biscuit01,
+  biscuit02,
+];
 
-export function Biscuit({ onGoHome }) {
+export function Biscuit() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -25,17 +28,12 @@ export function Biscuit({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
-
-  const cabinet = "J";
-  const drawer = "J4";
 
   function goToBoutique() {
     sessionStorage.removeItem("boutiqueCabinet");
@@ -43,36 +41,48 @@ export function Biscuit({ onGoHome }) {
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToCabinet() {
-    sessionStorage.setItem("boutiqueCabinet", cabinet);
+  function goToCabinetJ() {
+    sessionStorage.setItem("boutiqueCabinet", "J");
     sessionStorage.removeItem("boutiqueDrawer");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
-  function goToDrawer() {
-    sessionStorage.setItem("boutiqueCabinet", cabinet);
-    sessionStorage.setItem("boutiqueDrawer", drawer);
+  function goToDrawerJ4() {
+    sessionStorage.setItem("boutiqueCabinet", "J");
+    sessionStorage.setItem("boutiqueDrawer", "J4");
     window.dispatchEvent(new CustomEvent("go-boutique"));
   }
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinet}>
-            {cabinet}
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetJ}
+          >
+            J
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawer}>
-            {drawer}
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerJ4}
+          >
+            J4
           </button>
           <span className="breadcrumb-separator">/</span>
 
@@ -89,20 +99,16 @@ export function Biscuit({ onGoHome }) {
         <ColeccionLayout infoUrl="https://www.natucer.es/PDFs/Fichas/Biscuit-2026-Natucer.pdf" />
 
         <section className="gallery-grid">
-          <img
-            src={biscuit01}
-            className="gallery-img"
-            onClick={() => openModal(0)}
-            loading="lazy"
-            alt="BISCUIT 1"
-          />
-          <img
-            src={biscuit02}
-            className="gallery-img"
-            onClick={() => openModal(1)}
-            loading="lazy"
-            alt="BISCUIT 2"
-          />
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(index)}
+              loading="lazy"
+              alt={`BISCUIT ${index + 1}`}
+            />
+          ))}
         </section>
       </main>
 

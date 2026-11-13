@@ -20,7 +20,7 @@ const images = [
   inAndOut06,
 ];
 
-export function InAndOut({ onGoHome }) {
+export function InAndOut() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -36,13 +36,11 @@ export function InAndOut({ onGoHome }) {
   }
 
   function nextImage() {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }
 
   function goToBoutique() {
@@ -65,21 +63,33 @@ export function InAndOut({ onGoHome }) {
 
   return (
     <>
-      <Header onGoHome={onGoHome} />
+      <Header />
 
       <main>
         <div className="breadcrumb-boutique">
-          <button className="breadcrumb-link" onClick={goToBoutique}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToBoutique}
+          >
             BOUTIQUE
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToCabinetJ}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToCabinetJ}
+          >
             J
           </button>
           <span className="breadcrumb-separator">/</span>
 
-          <button className="breadcrumb-link" onClick={goToDrawerJ5}>
+          <button
+            type="button"
+            className="breadcrumb-link"
+            onClick={goToDrawerJ5}
+          >
             J5
           </button>
           <span className="breadcrumb-separator">/</span>
@@ -97,12 +107,16 @@ export function InAndOut({ onGoHome }) {
         <ColeccionLayout infoUrl="/pdf/IN-AND-OUT.pdf" />
 
         <section className="gallery-grid">
-          <img src={inAndOut01} className="gallery-img" onClick={() => openModal(0)} loading="lazy" alt="IN & OUT 1" />
-          <img src={inAndOut02} className="gallery-img" onClick={() => openModal(1)} loading="lazy" alt="IN & OUT 2" />
-          <img src={inAndOut03} className="gallery-img" onClick={() => openModal(2)} loading="lazy" alt="IN & OUT 3" />
-          <img src={inAndOut04} className="gallery-img" onClick={() => openModal(3)} loading="lazy" alt="IN & OUT 4" />
-          <img src={inAndOut05} className="gallery-img" onClick={() => openModal(4)} loading="lazy" alt="IN & OUT 5" />
-          <img src={inAndOut06} className="gallery-img" onClick={() => openModal(5)} loading="lazy" alt="IN & OUT 6" />
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              className="gallery-img"
+              onClick={() => openModal(index)}
+              loading="lazy"
+              alt={`IN & OUT ${index + 1}`}
+            />
+          ))}
         </section>
       </main>
 
