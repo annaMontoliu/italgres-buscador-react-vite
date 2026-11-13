@@ -539,13 +539,7 @@ const boutiqueDrawers = {
     },
   ],
   A6: [
-  {
-    name: "TEARS",
-    format: "5''X5''",
-    brand: "LIFE",
-    locations: ["A6", "D6"],
-    thumbnail: tears01,
-  },
+ 
 ],
 A7: [
   {
@@ -862,7 +856,7 @@ B10: [
     name: "SCALE",
     format: "4X5",
     brand: "LIFE CERAMICA",
-    locations: ["B10"],
+    locations: ["D6"],
     thumbnail: scale01,
   },
 ],
@@ -1242,7 +1236,7 @@ D6: [
     name: "TEARS",
     format: "5''X5''",
     brand: "LIFE",
-    locations: ["A6", "D6"],
+    locations: ["D6"],
     thumbnail: tears01,
   },
 ],
@@ -1804,12 +1798,34 @@ H1: [
     locations: ["H1"],
     thumbnail: cisele01,
   },
+   {
+    name: "DIAMOND HANDMADE",
+    format: "3''X5''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: diamondHandmade01,
+  },
+    {
+    name: "KITE HANDMADE",
+    format: "5''X9''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: kiteHandmade01,
+  },
   {
     name: "SUBWAY HANDMADE",
     format: "3''X8''",
     brand: "ALTERET",
     locations: ["H1", "H6"],
     thumbnail: subwayHandmade01,
+  },
+  
+  {
+    name: "PLAGE HANDMADE",
+    format: "2''X8''",
+    brand: "ALTERET",
+    locations: ["H1"],
+    thumbnail: plage01,
   },
   {
     name: "ZELLIGE HANDMADE",
@@ -1912,27 +1928,7 @@ H6: [
 ],
 
 H7: [
-  {
-    name: "DIAMOND HANDMADE",
-    format: "3''X5''",
-    brand: "ALTERET",
-    locations: ["H7"],
-    thumbnail: diamondHandmade01,
-  },
-  {
-    name: "KITE HANDMADE",
-    format: "5''X9''",
-    brand: "ALTERET",
-    locations: ["H7"],
-    thumbnail: kiteHandmade01,
-  },
-  {
-    name: "PLAGE HANDMADE",
-    format: "2''X8''",
-    brand: "ALTERET",
-    locations: ["H7"],
-    thumbnail: plage01,
-  },
+ 
 ],
 
 H9: [
@@ -1959,6 +1955,13 @@ H10: [
     brand: "ESTUDIO CERAMICO",
     locations: ["H10"],
     thumbnail: barcelonaBoutique01,
+  },
+   {
+    name: "HIGHBURY",
+    format: `6''X6''`,
+    brand: "ESTUDIO CERAMICO",
+    locations: ["H10"],
+    thumbnail: highbury01,
   },
 ],
 
@@ -2067,13 +2070,7 @@ I9: [
 ],
 
 I10: [
-  {
-    name: "HIGHBURY",
-    format: `6''X6''`,
-    brand: "ESTUDIO CERAMICO",
-    locations: ["I10"],
-    thumbnail: highbury01,
-  },
+ 
 ],
 J1: [
     {
@@ -2783,7 +2780,7 @@ const boutiqueCollections = [
   name: "SCALE",
   format: "4X5",
   brand: "LIFE CERAMICA",
-  locations: ["B10"],
+  locations: ["D6"],
   thumbnail: scale01,
 },
 {
@@ -3014,7 +3011,7 @@ const boutiqueCollections = [
   name: "TEARS",
   format: "5''X5''",
   brand: "LIFE",
-  locations: ["A6", "D6"],
+  locations: ["D6"],
   thumbnail: tears01,
 },
 {
@@ -3465,21 +3462,21 @@ const boutiqueCollections = [
   name: "DIAMOND HANDMADE",
   format: "3''X5''",
   brand: "ALTERET",
-  locations: ["H7"],
+  locations: ["H1"],
   thumbnail: diamondHandmade01,
 },
 {
   name: "KITE HANDMADE",
   format: "5''X9''",
   brand: "ALTERET",
-  locations: ["H7"],
+  locations: ["H1"],
   thumbnail: kiteHandmade01,
 },
 {
   name: "PLAGE HANDMADE",
   format: "2''X8''",
   brand: "ALTERET",
-  locations: ["H7"],
+  locations: ["H1"],
   thumbnail: plage01,
 },
 {
@@ -3592,7 +3589,7 @@ const boutiqueCollections = [
   name: "HIGHBURY",
   format: `6''X6''`,
   brand: "ESTUDIO CERAMICO",
-  locations: ["I10"],
+  locations: ["H10"],
   thumbnail: highbury01,
 },
 {

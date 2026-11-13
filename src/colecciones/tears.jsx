@@ -68,12 +68,12 @@ export function Tears() {
           <span className="breadcrumb-separator">/</span>
 
           <button type="button" className="breadcrumb-link" onClick={goToCabinetA}>
-            A
+            D
           </button>
           <span className="breadcrumb-separator">/</span>
 
           <button type="button" className="breadcrumb-link" onClick={goToDrawerA6}>
-            A6
+            D6
           </button>
           <span className="breadcrumb-separator">/</span>
 
@@ -84,7 +84,7 @@ export function Tears() {
 
         <div className="boutique-info">
           <p>5''X5'' · LIFE</p>
-          <p>A6 · D6</p>
+          <p>D6</p>
         </div>
 
         <ColeccionLayout infoUrl="/pdf/TEARS.pdf" />

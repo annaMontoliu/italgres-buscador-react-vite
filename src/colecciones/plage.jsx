@@ -79,7 +79,7 @@ export function Plage() {
             className="breadcrumb-link"
             onClick={goToDrawerH7}
           >
-            H7
+            H1
           </button>
           <span className="breadcrumb-separator">/</span>
 
@@ -92,7 +92,7 @@ export function Plage() {
 
         <div className="boutique-info">
           <p>2''X8'' · ALTERET</p>
-          <p>H7</p>
+          <p>H1</p>
         </div>
 
         <ColeccionLayout infoUrl="https://www.alteret.com/en/products/7262-handmade-wall-tiles/7266-collections/p-107025-plage" />

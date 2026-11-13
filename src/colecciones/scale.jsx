@@ -80,12 +80,12 @@ export function Scale({ onGoHome }) {
           <span className="breadcrumb-separator">/</span>
 
           <button className="breadcrumb-link" onClick={goToCabinetB}>
-            B
+            D
           </button>
           <span className="breadcrumb-separator">/</span>
 
           <button className="breadcrumb-link" onClick={goToDrawerB10}>
-            B10
+            D6
           </button>
           <span className="breadcrumb-separator">/</span>
 
@@ -96,7 +96,7 @@ export function Scale({ onGoHome }) {
 
         <div className="boutique-info">
           <p>4x5 · LIFE CERAMICA</p>
-          <p>B10</p>
+          <p>D6</p>
         </div>
 
         <ColeccionLayout infoUrl="https://www.lifeceramica.com/wp-content/uploads/2020/09/Scale.pdf" />

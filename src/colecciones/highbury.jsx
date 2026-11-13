@@ -57,8 +57,8 @@ export function Highbury({ onGoHome }) {
     );
   }
 
-  const cabinet = "I";
-  const drawer = "I10";
+  const cabinet = "H";
+  const drawer = "H10";
   const title = "HIGHBURY";
   const format = "6''X6''";
   const brand = "ESTUDIO CERAMICO";
