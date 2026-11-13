@@ -158,7 +158,6 @@ import baliHexCerlat01 from "./assets/imagenes/bali-cerlat/bali-hex-cerlat/bali-
 import baliVives01 from "./assets/imagenes/bali-vives/bali-vives-01.jpg";
 import samira01 from "./assets/imagenes/samira/samira-01.jpg";
 import samoa01 from "./assets/imagenes/samoa/samoa-01.jpg";
-import retinaBoutique01 from "./assets/imagenes/retina/retina-boutique/retina-boutique-01.jpg";
 import gracia01 from "./assets/imagenes/gracia/gracia-01.jpg";
 import merce01 from "./assets/imagenes/merce/merce-01.jpg";
 import hydraulicPatchwork01 from "./assets/imagenes/hydraulic-patchwork/hydraulic-patchwork-01.jpg";
@@ -1719,23 +1718,11 @@ G5: [
 ],
 
 G6: [
-  {
-    name: "RETINA",
-    format: "24''X24'', 24''X48'', 48''X48''...",
-    brand: "IMOLA",
-    locations: ["G6", "G7"],
-    thumbnail: retinaBoutique01,
-  },
+ 
 ],
 
 G7: [
-  {
-    name: "RETINA",
-    format: "24''X24'', 24''X48'', 48''X48''...",
-    brand: "IMOLA",
-    locations: ["G6", "G7"],
-    thumbnail: retinaBoutique01,
-  },
+ 
 ],
 
 G8: [
@@ -3338,13 +3325,6 @@ const boutiqueCollections = [
   brand: "CERLAT",
   locations: ["G5"],
   thumbnail: samoa01,
-},
-{
-  name: "RETINA",
-  format: "24''X24'', 24''X48'', 48''X48''...",
-  brand: "IMOLA",
-  locations: ["G6", "G7"],
-  thumbnail: retinaBoutique01,
 },
 {
   name: "GRACIA",

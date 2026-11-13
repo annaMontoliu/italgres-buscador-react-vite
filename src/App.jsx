@@ -280,7 +280,6 @@ import { BaliHexCerlat } from "./colecciones/bali-hex-cerlat";
 import { BaliVives } from "./colecciones/bali-vives";
 import { Samira } from "./colecciones/samira";
 import { Samoa } from "./colecciones/samoa";
-import { RetinaBoutique } from "./colecciones/retina-boutique";
 import { Gracia } from "./colecciones/gracia";
 import { Merce } from "./colecciones/merce";
 import { HydraulicPatchwork } from "./colecciones/hydraulic-patchwork";
@@ -687,7 +686,6 @@ export function App() {
     if (name === "BALI VIVES") setPage("bali-vives");
     if (name === "SAMIRA") setPage("samira");
     if (name === "SAMOA") setPage("samoa");
-    if (name === "RETINA") setPage("retina-boutique");
     if (name === "GRACIA") setPage("gracia");
     if (name === "MERCE") setPage("merce");
     if (name === "HYDRAULIC PATCHWORK") setPage("hydraulic-patchwork");
@@ -1046,7 +1044,6 @@ export function App() {
   if (page === "bali-vives") return <BaliVives />;
   if (page === "samira") return <Samira />;
   if (page === "samoa") return <Samoa />;
-  if (page === "retina-boutique") return <RetinaBoutique />;
   if (page === "gracia") return <Gracia />;
   if (page === "merce") return <Merce />;
   if (page === "hydraulic-patchwork") return <HydraulicPatchwork />;
