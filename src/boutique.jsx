@@ -852,13 +852,7 @@ B9: [
   },
 ],
 B10: [
-  {
-    name: "SCALE",
-    format: "4X5",
-    brand: "LIFE CERAMICA",
-    locations: ["D6"],
-    thumbnail: scale01,
-  },
+ 
 ],
 C1: [
   {
@@ -1232,6 +1226,14 @@ D5: [
 ],
 
 D6: [
+
+   {
+    name: "SCALE",
+    format: "4X5",
+    brand: "LIFE CERAMICA",
+    locations: ["D6"],
+    thumbnail: scale01,
+  },
   {
     name: "TEARS",
     format: "5''X5''",
