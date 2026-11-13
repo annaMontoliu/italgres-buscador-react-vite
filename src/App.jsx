@@ -344,6 +344,12 @@ import { Kilian } from "./colecciones/kilian";
 import { Marsella } from "./colecciones/marsella";
 import { Madox } from "./colecciones/madox";
 import { Miralith } from "./colecciones/miralith";
+import Deluxe from "./colecciones/deluxe";
+import Mediterranea from "./colecciones/mediterranea";
+import Biscuit from "./colecciones/biscuit";
+import InAndOut from "./colecciones/in-and-out";
+import Buit from "./colecciones/buit";
+import Wabisabi from "./colecciones/wabisabi";
 
 
 
@@ -750,6 +756,12 @@ export function App() {
     if (name === "MARSELLA") setPage("marsella");
     if (name === "MADOX") setPage("madox");
     if (name === "MIRALITH") setPage("miralith");
+    if (name === "DELUXE") setPage("deluxe");
+    if (name === "MEDITERRANEA") setPage("mediterranea");
+    if (name === "BISCUIT") setPage("biscuit");
+    if (name === "IN & OUT") setPage("in-and-out");
+    if (name === "BUIT") setPage("buit");
+    if (name === "WABISABI") setPage("wabisabi");
 
     
 
@@ -1108,6 +1120,12 @@ export function App() {
   if (page === "marsella") return <Marsella />;
   if (page === "madox") return <Madox />;
   if (page === "miralith") return <Miralith />;
+  if (page === "deluxe") return <Deluxe />;
+  if (page === "mediterranea") return <Mediterranea />;
+  if (page === "biscuit") return <Biscuit />;
+  if (page === "in-and-out") return <InAndOut />;
+  if (page === "buit") return <Buit />;
+  if (page === "wabisabi") return <Wabisabi />;
 
   return null;
 }

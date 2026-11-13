@@ -204,6 +204,12 @@ import osaka01 from "./assets/imagenes/osaka/osaka-01.jpg";
 import kyoto01 from "./assets/imagenes/kyoto/kyoto-01.jpg";
 import picos01 from "./assets/imagenes/picos/picos-01.jpg";
 import surfBoutique01 from "./assets/imagenes/surf-boutique/surf-boutique-01.jpg";
+import deluxe01 from "./assets/imagenes/deluxe/deluxe-01.jpg";
+import mediterranea01 from "./assets/imagenes/mediterranea/mediterranea-01.jpg";
+import biscuit01 from "./assets/imagenes/biscuit/biscuit-01.jpg";
+import inAndOut01 from "./assets/imagenes/in-and-out/in-and-out-01.jpg";
+import buit01 from "./assets/imagenes/buit/buit-01.jpg";
+import wabisabi01 from "./assets/imagenes/wabisabi/wabisabi-01.jpg";
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -264,6 +270,14 @@ const boutiqueDrawers = {
       locations: ["A3"],
       thumbnail: glint01,
     },
+    {
+       ame: "WABISABI",
+      format: '2"x6"',
+      brand: "TONALITE",
+      locations: ["A3"],
+      thumbnail: wabisabi01,
+},
+    
   ],
 
   A4: [
@@ -1713,7 +1727,13 @@ G5: [
   },
 ],
 
-G6: [
+G6: [  {
+    name: "BISCUIT",
+    format: '4"x8"',
+    brand: "NATUCER",
+    locations: ["J4", "G6"],
+    thumbnail: biscuit01,
+  },
  
 ],
 
@@ -2119,7 +2139,31 @@ J3: [
   },
 ],
 
-J4: [
+J4: [ 
+
+    {
+    name: "MEDITERRANEA",
+    format: '7"x2"',
+    brand: "NATUCER",
+    locations: ["J4"],
+    thumbnail: mediterranea01,
+  },
+  
+  {
+    name: "DELUXE",
+    format: '4"x15"',
+    brand: "NATUCER",
+    locations: ["J4"],
+    thumbnail: deluxe01,
+  },
+  
+  {
+    name: "BISCUIT",
+    format: '4"x8"',
+    brand: "NATUCER",
+    locations: ["J4", "G6"],
+    thumbnail: biscuit01,
+  },
   {
     name: "OSAKA",
     format: "5''X5''",
@@ -2139,6 +2183,22 @@ J6: [
   },
 ],
 J5: [
+
+    {
+    name: "IN & OUT",
+    format: '9"x9"',
+    brand: "HARMONY",
+    locations: ["J5"],
+    thumbnail: inAndOut01,
+  },
+
+    {
+    name: "BUIT",
+    format: '7"x7"',
+    brand: "BUIT",
+    locations: ["J5"],
+    thumbnail: buit01,
+  },
   {
     name: "KYOTO",
     format: "5''X5''",

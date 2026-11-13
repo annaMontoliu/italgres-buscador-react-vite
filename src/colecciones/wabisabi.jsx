@@ -1,0 +1,126 @@
+
+import { useState, useEffect } from "react";
+import Header from "../components/Header";
+import ColeccionLayout from "../components/ColeccionLayout";
+import ImageModal from "../components/ImageModal";
+
+const images = Object.values(
+  import.meta.glob("../assets/imagenes/wabisabi/*.jpg", {
+    eager: true,
+    query: "?url",
+    import: "default",
+  })
+).sort((a, b) => {
+  const getNumber = (path) =>
+    Number(path.match(/wabisabi-(\d+)\.jpg/)?.[1] || 0);
+
+  return getNumber(a) - getNumber(b);
+});
+
+export default function Wabisabi({ onGoHome }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    document.body.style.overflow = isModalOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isModalOpen]);
+
+  const openModal = (index) => {
+    setCurrentIndex(index);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => setIsModalOpen(false);
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex(
+      (prev) => (prev - 1 + images.length) % images.length
+    );
+  };
+
+  const goToBoutique = () => {
+    sessionStorage.removeItem("boutiqueCabinet");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  };
+
+  const goToCabinetA = () => {
+    sessionStorage.setItem("boutiqueCabinet", "A");
+    sessionStorage.removeItem("boutiqueDrawer");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  };
+
+  const goToDrawerA3 = () => {
+    sessionStorage.setItem("boutiqueCabinet", "A");
+    sessionStorage.setItem("boutiqueDrawer", "A3");
+    window.dispatchEvent(new CustomEvent("go-boutique"));
+  };
+
+  return (
+    <>
+      <Header onGoHome={onGoHome} />
+
+      <main>
+        <div className="breadcrumb">
+          <button onClick={goToBoutique}>BOUTIQUE</button>
+          <span>/</span>
+          <button onClick={goToCabinetA}>A</button>
+          <span>/</span>
+          <button onClick={goToDrawerA3}>A3</button>
+          <span>/</span>
+          <span>WABISABI</span>
+        </div>
+
+        <h1 className="titulo-coleccion boutique-title">
+          WABISABI
+        </h1>
+
+        <div className="boutique-info">
+          <p>
+            <strong>FORMAT:</strong> 2" x 6"
+          </p>
+          <p>
+            <strong>MANUFACTURER:</strong> TONALITE
+          </p>
+          <p>
+            <strong>LOCATION:</strong> A3
+          </p>
+        </div>
+
+        <ColeccionLayout
+          infoUrl="https://www.tonalite.it/media/wabisabi_tonalite.pdf"
+        />
+
+        <section className="gallery-grid">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`WABISABI ${index + 1}`}
+              loading="lazy"
+              onClick={() => openModal(index)}
+            />
+          ))}
+        </section>
+      </main>
+
+      {isModalOpen && (
+        <ImageModal
+          images={images}
+          currentIndex={currentIndex}
+          onClose={closeModal}
+          onNext={nextImage}
+          onPrev={prevImage}
+        />
+      )}
+    </>
+  );
+}
