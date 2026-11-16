@@ -210,6 +210,12 @@ import biscuit01 from "./assets/imagenes/biscuit/biscuit-01.jpg";
 import inAndOut01 from "./assets/imagenes/in-and-out/in-and-out-01.jpg";
 import buit01 from "./assets/imagenes/buit/buit-01.jpg";
 import wabisabi01 from "./assets/imagenes/wabisabi/wabisabi-01.jpg";
+import alfa01 from "./assets/imagenes/alfa/alfa-01.jpg";
+import bryggen01 from "./assets/imagenes/bryggen/bryggen-01.jpg";
+import pompei01 from "./assets/imagenes/pompei/pompei-01.jpg";
+import terracuita01 from "./assets/imagenes/terracuita/terracuita-01.jpg";
+import mediterraneo01 from "./assets/imagenes/mediterraneo/mediterraneo-01.jpg";
+
 
 const cabinets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
@@ -225,6 +231,13 @@ const boutiqueDrawers = {
   ],
 
   A2: [
+    {
+      name: "ALFA",
+      format: '4"x6"',
+      brand: "TONALITE",
+      locations: ["A2"],
+      thumbnail: alfa01,
+  },
     {
       name: "BECK",
       format: '4"x4"',
@@ -553,6 +566,13 @@ const boutiqueDrawers = {
     },
   ],
   A6: [
+      {
+    name: "BRYGGEN",
+    format: '2"x15"',
+    brand: "TONALITE",
+    locations: ["A6"],
+    thumbnail: bryggen01,
+  },
  
 ],
 A7: [
@@ -736,6 +756,13 @@ B2: [
     thumbnail: legacy3x1001,
   },
   {
+  name: "POMPEI",
+  format: '2"x6" · 8"x8"',
+  brand: "TONALITE",
+  locations: ["B2", "B10"],
+  thumbnail: pompei01,
+},
+  {
     name: "RABAT",
     format: "2x10",
     brand: "HARMONY",
@@ -866,6 +893,13 @@ B9: [
   },
 ],
 B10: [
+  {
+  name: "POMPEI",
+  format: '2"x6" · 8"x8"',
+  brand: "TONALITE",
+  locations: ["B2", "B10"],
+  thumbnail: pompei01,
+},
  
 ],
 C1: [
@@ -1621,6 +1655,13 @@ F9: [
 ],
  G1: [
   {
+  name: "TERRACUITA",
+  format: "",
+  brand: "ANTIC FANG",
+  locations: ["G1"],
+  thumbnail: terracuita01,
+},
+  {
     name: "WAVES",
     format: "5’’X18’’",
     brand: "CEVICA",
@@ -1834,6 +1875,7 @@ H1: [
     locations: ["H1"],
     thumbnail: kiteHandmade01,
   },
+
   {
     name: "SUBWAY HANDMADE",
     format: "3''X8''",
@@ -1949,8 +1991,24 @@ H6: [
   },
 ],
 
-H7: [
+H7: [  {
+  name: "SICILIA",
+  format: '4"x4"',
+  brand: "ANTIC FANG",
+  locations: ["H1"],
+  thumbnail: null,
+  },
  
+],
+
+H8: [
+  {
+    name: "MEDITERRANEO",
+    format: '4"x4"',
+    brand: "ANTIC FANG",
+    locations: ["H8"],
+    thumbnail: mediterraneo01,
+  },
 ],
 
 H9: [
@@ -3788,6 +3846,50 @@ const boutiqueCollections = [
   locations: ["A3"],
   thumbnail: wabisabi01,
 },
+
+{
+  name: "ALFA",
+  format: '4"x6"',
+  brand: "TONALITE",
+  locations: ["A2"],
+  thumbnail: alfa01,
+},
+{
+  name: "BRYGGEN",
+  format: '2"x15"',
+  brand: "TONALITE",
+  locations: ["A6"],
+  thumbnail: bryggen01,
+},
+{
+  name: "POMPEI",
+  format: '2"x6" · 8"x8"',
+  brand: "TONALITE",
+  locations: ["B2", "B10"],
+  thumbnail: pompei01,
+},
+{
+  name: "TERRACUITA",
+  format: "",
+  brand: "ANTIC FANG",
+  locations: ["G1"],
+  thumbnail: terracuita01,
+},
+{
+  name: "SICILIA",
+  format: '4"x4"',
+  brand: "ANTIC FANG",
+  locations: ["H7"],
+  thumbnail: null,
+},
+{
+  name: "MEDITERRANEO",
+  format: '4"x4"',
+  brand: "ANTIC FANG",
+  locations: ["H8"],
+  thumbnail: mediterraneo01,
+},
+
 
 
 ];

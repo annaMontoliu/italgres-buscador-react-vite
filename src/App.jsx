@@ -350,6 +350,13 @@ import { Biscuit } from "./colecciones/biscuit";
 import { InAndOut } from "./colecciones/in-and-out";
 import { Buit } from "./colecciones/buit";
 import { Wabisabi } from "./colecciones/wabisabi";
+import { Alfa } from "./colecciones/alfa";
+import { Bryggen } from "./colecciones/bryggen";
+import { Pompei } from "./colecciones/pompei";
+import { Terracuita } from "./colecciones/terracuita";
+import { Sicilia } from "./colecciones/sicilia";
+import { Mediterraneo } from "./colecciones/mediterraneo";
+
 
 
 
@@ -761,6 +768,13 @@ export function App() {
     if (name === "IN & OUT") setPage("in-and-out");
     if (name === "BUIT") setPage("buit");
     if (name === "WABISABI") setPage("wabisabi");
+    if (name === "ALFA") setPage("alfa");
+    if (name === "BRYGGEN") setPage("bryggen");
+    if (name === "POMPEI") setPage("pompei");
+    if (name === "TERRACUITA") setPage("terracuita");
+    if (name === "SICILIA") setPage("sicilia");
+    if (name === "MEDITERRANEO") setPage("mediterraneo");
+
 
     
 
@@ -1125,6 +1139,13 @@ export function App() {
   if (page === "in-and-out") return <InAndOut />;
   if (page === "buit") return <Buit />;
   if (page === "wabisabi") return <Wabisabi />;
+  if (page === "alfa") return <Alfa />;
+  if (page === "bryggen") return <Bryggen />;
+  if (page === "pompei") return <Pompei />;
+  if (page === "terracuita") return <Terracuita />;
+  if (page === "sicilia") return <Sicilia />;
+  if (page === "mediterraneo") return <Mediterraneo />;
+
 
   return null;
 }
